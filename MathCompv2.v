@@ -194,12 +194,13 @@ move: (infab_leq_ab b c); move=> /proj2; rewrite [inf a _](infComm); by move=> /
 Qed.
 
 
+(*Sólo esto es lo nuevo que he escrito*)
+
 
 Definition reflexive (rel : L -> L -> Prop) : Prop := forall x :L, rel x x.
 Definition antisymetric (rel : L -> L -> Prop) : Prop := forall x y : L, (rel x y) -> (rel y x) -> (x = y).
 Definition transitive (rel : L -> L -> Prop) :Prop := forall x y z :L, rel x y -> rel y z -> rel x z.
 Definition order (rel : L -> L -> Prop) := reflexive rel /\ antisymetric rel /\ transitive rel.
-
 
 
 Lemma AlgToSet1 : forall a b : L, (a ∨ b = b) <-> (a ∧ b = a).
