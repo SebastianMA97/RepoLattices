@@ -1,0 +1,3 @@
+* Davey, B. A., & Priestley, H. A. (2002). Introduction to Lattices and Order (2nd ed.). Cambridge University Press.
+* Bumcrot, Robert. "On Lattice Complements." Proceedings of the American Mathematical Society, vol. 16, no. 3, 1965, pp. 383–388.
+* Mahboubi, A., & Tassi, E. (2020). Mathematical Components (Y. Bertot & G. Gonthier, Contribs.). Mathematical Components Project.
