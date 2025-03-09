@@ -290,6 +290,7 @@ Definition joinPreserv {L K : Type} {ord_L: ordtype L} {ord_K: ordtype K}
                        (join_L : jointype ord_L) (join_K : jointype ord_K) (f : L -> K)
                        := forall x y : L, ord_K (join_K (f x) (f y)) (f ( join_L x y)) .
 
+(*
 Lemma prop219 {L K : Type} (ord_L: ordtype L) (ord_K: ordtype K) (join_L : jointype ord_L) (join_K : jointype ord_K) (f : L -> K)
                : ordPreserv ord_L ord_K f <-> joinPreserv join_L join_K f.
 Proof.
@@ -307,7 +308,7 @@ split.
   by rewrite (JT ord_K join_K (f (join_L a b)) (f a) (f b) ).
 unfold joinPreserv; move=> H.
 unfold ordPreserv; move=> a b leq_ab.
-
+*)
 
 
 
