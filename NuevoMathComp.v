@@ -240,50 +240,95 @@ Qed.
 Definition nord (a b : T) := joinAlg a b = b.
 
 
-Lemma AlgToSet2 : order nord.
+Lemma AlgToSetReflex : reflexive nord.
 Proof.
-split.
-  (*La nueva relación es Reflexiva*)
   move=> a.
   unfold nord.
   by apply: (L3_Alg a).
-split.
-  (*La nueva relación es Antisimétrica*)
+Qed.
+
+Lemma AlgToSetAntisym : antisymetric nord.
+Proof.
   move=> a b. unfold nord; unfold joinAlg; move=> supb; rewrite (L2_Alg b a); move=> supa.
   by move: supb; rewrite supa.
-(*La nueva relación es Transitiva*)
+Qed.
+
+
+Lemma AlgToSetTrans : transitive nord.
+Proof.
 move=> a b c; unfold nord; unfold joinAlg.
 move=> supab supbc.
 by move: (L1_Alg a b c); rewrite (supab); rewrite (supbc).
 Qed.
 
+Check Ordtype.
+Check AlgToSetReflex.
 
-Lemma AlgToSet25: Lattice { }
 
-Lemma AlgToSet3: forall z : L, (forall x y : L, (x ≼ z /\ y ≼ z) <-> x ∨ y ≼ z).
+(* 
+  El Canonical T_ordtype es la instancia de que nord y sus prubas 
+  son un elemento de ordtype, es decir, un orden.
+*)
+
+
+Canonical T_ordtype := Ordtype T nord AlgToSetReflex AlgToSetAntisym AlgToSetTrans.
+
+Lemma AlgToSet_joinAlg: forall z : T, (forall x y : T, (nord x z /\ nord y z) <-> nord (joinAlg x y) z).
 Proof.
 move=> z x y.
 split.
-  move=> [H1 H2]; rewrite -(Nord (x ∨ y) z).
-  have supxz: x ∨ z = z.
-    by move: H1; rewrite -(Nord x z).
-  have supyz: y ∨ z = z.
-    by move: H2; rewrite -(Nord y z).
-  by move: supxz; rewrite -{1}(supyz); rewrite -(L1 x y z).
+  move=> [H1 H2]; unfold nord.
+  have supxz: joinAlg x z = z.
+    by move: H1.
+  have supyz: joinAlg y z = z.
+    by move: H2.
+  by move: supxz; rewrite -{1}(supyz); unfold joinAlg; rewrite -(L1_Alg x y z).
 move=> H1.
-have cotaS: forall a b : L, (a ≼ (a ∨ b)) /\ (b ≼ (a ∨ b)).
+have cotaS: forall a b : T, (nord a (joinAlg a b)) /\ (nord b (joinAlg a b)).
   move=> a b.
   split.
-    by rewrite -(Nord a ((a ∨ b))); rewrite -(L1 a a b); rewrite L3.
-  by rewrite -(Nord b ((a ∨ b))); rewrite (L2 b (a ∨ b) ); rewrite (L1 a b b); rewrite L3.
-have trasnord: forall x y z :L, nord x y -> nord y z -> nord x z.
-    by move: AlgToSet2; move=> /proj2/proj2. 
+    by unfold nord; unfold joinAlg; rewrite -(L1_Alg a a b); rewrite L3_Alg.
+  by unfold nord; unfold joinAlg; rewrite (L2_Alg); rewrite (L1_Alg a b b); rewrite L3_Alg.
+have trasnord: forall x y z :T, nord x y -> nord y z -> nord x z.
+    by move: (AlgToSetTrans). 
 split.
   move: H1; move: (cotaS x y); move=> /proj1.
-  by apply: (trasnord x (x ∨ y) z ).
+  by apply: (trasnord x (joinAlg x y) z ).
 move: H1; move: (cotaS x y); move=> /proj2.
-by apply: (trasnord y (x ∨ y) z ).
+by apply: (trasnord y (joinAlg x y) z ).
 Qed.
+
+
+Lemma AlgToSet_meetAlg: forall z : T, (forall x y : T, (nord z x /\ nord z y) <-> nord z (meetAlg x y) ).
+Proof.
+move=> z x y.
+split.
+  unfold nord; move=> [/(AlgToSet1)-H1 /(AlgToSet1)-H2]; rewrite AlgToSet1.
+  by move: H1; rewrite -{1}(H2); unfold meetAlg; rewrite (L1d_Alg z y x); rewrite (L2d_Alg y x).
+move=> H1.
+have cotaI: forall a b : T, (nord (meetAlg a b) a) /\ (nord (meetAlg a b) b).
+move=> a b.
+split.
+  by unfold nord; rewrite AlgToSet1; unfold meetAlg; rewrite (L2d_Alg); rewrite -(L1d_Alg); rewrite L3d_Alg.
+by unfold nord; rewrite AlgToSet1; unfold meetAlg; rewrite (L1d_Alg); rewrite L3d_Alg.
+have trasnord: forall x y z :T, nord x y -> nord y z -> nord x z.
+    by move: AlgToSetTrans.
+split.
+  move: (cotaI x y); move=> /proj1; move: H1. 
+  by apply: (trasnord z (meetAlg x y) x ).
+move: (cotaI x y); move=> /proj2; move: H1.
+by apply: (trasnord z (meetAlg x y) y ).
+Qed.
+
+
+(* 
+  El Canonical T_lattice es la instancia de que lo que defino en LatticeAlg y sus prubas 
+  son un elemento de lattice, es decir, una Lattice como se definió usando un orden.
+*)
+
+Canonical T_lattice := Lattice T (Ordtype T nord AlgToSetReflex AlgToSetAntisym AlgToSetTrans)
+                       joinAlg AlgToSet_joinAlg meetAlg AlgToSet_meetAlg.
+
 
 
 End AlgtoSet.
