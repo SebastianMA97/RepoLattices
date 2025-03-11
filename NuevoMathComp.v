@@ -26,15 +26,14 @@ Section Propiedades_de_Lattices.
 
 Variable T : Type.
 Variable ord : ordtype T.
-Definition reflex := reflexT T ord.
-Definition antisym := antisymT T ord.
-Definition trans := transT T ord.
+Notation reflex := (reflexT T ord).
+Notation antisym := (antisymT T ord).
+Notation trans := (transT T ord).
 Variable L : lattice ord.
-Definition join := @joinT T ord L.
-Definition meet := @meetT T ord L.
-Definition JH := @jHT T ord L.
-Definition MH := @mHT T ord L.
-
+Notation join := (@joinT T ord L).
+Notation meet := (@meetT T ord L).
+Notation JH := (@jHT T ord L).
+Notation MH := (@mHT T ord L).
 
 
 Lemma ab_leq_jab : forall a b : T ,  ord a (join a b) /\ ord b (join a b) .
@@ -332,60 +331,76 @@ Canonical T_lattice := Lattice T (Ordtype T nord AlgToSetReflex AlgToSetAntisym 
 
 
 End AlgtoSet.
+End Propiedades_de_Lattices.
 
-Definition ordPreserv {L K : Type} (ord_L: ordtype L) (ord_K: ordtype K) (f : L -> K) := forall a b : L, ord_L a b -> ord_K (f a) (f b).
-
-
-Definition joinPreserv {L K : Type} {ord_L: ordtype L} {ord_K: ordtype K} 
-                       (join_L : jointype ord_L) (join_K : jointype ord_K) (f : L -> K)
-                       := forall x y : L, ord_K (join_K (f x) (f y)) (f ( join_L x y)) .
+Section Prop219.
 
 
-Definition meetPreserv {L K : Type} {ord_L: ordtype L} {ord_K: ordtype K} 
-                       (meet_L : meettype ord_L) (meet_K : meettype ord_K) (f : L -> K)
-                       := forall x y : L, ord_K (f ( meet_L x y)) (meet_K (f x) (f y)) .
+Variables L K : Type.
+Variable f : L -> K.
+Variables (ord_L : ordtype L) (ord_K : ordtype K).
+Notation reflex_L:= (reflexT L ord_L).
+Notation reflex_K:= (reflexT K ord_K).
+Notation antisym_L:= (antisymT L ord_L).
+Notation antisym_K:= (antisymT K ord_K).
+Notation trans_L:= (transT L ord_L).
+Notation trans_K:= (transT K ord_K).
+Variable Lattice_L : lattice ord_L.
+Variable Lattice_K : lattice ord_K.
+Notation join_L := (@joinT L ord_L Lattice_L).
+Notation join_K := (@joinT K ord_K Lattice_K).
+Notation meet_L := (@meetT L ord_L Lattice_L).
+Notation meet_K := (@meetT K ord_K Lattice_K).
+Notation JH_L := (@jHT L ord_L Lattice_L).
+Notation JH_K := (@jHT K ord_K Lattice_K).
+Notation MH_L := (@mHT L ord_L Lattice_L).
+Notation MH_K := (@mHT K ord_K Lattice_K).
 
 
-Lemma prop219i1 {L K : Type} (ord_L: ordtype L) (ord_K: ordtype K)
-              (join_L : jointype ord_L) (join_K : jointype ord_K) (f : L -> K)
-              : ordPreserv ord_L ord_K f <-> joinPreserv join_L join_K f.
+Definition ordPreserv := forall a b : L, ord_L a b -> ord_K (f a) (f b).
+
+
+Definition joinPreserv := forall x y : L, ord_K (join_K (f x) (f y)) (f ( join_L x y)) .
+
+
+Definition meetPreserv := forall x y : L, ord_K (f ( meet_L x y)) (meet_K (f x) (f y)) .
+
+Lemma prop219i1 : ordPreserv  <-> joinPreserv.
 Proof.
 split.
   unfold ordPreserv; move=> ordenP.
   unfold joinPreserv; move=> a b.
   have cotainf : ord_L a (join_L a b) /\ ord_L b (join_L a b).
-    move: (reflex L ord_L (join_L a b) ).
-    by move=> /(JH ord_L join_L (join_L a b) a b ).
+    move: (reflex_L (join_L a b) ).
+    by move=> /(JH_L (join_L a b) a b ).
   move: cotainf; move=> [cota_a cota_b].
   move: cota_a; move=> /(ordenP a (join_L a b)) cota_fa.
   move: cota_b; move=> /(ordenP b (join_L a b)) cota_fb.
   move: (conj cota_fa cota_fb).
-  by rewrite (JH ord_K join_K (f (join_L a b)) (f a) (f b) ).
+  by rewrite (JH_K (f (join_L a b)) (f a) (f b) ).
 unfold joinPreserv; move=> H.
-unfold ordPreserv; move=> a b /((ConnectJ ord_L join_L a b))-jab_L.
+unfold ordPreserv; move=> a b /((ConnectJ L ord_L Lattice_L a b))-jab_L.
 move: (H a b); rewrite jab_L.
-move: (ab_leq_jab ord_K join_K (f a) (f b)); move=> /proj1.
-by apply: (trans K ord_K (f a) (join_K (f a) (f b)) (f b) ).
+move: (ab_leq_jab K ord_K Lattice_K (f a) (f b)); move=> /proj1.
+by apply: (trans_K (f a) (join_K (f a) (f b)) (f b) ).
 Qed.
 
 
-Lemma prop219i2 {L K : Type} (ord_L: ordtype L) (ord_K: ordtype K)
-              (meet_L : meettype ord_L) (meet_K : meettype ord_K) (f : L -> K)
-              : ordPreserv ord_L ord_K f <-> meetPreserv meet_L meet_K f.
+Lemma prop219i2 : ordPreserv <-> meetPreserv.
 Proof.
 split.
   unfold ordPreserv; move=> ordenP.
   unfold meetPreserv; move=> a b.
-  move: (mab_leq_ab ord_L meet_L a b); move=> [cota_a cota_b].
+  move: (mab_leq_ab L ord_L Lattice_L a b); move=> [cota_a cota_b].
   move: cota_a; move=> /(ordenP (meet_L a b) a) cota_fa.
   move: cota_b; move=> /(ordenP (meet_L a b) b) cota_fb.
   move: (conj cota_fa cota_fb).
-  by rewrite (MH ord_K meet_K (f (meet_L a b)) (f a) (f b) ).
+  by rewrite (MH_K (f (meet_L a b)) (f a) (f b) ).
 unfold meetPreserv; move=> H.
-unfold ordPreserv; move=> a b /((ConnectM ord_L meet_L a b))-mab_L.
-move: (mab_leq_ab ord_K meet_K (f a) (f b)); move=> /proj2.
+unfold ordPreserv; move=> a b /((ConnectM L ord_L Lattice_L a b))-mab_L.
+move: (mab_leq_ab K ord_K Lattice_K (f a) (f b)); move=> /proj2.
 move: (H a b); rewrite mab_L.
-by apply: (trans K ord_K (f a) (meet_K (f a) (f b)) (f b) ).
+by apply: (trans_K (f a) (meet_K (f a) (f b)) (f b) ).
 Qed.
 
 
