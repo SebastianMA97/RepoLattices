@@ -21,11 +21,11 @@ Class Lattice (A : Set) (P: Poset A) := {
   join : A -> A -> A;
 
   (* Meet is equivalent to the infimum*)
-  meet_is_inf : forall a b : A,
+  MH : forall a b : A,
   forall x, x ≤ a /\ x ≤ b <-> x ≤ (meet a b);
 
   (* Join is equivalent to the supremum*)
-  join_is_sup : forall a b : A,
+  JH : forall a b : A,
   forall x, a ≤ x /\ b ≤ x <-> (join a b) ≤ x;
 
 }.
@@ -35,168 +35,173 @@ Infix "⊔" := join (at level 36, left associativity).
 
 Section LatticeProperties.
 
-Lemma meet_is_lb `{Lattice A}: forall a b : A, a ⊓ b ≤ a /\ a ⊓ b ≤ b.
+Lemma mab_leq_ab `{Lattice A}: forall a b : A, a ⊓ b ≤ a /\ a ⊓ b ≤ b.
 Proof.
   intros.
-  apply meet_is_inf.
+  apply MH.
   reflexivity.
 Qed.
 
-Lemma join_is_ub `{Lattice A}: forall a b : A, a ≤ a ⊔ b  /\ b ≤ a ⊔ b.
+Lemma ab_leq_jab `{Lattice A}: forall a b : A, a ≤ a ⊔ b  /\ b ≤ a ⊔ b.
 Proof.
   intros.
-  apply join_is_sup.
+  apply JH.
   reflexivity.
 Qed.
 
-Theorem meet_associative `{Lattice A}: forall a b c:A, (a ⊓ b) ⊓ c = a ⊓ (b ⊓ c).
+Theorem L1d `{Lattice A}: forall a b c:A, (a ⊓ b) ⊓ c = a ⊓ (b ⊓ c).
 Proof.
   intros.
   apply antisymmetric.
   
-  (* Prove (a ⊓ b) ⊓ c ≤ a ⊓ (b ⊓ c) *)
-  apply meet_is_inf. split.
-    apply transitivity with (y := a ⊓ b). apply meet_is_lb. apply meet_is_lb.
-    apply meet_is_inf. split. 
-      apply transitivity with (y := a ⊓ b). apply meet_is_lb. apply meet_is_lb.
-      apply meet_is_lb.
+  apply MH. split.
+    apply transitivity with (y := a ⊓ b). apply mab_leq_ab. apply mab_leq_ab.
+    apply MH. split. 
+      apply transitivity with (y := a ⊓ b). apply mab_leq_ab. apply mab_leq_ab.
+      apply mab_leq_ab.
 
-  (* Prove  a ⊓ (b ⊓ c) ≤ (a ⊓ b) ⊓ c *)
-  apply meet_is_inf. split.  apply meet_is_inf.  split.
-    apply meet_is_lb. 
-    apply transitivity with (y := b ⊓ c). apply meet_is_lb. apply meet_is_lb.
-    apply transitivity with (y := b ⊓ c). apply meet_is_lb. apply meet_is_lb.
+  apply MH. split.  apply MH.  split.
+    apply mab_leq_ab. 
+    apply transitivity with (y := b ⊓ c). apply mab_leq_ab. apply mab_leq_ab.
+    apply transitivity with (y := b ⊓ c). apply mab_leq_ab. apply mab_leq_ab.
 Qed.
 
-Theorem meet_commutative `{Lattice A}: forall a b:A, a ⊓ b = b ⊓ a.
+Theorem L2d `{Lattice A}: forall a b:A, a ⊓ b = b ⊓ a.
 Proof.
   intros.
-  apply antisymmetric. (* split equality into two inequalities *)
-  rewrite <- meet_is_inf.
+  apply antisymmetric.
+  rewrite <- MH.
   split.
-  apply meet_is_lb.  apply meet_is_lb.
+  apply mab_leq_ab.  apply mab_leq_ab.
 
-  rewrite <- meet_is_inf.
+  rewrite <- MH.
   split.
-  apply meet_is_lb.  apply meet_is_lb.
+  apply mab_leq_ab.  apply mab_leq_ab.
 Qed.
 
-Theorem  meet_idempotent `{Lattice A}: forall a : A, a ⊓ a = a.
+Theorem  L3d `{Lattice A}: forall a : A, a ⊓ a = a.
 Proof.
   intros.
   apply antisymmetric.
-  (* Prove a ⊓ a ≤ a. *)
-  apply meet_is_lb.  
-  
-  (* Prove a ≤ a ⊓ a. *)
-  apply meet_is_inf.  split.  reflexivity.  reflexivity.
+  apply mab_leq_ab.  
+  apply MH.  split.  reflexivity.  reflexivity.
 Qed.
 
-Theorem meet_absorptive `{Lattice A}: forall a b : A, a ⊓ (a ⊔ b) = a.
+Theorem L4d `{Lattice A}: forall a b : A, a ⊓ (a ⊔ b) = a.
 Proof.
   intros.
   apply antisymmetric.
-  
-  (* Prove a ⊓ (a ⊔ b) ≤ a.  Bad case -- but obvious!*)
-  apply meet_is_lb.
-
-  (* Prove a ≤ a ⊓ (a ⊔ b).  Good case! *)
-  apply meet_is_inf.  split.  reflexivity. apply join_is_ub.
+  apply mab_leq_ab.
+  apply MH.  split.  reflexivity. apply ab_leq_jab.
 Qed.
 
-(*-------------------------------------------------------*)
-(* 
-Properties of join
-*)
-(*-------------------------------------------------------*)
 
-Theorem join_associative `{Lattice A}: forall a b c : A,  (a ⊔ b) ⊔ c = a ⊔ (b ⊔ c).
+Theorem L1 `{Lattice A}: forall a b c : A,  (a ⊔ b) ⊔ c = a ⊔ (b ⊔ c).
   intros.
   apply antisymmetric.
-  
-  (* Prove (a ⊔ b) ⊔ c ≤ a ⊔ (b ⊔ c)  *)
-  apply join_is_sup. split.
-    apply join_is_sup. split.  apply join_is_ub.
-    apply transitivity with (y := b ⊔ c). apply join_is_ub. apply join_is_ub. 
-    apply transitivity with (y := b ⊔ c). apply join_is_ub. apply join_is_ub. 
-
-  (* Prove   a ⊔ (b ⊔ c) ≤ (a ⊔ b) ⊔ c *)
-  apply join_is_sup. split.
-    apply transitivity with (y := a ⊔ b). apply join_is_ub. apply join_is_ub. 
-    apply join_is_sup.  split. 
-      apply transitivity with (y := a ⊔ b). apply join_is_ub. apply join_is_ub. 
-      apply join_is_ub.
+  apply JH. split.
+    apply JH. split.  apply ab_leq_jab.
+    apply transitivity with (y := b ⊔ c). apply ab_leq_jab. apply ab_leq_jab. 
+    apply transitivity with (y := b ⊔ c). apply ab_leq_jab. apply ab_leq_jab. 
+  apply JH. split.
+    apply transitivity with (y := a ⊔ b). apply ab_leq_jab. apply ab_leq_jab. 
+    apply JH.  split. 
+      apply transitivity with (y := a ⊔ b). apply ab_leq_jab. apply ab_leq_jab. 
+      apply ab_leq_jab.
 
 
 
 Qed.
 
-Theorem join_commutative `{Lattice A}: forall a b : A, a ⊔ b = b ⊔ a.
+Theorem L2 `{Lattice A}: forall a b : A, a ⊔ b = b ⊔ a.
 Proof.
   intros.
-  apply antisymmetric. (* split equality into two inequalities *)
-  rewrite <- join_is_sup.
+  apply antisymmetric.
+  rewrite <- JH.
   split.
-  apply join_is_ub.  apply join_is_ub.
+  apply ab_leq_jab.  apply ab_leq_jab.
 
-  rewrite <- join_is_sup.
+  rewrite <- JH.
   split.
-  apply join_is_ub.  apply join_is_ub.
+  apply ab_leq_jab.  apply ab_leq_jab.
 Qed.
 
-Theorem join_idempotent `{Lattice A}: forall a : A, a ⊔ a = a.
+Theorem L3 `{Lattice A}: forall a : A, a ⊔ a = a.
 Proof.
   intros.
   apply antisymmetric.
-  (* Prove a ⊔ a ≤ a. *)
-  apply join_is_sup.  split.  reflexivity.  reflexivity.
-
-  (* Prove a ≤ a ⊔ a. *)
-  apply join_is_ub.  
+  apply JH.  split.  reflexivity.  reflexivity.
+  apply ab_leq_jab.  
 Qed.
 
-Theorem join_absorptive `{Lattice A}: forall a b : A, a ⊔ (a ⊓ b) = a.
+Theorem L4 `{Lattice A}: forall a b : A, a ⊔ (a ⊓ b) = a.
 Proof.
   intros.
   apply antisymmetric.
-  
-  (* Prove a ⊔ (a ⊓ b) ≤ a. Good case!*)
- 
-  apply join_is_sup.  split.  reflexivity. apply meet_is_lb.
-
-  (* Prove a ≤ a ⊔ (a ⊓ b).   Bad case -- but obvious! *)
-   apply join_is_ub.
+  apply JH.  split.  reflexivity. apply mab_leq_ab.
+   apply ab_leq_jab.
 Qed.
 
-Lemma connecting_lemma_join `{Lattice A}: forall a b : A, a ≤ b <-> a ⊔ b = b.
+Lemma ConnectJ `{Lattice A}: forall a b : A, a ≤ b <-> a ⊔ b = b.
 Proof.
   intros.  split.
-    intros. apply antisymmetric. apply join_is_sup. split. assumption. reflexivity. apply join_is_ub.
-    intros. rewrite <- H0.  apply join_is_ub.
+    intros. apply antisymmetric. apply JH. split. assumption. reflexivity. apply ab_leq_jab.
+    intros. rewrite <- H0.  apply ab_leq_jab.
 Qed.
 
 
-Lemma connecting_lemma_meet `{Lattice A}: forall a b : A, a ≤ b <-> a ⊓ b = a.
+Lemma  ConnectM `{Lattice A}: forall a b : A, a ≤ b <-> a ⊓ b = a.
 Proof.
   intros.  split.
-    intros. apply antisymmetric. apply meet_is_lb. apply meet_is_inf. split.  reflexivity. assumption.
-    intros. rewrite <- H0.  apply meet_is_lb.
+    intros. apply antisymmetric. apply mab_leq_ab. apply MH. split.  reflexivity. assumption.
+    intros. rewrite <- H0.  apply mab_leq_ab.
 Qed.
 
 
 Lemma connecting_lemma_joinmeet `{Lattice A}: forall a b : A, a ⊔ b = b <-> a ⊓ b = a.
 Proof.
   intros.  split.
-    intros. apply connecting_lemma_meet. apply connecting_lemma_join. assumption.
-    intros. apply connecting_lemma_join. apply connecting_lemma_meet. assumption.
+    intros. apply  ConnectM. apply ConnectJ. assumption.
+    intros. apply ConnectJ. apply  ConnectM. assumption.
 Qed.
 
 
 Theorem connecting_lemma `{Lattice A}: forall a b : A, (a ≤ b <-> a ⊔ b = b) /\  (a ⊔ b = b <-> a ⊓ b = a) /\ (a ⊓ b = a <-> a ≤ b).
 Proof.
   intros. 
-  split.  apply connecting_lemma_join.
+  split.  apply ConnectJ.
   split. apply connecting_lemma_joinmeet.
-  symmetry. apply connecting_lemma_meet.
+  symmetry. apply  ConnectM.
 Qed.
+
+Class LatticeAlg (A : Set) := {
+
+  m : A -> A -> A;
+  j : A -> A -> A;
+  l1 : forall a b c : A, j (j a b) c = j a (j b c);
+  l1d : forall a b c : A, m (m a b) c = m a (m b c);
+  l2 : forall a b : A, j a b = j b a;
+  l2d : forall a b : A, m a b = m b a;
+  l3 : forall a b : A, j a a = a;
+  l3d : forall a b : A, m a a = a;
+  l4 : forall a b : A, j a (m a b) = a;
+  l4d : forall a b : A, m a (j a b) = a
+
+}.
+
+Lemma AlgToSet1 `{LatticeAlg A} : forall a b : A, (j a b = b) <-> (m a b = a).
+Proof.
+split.
+  intro.
+  rewrite <- H0.
+  apply l4d.
+intro.
+rewrite l2d in H0. rewrite <- H0.
+rewrite l2. apply (l4 b a ).
+Qed.
+
+
+Definition nord `{LatticeAlg A} := forall a b : A, j a b = b.
+
+
 
