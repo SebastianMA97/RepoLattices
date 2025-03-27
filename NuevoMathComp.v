@@ -2,6 +2,12 @@ From Coq Require Import Logic.
 From mathcomp Require Import all_ssreflect.
 
 
+Lemma dobl (A : Prop) :  A <-> A /\ A.
+Proof.
+split. by [].
+move=> [h1 h2]; by [].
+Qed.
+
 Section Lattices.
 Definition reflexive {T : Type} (rel : T -> T -> Prop) : Prop := forall x :T, rel x x.
 Definition antisymetric {T : Type} (rel : T -> T -> Prop) : Prop := forall x y : T, (rel x y) -> (rel y x) -> (x = y).
@@ -26,79 +32,80 @@ Section Propiedades_de_Lattices.
 
 Variable T : Type.
 Variable ord : ordtype T.
+Notation "x ≤ y" := (ord x y) (at level 50).
 Notation reflex := (reflexT T ord).
 Notation antisym := (antisymT T ord).
 Notation trans := (transT T ord).
 Variable L : lattice ord.
-Notation join := (@joinT T ord L).
-Notation meet := (@meetT T ord L).
+Notation "x ⊓ y" := (@meetT T ord L x y) (at level 50).
+Notation "x ⊔ y" := (@joinT T ord L x y) (at level 50).
 Notation JH := (@jHT T ord L).
 Notation MH := (@mHT T ord L).
 
 
-Lemma ab_leq_jab : forall a b : T ,  ord a (join a b) /\ ord b (join a b) .
+Lemma ab_leq_jab : forall a b : T ,   a ≤ (a ⊔ b) /\  b ≤ (a ⊔ b).
 Proof.
 move=> a b.
 split.
-  by move: (reflex (join a b)); rewrite -(JH (join a b) a b); move=> /proj1.
-by move: (reflex (join a b)); rewrite -(JH (join a b) a b); move=> /proj2.
+  by move: (reflex (a ⊔ b)); rewrite -(JH (a ⊔ b) a b); move=> /proj1.
+by move: (reflex (a ⊔ b)); rewrite -(JH (a ⊔ b) a b); move=> /proj2.
 Qed.
 
-Lemma mab_leq_ab : forall a b : T ,  ord (meet a b) a /\ ord (meet a b) b.
+Lemma mab_leq_ab : forall a b : T ,  ord (a ⊓ b) a /\ ord (a ⊓ b) b.
 Proof.
 move=> a b.
 split.
-  by move: (reflex (meet a b)); rewrite -(MH (meet a b) a b); move=> /proj1.
-by move: (reflex (meet a b)); rewrite -(MH (meet a b) a b); move=> /proj2.
+  by move: (reflex (a ⊓ b)); rewrite -(MH (a ⊓ b) a b); move=> /proj1.
+by move: (reflex (a ⊓ b)); rewrite -(MH (a ⊓ b) a b); move=> /proj2.
 Qed.
 
 
-Lemma ConnectJ : forall a b : T ,  ord a b <-> (join a b = b).
+Lemma ConnectJ : forall a b : T ,  ord a b <-> (a ⊔ b = b).
 Proof.
 split.
 move=> abLeq.
-  apply: (antisym (join a b) b ).
+  apply: (antisym (a ⊔ b) b ).
     rewrite -(JH b a b).
     split.
       by [].
     by apply: (reflex b ).
-  move: (reflex (join a b)).
-  by rewrite -(JH (join a b) a b); move=> /proj2.
+  move: (reflex (a ⊔ b)).
+  by rewrite -(JH (a ⊔ b) a b); move=> /proj2.
 move=> H.
-move: (reflex (join a b)).
+move: (reflex (a ⊔ b)).
 rewrite {2}H.
 move: (ab_leq_jab a b); move=> /proj1.
-by apply: (trans a (join a b) b).
+by apply: (trans a (a ⊔ b) b).
 Qed.
 
-Lemma ConnectM : forall a b : T ,  ord a b <-> (meet a b = a).
+Lemma ConnectM : forall a b : T ,  ord a b <-> (a ⊓ b = a).
 Proof.
 split.
 move=> abLeq.
-apply: (antisym (meet a b) a ).
-  move: (reflex (meet a b)).
-  by rewrite -(MH (meet a b) a b); move=> /proj1.
+apply: (antisym (a ⊓ b) a ).
+  move: (reflex (a ⊓ b)).
+  by rewrite -(MH (a ⊓ b) a b); move=> /proj1.
 rewrite -(MH a a b).
 split.
   by apply: (reflex a).
 by [].
 move=> H.
 move: (mab_leq_ab a b); move=> /proj2.
-move: (reflex (meet a b)).
+move: (reflex (a ⊓ b)).
 rewrite {1}H.
-by apply: (trans a (meet a b) b).
+by apply: (trans a (a ⊓ b) b).
 Qed.
 
 (* Propiedades L1 a L4*)
 
-Lemma L3 : forall a : T , join a a = a.
+Lemma L3 : forall a : T , a ⊔ a = a.
 Proof.
 move=> a.
 move: (reflex  a). 
 by move=> /(ConnectJ a a).
 Qed.
 
-Lemma L3d : forall a : T , meet a a = a.
+Lemma L3d : forall a : T , a ⊓ a = a.
 Proof.
 move=> a.
 move: (reflex  a). 
@@ -106,90 +113,90 @@ by move=> /(ConnectM a a).
 Qed.
 
 
-Lemma L2 : forall a b : T , join a b = join b a.
+Lemma L2 : forall a b : T , a ⊔ b = b ⊔ a.
 Proof.
 move=> a b.
-apply: (antisym (join a b)  (join b a)). (*Por Antisimetría*)
+apply: (antisym (a ⊔ b)  (b ⊔ a)). (*Por Antisimetría*)
   move: (ab_leq_jab b a); move=> /and_comm.
-  by rewrite (JH (join b a) a b). 
+  by rewrite (JH (b ⊔ a) a b). 
 move: (ab_leq_jab a b); move=> /and_comm.
-by rewrite (JH (join a b) b a).
+by rewrite (JH (a ⊔ b) b a).
 Qed.
 
 
 
-Lemma L2d : forall a b : T , meet a b = meet b a.
+Lemma L2d : forall a b : T , a ⊓ b = b ⊓ a.
 Proof.
 move=> a b.
-apply: (antisym (meet a b)  (meet b a)). (*Por Antisimetría*)
+apply: (antisym (a ⊓ b)  (b ⊓ a)). (*Por Antisimetría*)
   move: (mab_leq_ab a b); move=> /and_comm.
-  by rewrite (MH (meet a b) b a). 
+  by rewrite (MH (a ⊓ b) b a). 
 move: (mab_leq_ab b a); move=> /and_comm.
-by rewrite (MH (meet b a) a b).
+by rewrite (MH (b ⊓ a) a b).
 Qed.
 
 
-Lemma L4 : forall a b : T , join a (meet a b) = a.
+Lemma L4 : forall a b : T , a ⊔ (a ⊓ b) = a.
 Proof.
 move=> a b.
 move: (mab_leq_ab a b); move=> /proj1. (*Vemos que inf a b ≤ a *)
-move=> /(ConnectJ (meet a b) a). (*Aplicamos el Connecting Lemma para ver que inf a b ∨ a = a*)
+move=> /(ConnectJ (a ⊓ b) a). (*Aplicamos el Connecting Lemma para ver que inf a b ∨ a = a*)
 by rewrite L2.
 Qed.
 
-Lemma L4d : forall a b : T , meet a (join a b) = a.
+Lemma L4d : forall a b : T , a ⊓ (a ⊔ b) = a.
 Proof.
 move=> a b.
 move: (ab_leq_jab a b); move=> /proj1. (*Vemos que a ≤ sup a b *)
-by move=> /(ConnectM a (join a b) ). (*Aplicamos el Connecting Lemma para ver que sup a b ∧ a = a*)
+by move=> /(ConnectM a (a ⊔ b) ). (*Aplicamos el Connecting Lemma para ver que sup a b ∧ a = a*)
 Qed.
 
-Lemma L1 : forall a b c : T , join (join a b) c = join a (join b c).
+Lemma L1 : forall a b c : T , (a ⊔ b) ⊔ c = a ⊔ (b ⊔ c).
 Proof. 
-have c_leq_jab: forall x y z : T , ord z y -> ord z (join x y).
-    move=>x y z z_leq_y; move: (ab_leq_jab x y); move=> /proj2; move: z_leq_y; by apply: (trans z y (join x y) ).
+have c_leq_jab: forall x y z : T , ord z y -> ord z (x ⊔ y).
+    move=>x y z z_leq_y; move: (ab_leq_jab x y); move=> /proj2; move: z_leq_y; by apply: (trans z y (x ⊔ y) ).
 move=> a b c.
-apply: (antisym (join (join a b) c) (join a (join b c))).  (*Veremos que son iguales por antisimetría*)
-  rewrite -(JH (join a (join b c)) (join a b) c).
+apply: (antisym ((a ⊔ b) ⊔ c) (a ⊔ (b ⊔ c))).  (*Veremos que son iguales por antisimetría*)
+  rewrite -(JH (a ⊔ (b ⊔ c)) (a ⊔ b) c).
   split.
-    rewrite -(JH (join a (join b c)) a b).
+    rewrite -(JH (a ⊔ (b ⊔ c)) a b).
     split.
-      move: (ab_leq_jab a (join b c)); by move=> /proj1. (*1° caso a ≤ sup a (sup b c)*)
-    move: (ab_leq_jab b c); move=> /proj1; by move=> /(c_leq_jab a (join b c) b). (*2° caso b ≤ sup a (sup b c)*)
-  move: (ab_leq_jab b c); move=> /proj2; by move=> /(c_leq_jab a (join b c) c). (*c ≤ sup a (sup b c)*)
-rewrite -(JH (join (join a b) c) a (join b c)).
+      move: (ab_leq_jab a (b ⊔ c)); by move=> /proj1. (*1° caso a ≤ sup a (sup b c)*)
+    move: (ab_leq_jab b c); move=> /proj1; by move=> /(c_leq_jab a (b ⊔ c) b). (*2° caso b ≤ sup a (sup b c)*)
+  move: (ab_leq_jab b c); move=> /proj2; by move=> /(c_leq_jab a (b ⊔ c) c). (*c ≤ sup a (sup b c)*)
+rewrite -(JH ((a ⊔ b) ⊔ c) a (b ⊔ c)).
 split.
   rewrite (L2).
   move: (ab_leq_jab a b); move=> /proj1.
-  by move=> /(c_leq_jab c (join a b) a).
-rewrite -(JH (join (join a b) c ) b c).
+  by move=> /(c_leq_jab c (a ⊔ b) a).
+rewrite -(JH ((a ⊔ b) ⊔ c ) b c).
 split.
-  move: (ab_leq_jab a b); move=> /proj2. rewrite [join _ c](L2).
-  by move=> /(c_leq_jab c (join a b) b).  (*sup c (sup a b)*)
-move: (ab_leq_jab (join a b) c); by move=> /proj2. (*c ≤ sup (sup a b) c*)
+  move: (ab_leq_jab a b); move=> /proj2. rewrite [_ ⊔ c](L2).
+  by move=> /(c_leq_jab c (a ⊔ b) b).  (*sup c (sup a b)*)
+move: (ab_leq_jab (a ⊔ b) c); by move=> /proj2. (*c ≤ sup (sup a b) c*)
 Qed.
 
 
-Lemma L1d : forall a b c : T , meet (meet a b) c = meet a (meet b c).
+Lemma L1d : forall a b c : T , (a ⊓ b) ⊓ c = a ⊓ (b ⊓ c).
 Proof. 
-have mab_leq_c: forall x y z : T , ord x z -> ord (meet x y) z.
-    move=>x y z H0; move: (mab_leq_ab x y); move=> /proj1-H1; move: H1 H0; by apply: (trans (meet x y) x z ).
+have mab_leq_c: forall x y z : T , ord x z -> ord (x ⊓ y) z.
+    move=>x y z H0; move: (mab_leq_ab x y); move=> /proj1-H1; move: H1 H0; by apply: (trans (x ⊓ y) x z ).
 move=> a b c.
-apply: (antisym (meet (meet a b) c) (meet a (meet b c))).  (*Veremos que son iguales por antisimetría*)
-  rewrite -(MH (meet (meet a b) c) a (meet b c) ).
+apply: (antisym ((a ⊓ b) ⊓ c) (a ⊓ (b ⊓ c))).  (*Veremos que son iguales por antisimetría*)
+  rewrite -(MH ((a ⊓ b) ⊓ c) a (b ⊓ c) ).
   split.
-    move: (mab_leq_ab a b); move=> /proj1; by move=> /(mab_leq_c (meet a b) c a). (*inf (inf a b) c ≤ a*)
-  rewrite -(MH (meet (meet a b) c) b c ).
+    move: (mab_leq_ab a b); move=> /proj1; by move=> /(mab_leq_c (a ⊓ b) c a). (*inf (inf a b) c ≤ a*)
+  rewrite -(MH ((a ⊓ b) ⊓ c) b c ).
   split.
-    move: (mab_leq_ab a b); move=> /proj2; by move=> /(mab_leq_c (meet a b) c b).  (*inf (inf a b) c ≤ b*)
-  move: (mab_leq_ab (meet a b) c); by move=> /proj2.
-rewrite -(MH (meet a (meet b c)) (meet a b) c ).
+    move: (mab_leq_ab a b); move=> /proj2; by move=> /(mab_leq_c (a ⊓ b) c b).  (*inf (inf a b) c ≤ b*)
+  move: (mab_leq_ab (a ⊓ b) c); by move=> /proj2.
+rewrite -(MH (a ⊓ (b ⊓ c)) (a ⊓ b) c ).
 split.
-  rewrite -(MH (meet a (meet b c)) a b ).
+  rewrite -(MH (a ⊓ (b ⊓ c)) a b ).
   split.
-    move: (mab_leq_ab a (meet b c)); by move=> /proj1.  (*inf a (inf b c) ≤ a*)
-  move: (mab_leq_ab b c); move=> /proj1; rewrite [meet a _](L2d); by move=> /(mab_leq_c (meet b c) a b).  (*inf a (inf b c) ≤ b*)
-move: (mab_leq_ab b c); move=> /proj2; rewrite [meet a _](L2d); by move=> /(mab_leq_c (meet b c) a c).  (*inf a (inf b c) ≤ c*)
+    move: (mab_leq_ab a (b ⊓ c)); by move=> /proj1.  (*inf a (inf b c) ≤ a*)
+  move: (mab_leq_ab b c); move=> /proj1; rewrite [a ⊓ _](L2d); by move=> /(mab_leq_c (b ⊓ c) a b).  (*inf a (inf b c) ≤ b*)
+move: (mab_leq_ab b c); move=> /proj2; rewrite [a ⊓ _](L2d); by move=> /(mab_leq_c (b ⊓ c) a c).  (*inf a (inf b c) ≤ c*)
 Qed.
 
 
@@ -202,11 +209,13 @@ Structure latticeAlg {T : Type} :=
                      l1d : forall a b c : T, m (m a b) c = m a (m b c);
                      l2 : forall a b : T, j a b = j b a;
                      l2d : forall a b : T, m a b = m b a;
-                     l3 : forall a b : T, j a a = a;
-                     l3d : forall a b : T, m a a = a;
+                     l3 : forall a : T, j a a = a;
+                     l3d : forall a : T, m a a = a;
                      l4 : forall a b : T, j a (m a b) = a;
                      l4d : forall a b : T, m a (j a b) = a
                     }.
+
+Canonical Alg_lattice := LatticeAlg T (@joinT T ord L) (@meetT T ord L) L1 L1d L2 L2d L3 L3d L4 L4d.
 
 Section AlgtoSet.
 Variable AlgL : @latticeAlg T.
@@ -329,6 +338,12 @@ Canonical T_lattice := Lattice T (Ordtype T nord AlgToSetReflex AlgToSetAntisym 
                        joinAlg AlgToSet_joinAlg meetAlg AlgToSet_meetAlg.
 
 
+Lemma join_eq : forall a b : T,  joinAlg a b = joinT T_ordtype T_lattice a b.
+Proof. by []. Qed.
+
+Lemma meet_eq : forall a b : T,  meetAlg a b = meetT T_ordtype T_lattice a b.
+Proof. by []. Qed.
+
 
 End AlgtoSet.
 End Propiedades_de_Lattices.
@@ -359,17 +374,27 @@ Notation MH_K := (@mHT K ord_K Lattice_K).
 
 Definition ordPreserv := forall a b : L, ord_L a b -> ord_K (f a) (f b).
 
+Definition ordEmmbed := forall a b : L, ord_L a b <-> ord_K (f a) (f b).
 
-Definition joinPreserv := forall x y : L, ord_K (join_K (f x) (f y)) (f ( join_L x y)) .
+Definition Biyective := (forall a b : L, (f a) = (f b) <-> a = b) /\ (forall b : K, (exists a : L, b = f a )).
 
+Definition ordIso := Biyective /\ ordEmmbed .
 
-Definition meetPreserv := forall x y : L, ord_K (f ( meet_L x y)) (meet_K (f x) (f y)) .
+Definition joinOrdPreserv := forall x y : L, ord_K (join_K (f x) (f y)) (f ( join_L x y)) .
 
-Lemma prop219i1 : ordPreserv  <-> joinPreserv.
+Definition meetOrdPreserv := forall x y : L, ord_K (f ( meet_L x y)) (meet_K (f x) (f y)) .
+
+Definition joinPreserv := forall x y : L, (join_K (f x) (f y)) = (f ( join_L x y)) .
+
+Definition meetPreserv := forall x y : L, (f ( meet_L x y)) = (meet_K (f x) (f y)) .
+
+Definition latticeIso := joinPreserv /\ meetPreserv /\ Biyective.
+
+Lemma prop219i1 : ordPreserv  <-> joinOrdPreserv.
 Proof.
 split.
   unfold ordPreserv; move=> ordenP.
-  unfold joinPreserv; move=> a b.
+  unfold joinOrdPreserv; move=> a b.
   have cotainf : ord_L a (join_L a b) /\ ord_L b (join_L a b).
     move: (reflex_L (join_L a b) ).
     by move=> /(JH_L (join_L a b) a b ).
@@ -378,7 +403,7 @@ split.
   move: cota_b; move=> /(ordenP b (join_L a b)) cota_fb.
   move: (conj cota_fa cota_fb).
   by rewrite (JH_K (f (join_L a b)) (f a) (f b) ).
-unfold joinPreserv; move=> H.
+unfold joinOrdPreserv; move=> H.
 unfold ordPreserv; move=> a b /((ConnectJ L ord_L Lattice_L a b))-jab_L.
 move: (H a b); rewrite jab_L.
 move: (ab_leq_jab K ord_K Lattice_K (f a) (f b)); move=> /proj1.
@@ -386,26 +411,165 @@ by apply: (trans_K (f a) (join_K (f a) (f b)) (f b) ).
 Qed.
 
 
-Lemma prop219i2 : ordPreserv <-> meetPreserv.
+Lemma prop219i2 : ordPreserv <-> meetOrdPreserv.
 Proof.
 split.
   unfold ordPreserv; move=> ordenP.
-  unfold meetPreserv; move=> a b.
+  unfold meetOrdPreserv; move=> a b.
   move: (mab_leq_ab L ord_L Lattice_L a b); move=> [cota_a cota_b].
   move: cota_a; move=> /(ordenP (meet_L a b) a) cota_fa.
   move: cota_b; move=> /(ordenP (meet_L a b) b) cota_fb.
   move: (conj cota_fa cota_fb).
   by rewrite (MH_K (f (meet_L a b)) (f a) (f b) ).
-unfold meetPreserv; move=> H.
+unfold meetOrdPreserv; move=> H.
 unfold ordPreserv; move=> a b /((ConnectM L ord_L Lattice_L a b))-mab_L.
 move: (mab_leq_ab K ord_K Lattice_K (f a) (f b)); move=> /proj2.
 move: (H a b); rewrite mab_L.
 by apply: (trans_K (f a) (meet_K (f a) (f b)) (f b) ).
 Qed.
 
+Lemma prop219i3 : ordIso <-> latticeIso.
+Proof.
+split.
+  unfold ordIso. unfold ordEmmbed. unfold Biyective. move=> [[inj sob] H].
+  unfold latticeIso. 
+  split.
+    unfold joinPreserv; move=> x y; apply: (antisymT K ord_K ).
+    move: (prop219i1); unfold ordPreserv; unfold joinOrdPreserv; move=> /proj1-H2.
+    apply: H2; move=> c d; by move: (H c d); move=> /proj1.
+    move: (sob (join_K (f x) (f y))); move=> [a Ha].
+    move: (ab_leq_jab K ord_K Lattice_K (f x) (f y) ); rewrite Ha; move=> [/H-xleqa /H-yleqa].
+    by rewrite -H; rewrite -(JH_L a x y).
+    split.
+      unfold meetPreserv; move=> x y; apply: (antisymT K ord_K ).
+      move: (prop219i2); unfold ordPreserv; unfold meetOrdPreserv; move=> /proj1-H2.
+      apply: H2; move=> c d; by move: (H c d); move=> /proj1.
+      move: (sob (meet_K (f x) (f y))); move=> [a Ha].
+      move: (mab_leq_ab K ord_K Lattice_K (f x) (f y) ); rewrite Ha; move=> [/H-aleqx /H-aleqy].
+      by rewrite -H; rewrite -(MH_L a x y).
+    by [].
+unfold latticeIso; move=> [Hjoin [Hmeet [inj sob]]]; unfold ordIso.
+split.
+  by [].
+unfold ordEmmbed; move=> a b.
+split.
+  by move=> /(ConnectJ L ord_L Lattice_L) /(inj (join_L a b) b ); rewrite -(Hjoin a b); rewrite -ConnectJ.
+by rewrite (ConnectJ K ord_K Lattice_K); rewrite Hjoin; rewrite inj; rewrite -(ConnectJ L ord_L Lattice_L).
+Qed.
+
+End Prop219.
 
 
+Section LatticesModularesDistributivasBooleanas.
 
+Variable T : Type.
+Variable ord : ordtype T.
+Notation "x ≤ y" := (ord x y) (at level 50).
+Notation reflex := (reflexT T ord).
+Notation antisym := (antisymT T ord).
+Notation trans := (transT T ord).
+Variable L : lattice ord.
+Notation "x ⊓ y" := (@meetT T ord L x y) (at level 50). (* \sqcap *)
+Notation "x ⊔ y" := (@joinT T ord L x y) (at level 50). (* \sqcup *)
+Notation JH := (@jHT T ord L).
+Notation MH := (@mHT T ord L).
+
+
+Lemma Lema4_1i : forall a b c : T, ((a ⊓ b) ⊔ (a ⊓ c)) ≤ (a ⊓ (b ⊔ c)).
+Proof.
+move=> a b c.
+rewrite -MH.
+split.
+  rewrite -JH.
+  split.
+    by move: (mab_leq_ab T ord L a b); move=> /proj1.
+  by move: (mab_leq_ab T ord L a c); move=> /proj1.
+rewrite -JH.
+move: (ab_leq_jab T ord L b c); move=> [cota_b cota_c].
+split.
+  move: cota_b; move: (mab_leq_ab T ord L a b); move=> /proj2.
+  by apply: (trans (a ⊓ b) b (b ⊔ c)).
+move: cota_c; move: (mab_leq_ab T ord L a c); move=> /proj2.
+by apply: (trans (a ⊓ c) c (b ⊔ c)).
+Qed.
+
+Lemma Lema4_1id : forall a b c : T, (a ⊔ (b ⊓ c)) ≤ ((a ⊔ b) ⊓ (a ⊔ c)).
+Proof.
+move=> a b c.
+rewrite -JH.
+split.
+  rewrite -MH.
+  split.
+    by move: (ab_leq_jab T ord L a b); move=> /proj1.
+  by move: (ab_leq_jab T ord L a c); move=> /proj1.
+rewrite -MH.
+move: (mab_leq_ab T ord L b c); move=> [cota_b cota_c].
+split.
+  move: (ab_leq_jab T ord L a b); move=> /proj2; move: cota_b .
+  by apply: (trans (b ⊓ c) b (a ⊔ b)).
+move: (ab_leq_jab T ord L a c); move=> /proj2; move: cota_c.
+by apply: (trans (b ⊓ c) c (a ⊔ c)).
+Qed.
+
+Lemma Lema4_1ii : forall a b c : T, c ≤ a -> ((a ⊓ b) ⊔ c) ≤ (a ⊓ (b ⊔ c)).
+Proof.
+move=> a b c /(ConnectM T ord L); rewrite (L2d); move=> H.
+by move: (Lema4_1i a b c); rewrite H.
+Qed.
+
+Lemma Lema4_1iid : forall a b c : T, a ≤ c -> (a ⊔ (b ⊓ c)) ≤ ((a ⊔ b) ⊓ c).
+Proof.
+move=> a b c /(ConnectJ T ord L); rewrite (L2d); move=> H.
+by move: (Lema4_1id a b c); rewrite (L2d T ord L b c); rewrite H.
+Qed.
+
+Lemma Lema4_1iii : forall a b c : T, ((a ⊓ b) ⊔ (b ⊓ c) ⊔ (c ⊓ a)) ≤ ((a ⊔ b) ⊓ (b ⊔ c) ⊓ (c ⊔ a)).
+Proof.
+have aux : forall a b c : T, (a ⊓ b) ≤ (c ⊔ a).
+  move=> a b c; move: (ab_leq_jab T ord L c a); move=> /proj2; move: (mab_leq_ab T ord L a b); move=> /proj1.
+  by apply: (trans (a ⊓ b) a (c ⊔ a)).
+move=> a b c.
+rewrite -JH.
+split.
+  rewrite -MH.
+  split.
+    have H1 : b ≤ ((a ⊔ b) ⊓ (b ⊔ c)).
+      rewrite -MH; split. by move: (ab_leq_jab T ord L a b); move=> /proj2.
+      by move: (ab_leq_jab T ord L b c); move=> /proj1.
+    have H2 : ((a ⊓ b) ⊔ (b ⊓ c)) ≤ b.
+      rewrite -JH; split. by move: (mab_leq_ab T ord L a b); move=> /proj2.
+      by move: (mab_leq_ab T ord L b c); move=> /proj1.
+    by move: H1; move: H2; apply: (trans ((a ⊓ b) ⊔ (b ⊓ c)) b ((a ⊔ b) ⊓ (b ⊔ c))).
+  rewrite -JH.
+  split.
+    by apply: aux.
+  by rewrite (L2d); rewrite (L2); apply aux.
+rewrite -MH.
+split.
+  rewrite -MH.
+  split.
+    by rewrite (L2d); rewrite (L2); apply aux.
+  by apply: aux.
+by rewrite L2; apply: aux.
+Qed.
+
+Lemma Lema4_2i : forall a b c : T, (c ≤ a -> (a ⊓ (b ⊔ c)) = ((a ⊓ b) ⊔ c)) <->
+                                   (c ≤ a -> (a ⊓ (b ⊔ c)) = ((a ⊓ b) ⊔ (a ⊓ c))).
+Proof.
+split.
+  by move=> H1 /dobl [/(ConnectM T ord L)-H] /H1; rewrite (L2d T ord L a c); rewrite H.
+by move=> H1 /dobl [/(ConnectM T ord L)-H] /H1; rewrite (L2d T ord L a c); rewrite H.
+Qed.
+
+Lemma Lema4_2ii : (forall a b c : T, c ≤ a -> (a ⊓ (b ⊔ c)) = ((a ⊓ b) ⊔ (a ⊓ c))) <->
+                  (forall p q r : T, (p ⊓ (q ⊔ (p ⊓ r))) = ((p ⊓ q) ⊔ (p ⊓ r))).
+Proof.
+split.
+  move=> H p q r. move: (mab_leq_ab T ord L p r); move=> /proj1. rewrite (Lema4_2i p q (p ⊓ r)).
+  by apply: H.
+move=> H a b c /(ConnectM T ord L)-cleqa; rewrite -{1}cleqa; rewrite {1}(L2d T ord L c a). 
+by apply: (H a b c). 
+Qed.
 
 
 
