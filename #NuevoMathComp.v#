@@ -415,7 +415,7 @@ move: (ab_leq_jab K ord_K Lattice_K (f a) (f b)) => /proj1.
 by apply: (trans_K (f a) (join_K (f a) (f b)) (f b) ).
 Qed.
 
-
+ 
 Lemma prop219i2 : ordPreserv <-> meetOrdPreserv.
 Proof.
 split.
