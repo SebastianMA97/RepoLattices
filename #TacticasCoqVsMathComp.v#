@@ -175,7 +175,7 @@ split.
 case H0.
   by [].
 case=> [Q | R].
-  apply: or_introl.
+   apply: or_introl.
   by apply: H4.
 apply: or_intror.
 apply: (NNPP s).
@@ -240,7 +240,7 @@ split; last first.
   by [].
 rewrite /not => Q.
 case (classic p).
-  by move=> /H0 /(_ Q).
+   by move=> /(H0) /(_ Q).
 move=> Np; move: H3.
 have H : (~p \/ t).
   by apply: or_introl.

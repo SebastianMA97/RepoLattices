@@ -51,7 +51,7 @@ split.
 by move: (reflex (a ⊔ b)); rewrite -(JH (a ⊔ b) a b) => /proj2.
 Qed.
 
-Lemma mab_leq_ab : forall a b : T ,  ord (a ⊓ b) a /\ ord (a ⊓ b) b.
+Lemma mab_leq_ab : forall a b : T ,  (a ⊓ b) ≤ a /\ (a ⊓ b) ≤ b.
 Proof.
 move=> a b.
 split.
@@ -409,7 +409,7 @@ split.
   move: (conj cota_fa cota_fb).
   by rewrite (JH_K (f (join_L a b)) (f a) (f b) ).
 rewrite /joinOrdPreserv => H.
-rewrite /ordPreserv => a b /((ConnectJ L ord_L Lattice_L a b))-jab_L.
+rewrite /ordPreserv => a b /((ConnectJ ))-jab_L.
 move: (H a b); rewrite jab_L.
 move: (ab_leq_jab K ord_K Lattice_K (f a) (f b)) => /proj1.
 by apply: (trans_K (f a) (join_K (f a) (f b)) (f b) ).
@@ -427,7 +427,7 @@ split.
   move: (conj cota_fa cota_fb).
   by rewrite (MH_K (f (meet_L a b)) (f a) (f b) ).
 rewrite /meetOrdPreserv => H.
-rewrite /ordPreserv => a b /((ConnectM L ord_L Lattice_L a b))-mab_L.
+rewrite /ordPreserv => a b /((ConnectM))-mab_L.
 move: (mab_leq_ab K ord_K Lattice_K (f a) (f b)) => /proj2.
 move: (H a b); rewrite mab_L.
 by apply: (trans_K (f a) (meet_K (f a) (f b)) (f b) ).
@@ -463,8 +463,8 @@ split.
   by [].
 rewrite /ordEmmbed => a b.
 split.
-  by move=> /(ConnectJ L ord_L Lattice_L) /(inj (join_L a b) b ); rewrite -(Hjoin a b) -ConnectJ.
-by rewrite (ConnectJ K ord_K Lattice_K) Hjoin inj -(ConnectJ L ord_L Lattice_L).
+  by move=> /ConnectJ /(inj (join_L a b) b ); rewrite -(Hjoin a b) -ConnectJ.
+by rewrite (ConnectJ K ord_K Lattice_K) Hjoin inj -(ConnectJ).
 Qed.
 
 End Prop219.
@@ -567,8 +567,8 @@ Lemma Lema4_2i : forall a b c : T, (c ≤ a -> (a ⊓ (b ⊔ c)) = ((a ⊓ b) �
                                    (c ≤ a -> (a ⊓ (b ⊔ c)) = ((a ⊓ b) ⊔ (a ⊓ c))).
 Proof.
 split.
-  by move=> H1 /dobl [/(ConnectM T ord L)-H] /H1; rewrite (L2d T ord L a c) H.
-by move=> H1 /dobl [/(ConnectM T ord L)-H] /H1; rewrite (L2d T ord L a c) H.
+  by move=> H1 /dobl [/(ConnectM)-H] /H1; rewrite (L2d T ord L a c) H.
+by move=> H1 /dobl [/(ConnectM)-H] /H1; rewrite (L2d T ord L a c) H.
 Qed.
 
 Lemma Lema4_2ii : (forall a b c : T, c ≤ a -> (a ⊓ (b ⊔ c)) = ((a ⊓ b) ⊔ (a ⊓ c))) <->
@@ -579,9 +579,186 @@ split.
   move: (mab_leq_ab T ord L p r) => /proj1.
   rewrite (Lema4_2i p q (p ⊓ r)).
   by apply: H.
-move=> H a b c /(ConnectM T ord L)-cleqa; rewrite -{1}cleqa {1}(L2d T ord L c a). 
-by apply: (H a b c). 
+move=> H a b c /(ConnectM T ord L)-cleqa. rewrite -{1}cleqa {1}(L2d T ord L c a). 
+by apply: (H a b c).
 Qed.
+
+Lemma Lema4_3 : (forall a b c : T, (a ⊓ (b ⊔ c)) = (a ⊓ b) ⊔ (a ⊓ c)) <-> 
+                (forall p q r : T, (p ⊔ (q ⊓ r)) = (p ⊔ q) ⊓ (p ⊔ r)).
+Proof.
+split.
+  move=> H p q r.
+  move: (H (p ⊔ q) p r).
+  rewrite [(p ⊔ q) ⊓ p]L2d [p ⊓ (p ⊔ q)]L4d [(p ⊔ q) ⊓ r]L2d.
+  rewrite (H r p q).
+  by rewrite -(L1 T ord L p (r ⊓ p) (r ⊓ q)) [r ⊓ p]L2d [p ⊔ (p ⊓ r)]L4 [r ⊓ q]L2d.
+move=> H a b c.
+move: (H (a ⊓ b) a c).
+rewrite [(a ⊓ b) ⊔ a]L2 [a ⊔ (a ⊓ b)]L4.
+rewrite [(a ⊓ b) ⊔ c]L2 (H c a b).
+by rewrite -(L1d T ord L a (c ⊔ a) (c ⊔ b)) [c ⊔ a]L2 [a ⊓ (a ⊔ c)]L4d [c ⊔ b]L2.
+Qed.
+
+Definition Distributive := forall a b c : T, (a ⊓ (b ⊔ c)) = ((a ⊓ b) ⊔ (a ⊓ c)).
+
+Definition Modular := forall a b c : T, (c ≤ a -> (a ⊓ (b ⊔ c)) = ((a ⊓ b) ⊔ c)).
+
+
+Structure booleanL := BooleanL
+  { 
+    Top : T;
+    Bot : T;
+    Dist : Distributive;
+    TopBot : forall a : T, a ≤ Top /\ Bot ≤ a;
+    compl : T -> T;
+    Complement: forall a : T, (a ⊔ (compl a) = Top) /\ (a ⊓ (compl a) = Bot)
+  }.
+
+Variable BL : booleanL.
+Notation  top := (Top BL).
+Notation  bot := (Bot BL).
+Notation c := (compl BL).
+
+Lemma ajBot : forall a : T, a ⊔ bot = a.
+Proof.
+move=> a.
+rewrite L2 -ConnectJ.
+by move: (TopBot BL a) => /proj2.
+Qed.
+
+Lemma amTop : forall a : T, a ⊓ top = a.
+Proof.
+move=> a.
+rewrite -ConnectM.
+by move: (TopBot BL a) => /proj1.
+Qed.
+
+Lemma compUnico : forall a b : T,  (a ⊔ b = top) /\ (a ⊓ b = bot) -> (c a) = b.
+Proof.
+move=> a b [H1 H2].
+apply: antisym.
+  rewrite (ConnectM T ord L ) -(amTop (c a)).
+  rewrite -{2}H1.
+  rewrite (Dist BL (c a) a b).
+  move: (Complement BL a)=> /proj2-H3.
+  by rewrite (amTop (c a)) [c a ⊓ a]L2d H3 L2 ajBot.
+rewrite (ConnectM T ord L ) -{2}(amTop (b)).
+move: (Complement BL a)=> /proj1-H3.
+rewrite -H3.
+rewrite (Dist BL b a (c a)).
+by rewrite [b ⊓ a]L2d H2 L2 ajBot.
+Qed.
+
+
+Lemma lema4_15i : c top = bot /\ c bot = top.
+Proof.
+split.
+  apply: (compUnico top bot).
+  split.
+    move: (TopBot BL top)=> /proj2.
+    by rewrite (ConnectJ T ord L) L2.
+  move: (TopBot BL top)=> /proj2.
+  by rewrite (ConnectM T ord L) L2d.
+apply: (compUnico bot top).
+split.
+  move: (TopBot BL top)=> /proj2.
+  by rewrite (ConnectJ T ord L) L2.
+move: (TopBot BL top)=> /proj2.
+by rewrite (ConnectM T ord L) L2d.
+Qed.
+
+Lemma lema4_15ii : forall a : T, c (c a) = a.
+Proof.
+move=> a.
+apply: (compUnico (c a) a).
+rewrite L2 L2d.
+by apply: Complement.
+Qed.
+
+Lemma lema4_15iii : forall a b : T, (c (a ⊔ b) = (c a) ⊓ (c b))
+                                    /\ ((c (a ⊓ b) = (c a) ⊔ (c b))).
+Proof.
+move=> a b.
+move: (Complement BL a) => [H1a H2a].
+move: (Complement BL b) => [H1b H2b].
+move: (Dist BL).
+rewrite /Distributive.
+rewrite Lema4_3 => H.
+move: (TopBot BL b) => /proj1.
+move=> /(ConnectJ T ord L)-HbTop.
+move: (TopBot BL a) => /proj1.
+move=> /(ConnectJ T ord L)-HaTop.
+move: (TopBot BL b) => /proj2.
+move=> /(ConnectM T ord L)-HbBot.
+move: (TopBot BL a) => /proj2.
+move=> /(ConnectM T ord L)-HaBot.
+move: (TopBot BL (c b)) => /proj2.
+move=> /(ConnectM T ord L)-HcbBot.
+move: (TopBot BL (c a)) => /proj2.
+move=> /(ConnectM T ord L)-HcaBot.
+move: (TopBot BL (c b)) => /proj1.
+move=> /(ConnectJ T ord L)-HcbTop.
+move: (TopBot BL (c a)) => /proj1.
+move=> /(ConnectJ T ord L)-HcaTop.
+split.
+  apply: (compUnico (a ⊔ b) ((c a) ⊓ (c b))).
+  split.
+    rewrite (H (a ⊔ b) (c a) (c b)) L2 -L1 [c a ⊔ a]L2 H1a.
+    rewrite L1 H1b.
+    by rewrite HaTop L2 HbTop amTop.
+  rewrite [(a ⊔ b) ⊓ (c a ⊓ c b)]L2d .
+  rewrite (Dist BL (c a ⊓ c b) a b).
+  rewrite [((c a ⊓ c b) ⊓ a)]L2d -L1d H2a L1d [c b ⊓ b]L2d H2b.
+  by rewrite HcbBot L2d HcaBot ajBot.
+apply: (compUnico (a ⊓ b) ((c a) ⊔ (c b))).
+split.
+  rewrite L2 H L2 L1 [c b ⊔ b]L2 H1b.
+  by rewrite -L1 H1a L2 HcbTop HcaTop amTop.
+rewrite (Dist BL) -L2d -L1d [c a ⊓ a]L2d H2a.
+by rewrite L1d H2b HbBot L2d HaBot ajBot.
+Qed.
+
+Lemma lema4_15iv : forall a b : T, (c (c a ⊔ c b) = (a ⊓ b))
+                                    /\ (c (c a ⊓ c b) = (a ⊔ b)).
+Proof.
+move=> a b.
+move: (lema4_15iii (c a) (c b))=> [H1 H2].
+split.
+  by rewrite H1 lema4_15ii lema4_15ii.
+by rewrite H2 lema4_15ii lema4_15ii.
+Qed.
+
+Lemma lema4_15v : forall a b : T, (a ⊓ (c b) = bot) <-> (a ≤ b).
+Proof.
+move=> a b.
+move: (Dist BL).
+rewrite /Distributive.
+rewrite Lema4_3 => DistD.
+split.
+  move=> H.
+  rewrite (ConnectM T ord L).
+  move: (ab_leq_jab T ord L a b) => /proj1.
+  rewrite (ConnectM T ord L) -{1}(L3d T ord L a).
+  move: (TopBot BL (a ⊓ a)) => /proj2.
+  rewrite (ConnectJ T ord L) L2 -H.  
+  rewrite -(Dist BL) -{1}(L3 T ord L a) -DistD => H2.
+  move: (TopBot BL (a ⊔ b)) => /proj1.
+  rewrite (ConnectM T ord L).
+  move: (Complement BL b) => /proj1-comp_b.
+  rewrite -comp_b {1}[a ⊔ b]L2 -DistD => H3.
+  rewrite -H2 -H3 L2 [b ⊔ (a ⊓ c b)]L2 -DistD.
+  move: (TopBot BL (a ⊓ b)) => /proj2.
+  rewrite (ConnectJ T ord L) => H4.
+  by rewrite H H4.
+rewrite (ConnectJ T ord L) => H.
+move: (Complement BL a) => /proj2-H2.
+move: (TopBot BL (c b)) => /proj2.
+rewrite (ConnectM T ord L) -{1}H2 L1d.
+move: (lema4_15iii a b) => /proj1-Compl.
+by rewrite -Compl H.
+Qed.
+
+
 
 
 
