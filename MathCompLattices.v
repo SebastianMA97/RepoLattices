@@ -547,7 +547,7 @@ Structure booleanLattice := BooleanLattice
   {
     BooL :> boundedLattice;
     Distr: (@Distributive BooL);
-    ExComplement : forall a : BooL, (exists b, (a ⊔ b = top ) /\ (a ⊓ b = bot) ) 
+    ExComplement : forall a : BooL, (exists b : BooL, (a ⊔ b = top ) /\ (a ⊓ b = bot) ) 
   }.
 Notation Dist := (Distr _).
 Notation ExComp := (ExComplement _).
@@ -619,7 +619,7 @@ apply: compUnico.
 
 
 
-
+(*
 move: (Complement BL a) => [H1a H2a].
 move: (Complement BL b) => [H1b H2b].
 move: (Dist BL).
@@ -657,7 +657,7 @@ split.
   by rewrite -L1 H1a L2 HcbTop HcaTop amTop.
 rewrite (Dist BL) -L2d -L1d [c a ⊓ a]L2d H2a.
 by rewrite L1d H2b HbBot L2d HaBot ajBot.
-Qed.
+*)
 
 
 
