@@ -498,9 +498,9 @@ rewrite -JH.
 move: (ab_leq_jab T ord L b c) => [cota_b cota_c].
 split.
   move: (mab_leq_ab T ord L a b) cota_b => /proj2.
-  by apply: (trans (a ⊓ b) b (b ⊔ c)).
+  by apply: trans.
 move: (mab_leq_ab T ord L a c) cota_c => /proj2.
-by apply: (trans (a ⊓ c) c (b ⊔ c)).
+by apply: trans.
 Qed.
 
 Lemma Lema4_1id : forall a b c : T, (a ⊔ (b ⊓ c)) ≤ ((a ⊔ b) ⊓ (a ⊔ c)).
@@ -516,9 +516,9 @@ rewrite -MH.
 move: (mab_leq_ab T ord L b c) => [cota_b cota_c].
 split.
   move: (ab_leq_jab T ord L a b) => /proj2; move: cota_b .
-  by apply: (trans (b ⊓ c) b (a ⊔ b)).
+  by apply: trans.
 move: (ab_leq_jab T ord L a c) => /proj2; move: cota_c.
-by apply: (trans (b ⊓ c) c (a ⊔ c)).
+by apply: trans.
 Qed.
 
 Lemma Lema4_1ii : forall a b c : T, c ≤ a -> ((a ⊓ b) ⊔ c) ≤ (a ⊓ (b ⊔ c)).
@@ -530,14 +530,14 @@ Qed.
 Lemma Lema4_1iid : forall a b c : T, a ≤ c -> (a ⊔ (b ⊓ c)) ≤ ((a ⊔ b) ⊓ c).
 Proof.
 move=> a b c /(ConnectJ T ord L); rewrite (L2d) => H.
-by move: (Lema4_1id a b c); rewrite (L2d T ord L b c) H.
+by move: (Lema4_1id a b c); rewrite L2d H.
 Qed.
 
 Lemma Lema4_1iii : forall a b c : T, ((a ⊓ b) ⊔ (b ⊓ c) ⊔ (c ⊓ a)) ≤ ((a ⊔ b) ⊓ (b ⊔ c) ⊓ (c ⊔ a)).
 Proof.
 have aux : forall a b c : T, (a ⊓ b) ≤ (c ⊔ a).
   move=> a b c; move: (ab_leq_jab T ord L c a)=> /proj2; move: (mab_leq_ab T ord L a b) => /proj1.
-  by apply: (trans (a ⊓ b) a (c ⊔ a)).
+  by apply: trans.
 move=> a b c.
 rewrite -JH.
 split.
@@ -549,7 +549,7 @@ split.
     have H2 : ((a ⊓ b) ⊔ (b ⊓ c)) ≤ b.
       rewrite -JH; split. by move: (mab_leq_ab T ord L a b) => /proj2.
       by move: (mab_leq_ab T ord L b c) => /proj1.
-    by move: H1; move: H2; apply: (trans ((a ⊓ b) ⊔ (b ⊓ c)) b ((a ⊔ b) ⊓ (b ⊔ c))).
+    by move: H1; move: H2; apply: trans.
   rewrite -JH.
   split.
     by apply: aux.
@@ -577,9 +577,10 @@ Proof.
 split.
   move=> H p q r.
   move: (mab_leq_ab T ord L p r) => /proj1.
-  rewrite (Lema4_2i p q (p ⊓ r)).
+  rewrite (Lema4_2i).
   by apply: H.
-move=> H a b c /(ConnectM T ord L)-cleqa. rewrite -{1}cleqa {1}(L2d T ord L c a). 
+move=> H a b c /(ConnectM T ord L)-cleqa.
+rewrite -{1}cleqa {1}(L2d T ord L c a). 
 by apply: (H a b c).
 Qed.
 
