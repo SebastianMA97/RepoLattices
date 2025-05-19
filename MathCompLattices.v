@@ -547,7 +547,7 @@ Structure booleanLattice := BooleanLattice
   {
     BooL :> boundedLattice;
     Distr: (@Distributive BooL);
-    ExComplement : forall a : BooL, (exists b : BooL, (a ⊔ b = top ) /\ (a ⊓ b = bot) ) 
+    ExComplement : forall a : BooL, (exists b, (a ⊔ b = top ) /\ (a ⊓ b = bot) ) 
   }.
 Notation Dist := (Distr _).
 Notation ExComp := (ExComplement _).
@@ -608,58 +608,151 @@ rewrite /Comp.
 by split.
 Qed.
 
-Lemma lema4_15iii {T : booleanLattice} : forall a b c d e f : T, (Comp (a ⊔ b) c -> Comp a d -> Comp b e -> (c = d ⊓ e))
-                                    /\ (Comp (a ⊓ b) f -> Comp a d -> Comp b e -> (f = d ⊔ e)).
+Lemma lema4_15iii {T : booleanLattice} : forall a b caub ca cb canb : T, (Comp (a ⊔ b) caub -> Comp a ca -> Comp b cb -> (caub = ca ⊓ cb))
+                                    /\ (Comp (a ⊓ b) canb -> Comp a ca -> Comp b cb -> (canb = ca ⊔ cb)).
 Proof.
-move=> a b c d e f.
+move=> a b caub ca cb canb.
+move: (Distr T).
+rewrite /Distributive Lema4_3 => Dis.
 split.
+  rewrite /Comp.
+  move=> [H0 H1] [H2 H3] [H4 H5].
+  apply: (compUnico (a ⊔ b)).
+  split.
+    by [].
+  split.
+    rewrite Dis [a ⊔ b]L2 L1 H2.
+    rewrite [b ⊔ a]L2 L1 H4.
+    move: (TB b) (TB a).
+    move=> /proj1/ConnectJ-bTop /proj1/ConnectJ-aTop.
+    by rewrite bTop aTop amTop.
+  rewrite L2d Dist L2d -L1d H3.
+  rewrite L1d [cb ⊓ b]L2d H5.
+  move: (TB cb) (TB ca).
+  move=> /proj2/ConnectM-eBot /proj2/ConnectM-dBot.
+  by rewrite eBot L2d dBot ajBot.
 rewrite /Comp.
 move=> [H0 H1] [H2 H3] [H4 H5].
-apply: compUnico.
-
-
-
-(*
-move: (Complement BL a) => [H1a H2a].
-move: (Complement BL b) => [H1b H2b].
-move: (Dist BL).
-rewrite /Distributive.
-rewrite Lema4_3 => H.
-move: (TopBot BL b) => /proj1.
-move=> /(ConnectJ T ord L)-HbTop.
-move: (TopBot BL a) => /proj1.
-move=> /(ConnectJ T ord L)-HaTop.
-move: (TopBot BL b) => /proj2.
-move=> /(ConnectM T ord L)-HbBot.
-move: (TopBot BL a) => /proj2.
-move=> /(ConnectM T ord L)-HaBot.
-move: (TopBot BL (c b)) => /proj2.
-move=> /(ConnectM T ord L)-HcbBot.
-move: (TopBot BL (c a)) => /proj2.
-move=> /(ConnectM T ord L)-HcaBot.
-move: (TopBot BL (c b)) => /proj1.
-move=> /(ConnectJ T ord L)-HcbTop.
-move: (TopBot BL (c a)) => /proj1.
-move=> /(ConnectJ T ord L)-HcaTop.
+apply: (compUnico (a ⊓ b)).
 split.
-  apply: (compUnico (a ⊔ b) ((c a) ⊓ (c b))).
+  by [].
+split.
+  rewrite L2 Dis L2 -L1 H2 L2.
+  rewrite L1 [cb ⊔ b]L2 H4.
+  move: (TB cb) (TB ca).
+  move=> /proj1/ConnectJ-eTop /proj1/ConnectJ-dTop.
+  by rewrite eTop dTop amTop.
+rewrite Dist [a ⊓ b]L2d L1d H3 L2d.
+rewrite [b ⊓ a]L2d L1d H5 [a ⊓ bot]L2d.
+move: (TB b) (TB a).
+move=> /proj2/ConnectM-bBot /proj2/ConnectM-aBot.
+by rewrite bBot aBot ajBot.
+Qed.
+
+Lemma lema4_15v {T : booleanLattice} : forall a b c : T, Comp b c -> a ⊓ c = bot <-> a ≤ b.
+Proof.
+move=> a b c.
+move: (Distr T).
+rewrite /Distributive Lema4_3 => DistD.
+move=> /dobl [CB [H0 H1]].
+split.
+  move=> H2.
+  rewrite ConnectM.
+  move: (ab_leq_jab a b) => /proj1.
+  rewrite ConnectM -{1}(L3d a).
+  move: (TB (a ⊓ a)) => /proj2.
+  rewrite ConnectJ L2 -H2.
+  rewrite -Dist -{1}(L3 a) -DistD => H3.
+  move: (TB (a ⊔ b)) => /proj1.
+  rewrite ConnectM.
+  rewrite -H0 {1}[a ⊔ b]L2 -DistD => H4.
+  rewrite -H3 -H4 L2 [b ⊔ (a ⊓ c)]L2 -DistD.
+  move: (TB (a ⊓ b)) => /proj2.
+  rewrite ConnectJ => H5.
+  by rewrite H2 H5.
+rewrite ConnectJ => H.
+move: (ExComp a).
+case => a0 [aTop aBot].
+have CA : Comp a a0.
+  by [].
+move: (TB c) => /proj2.
+rewrite ConnectM -{1}aBot L1d.
+move: (lema4_15iii a b c a0 c (a ⊓ b) ) => /proj1.
+rewrite H.
+move=> /(_ CB) /(_ CA) /(_ CB)-Compl.
+by rewrite -Compl.
+Qed.
+
+
+(* Aquí empiezo a implementar del libro de Curry por el momento *)
+
+
+Theorem Curry4_7 {T : lattice} : (forall a b c : T, (a ⊓ (b ⊔ c)) ≤ ((a ⊓ b) ⊔ c)) 
+                                 <-> (@Distributive T).
+Proof.
+split; last first.
+  rewrite /Distributive => H.
+  move=> a b c.
+  have sim:  forall a b : T, a = b -> a ≤ b.
+    move=> x y Hip; rewrite Hip; apply: reflex.
+  have Hip :forall a b c : T, (a ⊓ b) ⊔ (a ⊓ c) ≤ ((a ⊓ b) ⊔ c).
+    move=> x y z.
+    rewrite -JH.
+    split.
+      by move: (ab_leq_jab (x ⊓ y) z ) => /proj1.
+    move: (ab_leq_jab (x ⊓ y) z) => /proj2.
+    move: (mab_leq_ab x z) => /proj2.
+    by apply: trans.
+  move: (H a b c) (Hip a b c).
+  move=> /sim.
+  apply: trans.
+move=> H.
+have Hip1: forall a b c : T, (a ⊓ (b ⊔ c)) ≤ ((a ⊓ b) ⊔ (a ⊓ c)).
+move=> a b c.
+have Hip : forall a b c : T, (a ⊓ ((a ⊓ b) ⊔ c)) ≤ ((a ⊓ b) ⊔ (a ⊓ c)).
+  move=> x y z.
+  rewrite [(x ⊓ y) ⊔ z]L2 [(x ⊓ y) ⊔ (x ⊓ z)]L2.
+  by move: (H x z (x ⊓ y)).
+apply: (trans _ (a ⊓ ((a ⊓ b) ⊔ c)) _ ); last first.
+ by [].
+rewrite -MH.
+split; last first.
+  by [].
+by move: (mab_leq_ab a ((b ⊔ c))) => /proj1.
+move=> a b c.
+apply: antisym.
+  by [].
+by move: (Lema4_1i a b c).
+Qed.
+
+Theorem Curry4_8 {T : lattice} : (forall a b c : T, (a ⊓ b ≤ c /\ a ≤ (b ⊔ c)) -> (a ≤ c))
+                                 <-> (@Distributive T).
+Proof.
+split; last first.
+  rewrite -Curry4_7 => H.
+  move=> a b c [H0 H1].
+  have aux1 : a ⊓ (b ⊔ c) ≤ c.
+    apply: (trans _ ((a ⊓ b) ⊔ c)).
+      by [].
+    rewrite -JH.
+    split.
+      by [].
+    by apply: reflex.
+  apply: (trans _ (a ⊓ (b ⊔ c))); last first.
+    by [].
+  rewrite -MH.
+  split; last first.
+    by [].
+  by apply: reflex.
+move=> H.
+rewrite -Curry4_7.
+move=> a b c.
+apply: (H _ b).
   split.
-    rewrite (H (a ⊔ b) (c a) (c b)) L2 -L1 [c a ⊔ a]L2 H1a.
-    rewrite L1 H1b.
-    by rewrite HaTop L2 HbTop amTop.
-  rewrite [(a ⊔ b) ⊓ (c a ⊓ c b)]L2d .
-  rewrite (Dist BL (c a ⊓ c b) a b).
-  rewrite [((c a ⊓ c b) ⊓ a)]L2d -L1d H2a L1d [c b ⊓ b]L2d H2b.
-  by rewrite HcbBot L2d HcaBot ajBot.
-apply: (compUnico (a ⊓ b) ((c a) ⊔ (c b))).
-split.
-  rewrite L2 H L2 L1 [c b ⊔ b]L2 H1b.
-  by rewrite -L1 H1a L2 HcbTop HcaTop amTop.
-rewrite (Dist BL) -L2d -L1d [c a ⊓ a]L2d H2a.
-by rewrite L1d H2b HbBot L2d HaBot ajBot.
-*)
-
-
-
+  rewrite L1d [_ ⊓ b]L2d L4d.
+  by move: (ab_leq_jab (a ⊓ b) c) => /proj1.
+rewrite -L1 [a ⊓ b]L2d L4.
+by move: (mab_leq_ab a (b ⊔ c) ) => /proj2. 
+Qed.
 
 
