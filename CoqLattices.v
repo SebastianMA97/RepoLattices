@@ -15,22 +15,19 @@ Infix "≤" := ord (at level 50).
 
 Class Lattice (A : Set) (P: Poset A) := {
 
-  (* Meet and join take two elements of the set A and output another*)
   meet : A -> A -> A;
   join : A -> A -> A;
 
-  (* Meet is equivalent to the infimum*)
   MH : forall a b : A,
   forall x, x ≤ a /\ x ≤ b <-> x ≤ (meet a b);
 
-  (* Join is equivalent to the supremum*)
   JH : forall a b : A,
   forall x, a ≤ x /\ b ≤ x <-> (join a b) ≤ x;
 
 }.
 
-Infix "⊓" := meet (at level 40, left associativity).
-Infix "⊔" := join (at level 36, left associativity).
+Infix "⊓" := meet (at level 40).
+Infix "⊔" := join (at level 36).
 
 Section LatticeProperties.
 
@@ -201,10 +198,11 @@ Qed.
 
 
 Definition nord {A : Set} `{LatticeAlg A} (a b : A) := j a b = b.
+Infix "≼" := nord (at level 50).
 
 Lemma AlgToSetReflex `{LatticeAlg A} : Reflexive nord.
 Proof.
-unfold Reflexive. unfold nord.
+unfold Reflexive.
 intro.
 apply (l3 x).
 Qed.
@@ -309,7 +307,7 @@ split.
 Qed.
 
 
-Infix "≼" := nord (at level 50).
+
 
 Class LatticeNord (A : Set) `{LatticeAlg A} := {
 
@@ -536,5 +534,451 @@ split.
             apply ConnectJ in H4.
             assumption.
 Qed.
+
+(* Lattices modulares, distributivas y booleanas *)
+
+Lemma Lema4_1i `{Lattice T} : forall a b c : T, ((a ⊓ b) ⊔ (a ⊓ c)) ≤ (a ⊓ (b ⊔ c)).
+Proof.
+intros.
+apply MH.
+split.
+  * apply JH.
+    split.
+      ** apply mab_leq_ab.
+      ** apply mab_leq_ab.
+  * apply JH.
+    assert (b ≤ (b ⊔ c) /\ c ≤ (b ⊔ c)).
+      apply ab_leq_jab.
+    destruct H0.
+    split.
+      - assert (a ⊓ b ≤ b).
+          apply mab_leq_ab.
+        apply (transitive (a ⊓ b) b (b ⊔ c)).
+        assumption.
+        assumption.
+      - assert (a ⊓ c ≤ c).
+          apply mab_leq_ab.
+        apply (transitive (a ⊓ c) c (b ⊔ c)).
+        assumption.
+        assumption.
+Qed.
+
+Lemma Lema4_1id `{Lattice T} : forall a b c : T, (a ⊔ (b ⊓ c)) ≤ ((a ⊔ b) ⊓ (a ⊔ c)).
+Proof.
+intros.
+apply JH.
+split.
+  * apply MH.
+    split.
+      ** apply ab_leq_jab.
+      ** apply ab_leq_jab.
+  * apply MH.
+    assert ( (b ⊓ c) ≤ b /\ (b ⊓ c) ≤ c).
+      apply mab_leq_ab.
+    destruct H0.
+    split.
+      - assert (b ≤ (a ⊔ b)).
+          apply ab_leq_jab.
+        apply (transitive (b ⊓ c) b (a ⊔ b)).
+        assumption.
+        assumption.
+      - assert ( c ≤ (a ⊔ c)).
+          apply ab_leq_jab.
+        apply (transitive (b ⊓ c) c (a ⊔ c)).
+        assumption.
+        assumption.
+Qed.
+
+Lemma Lema4_1ii `{Lattice T} : forall a b c : T, c ≤ a -> ((a ⊓ b) ⊔ c) ≤ (a ⊓ (b ⊔ c)).
+Proof.
+intros.
+apply ConnectM in H0.
+rewrite L2d in H0.
+assert (((a ⊓ b) ⊔ (a ⊓ c)) ≤ (a ⊓ (b ⊔ c))).
+  apply Lema4_1i.
+rewrite H0 in H1.
+assumption.
+Qed.
+
+
+Lemma Lema4_1iid `{Lattice T} : forall a b c : T, a ≤ c -> (a ⊔ (b ⊓ c)) ≤ ((a ⊔ b) ⊓ c).
+Proof.
+intros.
+apply ConnectJ in H0.
+assert ((a ⊔ (b ⊓ c)) ≤ ((a ⊔ b) ⊓ (a ⊔ c))).
+  apply Lema4_1id.
+rewrite H0 in H1.
+assumption.
+Qed.
+
+Lemma Lema4_1iii `{Lattice T} : forall a b c : T, ((a ⊓ b) ⊔ (b ⊓ c) ⊔ (c ⊓ a)) ≤ ((a ⊔ b) ⊓ (b ⊔ c) ⊓ (c ⊔ a)).
+Proof.
+assert (forall a b c : T, (a ⊓ b) ≤ (c ⊔ a)).
+  intros. 
+  assert (a ≤ c ⊔ a).
+    apply ab_leq_jab.
+  assert (a ⊓ b ≤ a).
+    apply mab_leq_ab.
+  apply (transitive (a ⊓ b) a (c ⊔ a)).
+  assumption.
+  assumption.
+intros.
+apply JH.
+split.
+  * apply MH.
+    split.
+      + assert (b ≤ ((a ⊔ b) ⊓ (b ⊔ c))).
+          apply MH.
+          split.
+            apply ab_leq_jab.
+            apply ab_leq_jab.
+        assert (((a ⊓ b) ⊔ (b ⊓ c)) ≤ b).
+          apply JH.
+          split.
+            apply mab_leq_ab.
+            apply mab_leq_ab.
+        apply (transitive ((a ⊓ b) ⊔ (b ⊓ c)) b (a ⊔ b ⊓ b ⊔ c)).
+        assumption.
+        assumption.
+      + apply JH.
+        split.
+          - apply H0.
+          - rewrite L2d. rewrite L2. apply H0.
+  * apply MH.
+    split.
+      + apply MH.
+        split.
+          ++ rewrite L2d. rewrite L2. apply H0.
+          ++ apply H0.
+      + rewrite L2. apply H0.
+Qed.
+
+
+Lemma Lema4_2i `{Lattice T} : forall a b c : T, (c ≤ a -> (a ⊓ (b ⊔ c)) = ((a ⊓ b) ⊔ c)) <->
+                                   (c ≤ a -> (a ⊓ (b ⊔ c)) = ((a ⊓ b) ⊔ (a ⊓ c))).
+Proof.
+split.
+  * intros.
+    assert (c ⊓ a = c). 
+      apply ConnectM in H1.
+      assumption.
+    apply H0 in H1.
+    rewrite L2d in H2.
+    rewrite <- H2 in H1 at 2.
+    assumption.
+  * intros.
+    assert (c ⊓ a = c).
+      apply ConnectM in H1.
+      assumption.
+    rewrite L2d in H2.
+    apply H0 in H1.
+    rewrite H2 in H1.
+    assumption.
+Qed.
+
+
+Lemma Lema4_2ii `{Lattice T} : (forall a b c : T, c ≤ a -> (a ⊓ (b ⊔ c)) = ((a ⊓ b) ⊔ (a ⊓ c))) <->
+                  (forall p q r : T, (p ⊓ (q ⊔ (p ⊓ r))) = ((p ⊓ q) ⊔ (p ⊓ r))).
+Proof.
+split.
+  * intros.
+    assert (p ⊓ r ≤ p).
+      apply mab_leq_ab.
+    apply (Lema4_2i).
+    apply H0.
+    assumption.
+  * intros.
+    apply ConnectM in H1.
+    rewrite L2d in H1.
+    rewrite <- H1 at 1.
+    apply H0.
+Qed.
+
+Lemma Lema4_3 `{Lattice T} : (forall a b c : T, (a ⊓ (b ⊔ c)) = (a ⊓ b) ⊔ (a ⊓ c)) <-> 
+                (forall p q r : T, (p ⊔ (q ⊓ r)) = (p ⊔ q) ⊓ (p ⊔ r)).
+Proof.
+split.
+  * intros.
+    assert ((p ⊔ q) ⊓ (p ⊔ r) = ((p ⊔ q) ⊓ p) ⊔ ((p ⊔ q) ⊓ r)).
+      apply H0.
+    symmetry in H1.
+    rewrite L2d in H1.
+    rewrite L4d in H1.
+    rewrite L2d in H1.
+    rewrite (H0 r p q) in H1.
+    rewrite <- L1 in H1.
+    rewrite L2d in H1.
+    rewrite L4 in H1.
+    rewrite L2d in H1.
+    assumption.
+  * intros.
+    assert ((a ⊓ b) ⊔ (a ⊓ c) = (a ⊓ b) ⊔ a ⊓ (a ⊓ b) ⊔ c).
+      apply H0.
+    symmetry in H1.
+    rewrite L2 in H1.
+    rewrite L4 in H1.
+    rewrite L2 in H1.
+    rewrite H0 in H1.
+    rewrite <- L1d in H1.
+    rewrite L2 in H1.
+    rewrite L4d in H1.
+    rewrite L2 in H1.
+    assumption.
+Qed.
+
+Definition Distributive `{Lattice T} := forall a b c : T, (a ⊓ (b ⊔ c)) = ((a ⊓ b) ⊔ (a ⊓ c)).
+
+Definition Modular `{Lattice T} := forall a b c : T, (c ≤ a -> (a ⊓ (b ⊔ c)) = ((a ⊓ b) ⊔ c)).
+
+Class BoundedLattice `{Lattice BL} :=
+  {
+    top : BL;
+    bot : BL;
+    TB : forall a : BL, a ≤ top /\ bot ≤ a
+  }.
+
+Class BooleanLattice `{BoundedLattice BooL} :=
+  {
+    Dist: Distributive;
+    ExComp : forall a : BooL, (exists b, (a ⊔ b = top ) /\ (a ⊓ b = bot) ) 
+  }.
+
+Lemma ajBot `{BoundedLattice T} : forall a : T, a ⊔ bot = a.
+Proof.
+intros.
+rewrite L2.
+apply ConnectJ.
+apply TB.
+Qed.
+
+Lemma amTop `{BoundedLattice T} : forall a : T, a ⊓ top = a.
+Proof.
+intros.
+apply ConnectM.
+apply TB.
+Qed.
+
+Definition Comp `{BooleanLattice T} (a b : T ):= (a ⊔ b = top) /\ (a ⊓ b = bot).
+ 
+Lemma compUnico `{BooleanLattice T} : forall a b c : T,
+                (Comp a b /\ 
+                Comp a c) -> b = c.
+Proof.
+intros.
+unfold Comp in H2.
+destruct H2.
+destruct H2.
+destruct H3.
+apply antisymmetric.
+  * apply ConnectM.
+    rewrite <- amTop.
+    rewrite <- H3.
+    rewrite Dist.
+    symmetry.
+    rewrite L2d.
+    rewrite H4.
+    rewrite L2.
+    rewrite ajBot.
+    reflexivity.
+  * rewrite ConnectM.
+    rewrite <- amTop.
+    rewrite <- H2.
+    rewrite Dist.
+    symmetry.
+    rewrite L2d.
+    rewrite H5.
+    rewrite L2.
+    rewrite ajBot.
+    reflexivity.
+Qed.
+
+Lemma lema4_15i `{BooleanLattice T} : (Comp top bot).
+Proof.
+split.
+  * assert (bot ≤ top).
+      apply TB.
+    apply ConnectJ in H2.
+    rewrite L2 in H2.
+    assumption.
+  * assert (bot ≤ top).
+      apply TB.
+    rewrite ConnectM in H2.
+    rewrite L2d in H2.
+    assumption.
+Qed.
+
+
+Lemma lema4_15ii `{BooleanLattice T} : forall a b c : T, Comp a b -> Comp b c -> c = a.
+Proof.
+intros.
+destruct H2.
+rewrite L2 in H2.
+rewrite L2d in H4.
+apply (compUnico b).
+split.
+  * assumption.
+  * unfold Comp.
+    split.
+      assumption.
+      assumption.
+Qed.
+
+Lemma lema4_15iii `{BooleanLattice T} : forall a b caub ca cb canb : T, (Comp (a ⊔ b) caub -> Comp a ca -> Comp b cb -> (caub = ca ⊓ cb))
+                                    /\ (Comp (a ⊓ b) canb -> Comp a ca -> Comp b cb -> (canb = ca ⊔ cb)).
+Proof.
+rename H0 into BL.
+rename H1 into BooL.
+intro a. intro b. intro caub. intro ca. intro cb. intro canb.
+assert (Dis: Distributive).
+  apply Dist.
+unfold Distributive in Dis.
+rewrite Lema4_3 in Dis.
+split.
+  * unfold Comp.
+    intro. destruct H0.
+    intro. destruct H2.
+    intro. destruct H4.
+    apply (compUnico (a ⊔ b)).
+    split.
+      ** unfold Comp.
+         split.
+           assumption.
+           assumption.
+      ** split.
+           + rewrite (Dis (a ⊔ b) ca cb).
+             rewrite L2.
+             rewrite <- L1.
+             rewrite L2 in H2.
+             rewrite H2.
+             rewrite L1.
+             rewrite H4.
+             assert (a ⊔ top = top /\ b ⊔ top = top).
+               split.
+                 apply ConnectJ.
+                 apply TB.
+                 apply ConnectJ.
+                 apply TB.
+             destruct H6.
+             rewrite L2.
+             rewrite H7.
+             rewrite H6.
+             rewrite amTop.
+             reflexivity.
+           + rewrite L2d.
+             rewrite Dist.
+             rewrite L2d.
+             rewrite <- L1d.
+             rewrite H3.
+             rewrite L1d.
+             rewrite L2d in H5.
+             rewrite H5.
+             assert (bot ⊓ ca = bot /\ bot ⊓ cb = bot).
+               split.
+                 apply ConnectM.
+                 apply TB.
+                 apply ConnectM.
+                 apply TB.
+             destruct H6.
+             rewrite H7.
+             rewrite L2d.
+             rewrite H6.
+             rewrite ajBot.
+             reflexivity.
+  * unfold Comp.
+    intro. destruct H0.
+    intro. destruct H2.
+    intro. destruct H4.
+    apply (compUnico (a ⊓ b)).
+    split.
+      ** split.
+           assumption.
+           assumption.
+      ** split.
+           + rewrite L2.
+             rewrite Dis.
+             rewrite L2.
+             rewrite <- L1.
+             rewrite H2.
+             rewrite L1.
+             rewrite L2 in H4.
+             rewrite H4.
+             assert (cb ⊔ top = top /\ ca ⊔ top = top).
+               split.
+                 apply ConnectJ.
+                 apply TB.
+                 apply ConnectJ.
+                 apply TB.
+             destruct H6.
+             rewrite H7.
+             rewrite L2.
+             rewrite H6.
+             rewrite amTop.
+             reflexivity.
+           + rewrite Dist.
+             rewrite L2d.
+             rewrite <- L1d.
+             rewrite L2d in H3.
+             rewrite H3.
+             rewrite L1d.
+             rewrite H5.
+             assert (bot ⊓ b = bot /\ bot ⊓ a = bot).
+               split.
+                 apply ConnectM.
+                 apply TB.
+                 apply ConnectM.
+                 apply TB.
+             destruct H6.
+             rewrite H6.
+             rewrite L2d.
+             rewrite H7.
+             rewrite ajBot.
+             reflexivity.
+Qed.
+
+Lemma lema4_15v `{BooleanLattice T} : forall a b c : T, Comp b c -> a ⊓ c = bot <-> a ≤ b.
+Proof.
+intros.
+assert (DistD: Distributive).
+  apply Dist.
+unfold Distributive in DistD.
+rewrite Lema4_3 in DistD.
+assert (b ⊔ c = top /\ b ⊓ c = bot).
+  
+
+move=> a b c.
+move: (Distr T).
+rewrite /Distributive Lema4_3 => DistD.
+move=> /dobl [CB [H0 H1]].
+split.
+  move=> H2.
+  rewrite ConnectM.
+  move: (ab_leq_jab a b) => /proj1.
+  rewrite ConnectM -{1}(L3d a).
+  move: (TB (a ⊓ a)) => /proj2.
+  rewrite ConnectJ L2 -H2.
+  rewrite -Dist -{1}(L3 a) -DistD => H3.
+  move: (TB (a ⊔ b)) => /proj1.
+  rewrite ConnectM.
+  rewrite -H0 {1}[a ⊔ b]L2 -DistD => H4.
+  rewrite -H3 -H4 L2 [b ⊔ (a ⊓ c)]L2 -DistD.
+  move: (TB (a ⊓ b)) => /proj2.
+  rewrite ConnectJ => H5.
+  by rewrite H2 H5.
+rewrite ConnectJ => H.
+move: (ExComp a).
+case => a0 [aTop aBot].
+have CA : Comp a a0.
+  by [].
+move: (TB c) => /proj2.
+rewrite ConnectM -{1}aBot L1d.
+move: (lema4_15iii a b c a0 c (a ⊓ b) ) => /proj1.
+rewrite H.
+move=> /(_ CB) /(_ CA) /(_ CB)-Compl.
+by rewrite -Compl.
+Qed.
+
+
+
+
 
 
