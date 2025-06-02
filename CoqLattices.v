@@ -822,7 +822,7 @@ split.
       assumption.
       assumption.
 Qed.
-
+ 
 Lemma lema4_15iii `{BooleanLattice T} : forall a b caub ca cb canb : T, (Comp (a ⊔ b) caub -> Comp a ca -> Comp b cb -> (caub = ca ⊓ cb))
                                     /\ (Comp (a ⊓ b) canb -> Comp a ca -> Comp b cb -> (canb = ca ⊔ cb)).
 Proof.
@@ -894,8 +894,7 @@ split.
            assumption.
            assumption.
       ** split.
-           + rewrite L2.
-             rewrite Dis.
+           + rewrite L2; rewrite Dis.
              rewrite L2.
              rewrite <- L1.
              rewrite H2.
@@ -944,7 +943,7 @@ unfold Distributive in DistD.
 rewrite Lema4_3 in DistD.
 assert (b ⊔ c = top /\ b ⊓ c = bot).
   
-
+(*
 move=> a b c.
 move: (Distr T).
 rewrite /Distributive Lema4_3 => DistD.
@@ -976,7 +975,7 @@ rewrite H.
 move=> /(_ CB) /(_ CA) /(_ CB)-Compl.
 by rewrite -Compl.
 Qed.
-
+*)
 
 
 

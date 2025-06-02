@@ -530,7 +530,31 @@ Qed.
 
 Definition Distributive {T : lattice} := forall a b c : T, (a ⊓ (b ⊔ c)) = ((a ⊓ b) ⊔ (a ⊓ c)).
 
-Definition Modular {T : lattice} := forall a b c : T, (c ≤ a -> (a ⊓ (b ⊔ c)) = ((a ⊓ b) ⊔ c)).
+Definition Modular {T : lattice} := forall a b c : T, (c ≤ a -> (c ⊔ (b ⊓ a)) = ((c ⊔ b) ⊓ a)).
+
+Lemma Modular2 {T : lattice} : (@Modular T) -> forall a b c : T, (c ≤ a -> (a ⊓ (b ⊔ c)) = ((a ⊓ b) ⊔ c)).
+Proof.
+rewrite /Modular.
+move=> H a b c.
+move=> /(H a b c).
+by rewrite L2 [b ⊓_]L2d [_ ⊓ a]L2d [c ⊔ _]L2.
+Qed.
+
+Lemma ModularD {T : lattice} : (@Modular T) -> forall a b c : T, (a ≤ c -> (a ⊔ (b ⊓ c)) = ((a ⊔ b) ⊓ c)).
+Proof.
+rewrite /Modular.
+move=> H a b c.
+by move=> /(H c b a).
+Qed.
+
+Lemma ModularD2 {T : lattice} : (forall a b c : T, (a ≤ c -> (a ⊔ (b ⊓ c)) = ((a ⊔ b) ⊓ c)))
+                -> (forall a b c : T, (a ≤ c -> ( c ⊓ (b ⊔ a)  = (c ⊓ b) ⊔ a ))).
+Proof.
+move=> H a b c.
+move=> /(H _ b).
+by rewrite L2 [b ⊓ c]L2d [_ ⊓ c]L2d [a ⊔ b]L2.
+Qed.
+
 
 Structure boundedLattice := BoundedLattice 
   {
@@ -566,7 +590,7 @@ rewrite -ConnectM.
 by move: (TB a) => /proj1.
 Qed.
 
-Definition Comp {T : booleanLattice} (a b : T ):= (a ⊔ b = top) /\ (a ⊓ b = bot).
+Definition Comp {T : boundedLattice} (a b : T ):= (a ⊔ b = top) /\ (a ⊓ b = bot).
  
 Lemma compUnico {T : booleanLattice} : forall a b c : T,
                 (Comp a b /\ 
@@ -607,7 +631,7 @@ apply: (compUnico b).
 rewrite /Comp.
 by split.
 Qed.
-
+ 
 Lemma lema4_15iii {T : booleanLattice} : forall a b caub ca cb canb : T, (Comp (a ⊔ b) caub -> Comp a ca -> Comp b cb -> (caub = ca ⊓ cb))
                                     /\ (Comp (a ⊓ b) canb -> Comp a ca -> Comp b cb -> (canb = ca ⊔ cb)).
 Proof.
@@ -896,7 +920,7 @@ Qed.
 
 Structure implicativeLattice := ImplicativeLattice 
   {
-    ImpL :> boundedLattice;
+    ImpL :> lattice;
     ply : ImpL -> ImpL -> ImpL;
     Imp_P1 : forall a b : ImpL, a ⊓ (ply a b) ≤ b;
     Imp_P2 : forall a b c : ImpL, a ⊓ c ≤ b -> c ≤ (ply a b)
@@ -907,7 +931,7 @@ Notation P2 := (Imp_P2 _).
 
 (* Sección 4C Curry *)
 
-Theorem Curry4C_1LMono {T : implicativeLattice} : forall a b c: T, a ≤ b -> (b ⊃ c) ≤ (a ⊃ c).
+Theorem Curry4C_LMono {T : implicativeLattice} : forall a b c: T, a ≤ b -> (b ⊃ c) ≤ (a ⊃ c).
 Proof.
 move=> a b c H.
 move: (RpM _ _ (b ⊃ c) H).
@@ -917,7 +941,7 @@ move: (trans _ _ _ H0 H1).
 by move=> /P2.
 Qed.
 
-Theorem Curry4C_1RMono {T : implicativeLattice} : forall a b c: T, a ≤ b -> (c ⊃ a) ≤ (c ⊃ b).
+Theorem Curry4C_RMono {T : implicativeLattice} : forall a b c: T, a ≤ b -> (c ⊃ a) ≤ (c ⊃ b).
 Proof.
 move=> a b c H1.
 move: (P1 c a)=> H0.
@@ -925,3 +949,298 @@ move: (trans _ _ _ H0 H1).
 by move=> /P2.
 Qed.
 
+Theorem Curry4C_Unidad {T : implicativeLattice} : forall a : T, exists u, a ≤ u.
+Proof.
+move=> a.
+move: (mab_leq_ab a a) => /proj1.
+move=> /P2-H.
+by exists (a⊃a).
+Qed.
+
+Theorem Curry4C_1i {T : implicativeLattice} : forall a b : T, b ≤ (a ⊃ b).
+Proof.
+move=> a b.
+by move: (mab_leq_ab a b)=> /proj2 /P2.
+Qed.
+
+Theorem Curry4C_1ii1 {T : implicativeLattice} 
+        : forall a b c : T, (a ⊃ (b ⊃ c) = (a ⊓ b)⊃ c).
+Proof.
+move=> a b c.
+apply antisym.
+  move: (P1 a (b ⊃ c)).
+  move=> /(RpM _ _ b).
+  rewrite -L1d [b ⊓ a]L2d=> H0.
+  move: (P1 b c)=> H1.
+  move: (trans _ _ _ H0 H1).
+  by move=> /P2.
+move: (P1 (a ⊓ b) c).
+rewrite [_ ⊓ b]L2d L1d.
+by move=> /P2 /P2.
+Qed.
+
+Theorem Curry4C_1ii2 {T : implicativeLattice} 
+        : forall a b c : T, ((a ⊓ b) ⊃ c = b ⊃ (a ⊃ c)).
+Proof.
+move=> a b c.
+move: (Curry4C_1ii1 b a c).
+by rewrite L2d.
+Qed.
+
+
+(*Bumcroft*)
+
+(*
+
+Definition Modular {T : lattice} := 
+forall a b c : T, 
+(c ≤ a -> (a ⊓ (b ⊔ c)) = ((a ⊓ b) ⊔ c)).
+ c ⊔ (b ⊓ a) = (c ⊔ b) ⊓ a
+
+*)
+
+Section Bumcrot.
+
+Structure bumcrotLattice := BumcrotLattice 
+  {
+    BumL :> boundedLattice;
+    Mod: (@Modular BumL)
+  }.
+
+Theorem Bumcrot1 {L : bumcrotLattice} : forall a b caub canb : L, 
+                 (Comp (a ⊔ b) caub) -> (Comp (a ⊓ b) canb) 
+                 -> (exists ca, (Comp a ca)) /\ (exists cb, (Comp b cb)).
+Proof.
+move=> a b caub canb [H0 H1] [H2 H3].
+split.
+  exists (caub ⊔ (canb ⊓ b)).
+  split.
+    move: (Mod L); rewrite /Modular => Mod.
+    rewrite -(L4 a b).
+    rewrite L1 -[_⊔ (caub ⊔ _)]L1 [_⊔ caub]L2.
+    rewrite [(caub ⊔ _) ⊔ _]L1 -L1.
+    move: (mab_leq_ab a b)=> /proj2.
+    move=> /(Mod _ canb)-HMod1.
+    rewrite HMod1.
+    rewrite H2 [_ ⊓ b]L2d amTop.
+    by rewrite L2 -L1 [b ⊔ a]L2 H0.
+  move: (Mod L) => /Modular2-Mod.
+  rewrite -(L4d a b).
+  have aux : canb ⊓ b ≤ (a ⊔ b).
+    move: (ab_leq_jab a b)=>/proj2-Haub.
+    move: (mab_leq_ab canb b)=>/proj2-Hb.
+    by move: (trans _ _ _ Hb Haub).
+  move: aux => /(Mod _ caub)-HMod2. 
+  rewrite L1d HMod2 H1.
+  rewrite L2 ajBot.
+  by rewrite [_ ⊓ b]L2d -L1d H3.
+exists (caub ⊔ (canb ⊓ a)).
+split.
+  move: (Mod L); rewrite /Modular => Mod.
+  rewrite -(L4 b a).
+  rewrite L1 -[_⊔ (caub ⊔ _)]L1 [_⊔ caub]L2.
+  rewrite [(caub ⊔ _) ⊔ _]L1 -L1.
+  move: (mab_leq_ab b a)=> /proj2.
+  move=> /(Mod _ canb)-HMod1.
+  rewrite HMod1.
+  rewrite [b ⊓ _]L2d H2 [_ ⊓ a]L2d amTop.
+  by rewrite L2 -L1 H0.
+move: (Mod L) => /Modular2-Mod.
+rewrite -(L4d b a) [b ⊔ a]L2.
+have aux : canb ⊓ a ≤ (a ⊔ b).
+  move: (ab_leq_jab a b)=>/proj1-Haub.
+  move: (mab_leq_ab canb a)=>/proj2-Ha.
+  by move: (trans _ _ _ Ha Haub).
+move: aux => /(Mod _ caub)-HMod2. 
+rewrite L1d HMod2 H1.
+rewrite L2 ajBot.
+by rewrite L2d L1d L2d H3.
+Qed.
+
+Theorem AuxBumcrot {L : bumcrotLattice} : forall a b caub canb : L, 
+                 (Comp (a ⊔ b) caub) -> (Comp (a ⊓ b) canb) 
+                 -> ((Comp a (caub ⊔ (canb ⊓ b)) ) /\ (Comp b (caub ⊔ (canb ⊓ a)))).
+Proof.
+move=> a b caub canb [H0 H1] [H2 H3].
+split.
+  split.
+    move: (Mod L); rewrite /Modular => Mod.
+    rewrite -(L4 a b).
+    rewrite L1 -[_⊔ (caub ⊔ _)]L1 [_⊔ caub]L2.
+    rewrite [(caub ⊔ _) ⊔ _]L1 -L1.
+    move: (mab_leq_ab a b)=> /proj2.
+    move=> /(Mod _ canb)-HMod1.
+    rewrite HMod1.
+    rewrite H2 [_ ⊓ b]L2d amTop.
+    by rewrite L2 -L1 [b ⊔ a]L2 H0.
+  move: (Mod L) => /Modular2-Mod.
+  rewrite -(L4d a b).
+  have aux : canb ⊓ b ≤ (a ⊔ b).
+    move: (ab_leq_jab a b)=>/proj2-Haub.
+    move: (mab_leq_ab canb b)=>/proj2-Hb.
+    by move: (trans _ _ _ Hb Haub).
+  move: aux => /(Mod _ caub)-HMod2. 
+  rewrite L1d HMod2 H1.
+  rewrite L2 ajBot.
+  by rewrite [_ ⊓ b]L2d -L1d H3.
+split.
+  move: (Mod L); rewrite /Modular => Mod.
+  rewrite -(L4 b a).
+  rewrite L1 -[_⊔ (caub ⊔ _)]L1 [_⊔ caub]L2.
+  rewrite [(caub ⊔ _) ⊔ _]L1 -L1.
+  move: (mab_leq_ab b a)=> /proj2.
+  move=> /(Mod _ canb)-HMod1.
+  rewrite HMod1.
+  rewrite [b ⊓ _]L2d H2 [_ ⊓ a]L2d amTop.
+  by rewrite L2 -L1 H0.
+move: (Mod L) => /Modular2-Mod.
+rewrite -(L4d b a) [b ⊔ a]L2.
+have aux : canb ⊓ a ≤ (a ⊔ b).
+  move: (ab_leq_jab a b)=>/proj1-Haub.
+  move: (mab_leq_ab canb a)=>/proj2-Ha.
+  by move: (trans _ _ _ Ha Haub).
+move: aux => /(Mod _ caub)-HMod2. 
+rewrite L1d HMod2 H1.
+rewrite L2 ajBot.
+by rewrite L2d L1d L2d H3.
+Qed.
+
+Theorem AuxBumcrotd {L : bumcrotLattice} : forall a b caub canb : L, 
+                 (Comp (a ⊔ b) caub) -> (Comp (a ⊓ b) canb) 
+                 -> ((Comp a (canb ⊓ (caub ⊔ b)) ) /\ (Comp b (canb ⊓ (caub ⊔ a)))).
+Proof.
+move=> a b caub canb [H0 H1] [H2 H3].
+split.
+  split.
+    move: (Mod L)=> /ModularD => ModD.
+    rewrite -(L4 a b).
+    have aux : (a ⊓ b) ≤ (caub ⊔ b).
+      move: (mab_leq_ab a b)=> /proj2-H0b.
+      move: (ab_leq_jab caub b)=> /proj2-H1b.
+      by move: (trans _ _ _ H0b H1b).
+    move: aux => /(ModD _ canb)=>Mod1.
+    rewrite L1 Mod1 H2.
+    rewrite L2d amTop.
+    by rewrite [_ ⊔ b]L2 -L1 H0.
+  move: (Mod L)=> /ModularD/ModularD2-ModD.
+  rewrite -(L4d a b).
+  rewrite L1d -[_ ⊓ (canb ⊓ _)]L1d [_ ⊓ canb]L2d.
+  rewrite [(canb ⊓ _) ⊓ _]L1d.
+  move: (ab_leq_jab a b)=> /proj2.
+  move=> /(ModD _ caub)=> HModD1.
+  rewrite HModD1 H1.
+  rewrite L2 ajBot.
+  by rewrite [_ ⊓ b]L2d -L1d H3.
+split.
+  move: (Mod L)=> /ModularD => ModD.
+  rewrite -(L4 b a).
+  have aux: (b ⊓ a) ≤ (caub ⊔ a).
+    move: (mab_leq_ab b a)=> /proj2-H0a.
+    move: (ab_leq_jab caub a)=> /proj2-H1a.
+    by move: (trans _ _ _ H0a H1a).
+  move: aux => /ModD-HModD.
+  rewrite L1 HModD.
+  rewrite [_ ⊓ a]L2d H2 L2d amTop.
+  by rewrite L2 L1 L2 H0.
+move: (Mod L)=> /ModularD/ModularD2-ModD.
+rewrite -(L4d b a) [b ⊔ a]L2.
+rewrite L1d -[_ ⊓ (canb ⊓ _)]L1d [_ ⊓ canb]L2d.
+move: (ab_leq_jab a b)=> /proj1/(ModD _ caub)-HModD.
+rewrite L1d HModD.
+rewrite H1 [_ ⊔ a]L2 ajBot.
+by rewrite L2d L1d L2d H3.
+Qed.
+
+Definition C_unico {L : bumcrotLattice} (a : L) := forall b c : L, (Comp a b) /\ (Comp a c) -> b = c.
+
+Variable L : bumcrotLattice.
+Variables a b ca cb canb caub : L.
+Hypothesis (CompUa : C_unico a) (CompUb : C_unico b) (Comp_a : Comp a ca) (Comp_b : Comp b cb)
+           (H0 : Comp (a ⊔ b) caub) (H1 : Comp (a ⊓ b) canb).
+
+Lemma auxCompBumcrot : (ca = caub ⊔ (canb ⊓ b)) /\ (cb = caub ⊔ (canb ⊓ a)).
+Proof.
+split.
+  apply: CompUa.
+  split.
+    by [].
+  move: (AuxBumcrot a b caub canb).
+  by move=> /(_ H0)/(_ H1)/proj1.
+apply: CompUb.
+split.
+  by [].
+move: (AuxBumcrot a b caub canb).
+by move=> /(_ H0)/(_ H1)/proj2.
+Qed.
+
+Lemma auxCompBumcrotD : (ca = canb ⊓ (caub ⊔ b) /\ cb = canb ⊓ (caub ⊔ a)).
+Proof.
+split.
+  apply: CompUa.
+  split.
+    by [].
+  move: (AuxBumcrotd a b caub canb).
+  by move=> /(_ H0)/(_ H1)/proj1.
+apply: CompUb.
+split.
+  by [].
+move: (AuxBumcrotd a b caub canb).
+by move=> /(_ H0)/(_ H1)/proj2.
+Qed.
+
+Theorem Bumcrot2 : (Comp (a ⊓ b) (ca ⊔ cb)) /\ (Comp (a ⊔ b) (ca ⊓ cb)).
+Proof.
+move: H0 => [H2 H3].
+move: H1 => [H4 H5].
+split.
+  split.
+    move: auxCompBumcrot => [HCa HCb].
+    rewrite HCa HCb [_ ⊔ (caub ⊔ _)]L1 -[(canb ⊓ b) ⊔ (caub ⊔ (canb ⊓ a))]L1.
+    rewrite [_ ⊔ caub]L2 L1 -[caub ⊔ (caub ⊔ _)]L1.
+    rewrite L3 -[_ ⊔ (caub ⊔ _)]L1 [_ ⊔ caub]L2.
+    rewrite L1 -[_ ⊔ ((canb ⊓ b) ⊔ _)]L1 -(L3 (a ⊓ b)).
+    rewrite L1 [((a ⊓ b) ⊔ (a ⊓ b)) ⊔ _]L1.
+    rewrite -[(a ⊓ b) ⊔ ((canb ⊓ b) ⊔ (canb ⊓ a))]L1.
+    rewrite [_ ⊔ (canb ⊓ b)]L2 [(_ ⊔ (a ⊓ b)) ⊔ _]L1.
+    rewrite -[(a ⊓ b) ⊔ (_ ⊔ _)]L1.
+    move: (Mod L); rewrite /Modular => Mod.
+    move: (mab_leq_ab a b)=> [A B].
+    move: A => /(Mod _ canb)-HModa.
+    move: B => /(Mod _ canb)-HModb.
+    rewrite HModa HModb H4.
+    rewrite L2d [_ ⊓ a]L2d amTop amTop.
+    by rewrite L2 [b ⊔ a]L2 H2.
+  move: (Mod L)=> /ModularD/ModularD2-ModD.
+  move: auxCompBumcrotD => [HCa HCb].
+  rewrite HCa HCb.
+  move: (mab_leq_ab canb (caub ⊔ a))=> /proj1.
+  move=> /(ModD _ (caub ⊔ b))=> HModD.
+  rewrite -HModD -L1d H5.
+  move: (TB ((caub ⊔ b) ⊔ (canb ⊓ (caub ⊔ a))))=> /proj2.
+  by rewrite ConnectM.
+split.
+  move: (Mod L)=> /ModularD-ModD.
+  move: auxCompBumcrot => [HCa HCb].
+  rewrite HCa HCb.
+  move: (ab_leq_jab caub (canb ⊓ a))=> /proj1.
+  move=> /(ModD _ (canb ⊓ b))-HModD.
+  rewrite -HModD -L1 H2 L2.
+  move: ( TB ((canb ⊓ b) ⊓ (caub ⊔ (canb ⊓ a))))=> /proj1.
+  by rewrite ConnectJ.
+move: (Mod L)=> /Modular2-Mod.
+move: auxCompBumcrotD => [HCa HCb].
+rewrite HCa L1d [_ ⊓ cb]L2d -[_ ⊓ (cb ⊓_)]L1d.
+rewrite HCb -L1d -[canb ⊓ (canb ⊓ _)]L1d.
+rewrite L3d -[(a ⊔ b) ⊓ (canb ⊓ _)]L1d [_ ⊓ canb]L2d.
+rewrite L1d L1d -[(a ⊔ b) ⊓ (_ ⊓ _)]L1d -(L3d (a ⊔ b)).
+rewrite [(_ ⊓ _) ⊓ (caub ⊔ a)]L1d [(a ⊔ b) ⊓ _]L2d.
+rewrite [(_ ⊓ (a ⊔ b)) ⊓ (caub ⊔ b)]L1d.
+move: (ab_leq_jab a b)=> [A B].
+move: A => /(Mod _ caub)-HModa.
+move: B => /(Mod _ caub)-HModb.
+rewrite HModa HModb H3. 
+rewrite L2 [_ ⊔ b]L2 ajBot ajBot.
+by rewrite L2d H5.
+Qed.
+
+End Bumcrot.
