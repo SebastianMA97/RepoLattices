@@ -10,22 +10,6 @@ Inductive Term := Var (n : nat) | m (u : Term) (v : Term).
 
 Notation "x ∧ y" := (m x y) (at level 49). (* \wedge *)
 
-Fixpoint atomos (a : Term) : seq nat :=
-  match a with
-  | Var i => cons i nil
-  | a1 ∧ a2 => (atomos a1) ++ (atomos a2)
-  end.
-
-(*
-Fixpoint leq (s t : Term) : Prop := 
-match t with
-  | Var j => match s with
-             | Var i => i = j
-             | s1 ∧ s2 => leq s1 (Var j) \/ leq s2 (Var j)
-             end
-  | t1 ∧ t2 => (leq s t1) /\ (leq s t2)
-end.
-*)
 
 Fixpoint atm_en (s : Term) (j : nat) : Prop :=
   match s with
