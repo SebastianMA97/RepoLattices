@@ -11,11 +11,11 @@ Definition reflexive {T : Type} (rel : T -> T -> Prop) : Prop := forall x :T, re
 Definition antisymetric {T : Type} (rel : T -> T -> Prop) : Prop := forall x y : T, (rel x y) /\ (rel y x) <-> (x = y).
 Definition transitive {T : Type} (rel : T -> T -> Prop) :Prop := forall x y z :T, rel x y -> rel y z -> rel x z.
 
-Inductive atomos := u (n : nat).
 
 Structure quasiOrder := QuasiOrder
   { 
-    orden : atomos -> atomos -> Prop;
+    Qo :> Type;
+    orden : Qo -> Qo -> Prop;
     reflexq : reflexive orden;
     antisymq : antisymetric orden;
     transq : transitive orden
