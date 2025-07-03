@@ -39,6 +39,24 @@ Notation ΛK := (@LambdaK _).
 Notation ΛK' := (@LambdaK' _).
 Notation ΛS := (@LambdaS _).
 
+Inductive STerm := svar (n : nat) | sOp (u : STerm) (v : STerm).
+
+Section test.
+
+Context (sL : semiLattice).
+
+Fixpoint eval (t : STerm) (env : nat -> sL) : sL :=
+  match t with
+  | svar n => env n
+  | sOp t1 t2 => eval t1 env ∧ eval t2 env
+  end.
+
+Definition Leq (s t : STerm) : Prop := forall env, eval s env ≤ eval s env.
+
+Definition Equiv (s t : STerm) : Prop := forall env, eval s env = eval s env.
+
+
+
 Theorem ΛW {S : semiLattice} : forall a: S, a ≤ a ∧ a.
 Proof.
 move=> a.
@@ -74,7 +92,7 @@ move: (ΛC c b)=> H1.
 move=> /(τ _ _ _ H0)=> H2.
 by move: (τ _ _ _ H2 H1).
 Qed.
-
+(*
 Theorem C3i {S : semiLattice} : forall a : S, a ∧ a = a.
 Proof.
 move=> a.
@@ -135,7 +153,7 @@ move: (reflex a)=> H.
 rewrite -JH.
 by split.
 Qed.
-
+*)
 
 Theorem Curry4B_7 {T : lattice} : (forall a b c : T, (a ⊓ (b ⊔ c)) ≤ ((a ⊓ b) ⊔ c)) 
                                  <-> (@Distributive T).

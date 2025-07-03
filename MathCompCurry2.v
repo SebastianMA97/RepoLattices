@@ -104,7 +104,7 @@ Proof.
 move=> a b n.
 by rewrite sleqL_atm -AtmTerm -AtmTerm.
 Qed.
-
+ 
 
 Theorem Teorema2 : forall a b : Term, (forall i : nat, 
             atm_en b i -> atm_en a i) <-> a ≤ b.
