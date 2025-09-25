@@ -1571,7 +1571,7 @@ Lemma median : forall (x y z:A),
     Show Proof.
     Qed.
 *)
-
+(*
 Lemma median : forall (x y z:A),
     (x /*\ y) \*/ (y /*\ z) \*/ (z /*\ x) <= (x \*/ y) /*\ (y \*/ z) /*\ (z \*/ x).
 Proof.
@@ -1589,7 +1589,7 @@ Proof.
   vm_compute.
   constructor.
 Qed.
-
+*)
 
 Lemma median : forall (x y z:A),
     (x /*\ y) <= (x \*/ y).

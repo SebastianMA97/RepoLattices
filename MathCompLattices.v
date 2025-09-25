@@ -33,7 +33,6 @@ Structure lattice := Lattice
     meetT : T -> T -> T;
     mHT : (forall z : T , forall x y : T,  (z ≤ x /\ z ≤ y) <-> z ≤ ( meetT x y))
    }.
-
 Notation "x ⊓ y" := (@meetT _ x y) (at level 50). (* \sqcap *)
 Notation "x ⊔ y" := (@joinT _ x y) (at level 50). (* \sqcup *)
 Notation reflex := (reflexT _).
@@ -41,6 +40,336 @@ Notation antisym := (antisymT _).
 Notation trans := (transT _).
 Notation JH := (@jHT _).
 Notation MH := (@mHT _).
+
+(* Para el teorema de dualidad *)
+
+Definition dord {T : ordenParcial} (x y : T) := ord T y x.
+
+Lemma Dreflex {T : ordenParcial} : reflexive (@dord T).
+Proof.
+move: (reflexT T).
+by rewrite /reflexive /dord.
+Qed.
+
+Lemma Dantisym {T : ordenParcial} : antisymetric (@dord T).
+Proof.
+move: (antisymT T).
+rewrite /antisymetric /dord.
+move=> H x y H0 H1.
+by move: (H x y H1 H0).
+Qed.
+
+Lemma Dtrans {T : ordenParcial} : transitive (@dord T).
+Proof.
+move: (transT T).
+rewrite /transitive /dord.
+move=> H x y z H0 H1.
+by move: (H z y x H1 H0).
+Qed.
+
+Canonical Structure dual_ord T := OrdenParcial (O T) (dord) Dreflex Dantisym Dtrans.
+
+Canonical Structure dual_lattice_of (L : lattice) : lattice :=
+  Lattice
+    (dual_ord L) (meetT L) (fun z x y => mHT L z x y) (joinT L) (fun z x y => jHT L z x y).
+
+Inductive Term : Set :=
+| Var  : nat -> Term
+| Meet : Term -> Term -> Term
+| Join : Term -> Term -> Term.
+
+Fixpoint eval (L : lattice) (env : nat -> L) (t : Term) : L :=
+  match t with
+  | Var n     => env n
+  | Meet t1 t2 => @meetT L (eval L env t1) (eval L env t2)
+  | Join t1 t2 => @joinT L (eval L env t1) (eval L env t2)
+  end.
+
+Inductive Form : Set :=
+| f_leq  : Term -> Term -> Form
+| f_eq   : Term -> Term -> Form
+| f_neg  : Form -> Form
+| f_conj : Form -> Form -> Form
+| f_or   : Form -> Form -> Form
+| f_imp  : Form -> Form -> Form.
+
+Fixpoint eval_f (L : lattice) (env : nat -> L) (f : Form) : Prop :=
+  match f with
+  | f_leq t1 t2 => (eval L env t1) ≤ (eval L env t2)
+  | f_eq t1 t2  => (eval L env t1) = (eval L env t2)
+  | f_neg f1     => ~ (eval_f L env f1)
+  | f_conj f1 f2  => eval_f L env f1 /\ eval_f L env f2
+  | f_or f1 f2    => (eval_f L env f1) \/ (eval_f L env f2)
+  | f_imp f1 f2   =>  (~ eval_f L env f1) \/ (eval_f L env f2)
+  end.
+
+Definition Teorema (F : Form) : Prop :=
+forall (L : lattice) (env : nat -> L), (eval_f L env F).
+
+Fixpoint dual_t (t : Term) : Term :=
+  match t with
+  | Var n => Var n
+  | Meet t1 t2 => Join (dual_t t1) (dual_t t2)
+  | Join t1 t2 => Meet (dual_t t1) (dual_t t2)
+  end.
+
+Fixpoint dual (f : Form) : Form :=
+  match f with
+  | f_leq t1 t2 => f_leq (dual_t t2) (dual_t t1)
+  | f_eq t1 t2  => f_eq (dual_t t1) (dual_t t2)
+  | f_neg f1     => f_neg (dual f1)
+  | f_conj f1 f2  => f_conj (dual f1) (dual f2)
+  | f_or f1 f2    => f_or (dual f1) (dual f2)
+  | f_imp f1 f2   => f_imp (dual f1) (dual f2)
+  end.
+
+(* Theorem eval_dual *)
+
+Lemma gato : forall (L : lattice), joinT (dual_lattice_of L) = meetT L.
+Proof.
+  by [].
+Qed.
+
+Lemma gato2 : forall (L : lattice), meetT (dual_lattice_of L) = joinT L.
+Proof.
+  by [].
+Qed.
+
+Lemma  eval_m : forall (L : lattice) (env : nat -> L) (t0 t1 : Term), 
+              eval L env (Meet t0 t1) = meetT L (eval L env t0) (eval L env t1).
+Proof. by move=> L0 env0; rewrite /eval. Qed.
+
+Lemma eval_j : forall (L : lattice) (env : nat -> L) (t0 t1 : Term), 
+              eval L env (Join t0 t1) = joinT L (eval L env t0) (eval L env t1).
+Proof. by move=> L0 env0; rewrite /eval. Qed.
+
+Lemma eval_conj : forall (L : lattice) (env : nat -> L) (f0 f1 : Form), 
+                   eval_f L env (f_conj f0 f1) = and (eval_f L env f0) (eval_f L env f1).
+Proof.  by []. Qed.
+
+Lemma dual_conj : forall (f0 f1 : Form), dual (f_conj f0 f1) = f_conj (dual f0) (dual f1).
+Proof.  by []. Qed.
+
+Lemma eval_or : forall (L : lattice) (env : nat -> L) (f0 f1 : Form), 
+                   eval_f L env (f_or f0 f1) = or (eval_f L env f0) (eval_f L env f1).
+Proof.  by []. Qed.
+
+Lemma dual_or : forall (f0 f1 : Form), dual (f_or f0 f1) = f_or (dual f0) (dual f1).
+Proof.  by []. Qed.
+
+Lemma eval_imp : forall (L : lattice) (env : nat -> L) (f0 f1 : Form), 
+                   eval_f L env (f_imp f0 f1) = or (~ eval_f L env f0) (eval_f L env f1).
+Proof.  by []. Qed.
+
+Lemma dual_imp : forall (f0 f1 : Form), dual (f_imp f0 f1) = f_imp (dual f0) (dual f1).
+Proof.  by []. Qed.
+
+Lemma dual_m : forall t0 t1 : Term, 
+                dual_t (Meet t0 t1) = Join (dual_t t0) (dual_t t1).
+Proof.  by move=> t2 t3; rewrite /dual_t. Qed.
+
+Lemma dual_j : forall t0 t1 : Term, 
+                dual_t (Join t0 t1) = Meet (dual_t t0) (dual_t t1).
+Proof.  by move=> t2 t3; rewrite /dual_t. Qed.
+
+Theorem eval_dual (L : lattice) (env : nat -> L) (t : Term) :
+  eval (dual_lattice_of L) env t = eval L env (dual_t t).
+Proof.
+elim t.
+  (* Var n *)
+  move=> n0.
+  by rewrite {1}/eval/dual_t/eval.
+  
+  (* Meet t0 t1*)
+  move=> t0 H0 t1 H1.
+  rewrite dual_m (eval_j L env).
+  rewrite (eval_m (dual_lattice_of L) env).
+  by rewrite H0 H1 gato2.
+
+  (* Join t0 t1 *)
+  move=> t0 H0 t1 H1.
+  rewrite dual_j (eval_m L env).
+  rewrite (eval_j (dual_lattice_of L) env).
+  by rewrite H0 H1 gato.
+Qed.
+
+Lemma le_dual (L : lattice) (x y : L) :
+  (ord (dual_lattice_of L) x y) <-> (ord L y x).
+Proof.
+by [].
+Qed.
+
+Theorem eval_dual_f (L : lattice) (env : nat -> L) (f : Form) :
+  eval_f (dual_lattice_of L) env f = eval_f L env (dual f).
+Proof.
+elim f.
+  (* Term *)
+  move=> t0 t1.
+  by rewrite /dual /eval_f eval_dual eval_dual.
+  
+  move=> t0 t1.
+  by rewrite /dual /eval_f eval_dual eval_dual.
+  
+  (* Neg *)
+  move=> f0 H0.
+  have aux: forall (L : lattice) (env : nat -> L) (f0 : Form), eval_f L env (f_neg f0) = ~ (eval_f L env f0).
+    by [].
+  have auxd: forall (f0 : Form), dual (f_neg f0) = f_neg (dual f0).
+    by [].
+  rewrite auxd aux aux.
+  by rewrite H0.
+
+  (* Conj *)
+  move=> f0 H0 f1 H1.
+  rewrite dual_conj eval_conj eval_conj.
+  by rewrite H0 H1.
+  
+  (* Or *)
+  move=> f0 H0 f1 H1.
+  rewrite dual_or eval_or eval_or.
+  by rewrite H0 H1.
+  
+  (* Imp *)
+  move=> f0 H0 f1 H1.
+  rewrite dual_imp eval_imp eval_imp.
+  by rewrite H0 H1.
+Qed.
+
+(* Fin Theorem eval_dual *)
+
+Lemma perro {T : lattice} : forall a b c : T ,   a ≤ (b ⊓ c) <-> a ≤ b /\ a ≤ c.
+Proof.
+move=> a b c.
+rewrite (MH a b c).
+by [].
+Qed.
+
+
+
+Theorem Dualidad : forall f : Form, (Teorema f) -> (Teorema (dual f)).
+Proof.
+move=> f.
+elim f.
+  move=> t0 t1.
+  elim t0.
+    elim t1.
+
+    (* Caso: (Var n)  (Var n0) *)
+
+    rewrite /dual/dual_t/Teorema/eval_f/eval => n n0 H1.
+    move=> L envA.
+    move: (H1 L envA)=> H2.
+    rewrite /dual/dual_t/eval_f/eval.
+    pose envB x := if x == n then envA n0
+               else if x == n0 then envA n
+               else envA x.
+    move: (H1 L envB).
+    have Hip1 : envB n = envA n0.
+      rewrite /envB eqxx. by [].
+    have Hip2 : envB n0 = envA n.
+      rewrite /envB.
+      case H : (n0 == n).
+        move/eqP in H.
+        rewrite H. by [].
+      rewrite eqxx. by [].
+    rewrite Hip1 Hip2. by [].
+
+    (* Caso: (Var n) (Meet t1 t2) *)
+
+    rewrite /Teorema {1}/dual {2}/dual_t {1 2}/eval_f {1 4}/eval => t2 H1.
+    rewrite {1}/dual {2}/dual_t {1 2}/eval_f {1 4}/eval => t3 H2.
+    rewrite /dual {2}/dual_t /eval_f {1 4}/eval.
+    move=> n0 Hip.
+    move: (H1 n0)=> H1n0.
+    clear H1.
+    move: (H2 n0)=> H2n0.
+    clear H2.
+    have auxt2 : forall (L : lattice) (env : nat -> L), env n0 ≤ eval L env t2.
+       by move=> L env; move: (Hip L env); rewrite eval_m => /perro/proj1.
+    have auxt3 : forall (L : lattice) (env : nat -> L), env n0 ≤ eval L env t3.
+       by move=> L env; move: (Hip L env); rewrite eval_m => /perro/proj2.
+    move=> L env.
+    move: ((H1n0 auxt2) L env) => H1; clear H1n0 auxt2.
+    move: ((H2n0 auxt3) L env) => H2; clear H2n0 auxt3.
+    rewrite dual_m eval_j.
+    by rewrite - JH.
+
+    (* Caso: (Var n) (Joint t1 t2) *)
+    rewrite /Teorema => t2 _ t3 _.
+    rewrite /dual {2}/dual_t /eval_f {1 4}/eval.
+    move=> n0 Hip L env.
+    move: (Hip (dual_lattice_of L) env).
+    rewrite le_dual dual_j eval_m.
+    by rewrite eval_dual dual_j eval_m.
+    
+    (* Caso: (Meet t0 t1) (t2) *)
+    rewrite /Teorema => t2 _ t3 _.
+    rewrite /dual dual_m /eval_f => Hip L env.
+    rewrite eval_j.
+    move: (Hip (dual_lattice_of L) env).
+    rewrite le_dual eval_dual eval_dual.
+    by rewrite dual_m eval_j.
+
+    (* Caso: (Join t0 t1) (t2) *)
+    rewrite /Teorema => t2 _ t3 _.
+    rewrite /dual dual_j /eval_f => Hip L env.
+    rewrite eval_m.
+    move: (Hip (dual_lattice_of L) env).
+    rewrite le_dual eval_dual eval_dual.
+    by rewrite dual_j eval_m.
+
+    (* Caso: = *)
+    rewrite /Teorema /dual /eval_f => t0 t1 Hip L env.
+    move: (Hip (dual_lattice_of L) env).
+    by rewrite eval_dual eval_dual.
+
+    (* Caso: neg *)
+    rewrite /Teorema => f0 _ Hip L env.
+    move: (Hip (dual_lattice_of L) env).
+    have aux: forall (L : lattice) (env : nat -> L) (f0 : Form), eval_f L env (f_neg f0) = ~ (eval_f L env f0).
+      by [].
+    have auxd: forall (f0 : Form), dual (f_neg f0) = f_neg (dual f0).
+      by [].
+    rewrite auxd aux aux.
+    by rewrite eval_dual_f.
+
+    (* Caso: Conj *)
+    rewrite /Teorema => f0 _ f1 _ Hip L env.
+    move: (Hip (dual_lattice_of L) env).
+    rewrite dual_conj eval_conj eval_conj.
+    by rewrite eval_dual_f eval_dual_f.
+
+    (* Caso: Or *)
+    rewrite /Teorema => f0 _ f1 _ Hip L env.
+    move: (Hip (dual_lattice_of L) env).
+    rewrite dual_or eval_or eval_or.
+    by rewrite eval_dual_f eval_dual_f.
+
+    (* Caso: Imp *)
+    rewrite /Teorema => f0 _ f1 _ Hip L env.
+    move: (Hip (dual_lattice_of L) env).
+    rewrite dual_imp eval_imp eval_imp.
+    by rewrite eval_dual_f eval_dual_f.
+Qed.
+(*    Fin del Teorema de dualidad     *)
+
+(* Intento de teorema de reflexión *)
+
+Lemma reflect_teorema {L : lattice} (P : Prop) (f : Form) :
+  (forall env, eval_f L env f <-> P) ->
+  (Teorema f <-> P).
+Proof.
+move=> H.
+split.
+  rewrite /Teorema.
+  move=> H0.
+  move: (H0 L env).
+  rewrite -H.
+
+
+(* Acaba intento reflexión *)
+
+ 
 
 Lemma ab_leq_jab {T : lattice} : forall a b : T ,   a ≤ (a ⊔ b) /\  b ≤ (a ⊔ b).
 Proof.
@@ -262,6 +591,7 @@ by move: (L1_Alg a b c); rewrite supab supbc.
 Qed.
 
 Canonical T_ordenParcial {T : latticeAlg} := OrdenParcial T (@nord T) AlgToSetReflex AlgToSetAntisym AlgToSetTrans.
+
 
 Lemma AlgToSet_joinAlg {T : latticeAlg} : forall z : T, (forall x y : T, (x ≼ z /\ y ≼ z) <-> (x ∨ y) ≼ z).
 Proof.
