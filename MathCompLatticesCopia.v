@@ -234,6 +234,123 @@ elim f.
   by rewrite H0 H1.
 Qed.
 
+(* Fin Theorem eval_dual *)
+(*
+Lemma auxp {T : lattice} : forall a b c : T ,   a ≤ (b ⊓ c) <-> a ≤ b /\ a ≤ c.
+Proof.
+move=> a b c.
+rewrite (MH a b c).
+by [].
+Qed.
+*)
+(*
+Theorem Dualidad : forall f : Form, (Teorema f) -> (Teorema (dual f)).
+Proof.
+move=> f.
+elim f.
+  move=> t0 t1.
+  elim t0.
+    elim t1.
+
+    (* Caso: (Var n)  (Var n0) *)
+
+    rewrite /dual/dual_t/Teorema/eval_f/eval => n n0 H1.
+    move=> L envA.
+    move: (H1 L envA)=> H2.
+    rewrite /dual/dual_t/eval_f/eval.
+    pose envB x := if x == n then envA n0
+               else if x == n0 then envA n
+               else envA x.
+    move: (H1 L envB).
+    have Hip1 : envB n = envA n0.
+      rewrite /envB eqxx. by [].
+    have Hip2 : envB n0 = envA n.
+      rewrite /envB.
+      case H : (n0 == n).
+        move/eqP in H.
+        rewrite H. by [].
+      rewrite eqxx. by [].
+    rewrite Hip1 Hip2. by [].
+
+    (* Caso: (Var n) (Meet t1 t2) *)
+
+    rewrite /Teorema {1}/dual {2}/dual_t {1 2}/eval_f {1 4}/eval => t2 H1.
+    rewrite {1}/dual {2}/dual_t {1 2}/eval_f {1 4}/eval => t3 H2.
+    rewrite /dual {2}/dual_t /eval_f {1 4}/eval.
+    move=> n0 Hip.
+    move: (H1 n0)=> H1n0.
+    clear H1.
+    move: (H2 n0)=> H2n0.
+    clear H2.
+    have auxt2 : forall (L : lattice) (env : nat -> L), env n0 ≤ eval L env t2.
+       by move=> L env; move: (Hip L env); rewrite eval_m => /auxp/proj1.
+    have auxt3 : forall (L : lattice) (env : nat -> L), env n0 ≤ eval L env t3.
+       by move=> L env; move: (Hip L env); rewrite eval_m => /perro/proj2.
+    move=> L env.
+    move: ((H1n0 auxt2) L env) => H1; clear H1n0 auxt2.
+    move: ((H2n0 auxt3) L env) => H2; clear H2n0 auxt3.
+    rewrite dual_m eval_j.
+    by rewrite - JH.
+
+    (* Caso: (Var n) (Joint t1 t2) *)
+    rewrite /Teorema => t2 _ t3 _.
+    rewrite /dual {2}/dual_t /eval_f {1 4}/eval.
+    move=> n0 Hip L env.
+    move: (Hip (dual_lattice_of L) env).
+    rewrite le_dual dual_j eval_m.
+    by rewrite eval_dual dual_j eval_m.
+    
+    (* Caso: (Meet t0 t1) (t2) *)
+    rewrite /Teorema => t2 _ t3 _.
+    rewrite /dual dual_m /eval_f => Hip L env.
+    rewrite eval_j.
+    move: (Hip (dual_lattice_of L) env).
+    rewrite le_dual eval_dual eval_dual.
+    by rewrite dual_m eval_j.
+
+    (* Caso: (Join t0 t1) (t2) *)
+    rewrite /Teorema => t2 _ t3 _.
+    rewrite /dual dual_j /eval_f => Hip L env.
+    rewrite eval_m.
+    move: (Hip (dual_lattice_of L) env).
+    rewrite le_dual eval_dual eval_dual.
+    by rewrite dual_j eval_m.
+
+    (* Caso: = *)
+    rewrite /Teorema /dual /eval_f => t0 t1 Hip L env.
+    move: (Hip (dual_lattice_of L) env).
+    by rewrite eval_dual eval_dual.
+
+    (* Caso: neg *)
+    rewrite /Teorema => f0 _ Hip L env.
+    move: (Hip (dual_lattice_of L) env).
+    have aux: forall (L : lattice) (env : nat -> L) (f0 : Form), eval_f L env (f_neg f0) = ~ (eval_f L env f0).
+      by [].
+    have auxd: forall (f0 : Form), dual (f_neg f0) = f_neg (dual f0).
+      by [].
+    rewrite auxd aux aux.
+    by rewrite eval_dual_f.
+
+    (* Caso: Conj *)
+    rewrite /Teorema => f0 _ f1 _ Hip L env.
+    move: (Hip (dual_lattice_of L) env).
+    rewrite dual_conj eval_conj eval_conj.
+    by rewrite eval_dual_f eval_dual_f.
+
+    (* Caso: Or *)
+    rewrite /Teorema => f0 _ f1 _ Hip L env.
+    move: (Hip (dual_lattice_of L) env).
+    rewrite dual_or eval_or eval_or.
+    by rewrite eval_dual_f eval_dual_f.
+
+    (* Caso: Imp *)
+    rewrite /Teorema => f0 _ f1 _ Hip L env.
+    move: (Hip (dual_lattice_of L) env).
+    rewrite dual_imp eval_imp eval_imp.
+    by rewrite eval_dual_f eval_dual_f.
+Qed.
+(*    Fin del Teorema de dualidad     *)
+*)
 
 Lemma dual_td : forall t : Term, t = dual_t (dual_t t).
 Proof.
@@ -888,25 +1005,23 @@ Qed.
 
 Definition Distributive {T : lattice} := forall a b c : T, (a ⊓ (b ⊔ c)) = ((a ⊓ b) ⊔ (a ⊓ c)).
 
-Definition Modular := forall (T : lattice) (a b c : T), (c ≤ a -> (c ⊔ (b ⊓ a)) = ((c ⊔ b) ⊓ a)). 
+Definition Modular := forall (T : lattice) (a b c : T), (c ≤ a -> (c ⊔ (b ⊓ a)) = ((c ⊔ b) ⊓ a)).
 
-Definition Modu_L (L : lattice) := forall a b c : L, (c ≤ a -> (c ⊔ (b ⊓ a)) = ((c ⊔ b) ⊓ a)).
-
-Lemma Modular2 {T : lattice} (P : Modu_L T) : forall a b c : T, (c ≤ a -> (a ⊓ (b ⊔ c)) = ((a ⊓ b) ⊔ c)).
+Lemma Modular2 {T : lattice} (P : Modular) : forall a b c : T, (c ≤ a -> (a ⊓ (b ⊔ c)) = ((a ⊓ b) ⊔ c)).
 Proof.
-move: P; rewrite /Modu_L.
+move: (P T).
 move=> H a b c.
 move=> /(H a b c).
 by rewrite L2 [b ⊓_]L2d [_ ⊓ a]L2d [c ⊔ _]L2.
 Qed.
- 
+
 Lemma ModularD {T : lattice} (Mod : Modular) : forall a b c : T, (a ≤ c -> (a ⊔ (b ⊓ c)) = ((a ⊔ b) ⊓ c)).
 Proof.
 move=> a b c.
 (*Por Dualidad*)
 have teo : Teorema (transF( (V 2 e≤ V 0) e-> ((V 0 e⊓ (V 1 e⊔ V 2)) e= ((V 0 e⊓ V 1) e⊔ V 2)) )).
   rewrite /transF/transE /Teorema/eval_f/eval => L0 env.
-  by move: (Modular2 (Mod L0) (env 0) (env 1) (env 2)).
+  by move: (Modular2 Mod (env 0) (env 1) (env 2)).
 move: teo; rewrite /transF/transE Dual/dual/dual_t.
 rewrite /Teorema => /(_ T (@env_abc T a b c)).
 by rewrite /eval_f/eval/env_abc.
@@ -1344,336 +1459,14 @@ by rewrite L2d.
 Qed.
 
 (* Aquí necesito extender la noción de dualidad para que alcance lattices con Top y Bottom *)
-(* Dualidad de Bounded Lattice *)
+
+Section Bumcrot.
 
 Structure bumcrotLattice := BumcrotLattice 
   {
     BumL :> boundedLattice;
-    Mod: (Modu_L BumL)
+    Mod: Modular
   }.
-
-
-Inductive TermB : Set :=
-| TopB : TermB
-| BotB : TermB
-| VarB  : nat -> TermB
-| MeetB : TermB -> TermB -> TermB
-| JoinB : TermB -> TermB -> TermB.
-
-Fixpoint evalB (L : bumcrotLattice) (env : nat -> L) (t : TermB) : L :=
-  match t with
-  | TopB        => top
-  | BotB        => bot
-  | VarB n      => env n
-  | MeetB t1 t2 => @meetT L (evalB L env t1) (evalB L env t2)
-  | JoinB t1 t2 => @joinT L (evalB L env t1) (evalB L env t2)
-  end.
-
-Inductive FormB : Set :=
-| fb_leq  : TermB -> TermB -> FormB
-| fb_eq   : TermB -> TermB -> FormB
-| fb_neg  : FormB -> FormB
-| fb_conj : FormB -> FormB -> FormB
-| fb_or   : FormB -> FormB -> FormB
-| fb_imp  : FormB -> FormB -> FormB.
-
-Notation "x b⊓ y" := (MeetB x y) (at level 48). (* \sqcap *)
-Notation "x b⊔ y" := (JoinB x y) (at level 48). (* \sqcup *)
-Notation "x b≤ y" := (fb_leq x y) (at level 49).
-Notation "x b= y" := (fb_eq x y) (at level 50).
-Notation "b~ f" := (fb_neg f) (at level 50).
-Notation "x b/\ y" := (fb_conj x y) (at level 50).
-Notation "x b\/ y" := (fb_or x y) (at level 50).
-Notation "x b-> y" := (fb_imp x y) (at level 50).
-
-
-Fixpoint evalB_f (L : bumcrotLattice) (env : nat -> L) (f : FormB) : Prop :=
-  match f with
-  | fb_leq t1 t2 => (evalB L env t1) ≤ (evalB L env t2)
-  | fb_eq t1 t2  => (evalB L env t1) = (evalB L env t2)
-  | fb_neg f1     => ~ (evalB_f L env f1)
-  | fb_conj f1 f2  => evalB_f L env f1 /\ evalB_f L env f2
-  | fb_or f1 f2    => (evalB_f L env f1) \/ (evalB_f L env f2)
-  | fb_imp f1 f2   =>  (evalB_f L env f1) -> (evalB_f L env f2)
-  end.
-
-Fixpoint dualB_t (t : TermB) : TermB :=
-  match t with
-  | TopB  => BotB
-  | BotB  => TopB
-  | VarB n => VarB n
-  | MeetB t1 t2 => JoinB (dualB_t t1) (dualB_t t2)
-  | JoinB t1 t2 => MeetB (dualB_t t1) (dualB_t t2)
-  end.
-
-Fixpoint dualB (f : FormB) : FormB :=
-  match f with
-  | fb_leq t1 t2 => fb_leq (dualB_t t2) (dualB_t t1)
-  | fb_eq t1 t2  => fb_eq (dualB_t t1) (dualB_t t2)
-  | fb_neg f1     => fb_neg (dualB f1)
-  | fb_conj f1 f2  => fb_conj (dualB f1) (dualB f2)
-  | fb_or f1 f2    => fb_or (dualB f1) (dualB f2)
-  | fb_imp f1 f2   => fb_imp (dualB f1) (dualB f2)
-  end.
-
-
-Canonical Structure dual_bounded_lattice_of (L : boundedLattice) : boundedLattice :=
-  BoundedLattice
-    (dual_lattice_of L) (Bot L) (Top L)  (fun a => 
-      let '(conj Htop Hbot) := Top_Bottom L a in
-      conj Hbot Htop) .
-
-
-Lemma le_dualBound (L : boundedLattice) (x y : L) :
-  (ord (dual_bounded_lattice_of L) x y) <-> (ord L y x).
-Proof.
-by [].
-Qed.
-
-Lemma le_dualj (L : boundedLattice) (x y : L) :
-  (@joinT (dual_bounded_lattice_of L) x y) = (@meetT L x y).
-Proof.
-by [].
-Qed.
-
-Lemma le_dualm (L : boundedLattice) (x y : L) :
-  (@meetT (dual_bounded_lattice_of L) x y) = (@joinT L x y).
-Proof.
-by [].
-Qed.
-
-
-Lemma modular_dual (L : boundedLattice) (P : Modu_L L) : Modu_L (dual_bounded_lattice_of L).
-Proof.
-  rewrite /Modu_L.
-  move=> p q r.
-  rewrite le_dualBound le_dualj le_dualj le_dualm le_dualm.
-  by move: ((@Modular2 L P) r q p).
-Qed.
-
-Canonical Structure dual_bumcrot_lattice_of (B : bumcrotLattice) : bumcrotLattice :=
-  BumcrotLattice
-    (dual_bounded_lattice_of B)
-    (modular_dual (B) (Mod B)).
-
-
-Lemma jldmB : forall (L : bumcrotLattice), joinT (dual_bumcrot_lattice_of L) = meetT L.
-Proof.
-  by [].
-Qed.
-
-Lemma mldjB : forall (L : bumcrotLattice), meetT (dual_bumcrot_lattice_of L) = joinT L.
-Proof.
-  by [].
-Qed.
-
-Lemma  evalB_m : forall (L : bumcrotLattice) (env : nat -> L) (t0 t1 : TermB), 
-              evalB L env (MeetB t0 t1) = meetT L (evalB L env t0) (evalB L env t1).
-Proof. by move=> L0 env0; rewrite /evalB. Qed.
-
-Lemma evalB_j : forall (L : bumcrotLattice) (env : nat -> L) (t0 t1 : TermB), 
-              evalB L env (JoinB t0 t1) = joinT L (evalB L env t0) (evalB L env t1).
-Proof. by move=> L0 env0; rewrite /evalB. Qed.
-
-Lemma evalB_conj : forall (L : bumcrotLattice) (env : nat -> L) (f0 f1 : FormB), 
-                   evalB_f L env (fb_conj f0 f1) = and (evalB_f L env f0) (evalB_f L env f1).
-Proof.  by []. Qed.
-
-Lemma dualB_conj : forall (f0 f1 : FormB), dualB (fb_conj f0 f1) = fb_conj (dualB f0) (dualB f1).
-Proof.  by []. Qed.
-
-Lemma evalB_or : forall (L : bumcrotLattice) (env : nat -> L) (f0 f1 : FormB), 
-                   evalB_f L env (fb_or f0 f1) = or (evalB_f L env f0) (evalB_f L env f1).
-Proof.  by []. Qed.
-
-Lemma dualB_or : forall (f0 f1 : FormB), dualB (fb_or f0 f1) = fb_or (dualB f0) (dualB f1).
-Proof.  by []. Qed.
-
-Lemma evalB_imp : forall (L : bumcrotLattice) (env : nat -> L) (f0 f1 : FormB), 
-                   evalB_f L env (fb_imp f0 f1) =(( evalB_f L env f0) -> (evalB_f L env f1)).
-Proof. by []. Qed.
-
-Lemma dualB_imp : forall (f0 f1 : FormB), dualB (fb_imp f0 f1) = fb_imp (dualB f0) (dualB f1).
-Proof.  by []. Qed.
-
-Lemma dualB_m : forall t0 t1 : TermB, 
-                dualB_t (MeetB t0 t1) = JoinB (dualB_t t0) (dualB_t t1).
-Proof.  by move=> t2 t3; rewrite /dualB_t. Qed.
-
-Lemma dualB_j : forall t0 t1 : TermB, 
-                dualB_t (JoinB t0 t1) = MeetB (dualB_t t0) (dualB_t t1).
-Proof.  by move=> t2 t3; rewrite /dualB_t. Qed.
-
-Theorem eval_dualB (L : bumcrotLattice) (env : nat -> L) (t : TermB) :
-  evalB (dual_bumcrot_lattice_of L) env t = evalB L env (dualB_t t).
-Proof.
-elim t.
-  (* TopB *)
-  by rewrite /evalB.
-  (* BotB *)
-  by rewrite /evalB.
-
-  (* VarB n *)
-  move=> n0.
-  by rewrite {1}/evalB/dualB_t/evalB.
-  
-  (* MeetB t0 t1*)
-  move=> t0 H0 t1 H1.
-  rewrite dualB_m (evalB_j L env).
-  rewrite (evalB_m (dual_bumcrot_lattice_of L) env).
-  by rewrite H0 H1 mldjB.
-
-  (* JoinB t0 t1 *)
-  move=> t0 H0 t1 H1.
-  rewrite dualB_j (evalB_m L env).
-  rewrite (evalB_j (dual_bumcrot_lattice_of L) env).
-  by rewrite H0 H1 jldmB.
-Qed.
-
-Lemma le_dualB (L : bumcrotLattice) (x y : L) :
-  (ord (dual_bumcrot_lattice_of L) x y) <-> (ord L y x).
-Proof.
-by [].
-Qed.
-
-Theorem evalB_dual_f (L : bumcrotLattice) (env : nat -> L) (f : FormB) :
-  evalB_f (dual_bumcrot_lattice_of L) env f = evalB_f L env (dualB f).
-Proof.
-elim f.
-  (* Term *)
-  move=> t0 t1.
-  by rewrite /dualB /evalB_f eval_dualB eval_dualB.
-  
-  move=> t0 t1.
-  by rewrite /dualB /evalB_f eval_dualB eval_dualB.
-  
-  (* Neg *)
-  move=> f0 H0.
-  have aux: forall (L : bumcrotLattice) (env : nat -> L) (f0 : FormB), evalB_f L env (fb_neg f0) = ~ (evalB_f L env f0).
-    by [].
-  have auxd: forall (f0 : FormB), dualB (fb_neg f0) = fb_neg (dualB f0).
-    by [].
-  rewrite auxd aux aux.
-  by rewrite H0.
-
-  (* Conj *)
-  move=> f0 H0 f1 H1.
-  rewrite dualB_conj evalB_conj evalB_conj.
-  by rewrite H0 H1.
-  
-  (* Or *)
-  move=> f0 H0 f1 H1.
-  rewrite dualB_or evalB_or evalB_or.
-  by rewrite H0 H1.
-  
-  (* Imp *)
-  move=> f0 H0 f1 H1.
-  rewrite dualB_imp evalB_imp evalB_imp.
-  by rewrite H0 H1.
-Qed.
-
-
-Lemma dualB_td : forall t : TermB, t = dualB_t (dualB_t t).
-Proof.
-move=> t; elim t.
-  
-  by rewrite /dualB_t.
-  
-  by rewrite /dualB_t.
-
-  by rewrite /dualB_t.
-  
-  move=> t0 H0 t1 H1.
-  by rewrite dualB_m dualB_j -H0 -H1.
-  
-  move=> t0 H0 t1 H1.
-  by rewrite dualB_j dualB_m -H0 -H1.
-Qed.
-
-Lemma dualBd : forall F : FormB, F = dualB (dualB F).
-Proof.
-move=>F; elim F.
-  by move=> t0 t1; rewrite /dualB {1}(dualB_td t0) {1}(dualB_td t1).
-
-  by move=> t0 t1; rewrite /dualB {1}(dualB_td t0) {1}(dualB_td t1).
-
-  by move=> F0 H0; rewrite {1}H0 {3 4}/dualB.
-
-  by move=> F0 H0 F1 H1; rewrite dualB_conj dualB_conj -H0 -H1.
-
-  by move=> F0 H0 F1 H1; rewrite dualB_or dualB_or -H0 -H1.
-
-  by move=> F0 H0 F1 H1; rewrite dualB_imp dualB_imp -H0 -H1.
-Qed.
-
-
-
-Definition TeoremaB (F : FormB) : Prop :=
-forall (L : bumcrotLattice) (env : nat -> L), (evalB_f L env F).
-
-Theorem DualidadB : forall f : FormB, (TeoremaB f) -> (TeoremaB (dualB f)).
-Proof.
-move=> f.
-elim f.
-  move=> t0 t1.
-
-    (* Caso: leq *)
-
-    rewrite /dualB /TeoremaB => Hip L env.
-    move: (Hip (dual_bumcrot_lattice_of L) env).
-    by rewrite evalB_dual_f /dualB.
-
-    (* Caso: eq *)
-    
-    rewrite /TeoremaB /dualB /evalB_f => t0 t1 Hip L env.
-    move: (Hip (dual_bumcrot_lattice_of L) env).
-    by rewrite eval_dualB eval_dualB.
-
-    (* Caso: neg *)
-    rewrite /TeoremaB => f0 _ Hip L env.
-    move: (Hip (dual_bumcrot_lattice_of L) env).
-    have aux: forall (L : bumcrotLattice) (env : nat -> L) (f0 : FormB), evalB_f L env (fb_neg f0) = ~ (evalB_f L env f0).
-      by [].
-    have auxd: forall (f0 : FormB), dualB (fb_neg f0) = fb_neg (dualB f0).
-      by [].
-    rewrite auxd aux aux.
-    by rewrite evalB_dual_f.
-
-    (* Caso: Conj *)
-    rewrite /TeoremaB => f0 _ f1 _ Hip L env.
-    move: (Hip (dual_bumcrot_lattice_of L) env).
-    rewrite dualB_conj evalB_conj evalB_conj.
-    by rewrite evalB_dual_f evalB_dual_f.
-
-    (* Caso: Or *)
-    rewrite /TeoremaB => f0 _ f1 _ Hip L env.
-    move: (Hip (dual_bumcrot_lattice_of L) env).
-    rewrite dualB_or evalB_or evalB_or.
-    by rewrite evalB_dual_f evalB_dual_f.
-
-    (* Caso: Imp *)
-    rewrite /TeoremaB => f0 _ f1 _ Hip L env.
-    move: (Hip (dual_bumcrot_lattice_of L) env).
-    rewrite dualB_imp evalB_imp evalB_imp.
-    by rewrite evalB_dual_f evalB_dual_f.
-Qed.
-(*    Fin del Teorema de dualidad para lattices acotadas     *)
-
-Lemma DualB : forall f : FormB, (TeoremaB f) <-> (TeoremaB (dualB f)).
-Proof.
-move=> f.
-split.
-  by move: (DualidadB f).
-move: (DualidadB (dualB f))=> H.
-by rewrite {2}(dualBd f).
-Qed.
-
-
-
-
-Section Bumcrot.
-
-
 
 Theorem Bumcrot1 {L : bumcrotLattice} : forall a b caub canb : L, 
                  (Comp (a ⊔ b) caub) -> (Comp (a ⊓ b) canb) 
@@ -1683,7 +1476,7 @@ move=> a b caub canb [H0 H1] [H2 H3].
 split.
   exists (caub ⊔ (canb ⊓ b)).
   split.
-    move: ((Mod L))=> Modu.
+    move: ((Mod L) L)=> Modu.
     rewrite -(L4 a b).
     rewrite L1 -[_⊔ (caub ⊔ _)]L1 [_⊔ caub]L2.
     rewrite [(caub ⊔ _) ⊔ _]L1 -L1.
@@ -1704,7 +1497,7 @@ split.
   by rewrite [_ ⊓ b]L2d -L1d H3.
 exists (caub ⊔ (canb ⊓ a)).
 split.
-  move: (Mod L)=> Mod.
+  move: ((Mod L) L)=> Mod.
   rewrite -(L4 b a).
   rewrite L1 -[_⊔ (caub ⊔ _)]L1 [_⊔ caub]L2.
   rewrite [(caub ⊔ _) ⊔ _]L1 -L1.
@@ -1728,9 +1521,9 @@ Qed.
 Theorem AuxBumcrot {L : bumcrotLattice} : forall a b caub canb : L, 
                  (Comp (a ⊔ b) caub) -> (Comp (a ⊓ b) canb) 
                  -> ((Comp a (caub ⊔ (canb ⊓ b)) ) /\ (Comp b (caub ⊔ (canb ⊓ a)))).
-Proof. 
+Proof.
 move=> a b caub canb [H0 H1] [H2 H3].
-move: (Mod L) (@Modular2 L (Mod L))=> Modu Modu2.
+move: ((Mod L) L) (@Modular2 L (Mod L))=> Modu Modu2.
 split.
   split.
     rewrite -(L4 a b).
@@ -1770,43 +1563,26 @@ rewrite L2 ajBot.
 by rewrite L2d L1d L2d H3.
 Qed.
 
-
 Theorem AuxBumcrotd {L : bumcrotLattice} : forall a b caub canb : L, 
                  (Comp (a ⊔ b) caub) -> (Comp (a ⊓ b) canb) 
                  -> ((Comp a (canb ⊓ (caub ⊔ b)) ) /\ (Comp b (canb ⊓ (caub ⊔ a)))).
 Proof.
-move=> a b caub canb.
-(*Por Dualidad*)
-have teo : TeoremaB ( 
-                      (VarB 0 b⊔ VarB 1) b⊔ VarB 2 b= TopB b/\
-                      ((VarB 0 b⊔ VarB 1) b⊓ VarB 2 b= BotB) b->
-                      ((VarB 0 b⊓ VarB 1) b⊔ VarB 3 b= TopB) b/\
-                      ((VarB 0 b⊓ VarB 1) b⊓ VarB 3 b= BotB) b->
-                      (VarB 0 b⊔ (VarB 2 b⊔ (VarB 3 b⊓ VarB 1)) b= TopB b/\
-                       (VarB 0 b⊓ (VarB 2 b⊔ (VarB 3 b⊓ VarB 1)) b= BotB)) b/\
-                       (VarB 1 b⊔ (VarB 2 b⊔ (VarB 3 b⊓ VarB 0)) b= TopB) b/\
-                       (VarB 1 b⊓ (VarB 2 b⊔ (VarB 3 b⊓ VarB 0)) b= BotB)
-                      ).
-
-
-
 
 (*
-( (((VarB 0 b⊔ VarB 1) b⊔ VarB 2 b= TopB) b/\ ((VarB 0 b⊔ VarB 1) b⊓ VarB 2 b= BotB)) b->
-                            (((VarB 0 b⊓ VarB 1) b⊔ VarB 3 b= TopB) b/\ ((VarB 0 b⊓ VarB 1) b⊓ VarB 3 b= BotB)) b->
-                            (( (VarB 0 b⊔ (VarB 2 b⊔ (VarB 3 b⊓ VarB 1)) b= TopB) b/\
-                             (VarB 0 b⊓ (VarB 2 b⊔ (VarB 3 b⊓ VarB 1)) b= BotB) ) b/\
-                             ((VarB 1 b⊔ (VarB 2 b⊔ (VarB 3 b⊓ VarB 0)) b= TopB) b/\
-                             (VarB 1 b⊓ (VarB 2 b⊔ (VarB 3 b⊓ VarB 0)) b= BotB)  )))
-*)
-  rewrite /TeoremaB/evalB_f/evalB => L0 env.
-  move: ((@AuxBumcrot L0) (env 0) (env 1) (env 2) (env 3)).
-  rewrite /Comp.
-  by [].
+move=> a b caub canb.
+(*Por Dualidad*)
+have teo : Teorema (transF( (V 0 ⊔ V 1) ⊔ V 3 = top /\ (a ⊔ b) ⊓ caub = bot ->
+                            (a ⊓ b) ⊔ canb = top /\ (a ⊓ b) ⊓ canb = bot ->
+                            (a ⊔ (caub ⊔ (canb ⊓ b)) = top /\
+                             a ⊓ (caub ⊔ (canb ⊓ b)) = bot) /\
+                             b ⊔ (caub ⊔ (canb ⊓ a)) = top /\
+                             b ⊓ (caub ⊔ (canb ⊓ a)) = bot  )).
+  rewrite /transF/transE /Teorema/eval_f/eval => L0 env.
+  by move: (Modular2 Mod (env 0) (env 1) (env 2)).
 move: teo; rewrite /transF/transE Dual/dual/dual_t.
 rewrite /Teorema => /(_ T (@env_abc T a b c)).
 by rewrite /eval_f/eval/env_abc.
-
+*)
 
 move=> a b caub canb [H0 H1] [H2 H3].
 split.
