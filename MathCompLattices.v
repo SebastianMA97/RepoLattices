@@ -1,6 +1,7 @@
 From Coq Require Import Logic.
 From mathcomp Require Import all_ssreflect.
 
+
 Lemma dobl (A : Prop) :  A <-> A /\ A.
 Proof.
 split. by [].

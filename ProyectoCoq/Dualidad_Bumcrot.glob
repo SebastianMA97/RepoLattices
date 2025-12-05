@@ -1,0 +1,1148 @@
+DIGEST 97f8340d046388dcb189a4a77e8d3a40
+FProyectoCoq.Dualidad_Bumcrot
+R29:41 mathcomp.ssreflect.all_ssreflect <> <> lib
+R76:86 ProyectoCoq.Def_Lattice <> <> lib
+R121:128 ProyectoCoq.Dualidad <> <> lib
+R163:185 ProyectoCoq.MathCompLattices_SeqEnv <> <> lib
+rec 199:212 <> bumcrotLattice
+proj 241:244 <> BumL
+proj 269:271 <> Mod
+R249:262 ProyectoCoq.MathCompLattices_SeqEnv <> boundedLattice rec
+R276:281 ProyectoCoq.MathCompLattices_SeqEnv <> Modu_L def
+R283:286 ProyectoCoq.Dualidad_Bumcrot <> BumL:2 meth
+ind 305:309 <> TermB
+constr 322:325 <> TopB
+constr 337:340 <> BotB
+constr 352:355 <> VarB
+constr 375:379 <> MeetB
+constr 409:413 <> JoinB
+R329:333 ProyectoCoq.Dualidad_Bumcrot <> TermB:4 ind
+R344:348 ProyectoCoq.Dualidad_Bumcrot <> TermB:4 ind
+R363:366 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R360:362 Coq.Init.Datatypes <> nat ind
+R367:371 ProyectoCoq.Dualidad_Bumcrot <> TermB:4 ind
+R388:391 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R383:387 ProyectoCoq.Dualidad_Bumcrot <> TermB:4 ind
+R397:400 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R392:396 ProyectoCoq.Dualidad_Bumcrot <> TermB:4 ind
+R401:405 ProyectoCoq.Dualidad_Bumcrot <> TermB:4 ind
+R422:425 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R417:421 ProyectoCoq.Dualidad_Bumcrot <> TermB:4 ind
+R431:434 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R426:430 ProyectoCoq.Dualidad_Bumcrot <> TermB:4 ind
+R435:439 ProyectoCoq.Dualidad_Bumcrot <> TermB:4 ind
+def 452:456 <> evalB
+R463:476 ProyectoCoq.Dualidad_Bumcrot <> bumcrotLattice rec
+binder 459:459 <> L:6
+R484:484 ProyectoCoq.Dualidad_Bumcrot <> L:6 var
+binder 480:480 <> z:7
+R494:496 mathcomp.ssreflect.seq <> seq abbrev
+R498:498 ProyectoCoq.Dualidad_Bumcrot <> L:6 var
+binder 488:490 <> env:8
+R506:510 ProyectoCoq.Dualidad_Bumcrot <> TermB ind
+binder 502:502 <> t:9
+R515:515 ProyectoCoq.Dualidad_Bumcrot <> L:6 var
+R528:528 ProyectoCoq.Dualidad_Bumcrot <> t:9 var
+R539:542 ProyectoCoq.Dualidad_Bumcrot <> TopB constr
+R554:556 ProyectoCoq.MathCompLattices_SeqEnv <> top abbrev
+R562:565 ProyectoCoq.Dualidad_Bumcrot <> BotB constr
+R577:579 ProyectoCoq.MathCompLattices_SeqEnv <> bot abbrev
+R585:588 ProyectoCoq.Dualidad_Bumcrot <> VarB constr
+R600:602 mathcomp.ssreflect.seq <> nth def
+R606:608 ProyectoCoq.Dualidad_Bumcrot <> env:8 var
+R604:604 ProyectoCoq.Dualidad_Bumcrot <> z:7 var
+R616:620 ProyectoCoq.Dualidad_Bumcrot <> MeetB constr
+R632:636 ProyectoCoq.Def_Lattice <> meetT proj
+R638:638 ProyectoCoq.Dualidad_Bumcrot <> L:6 var
+R641:645 ProyectoCoq.Dualidad_Bumcrot <> evalB:10 def
+R651:653 ProyectoCoq.Dualidad_Bumcrot <> env:8 var
+R649:649 ProyectoCoq.Dualidad_Bumcrot <> z:7 var
+R647:647 ProyectoCoq.Dualidad_Bumcrot <> L:6 var
+R660:664 ProyectoCoq.Dualidad_Bumcrot <> evalB:10 def
+R670:672 ProyectoCoq.Dualidad_Bumcrot <> env:8 var
+R668:668 ProyectoCoq.Dualidad_Bumcrot <> z:7 var
+R666:666 ProyectoCoq.Dualidad_Bumcrot <> L:6 var
+R682:686 ProyectoCoq.Dualidad_Bumcrot <> JoinB constr
+R698:702 ProyectoCoq.Def_Lattice <> joinT proj
+R704:704 ProyectoCoq.Dualidad_Bumcrot <> L:6 var
+R707:711 ProyectoCoq.Dualidad_Bumcrot <> evalB:10 def
+R717:719 ProyectoCoq.Dualidad_Bumcrot <> env:8 var
+R715:715 ProyectoCoq.Dualidad_Bumcrot <> z:7 var
+R713:713 ProyectoCoq.Dualidad_Bumcrot <> L:6 var
+R726:730 ProyectoCoq.Dualidad_Bumcrot <> evalB:10 def
+R736:738 ProyectoCoq.Dualidad_Bumcrot <> env:8 var
+R734:734 ProyectoCoq.Dualidad_Bumcrot <> z:7 var
+R732:732 ProyectoCoq.Dualidad_Bumcrot <> L:6 var
+ind 762:766 <> FormB
+constr 779:784 <> fb_leq
+constr 815:819 <> fb_eq
+constr 851:856 <> fb_neg
+constr 878:884 <> fb_conj
+constr 914:918 <> fb_or
+constr 950:955 <> fb_imp
+R794:797 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R789:793 ProyectoCoq.Dualidad_Bumcrot <> TermB ind
+R803:806 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R798:802 ProyectoCoq.Dualidad_Bumcrot <> TermB ind
+R807:811 ProyectoCoq.Dualidad_Bumcrot <> FormB:12 ind
+R830:833 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R825:829 ProyectoCoq.Dualidad_Bumcrot <> TermB ind
+R839:842 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R834:838 ProyectoCoq.Dualidad_Bumcrot <> TermB ind
+R843:847 ProyectoCoq.Dualidad_Bumcrot <> FormB:12 ind
+R866:869 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R861:865 ProyectoCoq.Dualidad_Bumcrot <> FormB:12 ind
+R870:874 ProyectoCoq.Dualidad_Bumcrot <> FormB:12 ind
+R893:896 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R888:892 ProyectoCoq.Dualidad_Bumcrot <> FormB:12 ind
+R902:905 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R897:901 ProyectoCoq.Dualidad_Bumcrot <> FormB:12 ind
+R906:910 ProyectoCoq.Dualidad_Bumcrot <> FormB:12 ind
+R929:932 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R924:928 ProyectoCoq.Dualidad_Bumcrot <> FormB:12 ind
+R938:941 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R933:937 ProyectoCoq.Dualidad_Bumcrot <> FormB:12 ind
+R942:946 ProyectoCoq.Dualidad_Bumcrot <> FormB:12 ind
+R965:968 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R960:964 ProyectoCoq.Dualidad_Bumcrot <> FormB:12 ind
+R974:977 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R969:973 ProyectoCoq.Dualidad_Bumcrot <> FormB:12 ind
+R978:982 ProyectoCoq.Dualidad_Bumcrot <> FormB:12 ind
+def 995:1001 <> evalB_f
+R1008:1021 ProyectoCoq.Dualidad_Bumcrot <> bumcrotLattice rec
+binder 1004:1004 <> L:14
+R1029:1029 ProyectoCoq.Dualidad_Bumcrot <> L:14 var
+binder 1025:1025 <> z:15
+R1039:1041 mathcomp.ssreflect.seq <> seq abbrev
+R1043:1043 ProyectoCoq.Dualidad_Bumcrot <> L:14 var
+binder 1033:1035 <> env:16
+R1051:1055 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+binder 1047:1047 <> f:17
+R1076:1076 ProyectoCoq.Dualidad_Bumcrot <> f:17 var
+R1087:1092 ProyectoCoq.Dualidad_Bumcrot <> fb_leq constr
+R1103:1103 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R1120:1126 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R1143:1143 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R1104:1108 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R1110:1110 ProyectoCoq.Dualidad_Bumcrot <> L:14 var
+R1112:1112 ProyectoCoq.Dualidad_Bumcrot <> z:15 var
+R1114:1116 ProyectoCoq.Dualidad_Bumcrot <> env:16 var
+R1127:1131 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R1133:1133 ProyectoCoq.Dualidad_Bumcrot <> L:14 var
+R1135:1135 ProyectoCoq.Dualidad_Bumcrot <> z:15 var
+R1137:1139 ProyectoCoq.Dualidad_Bumcrot <> env:16 var
+R1149:1153 ProyectoCoq.Dualidad_Bumcrot <> fb_eq constr
+R1165:1165 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1182:1186 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1203:1203 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1166:1170 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R1172:1172 ProyectoCoq.Dualidad_Bumcrot <> L:14 var
+R1174:1174 ProyectoCoq.Dualidad_Bumcrot <> z:15 var
+R1176:1178 ProyectoCoq.Dualidad_Bumcrot <> env:16 var
+R1187:1191 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R1193:1193 ProyectoCoq.Dualidad_Bumcrot <> L:14 var
+R1195:1195 ProyectoCoq.Dualidad_Bumcrot <> z:15 var
+R1197:1199 ProyectoCoq.Dualidad_Bumcrot <> env:16 var
+R1209:1214 ProyectoCoq.Dualidad_Bumcrot <> fb_neg constr
+R1226:1228 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1247:1247 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1229:1235 ProyectoCoq.Dualidad_Bumcrot <> evalB_f:18 def
+R1241:1243 ProyectoCoq.Dualidad_Bumcrot <> env:16 var
+R1239:1239 ProyectoCoq.Dualidad_Bumcrot <> z:15 var
+R1237:1237 ProyectoCoq.Dualidad_Bumcrot <> L:14 var
+R1253:1259 ProyectoCoq.Dualidad_Bumcrot <> fb_conj constr
+R1289:1292 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1271:1277 ProyectoCoq.Dualidad_Bumcrot <> evalB_f:18 def
+R1283:1285 ProyectoCoq.Dualidad_Bumcrot <> env:16 var
+R1281:1281 ProyectoCoq.Dualidad_Bumcrot <> z:15 var
+R1279:1279 ProyectoCoq.Dualidad_Bumcrot <> L:14 var
+R1293:1299 ProyectoCoq.Dualidad_Bumcrot <> evalB_f:18 def
+R1305:1307 ProyectoCoq.Dualidad_Bumcrot <> env:16 var
+R1303:1303 ProyectoCoq.Dualidad_Bumcrot <> z:15 var
+R1301:1301 ProyectoCoq.Dualidad_Bumcrot <> L:14 var
+R1316:1320 ProyectoCoq.Dualidad_Bumcrot <> fb_or constr
+R1334:1334 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R1353:1358 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R1377:1377 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R1335:1341 ProyectoCoq.Dualidad_Bumcrot <> evalB_f:18 def
+R1347:1349 ProyectoCoq.Dualidad_Bumcrot <> env:16 var
+R1345:1345 ProyectoCoq.Dualidad_Bumcrot <> z:15 var
+R1343:1343 ProyectoCoq.Dualidad_Bumcrot <> L:14 var
+R1359:1365 ProyectoCoq.Dualidad_Bumcrot <> evalB_f:18 def
+R1371:1373 ProyectoCoq.Dualidad_Bumcrot <> env:16 var
+R1369:1369 ProyectoCoq.Dualidad_Bumcrot <> z:15 var
+R1367:1367 ProyectoCoq.Dualidad_Bumcrot <> L:14 var
+R1383:1388 ProyectoCoq.Dualidad_Bumcrot <> fb_imp constr
+R1402:1402 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1421:1426 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1445:1445 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1403:1409 ProyectoCoq.Dualidad_Bumcrot <> evalB_f:18 def
+R1415:1417 ProyectoCoq.Dualidad_Bumcrot <> env:16 var
+R1413:1413 ProyectoCoq.Dualidad_Bumcrot <> z:15 var
+R1411:1411 ProyectoCoq.Dualidad_Bumcrot <> L:14 var
+R1427:1433 ProyectoCoq.Dualidad_Bumcrot <> evalB_f:18 def
+R1439:1441 ProyectoCoq.Dualidad_Bumcrot <> env:16 var
+R1437:1437 ProyectoCoq.Dualidad_Bumcrot <> z:15 var
+R1435:1435 ProyectoCoq.Dualidad_Bumcrot <> L:14 var
+def 1464:1470 <> dualB_t
+R1477:1481 ProyectoCoq.Dualidad_Bumcrot <> TermB ind
+binder 1473:1473 <> t:20
+R1486:1490 ProyectoCoq.Dualidad_Bumcrot <> TermB ind
+R1503:1503 ProyectoCoq.Dualidad_Bumcrot <> t:20 var
+R1514:1517 ProyectoCoq.Dualidad_Bumcrot <> TopB constr
+R1523:1526 ProyectoCoq.Dualidad_Bumcrot <> BotB constr
+R1532:1535 ProyectoCoq.Dualidad_Bumcrot <> BotB constr
+R1541:1544 ProyectoCoq.Dualidad_Bumcrot <> TopB constr
+R1550:1553 ProyectoCoq.Dualidad_Bumcrot <> VarB constr
+R1560:1563 ProyectoCoq.Dualidad_Bumcrot <> VarB constr
+R1571:1575 ProyectoCoq.Dualidad_Bumcrot <> MeetB constr
+R1586:1590 ProyectoCoq.Dualidad_Bumcrot <> JoinB constr
+R1593:1599 ProyectoCoq.Dualidad_Bumcrot <> dualB_t:21 def
+R1606:1612 ProyectoCoq.Dualidad_Bumcrot <> dualB_t:21 def
+R1622:1626 ProyectoCoq.Dualidad_Bumcrot <> JoinB constr
+R1637:1641 ProyectoCoq.Dualidad_Bumcrot <> MeetB constr
+R1644:1650 ProyectoCoq.Dualidad_Bumcrot <> dualB_t:21 def
+R1657:1663 ProyectoCoq.Dualidad_Bumcrot <> dualB_t:21 def
+def 1686:1690 <> dualB
+R1697:1701 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+binder 1693:1693 <> f:23
+R1706:1710 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+R1723:1723 ProyectoCoq.Dualidad_Bumcrot <> f:23 var
+R1734:1739 ProyectoCoq.Dualidad_Bumcrot <> fb_leq constr
+R1750:1755 ProyectoCoq.Dualidad_Bumcrot <> fb_leq constr
+R1758:1764 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R1771:1777 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R1787:1791 ProyectoCoq.Dualidad_Bumcrot <> fb_eq constr
+R1803:1807 ProyectoCoq.Dualidad_Bumcrot <> fb_eq constr
+R1810:1816 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R1823:1829 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R1839:1844 ProyectoCoq.Dualidad_Bumcrot <> fb_neg constr
+R1856:1861 ProyectoCoq.Dualidad_Bumcrot <> fb_neg constr
+R1864:1868 ProyectoCoq.Dualidad_Bumcrot <> dualB:24 def
+R1878:1884 ProyectoCoq.Dualidad_Bumcrot <> fb_conj constr
+R1896:1902 ProyectoCoq.Dualidad_Bumcrot <> fb_conj constr
+R1905:1909 ProyectoCoq.Dualidad_Bumcrot <> dualB:24 def
+R1916:1920 ProyectoCoq.Dualidad_Bumcrot <> dualB:24 def
+R1930:1934 ProyectoCoq.Dualidad_Bumcrot <> fb_or constr
+R1948:1952 ProyectoCoq.Dualidad_Bumcrot <> fb_or constr
+R1955:1959 ProyectoCoq.Dualidad_Bumcrot <> dualB:24 def
+R1966:1970 ProyectoCoq.Dualidad_Bumcrot <> dualB:24 def
+R1980:1985 ProyectoCoq.Dualidad_Bumcrot <> fb_imp constr
+R1998:2003 ProyectoCoq.Dualidad_Bumcrot <> fb_imp constr
+R2006:2010 ProyectoCoq.Dualidad_Bumcrot <> dualB:24 def
+R2017:2021 ProyectoCoq.Dualidad_Bumcrot <> dualB:24 def
+def 2055:2077 <> dual_bounded_lattice_of
+R2084:2097 ProyectoCoq.MathCompLattices_SeqEnv <> boundedLattice rec
+binder 2080:2080 <> L:26
+R2102:2115 ProyectoCoq.MathCompLattices_SeqEnv <> boundedLattice rec
+R2122:2135 ProyectoCoq.MathCompLattices_SeqEnv <> BoundedLattice constr
+R2142:2156 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R2158:2158 ProyectoCoq.Dualidad_Bumcrot <> L:26 var
+R2162:2164 ProyectoCoq.MathCompLattices_SeqEnv <> Bot proj
+R2166:2166 ProyectoCoq.Dualidad_Bumcrot <> L:26 var
+R2170:2172 ProyectoCoq.MathCompLattices_SeqEnv <> Top proj
+R2174:2174 ProyectoCoq.Dualidad_Bumcrot <> L:26 var
+binder 2183:2183 <> a:27
+R2220:2229 ProyectoCoq.MathCompLattices_SeqEnv <> Top_Bottom proj
+R2231:2231 ProyectoCoq.Dualidad_Bumcrot <> L:26 var
+R2233:2233 ProyectoCoq.Dualidad_Bumcrot <> a:27 var
+R2201:2204 Coq.Init.Logic <> conj constr
+R2244:2247 Coq.Init.Logic <> conj constr
+prf 2270:2281 <> le_dualBound
+R2288:2301 ProyectoCoq.MathCompLattices_SeqEnv <> boundedLattice rec
+binder 2284:2284 <> L:28
+R2311:2311 ProyectoCoq.Dualidad_Bumcrot <> L:28 var
+binder 2305:2305 <> x:29
+binder 2307:2307 <> y:30
+R2318:2318 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R2354:2360 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R2370:2370 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R2319:2321 ProyectoCoq.Def_Lattice <> ord proj
+R2324:2346 ProyectoCoq.Dualidad_Bumcrot <> dual_bounded_lattice_of canonstruc
+R2348:2348 ProyectoCoq.Dualidad_Bumcrot <> L:28 var
+R2351:2351 ProyectoCoq.Dualidad_Bumcrot <> x:29 var
+R2353:2353 ProyectoCoq.Dualidad_Bumcrot <> y:30 var
+R2361:2363 ProyectoCoq.Def_Lattice <> ord proj
+R2365:2365 ProyectoCoq.Dualidad_Bumcrot <> L:28 var
+R2367:2367 ProyectoCoq.Dualidad_Bumcrot <> y:30 var
+R2369:2369 ProyectoCoq.Dualidad_Bumcrot <> x:29 var
+prf 2399:2406 <> le_dualj
+R2413:2426 ProyectoCoq.MathCompLattices_SeqEnv <> boundedLattice rec
+binder 2409:2409 <> L:31
+R2436:2436 ProyectoCoq.Dualidad_Bumcrot <> L:31 var
+binder 2430:2430 <> x:32
+binder 2432:2432 <> y:33
+R2443:2443 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2482:2486 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2499:2499 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2445:2449 ProyectoCoq.Def_Lattice <> joinT proj
+R2452:2474 ProyectoCoq.Dualidad_Bumcrot <> dual_bounded_lattice_of canonstruc
+R2476:2476 ProyectoCoq.Dualidad_Bumcrot <> L:31 var
+R2479:2479 ProyectoCoq.Dualidad_Bumcrot <> x:32 var
+R2481:2481 ProyectoCoq.Dualidad_Bumcrot <> y:33 var
+R2488:2492 ProyectoCoq.Def_Lattice <> meetT proj
+R2494:2494 ProyectoCoq.Dualidad_Bumcrot <> L:31 var
+R2496:2496 ProyectoCoq.Dualidad_Bumcrot <> x:32 var
+R2498:2498 ProyectoCoq.Dualidad_Bumcrot <> y:33 var
+prf 2528:2535 <> le_dualm
+R2542:2555 ProyectoCoq.MathCompLattices_SeqEnv <> boundedLattice rec
+binder 2538:2538 <> L:34
+R2565:2565 ProyectoCoq.Dualidad_Bumcrot <> L:34 var
+binder 2559:2559 <> x:35
+binder 2561:2561 <> y:36
+R2572:2572 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2611:2615 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2628:2628 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2574:2578 ProyectoCoq.Def_Lattice <> meetT proj
+R2581:2603 ProyectoCoq.Dualidad_Bumcrot <> dual_bounded_lattice_of canonstruc
+R2605:2605 ProyectoCoq.Dualidad_Bumcrot <> L:34 var
+R2608:2608 ProyectoCoq.Dualidad_Bumcrot <> x:35 var
+R2610:2610 ProyectoCoq.Dualidad_Bumcrot <> y:36 var
+R2617:2621 ProyectoCoq.Def_Lattice <> joinT proj
+R2623:2623 ProyectoCoq.Dualidad_Bumcrot <> L:34 var
+R2625:2625 ProyectoCoq.Dualidad_Bumcrot <> x:35 var
+R2627:2627 ProyectoCoq.Dualidad_Bumcrot <> y:36 var
+prf 2658:2669 <> modular_dual
+R2676:2689 ProyectoCoq.MathCompLattices_SeqEnv <> boundedLattice rec
+binder 2672:2672 <> L:37
+R2697:2697 ProyectoCoq.Dualidad_Bumcrot <> L:37 var
+binder 2693:2693 <> z:38
+R2706:2711 ProyectoCoq.MathCompLattices_SeqEnv <> Modu_L def
+R2713:2713 ProyectoCoq.Dualidad_Bumcrot <> L:37 var
+binder 2701:2701 <> P:39
+R2719:2724 ProyectoCoq.MathCompLattices_SeqEnv <> Modu_L def
+R2727:2749 ProyectoCoq.Dualidad_Bumcrot <> dual_bounded_lattice_of canonstruc
+R2751:2751 ProyectoCoq.Dualidad_Bumcrot <> L:37 var
+R2773:2778 ProyectoCoq.MathCompLattices_SeqEnv <> Modu_L def
+R2773:2778 ProyectoCoq.MathCompLattices_SeqEnv <> Modu_L def
+R2773:2778 ProyectoCoq.MathCompLattices_SeqEnv <> Modu_L def
+R2807:2818 ProyectoCoq.Dualidad_Bumcrot <> le_dualBound thm
+R2820:2827 ProyectoCoq.Dualidad_Bumcrot <> le_dualj thm
+R2829:2836 ProyectoCoq.Dualidad_Bumcrot <> le_dualj thm
+R2838:2845 ProyectoCoq.Dualidad_Bumcrot <> le_dualm thm
+R2847:2854 ProyectoCoq.Dualidad_Bumcrot <> le_dualm thm
+R2807:2818 ProyectoCoq.Dualidad_Bumcrot <> le_dualBound thm
+R2807:2818 ProyectoCoq.Dualidad_Bumcrot <> le_dualBound thm
+R2820:2827 ProyectoCoq.Dualidad_Bumcrot <> le_dualj thm
+R2820:2827 ProyectoCoq.Dualidad_Bumcrot <> le_dualj thm
+R2829:2836 ProyectoCoq.Dualidad_Bumcrot <> le_dualj thm
+R2829:2836 ProyectoCoq.Dualidad_Bumcrot <> le_dualj thm
+R2838:2845 ProyectoCoq.Dualidad_Bumcrot <> le_dualm thm
+R2838:2845 ProyectoCoq.Dualidad_Bumcrot <> le_dualm thm
+R2847:2854 ProyectoCoq.Dualidad_Bumcrot <> le_dualm thm
+R2847:2854 ProyectoCoq.Dualidad_Bumcrot <> le_dualm thm
+R2871:2878 ProyectoCoq.MathCompLattices_SeqEnv <> Modular2 thm
+R2871:2878 ProyectoCoq.MathCompLattices_SeqEnv <> Modular2 thm
+R2871:2878 ProyectoCoq.MathCompLattices_SeqEnv <> Modular2 thm
+def 2921:2943 <> dual_bumcrot_lattice_of
+R2950:2963 ProyectoCoq.Dualidad_Bumcrot <> bumcrotLattice rec
+binder 2946:2946 <> B:40
+R2971:2971 ProyectoCoq.Dualidad_Bumcrot <> B:40 var
+binder 2967:2967 <> z:41
+R2976:2989 ProyectoCoq.Dualidad_Bumcrot <> bumcrotLattice rec
+R2996:3009 ProyectoCoq.Dualidad_Bumcrot <> BumcrotLattice constr
+R3016:3038 ProyectoCoq.Dualidad_Bumcrot <> dual_bounded_lattice_of canonstruc
+R3040:3040 ProyectoCoq.Dualidad_Bumcrot <> B:40 var
+R3048:3059 ProyectoCoq.Dualidad_Bumcrot <> modular_dual thm
+R3062:3062 ProyectoCoq.Dualidad_Bumcrot <> B:40 var
+R3065:3065 ProyectoCoq.Dualidad_Bumcrot <> z:41 var
+R3068:3070 ProyectoCoq.Dualidad_Bumcrot <> Mod proj
+R3072:3072 ProyectoCoq.Dualidad_Bumcrot <> B:40 var
+prf 3085:3089 <> jldmB
+R3105:3118 ProyectoCoq.Dualidad_Bumcrot <> bumcrotLattice rec
+binder 3101:3101 <> L:42
+R3126:3126 ProyectoCoq.Dualidad_Bumcrot <> L:42 var
+binder 3122:3122 <> z:43
+R3166:3168 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3131:3135 ProyectoCoq.Def_Lattice <> joinT proj
+R3138:3160 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R3162:3162 ProyectoCoq.Dualidad_Bumcrot <> L:42 var
+R3164:3164 ProyectoCoq.Dualidad_Bumcrot <> z:43 var
+R3169:3173 ProyectoCoq.Def_Lattice <> meetT proj
+R3175:3175 ProyectoCoq.Dualidad_Bumcrot <> L:42 var
+prf 3206:3210 <> mldjB
+R3226:3239 ProyectoCoq.Dualidad_Bumcrot <> bumcrotLattice rec
+binder 3222:3222 <> L:44
+R3247:3247 ProyectoCoq.Dualidad_Bumcrot <> L:44 var
+binder 3243:3243 <> z:45
+R3286:3288 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3251:3255 ProyectoCoq.Def_Lattice <> meetT proj
+R3258:3280 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R3282:3282 ProyectoCoq.Dualidad_Bumcrot <> L:44 var
+R3284:3284 ProyectoCoq.Dualidad_Bumcrot <> z:45 var
+R3289:3293 ProyectoCoq.Def_Lattice <> joinT proj
+R3295:3295 ProyectoCoq.Dualidad_Bumcrot <> L:44 var
+prf 3327:3333 <> evalB_m
+R3349:3362 ProyectoCoq.Dualidad_Bumcrot <> bumcrotLattice rec
+binder 3345:3345 <> L:46
+R3370:3370 ProyectoCoq.Dualidad_Bumcrot <> L:46 var
+binder 3366:3366 <> z:47
+R3380:3382 mathcomp.ssreflect.seq <> seq abbrev
+R3384:3384 ProyectoCoq.Dualidad_Bumcrot <> L:46 var
+binder 3374:3376 <> env:48
+R3396:3400 ProyectoCoq.Dualidad_Bumcrot <> TermB ind
+binder 3388:3389 <> t0:49
+binder 3391:3392 <> t1:50
+R3446:3448 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3419:3423 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R3425:3425 ProyectoCoq.Dualidad_Bumcrot <> L:46 var
+R3427:3427 ProyectoCoq.Dualidad_Bumcrot <> z:47 var
+R3429:3431 ProyectoCoq.Dualidad_Bumcrot <> env:48 var
+R3434:3438 ProyectoCoq.Dualidad_Bumcrot <> MeetB constr
+R3440:3441 ProyectoCoq.Dualidad_Bumcrot <> t0:49 var
+R3443:3444 ProyectoCoq.Dualidad_Bumcrot <> t1:50 var
+R3449:3453 ProyectoCoq.Def_Lattice <> meetT proj
+R3455:3455 ProyectoCoq.Dualidad_Bumcrot <> L:46 var
+R3458:3462 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R3464:3464 ProyectoCoq.Dualidad_Bumcrot <> L:46 var
+R3466:3466 ProyectoCoq.Dualidad_Bumcrot <> z:47 var
+R3468:3470 ProyectoCoq.Dualidad_Bumcrot <> env:48 var
+R3472:3473 ProyectoCoq.Dualidad_Bumcrot <> t0:49 var
+R3477:3481 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R3483:3483 ProyectoCoq.Dualidad_Bumcrot <> L:46 var
+R3485:3485 ProyectoCoq.Dualidad_Bumcrot <> z:47 var
+R3487:3489 ProyectoCoq.Dualidad_Bumcrot <> env:48 var
+R3491:3492 ProyectoCoq.Dualidad_Bumcrot <> t1:50 var
+R3531:3535 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R3531:3535 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R3531:3535 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+prf 3550:3556 <> evalB_j
+R3572:3585 ProyectoCoq.Dualidad_Bumcrot <> bumcrotLattice rec
+binder 3568:3568 <> L:51
+R3593:3593 ProyectoCoq.Dualidad_Bumcrot <> L:51 var
+binder 3589:3589 <> z:52
+R3603:3605 mathcomp.ssreflect.seq <> seq abbrev
+R3607:3607 ProyectoCoq.Dualidad_Bumcrot <> L:51 var
+binder 3597:3599 <> env:53
+R3619:3623 ProyectoCoq.Dualidad_Bumcrot <> TermB ind
+binder 3611:3612 <> t0:54
+binder 3614:3615 <> t1:55
+R3669:3671 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3642:3646 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R3648:3648 ProyectoCoq.Dualidad_Bumcrot <> L:51 var
+R3650:3650 ProyectoCoq.Dualidad_Bumcrot <> z:52 var
+R3652:3654 ProyectoCoq.Dualidad_Bumcrot <> env:53 var
+R3657:3661 ProyectoCoq.Dualidad_Bumcrot <> JoinB constr
+R3663:3664 ProyectoCoq.Dualidad_Bumcrot <> t0:54 var
+R3666:3667 ProyectoCoq.Dualidad_Bumcrot <> t1:55 var
+R3672:3676 ProyectoCoq.Def_Lattice <> joinT proj
+R3678:3678 ProyectoCoq.Dualidad_Bumcrot <> L:51 var
+R3681:3685 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R3687:3687 ProyectoCoq.Dualidad_Bumcrot <> L:51 var
+R3689:3689 ProyectoCoq.Dualidad_Bumcrot <> z:52 var
+R3691:3693 ProyectoCoq.Dualidad_Bumcrot <> env:53 var
+R3695:3696 ProyectoCoq.Dualidad_Bumcrot <> t0:54 var
+R3700:3704 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R3706:3706 ProyectoCoq.Dualidad_Bumcrot <> L:51 var
+R3708:3708 ProyectoCoq.Dualidad_Bumcrot <> z:52 var
+R3710:3712 ProyectoCoq.Dualidad_Bumcrot <> env:53 var
+R3714:3715 ProyectoCoq.Dualidad_Bumcrot <> t1:55 var
+R3754:3758 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R3754:3758 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R3754:3758 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+prf 3773:3782 <> evalB_conj
+R3798:3811 ProyectoCoq.Dualidad_Bumcrot <> bumcrotLattice rec
+binder 3794:3794 <> L:56
+R3819:3819 ProyectoCoq.Dualidad_Bumcrot <> L:56 var
+binder 3815:3815 <> z:57
+R3829:3831 mathcomp.ssreflect.seq <> seq abbrev
+R3833:3833 ProyectoCoq.Dualidad_Bumcrot <> L:56 var
+binder 3823:3825 <> env:58
+R3845:3849 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+binder 3837:3838 <> f0:59
+binder 3840:3841 <> f1:60
+R3904:3906 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3873:3879 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R3881:3881 ProyectoCoq.Dualidad_Bumcrot <> L:56 var
+R3883:3883 ProyectoCoq.Dualidad_Bumcrot <> z:57 var
+R3885:3887 ProyectoCoq.Dualidad_Bumcrot <> env:58 var
+R3890:3896 ProyectoCoq.Dualidad_Bumcrot <> fb_conj constr
+R3898:3899 ProyectoCoq.Dualidad_Bumcrot <> f0:59 var
+R3901:3902 ProyectoCoq.Dualidad_Bumcrot <> f1:60 var
+R3907:3909 Coq.Init.Logic <> and ind
+R3933:3939 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R3941:3941 ProyectoCoq.Dualidad_Bumcrot <> L:56 var
+R3943:3943 ProyectoCoq.Dualidad_Bumcrot <> z:57 var
+R3945:3947 ProyectoCoq.Dualidad_Bumcrot <> env:58 var
+R3949:3950 ProyectoCoq.Dualidad_Bumcrot <> f1:60 var
+R3912:3918 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R3920:3920 ProyectoCoq.Dualidad_Bumcrot <> L:56 var
+R3922:3922 ProyectoCoq.Dualidad_Bumcrot <> z:57 var
+R3924:3926 ProyectoCoq.Dualidad_Bumcrot <> env:58 var
+R3928:3929 ProyectoCoq.Dualidad_Bumcrot <> f0:59 var
+prf 3981:3990 <> dualB_conj
+R4010:4014 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+binder 4002:4003 <> f0:61
+binder 4005:4006 <> f1:62
+R4039:4041 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4018:4022 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R4025:4031 ProyectoCoq.Dualidad_Bumcrot <> fb_conj constr
+R4033:4034 ProyectoCoq.Dualidad_Bumcrot <> f0:61 var
+R4036:4037 ProyectoCoq.Dualidad_Bumcrot <> f1:62 var
+R4042:4048 ProyectoCoq.Dualidad_Bumcrot <> fb_conj constr
+R4051:4055 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R4057:4058 ProyectoCoq.Dualidad_Bumcrot <> f0:61 var
+R4062:4066 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R4068:4069 ProyectoCoq.Dualidad_Bumcrot <> f1:62 var
+prf 4100:4107 <> evalB_or
+R4123:4136 ProyectoCoq.Dualidad_Bumcrot <> bumcrotLattice rec
+binder 4119:4119 <> L:63
+R4144:4144 ProyectoCoq.Dualidad_Bumcrot <> L:63 var
+binder 4140:4140 <> z:64
+R4154:4156 mathcomp.ssreflect.seq <> seq abbrev
+R4158:4158 ProyectoCoq.Dualidad_Bumcrot <> L:63 var
+binder 4148:4150 <> env:65
+R4170:4174 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+binder 4162:4163 <> f0:66
+binder 4165:4166 <> f1:67
+R4227:4229 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4198:4204 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R4206:4206 ProyectoCoq.Dualidad_Bumcrot <> L:63 var
+R4208:4208 ProyectoCoq.Dualidad_Bumcrot <> z:64 var
+R4210:4212 ProyectoCoq.Dualidad_Bumcrot <> env:65 var
+R4215:4219 ProyectoCoq.Dualidad_Bumcrot <> fb_or constr
+R4221:4222 ProyectoCoq.Dualidad_Bumcrot <> f0:66 var
+R4224:4225 ProyectoCoq.Dualidad_Bumcrot <> f1:67 var
+R4230:4231 Coq.Init.Logic <> or ind
+R4255:4261 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R4263:4263 ProyectoCoq.Dualidad_Bumcrot <> L:63 var
+R4265:4265 ProyectoCoq.Dualidad_Bumcrot <> z:64 var
+R4267:4269 ProyectoCoq.Dualidad_Bumcrot <> env:65 var
+R4271:4272 ProyectoCoq.Dualidad_Bumcrot <> f1:67 var
+R4234:4240 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R4242:4242 ProyectoCoq.Dualidad_Bumcrot <> L:63 var
+R4244:4244 ProyectoCoq.Dualidad_Bumcrot <> z:64 var
+R4246:4248 ProyectoCoq.Dualidad_Bumcrot <> env:65 var
+R4250:4251 ProyectoCoq.Dualidad_Bumcrot <> f0:66 var
+prf 4303:4310 <> dualB_or
+R4330:4334 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+binder 4322:4323 <> f0:68
+binder 4325:4326 <> f1:69
+R4357:4359 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4338:4342 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R4345:4349 ProyectoCoq.Dualidad_Bumcrot <> fb_or constr
+R4351:4352 ProyectoCoq.Dualidad_Bumcrot <> f0:68 var
+R4354:4355 ProyectoCoq.Dualidad_Bumcrot <> f1:69 var
+R4360:4364 ProyectoCoq.Dualidad_Bumcrot <> fb_or constr
+R4367:4371 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R4373:4374 ProyectoCoq.Dualidad_Bumcrot <> f0:68 var
+R4378:4382 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R4384:4385 ProyectoCoq.Dualidad_Bumcrot <> f1:69 var
+prf 4416:4424 <> evalB_imp
+R4440:4453 ProyectoCoq.Dualidad_Bumcrot <> bumcrotLattice rec
+binder 4436:4436 <> L:70
+R4461:4461 ProyectoCoq.Dualidad_Bumcrot <> L:70 var
+binder 4457:4457 <> z:71
+R4471:4473 mathcomp.ssreflect.seq <> seq abbrev
+R4475:4475 ProyectoCoq.Dualidad_Bumcrot <> L:70 var
+binder 4465:4467 <> env:72
+R4487:4491 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+binder 4479:4480 <> f0:73
+binder 4482:4483 <> f1:74
+R4545:4547 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4593:4593 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4515:4521 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R4523:4523 ProyectoCoq.Dualidad_Bumcrot <> L:70 var
+R4525:4525 ProyectoCoq.Dualidad_Bumcrot <> z:71 var
+R4527:4529 ProyectoCoq.Dualidad_Bumcrot <> env:72 var
+R4532:4537 ProyectoCoq.Dualidad_Bumcrot <> fb_imp constr
+R4539:4540 ProyectoCoq.Dualidad_Bumcrot <> f0:73 var
+R4542:4543 ProyectoCoq.Dualidad_Bumcrot <> f1:74 var
+R4548:4549 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4568:4573 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4592:4592 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4550:4556 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R4558:4558 ProyectoCoq.Dualidad_Bumcrot <> L:70 var
+R4560:4560 ProyectoCoq.Dualidad_Bumcrot <> z:71 var
+R4562:4564 ProyectoCoq.Dualidad_Bumcrot <> env:72 var
+R4566:4567 ProyectoCoq.Dualidad_Bumcrot <> f0:73 var
+R4574:4580 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R4582:4582 ProyectoCoq.Dualidad_Bumcrot <> L:70 var
+R4584:4584 ProyectoCoq.Dualidad_Bumcrot <> z:71 var
+R4586:4588 ProyectoCoq.Dualidad_Bumcrot <> env:72 var
+R4590:4591 ProyectoCoq.Dualidad_Bumcrot <> f1:74 var
+prf 4622:4630 <> dualB_imp
+R4650:4654 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+binder 4642:4643 <> f0:75
+binder 4645:4646 <> f1:76
+R4678:4680 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4658:4662 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R4665:4670 ProyectoCoq.Dualidad_Bumcrot <> fb_imp constr
+R4672:4673 ProyectoCoq.Dualidad_Bumcrot <> f0:75 var
+R4675:4676 ProyectoCoq.Dualidad_Bumcrot <> f1:76 var
+R4681:4686 ProyectoCoq.Dualidad_Bumcrot <> fb_imp constr
+R4689:4693 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R4695:4696 ProyectoCoq.Dualidad_Bumcrot <> f0:75 var
+R4700:4704 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R4706:4707 ProyectoCoq.Dualidad_Bumcrot <> f1:76 var
+prf 4738:4744 <> dualB_m
+R4763:4767 ProyectoCoq.Dualidad_Bumcrot <> TermB ind
+binder 4755:4756 <> t0:77
+binder 4758:4759 <> t1:78
+R4808:4810 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4787:4793 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R4796:4800 ProyectoCoq.Dualidad_Bumcrot <> MeetB constr
+R4802:4803 ProyectoCoq.Dualidad_Bumcrot <> t0:77 var
+R4805:4806 ProyectoCoq.Dualidad_Bumcrot <> t1:78 var
+R4811:4815 ProyectoCoq.Dualidad_Bumcrot <> JoinB constr
+R4818:4824 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R4826:4827 ProyectoCoq.Dualidad_Bumcrot <> t0:77 var
+R4831:4837 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R4839:4840 ProyectoCoq.Dualidad_Bumcrot <> t1:78 var
+R4878:4884 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R4878:4884 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R4878:4884 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+prf 4899:4905 <> dualB_j
+R4924:4928 ProyectoCoq.Dualidad_Bumcrot <> TermB ind
+binder 4916:4917 <> t0:79
+binder 4919:4920 <> t1:80
+R4969:4971 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4948:4954 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R4957:4961 ProyectoCoq.Dualidad_Bumcrot <> JoinB constr
+R4963:4964 ProyectoCoq.Dualidad_Bumcrot <> t0:79 var
+R4966:4967 ProyectoCoq.Dualidad_Bumcrot <> t1:80 var
+R4972:4976 ProyectoCoq.Dualidad_Bumcrot <> MeetB constr
+R4979:4985 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R4987:4988 ProyectoCoq.Dualidad_Bumcrot <> t0:79 var
+R4992:4998 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R5000:5001 ProyectoCoq.Dualidad_Bumcrot <> t1:80 var
+R5039:5045 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R5039:5045 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R5039:5045 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+prf 5062:5071 <> eval_dualB
+R5078:5091 ProyectoCoq.Dualidad_Bumcrot <> bumcrotLattice rec
+binder 5074:5074 <> L:81
+R5099:5099 ProyectoCoq.Dualidad_Bumcrot <> L:81 var
+binder 5095:5095 <> z:82
+R5109:5111 mathcomp.ssreflect.seq <> seq abbrev
+R5113:5113 ProyectoCoq.Dualidad_Bumcrot <> L:81 var
+binder 5103:5105 <> env:83
+R5121:5125 ProyectoCoq.Dualidad_Bumcrot <> TermB ind
+binder 5117:5117 <> t:84
+R5175:5177 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5132:5136 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R5139:5161 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R5163:5163 ProyectoCoq.Dualidad_Bumcrot <> L:81 var
+R5165:5165 ProyectoCoq.Dualidad_Bumcrot <> z:82 var
+R5168:5168 ProyectoCoq.Dualidad_Bumcrot <> z:82 var
+R5170:5172 ProyectoCoq.Dualidad_Bumcrot <> env:83 var
+R5174:5174 ProyectoCoq.Dualidad_Bumcrot <> t:84 var
+R5178:5182 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R5184:5184 ProyectoCoq.Dualidad_Bumcrot <> L:81 var
+R5186:5186 ProyectoCoq.Dualidad_Bumcrot <> z:82 var
+R5188:5190 ProyectoCoq.Dualidad_Bumcrot <> env:83 var
+R5193:5199 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R5201:5201 ProyectoCoq.Dualidad_Bumcrot <> t:84 var
+R5247:5251 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R5247:5251 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R5247:5251 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R5281:5285 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R5281:5285 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R5281:5285 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R5334:5338 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R5340:5346 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R5348:5352 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R5334:5338 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R5334:5338 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R5340:5346 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R5340:5346 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R5348:5352 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R5348:5352 ProyectoCoq.Dualidad_Bumcrot <> evalB def
+R5409:5415 ProyectoCoq.Dualidad_Bumcrot <> dualB_m thm
+R5418:5424 ProyectoCoq.Dualidad_Bumcrot <> evalB_j thm
+R5409:5415 ProyectoCoq.Dualidad_Bumcrot <> dualB_m thm
+R5409:5415 ProyectoCoq.Dualidad_Bumcrot <> dualB_m thm
+R5418:5424 ProyectoCoq.Dualidad_Bumcrot <> evalB_j thm
+R5418:5424 ProyectoCoq.Dualidad_Bumcrot <> evalB_j thm
+R5447:5453 ProyectoCoq.Dualidad_Bumcrot <> evalB_m thm
+R5456:5478 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R5447:5453 ProyectoCoq.Dualidad_Bumcrot <> evalB_m thm
+R5456:5478 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R5447:5453 ProyectoCoq.Dualidad_Bumcrot <> evalB_m thm
+R5456:5478 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R5512:5516 ProyectoCoq.Dualidad_Bumcrot <> mldjB thm
+R5512:5516 ProyectoCoq.Dualidad_Bumcrot <> mldjB thm
+R5512:5516 ProyectoCoq.Dualidad_Bumcrot <> mldjB thm
+R5572:5578 ProyectoCoq.Dualidad_Bumcrot <> dualB_j thm
+R5581:5587 ProyectoCoq.Dualidad_Bumcrot <> evalB_m thm
+R5572:5578 ProyectoCoq.Dualidad_Bumcrot <> dualB_j thm
+R5572:5578 ProyectoCoq.Dualidad_Bumcrot <> dualB_j thm
+R5581:5587 ProyectoCoq.Dualidad_Bumcrot <> evalB_m thm
+R5581:5587 ProyectoCoq.Dualidad_Bumcrot <> evalB_m thm
+R5610:5616 ProyectoCoq.Dualidad_Bumcrot <> evalB_j thm
+R5619:5641 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R5610:5616 ProyectoCoq.Dualidad_Bumcrot <> evalB_j thm
+R5619:5641 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R5610:5616 ProyectoCoq.Dualidad_Bumcrot <> evalB_j thm
+R5619:5641 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R5675:5679 ProyectoCoq.Dualidad_Bumcrot <> jldmB thm
+R5675:5679 ProyectoCoq.Dualidad_Bumcrot <> jldmB thm
+R5675:5679 ProyectoCoq.Dualidad_Bumcrot <> jldmB thm
+prf 5694:5701 <> le_dualB
+R5708:5721 ProyectoCoq.Dualidad_Bumcrot <> bumcrotLattice rec
+binder 5704:5704 <> L:85
+R5729:5729 ProyectoCoq.Dualidad_Bumcrot <> L:85 var
+binder 5725:5725 <> z:86
+R5739:5739 ProyectoCoq.Dualidad_Bumcrot <> L:85 var
+binder 5733:5733 <> x:87
+binder 5735:5735 <> y:88
+R5746:5746 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R5784:5790 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R5800:5800 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R5747:5749 ProyectoCoq.Def_Lattice <> ord proj
+R5752:5774 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R5776:5776 ProyectoCoq.Dualidad_Bumcrot <> L:85 var
+R5778:5778 ProyectoCoq.Dualidad_Bumcrot <> z:86 var
+R5781:5781 ProyectoCoq.Dualidad_Bumcrot <> x:87 var
+R5783:5783 ProyectoCoq.Dualidad_Bumcrot <> y:88 var
+R5791:5793 ProyectoCoq.Def_Lattice <> ord proj
+R5795:5795 ProyectoCoq.Dualidad_Bumcrot <> L:85 var
+R5797:5797 ProyectoCoq.Dualidad_Bumcrot <> y:88 var
+R5799:5799 ProyectoCoq.Dualidad_Bumcrot <> x:87 var
+prf 5831:5842 <> evalB_dual_f
+R5849:5862 ProyectoCoq.Dualidad_Bumcrot <> bumcrotLattice rec
+binder 5845:5845 <> L:89
+R5870:5870 ProyectoCoq.Dualidad_Bumcrot <> L:89 var
+binder 5866:5866 <> z:90
+R5880:5882 mathcomp.ssreflect.seq <> seq abbrev
+R5884:5884 ProyectoCoq.Dualidad_Bumcrot <> L:89 var
+binder 5874:5876 <> env:91
+R5892:5896 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+binder 5888:5888 <> f:92
+R5948:5950 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5903:5909 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R5912:5934 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R5936:5936 ProyectoCoq.Dualidad_Bumcrot <> L:89 var
+R5938:5938 ProyectoCoq.Dualidad_Bumcrot <> z:90 var
+R5941:5941 ProyectoCoq.Dualidad_Bumcrot <> z:90 var
+R5943:5945 ProyectoCoq.Dualidad_Bumcrot <> env:91 var
+R5947:5947 ProyectoCoq.Dualidad_Bumcrot <> f:92 var
+R5951:5957 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R5959:5959 ProyectoCoq.Dualidad_Bumcrot <> L:89 var
+R5961:5961 ProyectoCoq.Dualidad_Bumcrot <> z:90 var
+R5963:5965 ProyectoCoq.Dualidad_Bumcrot <> env:91 var
+R5968:5972 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R5974:5974 ProyectoCoq.Dualidad_Bumcrot <> f:92 var
+R6036:6040 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R6043:6049 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R6051:6060 ProyectoCoq.Dualidad_Bumcrot <> eval_dualB thm
+R6062:6071 ProyectoCoq.Dualidad_Bumcrot <> eval_dualB thm
+R6036:6040 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R6036:6040 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R6043:6049 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R6043:6049 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R6051:6060 ProyectoCoq.Dualidad_Bumcrot <> eval_dualB thm
+R6051:6060 ProyectoCoq.Dualidad_Bumcrot <> eval_dualB thm
+R6062:6071 ProyectoCoq.Dualidad_Bumcrot <> eval_dualB thm
+R6062:6071 ProyectoCoq.Dualidad_Bumcrot <> eval_dualB thm
+R6107:6111 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R6114:6120 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R6122:6131 ProyectoCoq.Dualidad_Bumcrot <> eval_dualB thm
+R6133:6142 ProyectoCoq.Dualidad_Bumcrot <> eval_dualB thm
+R6107:6111 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R6107:6111 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R6114:6120 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R6114:6120 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R6122:6131 ProyectoCoq.Dualidad_Bumcrot <> eval_dualB thm
+R6122:6131 ProyectoCoq.Dualidad_Bumcrot <> eval_dualB thm
+R6133:6142 ProyectoCoq.Dualidad_Bumcrot <> eval_dualB thm
+R6133:6142 ProyectoCoq.Dualidad_Bumcrot <> eval_dualB thm
+R6200:6213 ProyectoCoq.Dualidad_Bumcrot <> bumcrotLattice rec
+binder 6196:6196 <> L:93
+R6221:6221 ProyectoCoq.Dualidad_Bumcrot <> L:93 var
+binder 6217:6217 <> z:94
+R6231:6233 mathcomp.ssreflect.seq <> seq abbrev
+R6235:6235 ProyectoCoq.Dualidad_Bumcrot <> L:93 var
+binder 6225:6227 <> env:95
+R6244:6248 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+binder 6239:6240 <> f0:96
+R6279:6281 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6252:6258 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R6260:6260 ProyectoCoq.Dualidad_Bumcrot <> L:93 var
+R6262:6262 ProyectoCoq.Dualidad_Bumcrot <> z:94 var
+R6264:6266 ProyectoCoq.Dualidad_Bumcrot <> env:95 var
+R6269:6274 ProyectoCoq.Dualidad_Bumcrot <> fb_neg constr
+R6276:6277 ProyectoCoq.Dualidad_Bumcrot <> f0:96 var
+R6282:6284 Coq.Init.Logic <> ::type_scope:'~'_x not
+R6303:6303 Coq.Init.Logic <> ::type_scope:'~'_x not
+R6285:6291 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R6293:6293 ProyectoCoq.Dualidad_Bumcrot <> L:93 var
+R6295:6295 ProyectoCoq.Dualidad_Bumcrot <> z:94 var
+R6297:6299 ProyectoCoq.Dualidad_Bumcrot <> env:95 var
+R6301:6302 ProyectoCoq.Dualidad_Bumcrot <> f0:96 var
+R6343:6347 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+binder 6338:6339 <> f0:97
+R6368:6370 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6351:6355 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R6358:6363 ProyectoCoq.Dualidad_Bumcrot <> fb_neg constr
+R6365:6366 ProyectoCoq.Dualidad_Bumcrot <> f0:97 var
+R6371:6376 ProyectoCoq.Dualidad_Bumcrot <> fb_neg constr
+R6379:6383 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R6385:6386 ProyectoCoq.Dualidad_Bumcrot <> f0:97 var
+R6488:6497 ProyectoCoq.Dualidad_Bumcrot <> dualB_conj thm
+R6499:6508 ProyectoCoq.Dualidad_Bumcrot <> evalB_conj thm
+R6510:6519 ProyectoCoq.Dualidad_Bumcrot <> evalB_conj thm
+R6488:6497 ProyectoCoq.Dualidad_Bumcrot <> dualB_conj thm
+R6488:6497 ProyectoCoq.Dualidad_Bumcrot <> dualB_conj thm
+R6499:6508 ProyectoCoq.Dualidad_Bumcrot <> evalB_conj thm
+R6499:6508 ProyectoCoq.Dualidad_Bumcrot <> evalB_conj thm
+R6510:6519 ProyectoCoq.Dualidad_Bumcrot <> evalB_conj thm
+R6510:6519 ProyectoCoq.Dualidad_Bumcrot <> evalB_conj thm
+R6588:6595 ProyectoCoq.Dualidad_Bumcrot <> dualB_or thm
+R6597:6604 ProyectoCoq.Dualidad_Bumcrot <> evalB_or thm
+R6606:6613 ProyectoCoq.Dualidad_Bumcrot <> evalB_or thm
+R6588:6595 ProyectoCoq.Dualidad_Bumcrot <> dualB_or thm
+R6588:6595 ProyectoCoq.Dualidad_Bumcrot <> dualB_or thm
+R6597:6604 ProyectoCoq.Dualidad_Bumcrot <> evalB_or thm
+R6597:6604 ProyectoCoq.Dualidad_Bumcrot <> evalB_or thm
+R6606:6613 ProyectoCoq.Dualidad_Bumcrot <> evalB_or thm
+R6606:6613 ProyectoCoq.Dualidad_Bumcrot <> evalB_or thm
+R6683:6691 ProyectoCoq.Dualidad_Bumcrot <> dualB_imp thm
+R6693:6701 ProyectoCoq.Dualidad_Bumcrot <> evalB_imp thm
+R6703:6711 ProyectoCoq.Dualidad_Bumcrot <> evalB_imp thm
+R6683:6691 ProyectoCoq.Dualidad_Bumcrot <> dualB_imp thm
+R6683:6691 ProyectoCoq.Dualidad_Bumcrot <> dualB_imp thm
+R6693:6701 ProyectoCoq.Dualidad_Bumcrot <> evalB_imp thm
+R6693:6701 ProyectoCoq.Dualidad_Bumcrot <> evalB_imp thm
+R6703:6711 ProyectoCoq.Dualidad_Bumcrot <> evalB_imp thm
+R6703:6711 ProyectoCoq.Dualidad_Bumcrot <> evalB_imp thm
+prf 6747:6754 <> dualB_td
+R6769:6773 ProyectoCoq.Dualidad_Bumcrot <> TermB ind
+binder 6765:6765 <> t:98
+R6777:6779 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6776:6776 ProyectoCoq.Dualidad_Bumcrot <> t:98 var
+R6780:6786 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R6789:6795 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R6797:6797 ProyectoCoq.Dualidad_Bumcrot <> t:98 var
+R6843:6849 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R6843:6849 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R6843:6849 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R6869:6875 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R6869:6875 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R6869:6875 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R6893:6899 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R6893:6899 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R6893:6899 ProyectoCoq.Dualidad_Bumcrot <> dualB_t def
+R6940:6946 ProyectoCoq.Dualidad_Bumcrot <> dualB_m thm
+R6948:6954 ProyectoCoq.Dualidad_Bumcrot <> dualB_j thm
+R6940:6946 ProyectoCoq.Dualidad_Bumcrot <> dualB_m thm
+R6940:6946 ProyectoCoq.Dualidad_Bumcrot <> dualB_m thm
+R6948:6954 ProyectoCoq.Dualidad_Bumcrot <> dualB_j thm
+R6948:6954 ProyectoCoq.Dualidad_Bumcrot <> dualB_j thm
+R7003:7009 ProyectoCoq.Dualidad_Bumcrot <> dualB_j thm
+R7011:7017 ProyectoCoq.Dualidad_Bumcrot <> dualB_m thm
+R7003:7009 ProyectoCoq.Dualidad_Bumcrot <> dualB_j thm
+R7003:7009 ProyectoCoq.Dualidad_Bumcrot <> dualB_j thm
+R7011:7017 ProyectoCoq.Dualidad_Bumcrot <> dualB_m thm
+R7011:7017 ProyectoCoq.Dualidad_Bumcrot <> dualB_m thm
+prf 7040:7045 <> dualBd
+R7060:7064 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+binder 7056:7056 <> F:99
+R7068:7070 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7067:7067 ProyectoCoq.Dualidad_Bumcrot <> F:99 var
+R7071:7075 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7078:7082 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7084:7084 ProyectoCoq.Dualidad_Bumcrot <> F:99 var
+R7140:7144 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7150:7157 ProyectoCoq.Dualidad_Bumcrot <> dualB_td thm
+R7167:7174 ProyectoCoq.Dualidad_Bumcrot <> dualB_td thm
+R7140:7144 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7140:7144 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7150:7157 ProyectoCoq.Dualidad_Bumcrot <> dualB_td thm
+R7150:7157 ProyectoCoq.Dualidad_Bumcrot <> dualB_td thm
+R7167:7174 ProyectoCoq.Dualidad_Bumcrot <> dualB_td thm
+R7167:7174 ProyectoCoq.Dualidad_Bumcrot <> dualB_td thm
+R7210:7214 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7220:7227 ProyectoCoq.Dualidad_Bumcrot <> dualB_td thm
+R7237:7244 ProyectoCoq.Dualidad_Bumcrot <> dualB_td thm
+R7210:7214 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7210:7214 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7220:7227 ProyectoCoq.Dualidad_Bumcrot <> dualB_td thm
+R7220:7227 ProyectoCoq.Dualidad_Bumcrot <> dualB_td thm
+R7237:7244 ProyectoCoq.Dualidad_Bumcrot <> dualB_td thm
+R7237:7244 ProyectoCoq.Dualidad_Bumcrot <> dualB_td thm
+R7291:7295 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7291:7295 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7291:7295 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7332:7341 ProyectoCoq.Dualidad_Bumcrot <> dualB_conj thm
+R7343:7352 ProyectoCoq.Dualidad_Bumcrot <> dualB_conj thm
+R7332:7341 ProyectoCoq.Dualidad_Bumcrot <> dualB_conj thm
+R7332:7341 ProyectoCoq.Dualidad_Bumcrot <> dualB_conj thm
+R7343:7352 ProyectoCoq.Dualidad_Bumcrot <> dualB_conj thm
+R7343:7352 ProyectoCoq.Dualidad_Bumcrot <> dualB_conj thm
+R7397:7404 ProyectoCoq.Dualidad_Bumcrot <> dualB_or thm
+R7406:7413 ProyectoCoq.Dualidad_Bumcrot <> dualB_or thm
+R7397:7404 ProyectoCoq.Dualidad_Bumcrot <> dualB_or thm
+R7397:7404 ProyectoCoq.Dualidad_Bumcrot <> dualB_or thm
+R7406:7413 ProyectoCoq.Dualidad_Bumcrot <> dualB_or thm
+R7406:7413 ProyectoCoq.Dualidad_Bumcrot <> dualB_or thm
+R7458:7466 ProyectoCoq.Dualidad_Bumcrot <> dualB_imp thm
+R7468:7476 ProyectoCoq.Dualidad_Bumcrot <> dualB_imp thm
+R7458:7466 ProyectoCoq.Dualidad_Bumcrot <> dualB_imp thm
+R7458:7466 ProyectoCoq.Dualidad_Bumcrot <> dualB_imp thm
+R7468:7476 ProyectoCoq.Dualidad_Bumcrot <> dualB_imp thm
+R7468:7476 ProyectoCoq.Dualidad_Bumcrot <> dualB_imp thm
+def 7506:7513 <> TeoremaB
+R7520:7524 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+binder 7516:7516 <> F:100
+R7549:7562 ProyectoCoq.Dualidad_Bumcrot <> bumcrotLattice rec
+binder 7545:7545 <> L:101
+R7570:7570 ProyectoCoq.Dualidad_Bumcrot <> L:101 var
+binder 7566:7566 <> z:102
+R7580:7582 mathcomp.ssreflect.seq <> seq abbrev
+R7584:7584 ProyectoCoq.Dualidad_Bumcrot <> L:101 var
+binder 7574:7576 <> env:103
+R7589:7595 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R7597:7597 ProyectoCoq.Dualidad_Bumcrot <> L:101 var
+R7599:7599 ProyectoCoq.Dualidad_Bumcrot <> z:102 var
+R7601:7603 ProyectoCoq.Dualidad_Bumcrot <> env:103 var
+R7605:7605 ProyectoCoq.Dualidad_Bumcrot <> F:100 var
+prf 7618:7626 <> DualidadB
+R7641:7645 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+binder 7637:7637 <> f:104
+R7648:7648 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7659:7664 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7683:7683 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7649:7656 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R7658:7658 ProyectoCoq.Dualidad_Bumcrot <> f:104 var
+R7665:7672 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R7675:7679 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7681:7681 ProyectoCoq.Dualidad_Bumcrot <> f:104 var
+R7762:7766 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7769:7776 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R7762:7766 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7762:7766 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7769:7776 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R7769:7776 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R7810:7832 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R7810:7832 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R7810:7832 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R7862:7873 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R7876:7880 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7862:7873 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R7862:7873 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R7876:7880 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7876:7880 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7921:7928 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R7931:7935 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7938:7944 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R7921:7928 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R7921:7928 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R7931:7935 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7931:7935 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R7938:7944 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R7938:7944 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R7984:8006 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R7984:8006 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R7984:8006 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R8036:8045 ProyectoCoq.Dualidad_Bumcrot <> eval_dualB thm
+R8047:8056 ProyectoCoq.Dualidad_Bumcrot <> eval_dualB thm
+R8036:8045 ProyectoCoq.Dualidad_Bumcrot <> eval_dualB thm
+R8036:8045 ProyectoCoq.Dualidad_Bumcrot <> eval_dualB thm
+R8047:8056 ProyectoCoq.Dualidad_Bumcrot <> eval_dualB thm
+R8047:8056 ProyectoCoq.Dualidad_Bumcrot <> eval_dualB thm
+R8093:8100 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R8093:8100 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R8093:8100 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R8139:8161 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R8139:8161 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R8139:8161 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R8202:8215 ProyectoCoq.Dualidad_Bumcrot <> bumcrotLattice rec
+binder 8198:8198 <> L:105
+R8223:8223 ProyectoCoq.Dualidad_Bumcrot <> L:105 var
+binder 8219:8219 <> z:106
+R8233:8235 mathcomp.ssreflect.seq <> seq abbrev
+R8237:8237 ProyectoCoq.Dualidad_Bumcrot <> L:105 var
+binder 8227:8229 <> env:107
+R8246:8250 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+binder 8241:8242 <> f0:108
+R8281:8283 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8254:8260 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R8262:8262 ProyectoCoq.Dualidad_Bumcrot <> L:105 var
+R8264:8264 ProyectoCoq.Dualidad_Bumcrot <> z:106 var
+R8266:8268 ProyectoCoq.Dualidad_Bumcrot <> env:107 var
+R8271:8276 ProyectoCoq.Dualidad_Bumcrot <> fb_neg constr
+R8278:8279 ProyectoCoq.Dualidad_Bumcrot <> f0:108 var
+R8284:8286 Coq.Init.Logic <> ::type_scope:'~'_x not
+R8305:8305 Coq.Init.Logic <> ::type_scope:'~'_x not
+R8287:8293 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R8295:8295 ProyectoCoq.Dualidad_Bumcrot <> L:105 var
+R8297:8297 ProyectoCoq.Dualidad_Bumcrot <> z:106 var
+R8299:8301 ProyectoCoq.Dualidad_Bumcrot <> env:107 var
+R8303:8304 ProyectoCoq.Dualidad_Bumcrot <> f0:108 var
+R8349:8353 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+binder 8344:8345 <> f0:109
+R8374:8376 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8357:8361 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R8364:8369 ProyectoCoq.Dualidad_Bumcrot <> fb_neg constr
+R8371:8372 ProyectoCoq.Dualidad_Bumcrot <> f0:109 var
+R8377:8382 ProyectoCoq.Dualidad_Bumcrot <> fb_neg constr
+R8385:8389 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R8391:8392 ProyectoCoq.Dualidad_Bumcrot <> f0:109 var
+R8450:8461 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R8450:8461 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R8450:8461 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R8499:8506 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R8499:8506 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R8499:8506 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R8550:8572 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R8550:8572 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R8550:8572 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R8599:8608 ProyectoCoq.Dualidad_Bumcrot <> dualB_conj thm
+R8610:8619 ProyectoCoq.Dualidad_Bumcrot <> evalB_conj thm
+R8621:8630 ProyectoCoq.Dualidad_Bumcrot <> evalB_conj thm
+R8599:8608 ProyectoCoq.Dualidad_Bumcrot <> dualB_conj thm
+R8599:8608 ProyectoCoq.Dualidad_Bumcrot <> dualB_conj thm
+R8610:8619 ProyectoCoq.Dualidad_Bumcrot <> evalB_conj thm
+R8610:8619 ProyectoCoq.Dualidad_Bumcrot <> evalB_conj thm
+R8621:8630 ProyectoCoq.Dualidad_Bumcrot <> evalB_conj thm
+R8621:8630 ProyectoCoq.Dualidad_Bumcrot <> evalB_conj thm
+R8648:8659 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R8661:8672 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R8648:8659 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R8648:8659 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R8661:8672 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R8661:8672 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R8708:8715 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R8708:8715 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R8708:8715 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R8759:8781 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R8759:8781 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R8759:8781 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R8808:8815 ProyectoCoq.Dualidad_Bumcrot <> dualB_or thm
+R8817:8824 ProyectoCoq.Dualidad_Bumcrot <> evalB_or thm
+R8826:8833 ProyectoCoq.Dualidad_Bumcrot <> evalB_or thm
+R8808:8815 ProyectoCoq.Dualidad_Bumcrot <> dualB_or thm
+R8808:8815 ProyectoCoq.Dualidad_Bumcrot <> dualB_or thm
+R8817:8824 ProyectoCoq.Dualidad_Bumcrot <> evalB_or thm
+R8817:8824 ProyectoCoq.Dualidad_Bumcrot <> evalB_or thm
+R8826:8833 ProyectoCoq.Dualidad_Bumcrot <> evalB_or thm
+R8826:8833 ProyectoCoq.Dualidad_Bumcrot <> evalB_or thm
+R8851:8862 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R8864:8875 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R8851:8862 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R8851:8862 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R8864:8875 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R8864:8875 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R8912:8919 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R8912:8919 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R8912:8919 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R8963:8985 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R8963:8985 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R8963:8985 ProyectoCoq.Dualidad_Bumcrot <> dual_bumcrot_lattice_of canonstruc
+R9012:9020 ProyectoCoq.Dualidad_Bumcrot <> dualB_imp thm
+R9022:9030 ProyectoCoq.Dualidad_Bumcrot <> evalB_imp thm
+R9032:9040 ProyectoCoq.Dualidad_Bumcrot <> evalB_imp thm
+R9012:9020 ProyectoCoq.Dualidad_Bumcrot <> dualB_imp thm
+R9012:9020 ProyectoCoq.Dualidad_Bumcrot <> dualB_imp thm
+R9022:9030 ProyectoCoq.Dualidad_Bumcrot <> evalB_imp thm
+R9022:9030 ProyectoCoq.Dualidad_Bumcrot <> evalB_imp thm
+R9032:9040 ProyectoCoq.Dualidad_Bumcrot <> evalB_imp thm
+R9032:9040 ProyectoCoq.Dualidad_Bumcrot <> evalB_imp thm
+R9058:9069 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R9071:9082 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R9058:9069 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R9058:9069 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R9071:9082 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+R9071:9082 ProyectoCoq.Dualidad_Bumcrot <> evalB_dual_f thm
+prf 9161:9165 <> DualB
+R9180:9184 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+binder 9176:9176 <> f:110
+R9187:9187 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R9198:9204 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R9223:9223 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R9188:9195 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R9197:9197 ProyectoCoq.Dualidad_Bumcrot <> f:110 var
+R9205:9212 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R9215:9219 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R9221:9221 ProyectoCoq.Dualidad_Bumcrot <> f:110 var
+R9262:9270 ProyectoCoq.Dualidad_Bumcrot <> DualidadB thm
+R9262:9270 ProyectoCoq.Dualidad_Bumcrot <> DualidadB thm
+R9262:9270 ProyectoCoq.Dualidad_Bumcrot <> DualidadB thm
+R9283:9291 ProyectoCoq.Dualidad_Bumcrot <> DualidadB thm
+R9294:9298 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R9283:9291 ProyectoCoq.Dualidad_Bumcrot <> DualidadB thm
+R9294:9298 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R9283:9291 ProyectoCoq.Dualidad_Bumcrot <> DualidadB thm
+R9294:9298 ProyectoCoq.Dualidad_Bumcrot <> dualB def
+R9324:9329 ProyectoCoq.Dualidad_Bumcrot <> dualBd thm
+R9324:9329 ProyectoCoq.Dualidad_Bumcrot <> dualBd thm
+R9324:9329 ProyectoCoq.Dualidad_Bumcrot <> dualBd thm
+R9411:9414 Coq.Init.Datatypes <> cons constr
+R9411:9414 Coq.Init.Datatypes <> cons constr
+R9510:9512 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9510:9512 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9550:9550 Coq.Init.Datatypes <> S constr
+R9485:9487 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9943:9945 ProyectoCoq.MathCompLattices_SeqEnv <> top abbrev
+R9943:9945 ProyectoCoq.MathCompLattices_SeqEnv <> top abbrev
+R9968:9970 ProyectoCoq.MathCompLattices_SeqEnv <> bot abbrev
+R9968:9970 ProyectoCoq.MathCompLattices_SeqEnv <> bot abbrev
+R10006:10009 ProyectoCoq.Dualidad_Bumcrot <> VarB constr
+R9983:9986 ProyectoCoq.Dualidad_Bumcrot <> BotB constr
+R9958:9961 ProyectoCoq.Dualidad_Bumcrot <> TopB constr
+R9931:9934 ProyectoCoq.Dualidad_Bumcrot <> VarB constr
+R9858:9862 ProyectoCoq.Dualidad_Bumcrot <> JoinB constr
+R9732:9736 ProyectoCoq.Dualidad_Bumcrot <> MeetB constr
+R10079:10083 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R10079:10083 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R10206:10208 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10206:10208 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10328:10329 Coq.Init.Logic <> ::type_scope:'~'_x not
+R10328:10329 Coq.Init.Logic <> ::type_scope:'~'_x not
+R10414:10417 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10414:10417 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10551:10554 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R10551:10554 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R10686:10689 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10686:10689 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10802:10807 ProyectoCoq.Dualidad_Bumcrot <> fb_imp constr
+R10667:10671 ProyectoCoq.Dualidad_Bumcrot <> fb_or constr
+R10530:10536 ProyectoCoq.Dualidad_Bumcrot <> fb_conj constr
+R10397:10402 ProyectoCoq.Dualidad_Bumcrot <> fb_neg constr
+R10311:10315 ProyectoCoq.Dualidad_Bumcrot <> fb_eq constr
+R10186:10191 ProyectoCoq.Dualidad_Bumcrot <> fb_leq constr
+prf 10887:10905 <> reflect_sound_fullB
+R10912:10925 ProyectoCoq.Dualidad_Bumcrot <> bumcrotLattice rec
+binder 10908:10908 <> L:111
+R10933:10933 ProyectoCoq.Dualidad_Bumcrot <> L:111 var
+binder 10929:10929 <> z:112
+R10943:10945 mathcomp.ssreflect.seq <> seq abbrev
+R10947:10947 ProyectoCoq.Dualidad_Bumcrot <> L:111 var
+binder 10937:10939 <> env:113
+R10955:10959 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+binder 10951:10951 <> f:114
+R10983:10987 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R10966:10972 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R10974:10974 ProyectoCoq.Dualidad_Bumcrot <> L:111 var
+R10976:10976 ProyectoCoq.Dualidad_Bumcrot <> z:112 var
+R10978:10980 ProyectoCoq.Dualidad_Bumcrot <> env:113 var
+R10982:10982 ProyectoCoq.Dualidad_Bumcrot <> f:114 var
+R10988:10994 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R10996:10996 ProyectoCoq.Dualidad_Bumcrot <> L:111 var
+R10998:10998 ProyectoCoq.Dualidad_Bumcrot <> z:112 var
+R11000:11002 ProyectoCoq.Dualidad_Bumcrot <> env:113 var
+R11004:11004 ProyectoCoq.Dualidad_Bumcrot <> f:114 var
+R11146:11150 Coq.Init.Logic <> proj1 thm
+R11153:11171 ProyectoCoq.Dualidad_Bumcrot <> reflect_sound_fullB thm
+prf 11200:11211 <> reflectDualB
+R11218:11231 ProyectoCoq.Dualidad_Bumcrot <> bumcrotLattice rec
+binder 11214:11214 <> L:115
+R11239:11239 ProyectoCoq.Dualidad_Bumcrot <> L:115 var
+binder 11235:11235 <> z:116
+R11249:11251 mathcomp.ssreflect.seq <> seq abbrev
+R11253:11253 ProyectoCoq.Dualidad_Bumcrot <> L:115 var
+binder 11243:11245 <> env:117
+R11261:11265 ProyectoCoq.Dualidad_Bumcrot <> FormB ind
+binder 11257:11257 <> F:118
+R11282:11285 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11270:11277 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R11280:11280 ProyectoCoq.Dualidad_Bumcrot <> F:118 var
+R11286:11292 ProyectoCoq.Dualidad_Bumcrot <> evalB_f def
+R11294:11294 ProyectoCoq.Dualidad_Bumcrot <> L:115 var
+R11296:11296 ProyectoCoq.Dualidad_Bumcrot <> z:116 var
+R11298:11300 ProyectoCoq.Dualidad_Bumcrot <> env:117 var
+R11302:11302 ProyectoCoq.Dualidad_Bumcrot <> F:118 var
+R11321:11328 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R11321:11328 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def
+R11321:11328 ProyectoCoq.Dualidad_Bumcrot <> TeoremaB def

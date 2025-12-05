@@ -39,9 +39,9 @@ Notation ΛK := (@LambdaK _).
 Notation ΛK' := (@LambdaK' _).
 Notation ΛS := (@LambdaS _).
 
-Inductive STerm := svar (n : nat) | sOp (u : STerm) (v : STerm).
-
-Section test.
+Inductive STerm : Set := 
+| svar : nat -> STerm
+| sOp  : STerm -> STerm -> STerm.
 
 Context (sL : semiLattice).
 
@@ -51,11 +51,55 @@ Fixpoint eval (t : STerm) (env : nat -> sL) : sL :=
   | sOp t1 t2 => eval t1 env ∧ eval t2 env
   end.
 
-Definition Leq (s t : STerm) : Prop := forall env, eval s env ≤ eval s env.
+Definition Leq (s t : STerm) : Prop := forall env, eval s env ≤ eval t env.
 
-Definition Equiv (s t : STerm) : Prop := forall env, eval s env = eval s env.
+Definition Equiv (s t : STerm) : Prop := forall env, eval s env = eval t env.
 
 
+Fixpoint atm_en (s : STerm) (j : nat) :=
+  match s with
+  | svar i => i = j
+  | sOp s1 s2 => (atm_en s1 j) \/ (atm_en s2 j)
+  end.
+
+Fixpoint leq (s t : STerm) :=
+  match t with
+  | svar j => atm_en s j
+  | sOp t1 t2 => (leq s t1) /\ (leq s t2)
+  end.
+
+Lemma atm_en_eval_le (s : STerm) j env :
+  atm_en s j -> eval s env ≤ env j.
+Proof.
+elim s =>  [i|s1 H1 s2 H2] /=.
+  move=> H.
+  rewrite H.
+  by move: (ρ (env j)).
+  move=> [H|H].
+    move: (ΛK (eval s1 env) (eval s2 env))=> Hle.
+    apply (τ (eval s1 env ∧ eval s2 env) (eval s1 env) _ ).
+      by [].
+    by move: H => /H1.
+move: (ΛK' (eval s1 env) (eval s2 env))=> Hle.
+apply (τ (eval s1 env ∧ eval s2 env) (eval s2 env) _ ).
+  by [].
+by move: H => /H2.
+Qed.
+
+
+Lemma leq_impl_Leq s t :
+  leq s t -> Leq s t.
+Proof.
+elim: t => [j|t1 H1 t2 H2] /=.
+  move=> H env.
+  rewrite {2}/eval.
+  by move: ((atm_en_eval_le s j env) H).
+move=> [Hs1 Hs2] env.
+apply: ΛS.
+split.
+  by apply: H1.
+by apply: H2.
+Qed.
 
 Theorem ΛW {S : semiLattice} : forall a: S, a ≤ a ∧ a.
 Proof.

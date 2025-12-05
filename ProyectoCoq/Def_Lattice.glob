@@ -1,0 +1,165 @@
+DIGEST dc5b0e14e2d8ffd33b8a877efcd810e1
+FProyectoCoq.Def_Lattice
+R29:41 mathcomp.ssreflect.all_ssreflect <> <> lib
+def 56:64 <> reflexive
+binder 67:67 <> T:1
+R85:88 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R84:84 ProyectoCoq.Def_Lattice <> T:1 var
+R90:93 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R89:89 ProyectoCoq.Def_Lattice <> T:1 var
+binder 78:80 <> rel:2
+R120:120 ProyectoCoq.Def_Lattice <> T:1 var
+binder 117:117 <> x:3
+R123:125 ProyectoCoq.Def_Lattice <> rel:2 var
+R129:129 ProyectoCoq.Def_Lattice <> x:3 var
+R127:127 ProyectoCoq.Def_Lattice <> x:3 var
+def 143:154 <> antisymetric
+binder 157:157 <> T:4
+R175:178 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R174:174 ProyectoCoq.Def_Lattice <> T:4 var
+R180:183 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R179:179 ProyectoCoq.Def_Lattice <> T:4 var
+binder 168:170 <> rel:5
+R213:213 ProyectoCoq.Def_Lattice <> T:4 var
+binder 207:207 <> x:6
+binder 209:209 <> y:7
+R216:216 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R224:228 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R217:219 ProyectoCoq.Def_Lattice <> rel:5 var
+R223:223 ProyectoCoq.Def_Lattice <> y:7 var
+R221:221 ProyectoCoq.Def_Lattice <> x:6 var
+R229:229 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R237:242 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R248:248 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R230:232 ProyectoCoq.Def_Lattice <> rel:5 var
+R236:236 ProyectoCoq.Def_Lattice <> x:6 var
+R234:234 ProyectoCoq.Def_Lattice <> y:7 var
+R244:246 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R243:243 ProyectoCoq.Def_Lattice <> x:6 var
+R247:247 ProyectoCoq.Def_Lattice <> y:7 var
+def 262:271 <> transitive
+binder 274:274 <> T:8
+R292:295 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R291:291 ProyectoCoq.Def_Lattice <> T:8 var
+R297:300 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R296:296 ProyectoCoq.Def_Lattice <> T:8 var
+binder 285:287 <> rel:9
+R330:330 ProyectoCoq.Def_Lattice <> T:8 var
+binder 323:323 <> x:10
+binder 325:325 <> y:11
+binder 327:327 <> z:12
+R340:343 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R333:335 ProyectoCoq.Def_Lattice <> rel:9 var
+R339:339 ProyectoCoq.Def_Lattice <> y:11 var
+R337:337 ProyectoCoq.Def_Lattice <> x:10 var
+R351:354 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R344:346 ProyectoCoq.Def_Lattice <> rel:9 var
+R350:350 ProyectoCoq.Def_Lattice <> z:12 var
+R348:348 ProyectoCoq.Def_Lattice <> y:11 var
+R355:357 ProyectoCoq.Def_Lattice <> rel:9 var
+R361:361 ProyectoCoq.Def_Lattice <> z:12 var
+R359:359 ProyectoCoq.Def_Lattice <> x:10 var
+def 375:379 <> order
+binder 382:382 <> T:13
+R400:403 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R399:399 ProyectoCoq.Def_Lattice <> T:13 var
+R405:408 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R404:404 ProyectoCoq.Def_Lattice <> T:13 var
+binder 393:395 <> rel:14
+R431:434 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R418:426 ProyectoCoq.Def_Lattice <> reflexive def
+R428:430 ProyectoCoq.Def_Lattice <> rel:14 var
+R451:454 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R435:446 ProyectoCoq.Def_Lattice <> antisymetric def
+R448:450 ProyectoCoq.Def_Lattice <> rel:14 var
+R455:464 ProyectoCoq.Def_Lattice <> transitive def
+R466:468 ProyectoCoq.Def_Lattice <> rel:14 var
+rec 482:493 <> ordenParcial
+proj 519:519 <> O
+proj 534:536 <> ord
+proj 560:566 <> reflexT
+proj 589:596 <> antisymT
+proj 622:627 <> transT
+R541:544 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R540:540 ProyectoCoq.Def_Lattice <> O:16 meth
+R546:549 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R545:545 ProyectoCoq.Def_Lattice <> O:16 meth
+R570:578 ProyectoCoq.Def_Lattice <> reflexive def
+R580:582 ProyectoCoq.Def_Lattice <> ord:17 meth
+R600:611 ProyectoCoq.Def_Lattice <> antisymetric def
+R613:615 ProyectoCoq.Def_Lattice <> ord:17 meth
+R631:640 ProyectoCoq.Def_Lattice <> transitive def
+R642:644 ProyectoCoq.Def_Lattice <> ord:17 meth
+R675:677 ProyectoCoq.Def_Lattice <> ord proj
+not 661:661 <> :::x_'≤'_x
+rec 712:718 <> lattice
+proj 741:741 <> T
+proj 764:768 <> joinT
+proj 789:791 <> jHT
+proj 877:881 <> meetT
+proj 902:904 <> mHT
+R746:757 ProyectoCoq.Def_Lattice <> ordenParcial rec
+R773:776 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R772:772 ProyectoCoq.Def_Lattice <> T:22 meth
+R778:781 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R777:777 ProyectoCoq.Def_Lattice <> T:22 meth
+R782:782 ProyectoCoq.Def_Lattice <> T:22 meth
+R807:807 ProyectoCoq.Def_Lattice <> T:22 meth
+binder 803:803 <> z:24
+R824:824 ProyectoCoq.Def_Lattice <> T:22 meth
+binder 818:818 <> x:25
+binder 820:820 <> y:26
+R828:828 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R847:851 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R836:839 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R830:834 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R829:829 ProyectoCoq.Def_Lattice <> x:25 var
+R835:835 ProyectoCoq.Def_Lattice <> z:24 var
+R841:845 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R840:840 ProyectoCoq.Def_Lattice <> y:26 var
+R846:846 ProyectoCoq.Def_Lattice <> z:24 var
+R852:853 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R863:868 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R854:858 ProyectoCoq.Def_Lattice <> joinT:23 meth
+R862:862 ProyectoCoq.Def_Lattice <> y:26 var
+R860:860 ProyectoCoq.Def_Lattice <> x:25 var
+R869:869 ProyectoCoq.Def_Lattice <> z:24 var
+R886:889 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R885:885 ProyectoCoq.Def_Lattice <> T:22 meth
+R891:894 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R890:890 ProyectoCoq.Def_Lattice <> T:22 meth
+R895:895 ProyectoCoq.Def_Lattice <> T:22 meth
+R920:920 ProyectoCoq.Def_Lattice <> T:22 meth
+binder 916:916 <> z:29
+R937:937 ProyectoCoq.Def_Lattice <> T:22 meth
+binder 931:931 <> x:30
+binder 933:933 <> y:31
+R941:941 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R960:965 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R949:952 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R943:947 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R942:942 ProyectoCoq.Def_Lattice <> z:29 var
+R948:948 ProyectoCoq.Def_Lattice <> x:30 var
+R954:958 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R953:953 ProyectoCoq.Def_Lattice <> z:29 var
+R959:959 ProyectoCoq.Def_Lattice <> y:31 var
+R967:973 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R983:983 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R966:966 ProyectoCoq.Def_Lattice <> z:29 var
+R974:978 ProyectoCoq.Def_Lattice <> meetT:28 meth
+R982:982 ProyectoCoq.Def_Lattice <> y:31 var
+R980:980 ProyectoCoq.Def_Lattice <> x:30 var
+R1017:1021 ProyectoCoq.Def_Lattice <> meetT proj
+not 1002:1002 <> :::x_'⊓'_x
+R1082:1086 ProyectoCoq.Def_Lattice <> joinT proj
+not 1067:1067 <> :::x_'⊔'_x
+abbrev 1132:1137 <> reflex
+R1143:1149 ProyectoCoq.Def_Lattice <> reflexT proj
+abbrev 1164:1170 <> antisym
+R1176:1183 ProyectoCoq.Def_Lattice <> antisymT proj
+abbrev 1198:1202 <> trans
+R1208:1213 ProyectoCoq.Def_Lattice <> transT proj
+abbrev 1228:1229 <> JH
+R1236:1238 ProyectoCoq.Def_Lattice <> jHT proj
+abbrev 1253:1254 <> MH
+R1261:1263 ProyectoCoq.Def_Lattice <> mHT proj

@@ -1,0 +1,9 @@
+-Q . ProyectoCoq
+Bumcrot.v
+Curry.v
+CurryThm2.v
+Def_Lattice.v
+Dualidad.v
+Dualidad_Bumcrot.v
+Ltac_Dual.v
+MathCompLattices_SeqEnv.v

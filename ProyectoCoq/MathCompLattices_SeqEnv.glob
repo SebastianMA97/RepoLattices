@@ -1,0 +1,2910 @@
+DIGEST 351ee0ea674fb4f9339456f95a420a8f
+FProyectoCoq.MathCompLattices_SeqEnv
+R29:41 mathcomp.ssreflect.all_ssreflect <> <> lib
+R76:86 ProyectoCoq.Def_Lattice <> <> lib
+R121:128 ProyectoCoq.Dualidad <> <> lib
+R163:171 ProyectoCoq.Ltac_Dual <> <> lib
+R198:202 Coq.Init.Logic <> <> lib
+prf 213:216 <> dobl
+binder 219:219 <> A:1
+R233:237 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R232:232 ProyectoCoq.MathCompLattices_SeqEnv <> A:1 var
+R239:242 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R238:238 ProyectoCoq.MathCompLattices_SeqEnv <> A:1 var
+R243:243 ProyectoCoq.MathCompLattices_SeqEnv <> A:1 var
+prf 302:311 <> ab_leq_jab
+R318:324 ProyectoCoq.Def_Lattice <> lattice rec
+binder 314:314 <> T:2
+R332:332 ProyectoCoq.MathCompLattices_SeqEnv <> T:2 var
+binder 328:328 <> z:3
+R350:350 ProyectoCoq.MathCompLattices_SeqEnv <> T:2 var
+binder 344:344 <> a:4
+binder 346:346 <> b:5
+R371:375 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R357:362 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R370:370 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R356:356 ProyectoCoq.MathCompLattices_SeqEnv <> a:4 var
+R364:368 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R363:363 ProyectoCoq.MathCompLattices_SeqEnv <> a:4 var
+R369:369 ProyectoCoq.MathCompLattices_SeqEnv <> b:5 var
+R377:382 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R390:390 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R376:376 ProyectoCoq.MathCompLattices_SeqEnv <> b:5 var
+R384:388 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R383:383 ProyectoCoq.MathCompLattices_SeqEnv <> a:4 var
+R389:389 ProyectoCoq.MathCompLattices_SeqEnv <> b:5 var
+R431:436 ProyectoCoq.Def_Lattice <> reflex abbrev
+R440:444 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R460:461 ProyectoCoq.Def_Lattice <> JH abbrev
+R465:469 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R431:436 ProyectoCoq.Def_Lattice <> reflex abbrev
+R440:444 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R431:436 ProyectoCoq.Def_Lattice <> reflex abbrev
+R440:444 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R460:461 ProyectoCoq.Def_Lattice <> JH abbrev
+R465:469 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R460:461 ProyectoCoq.Def_Lattice <> JH abbrev
+R465:469 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R482:486 Coq.Init.Logic <> proj1 thm
+R499:504 ProyectoCoq.Def_Lattice <> reflex abbrev
+R508:512 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R528:529 ProyectoCoq.Def_Lattice <> JH abbrev
+R533:537 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R499:504 ProyectoCoq.Def_Lattice <> reflex abbrev
+R508:512 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R499:504 ProyectoCoq.Def_Lattice <> reflex abbrev
+R508:512 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R528:529 ProyectoCoq.Def_Lattice <> JH abbrev
+R533:537 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R528:529 ProyectoCoq.Def_Lattice <> JH abbrev
+R533:537 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R550:554 Coq.Init.Logic <> proj2 thm
+prf 569:578 <> mab_leq_ab
+R585:591 ProyectoCoq.Def_Lattice <> lattice rec
+binder 581:581 <> T:6
+R599:599 ProyectoCoq.MathCompLattices_SeqEnv <> T:6 var
+binder 595:595 <> z:7
+R617:617 ProyectoCoq.MathCompLattices_SeqEnv <> T:6 var
+binder 611:611 <> a:8
+binder 613:613 <> b:9
+R637:640 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R622:622 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R630:635 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R624:628 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R623:623 ProyectoCoq.MathCompLattices_SeqEnv <> a:8 var
+R629:629 ProyectoCoq.MathCompLattices_SeqEnv <> b:9 var
+R636:636 ProyectoCoq.MathCompLattices_SeqEnv <> a:8 var
+R641:641 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R649:654 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R643:647 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R642:642 ProyectoCoq.MathCompLattices_SeqEnv <> a:8 var
+R648:648 ProyectoCoq.MathCompLattices_SeqEnv <> b:9 var
+R655:655 ProyectoCoq.MathCompLattices_SeqEnv <> b:9 var
+R718:721 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R723:724 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R726:726 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R718:721 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R723:724 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R726:726 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R728:732 ProyectoCoq.Def_Lattice <> meetT proj
+R734:738 ProyectoCoq.Def_Lattice <> joinT proj
+R747:757 ProyectoCoq.Ltac_Dual <> reflectDual thm
+R747:757 ProyectoCoq.Ltac_Dual <> reflectDual thm
+R768:771 ProyectoCoq.Dualidad <> Dual thm
+R773:776 ProyectoCoq.Dualidad <> dual def
+R778:783 ProyectoCoq.Dualidad <> dual_t def
+R785:791 ProyectoCoq.Dualidad <> Teorema def
+R768:771 ProyectoCoq.Dualidad <> Dual thm
+R768:771 ProyectoCoq.Dualidad <> Dual thm
+R773:776 ProyectoCoq.Dualidad <> dual def
+R773:776 ProyectoCoq.Dualidad <> dual def
+R778:783 ProyectoCoq.Dualidad <> dual_t def
+R778:783 ProyectoCoq.Dualidad <> dual_t def
+R785:791 ProyectoCoq.Dualidad <> Teorema def
+R785:791 ProyectoCoq.Dualidad <> Teorema def
+R817:822 ProyectoCoq.Dualidad <> eval_f def
+R817:822 ProyectoCoq.Dualidad <> eval_f def
+R817:822 ProyectoCoq.Dualidad <> eval_f def
+R837:846 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R856:859 ProyectoCoq.Dualidad <> eval def
+R873:875 ProyectoCoq.Dualidad <> Var constr
+R882:885 ProyectoCoq.Dualidad <> eval def
+R899:901 ProyectoCoq.Dualidad <> Var constr
+R837:846 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R856:859 ProyectoCoq.Dualidad <> eval def
+R873:875 ProyectoCoq.Dualidad <> Var constr
+R882:885 ProyectoCoq.Dualidad <> eval def
+R899:901 ProyectoCoq.Dualidad <> Var constr
+R837:846 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R856:859 ProyectoCoq.Dualidad <> eval def
+R873:875 ProyectoCoq.Dualidad <> Var constr
+R882:885 ProyectoCoq.Dualidad <> eval def
+R899:901 ProyectoCoq.Dualidad <> Var constr
+prf 922:929 <> ConnectJ
+R936:942 ProyectoCoq.Def_Lattice <> lattice rec
+binder 932:932 <> T:10
+R950:950 ProyectoCoq.MathCompLattices_SeqEnv <> T:10 var
+binder 946:946 <> z:11
+R968:968 ProyectoCoq.MathCompLattices_SeqEnv <> T:10 var
+binder 962:962 <> a:12
+binder 964:964 <> b:13
+R980:985 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R997:997 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R974:978 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R973:973 ProyectoCoq.MathCompLattices_SeqEnv <> a:12 var
+R979:979 ProyectoCoq.MathCompLattices_SeqEnv <> b:13 var
+R993:995 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R987:991 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R986:986 ProyectoCoq.MathCompLattices_SeqEnv <> a:12 var
+R992:992 ProyectoCoq.MathCompLattices_SeqEnv <> b:13 var
+R996:996 ProyectoCoq.MathCompLattices_SeqEnv <> b:13 var
+R1037:1043 ProyectoCoq.Def_Lattice <> antisym abbrev
+R1037:1043 ProyectoCoq.Def_Lattice <> antisym abbrev
+R1060:1061 ProyectoCoq.Def_Lattice <> JH abbrev
+R1060:1061 ProyectoCoq.Def_Lattice <> JH abbrev
+R1060:1061 ProyectoCoq.Def_Lattice <> JH abbrev
+R1103:1108 ProyectoCoq.Def_Lattice <> reflex abbrev
+R1103:1108 ProyectoCoq.Def_Lattice <> reflex abbrev
+R1120:1125 ProyectoCoq.Def_Lattice <> reflex abbrev
+R1129:1133 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R1120:1125 ProyectoCoq.Def_Lattice <> reflex abbrev
+R1129:1133 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R1120:1125 ProyectoCoq.Def_Lattice <> reflex abbrev
+R1129:1133 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R1154:1155 ProyectoCoq.Def_Lattice <> JH abbrev
+R1154:1155 ProyectoCoq.Def_Lattice <> JH abbrev
+R1154:1155 ProyectoCoq.Def_Lattice <> JH abbrev
+R1162:1166 Coq.Init.Logic <> proj2 thm
+R1186:1191 ProyectoCoq.Def_Lattice <> reflex abbrev
+R1195:1199 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R1186:1191 ProyectoCoq.Def_Lattice <> reflex abbrev
+R1195:1199 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R1186:1191 ProyectoCoq.Def_Lattice <> reflex abbrev
+R1195:1199 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R1226:1235 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R1226:1235 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R1226:1235 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R1248:1252 Coq.Init.Logic <> proj1 thm
+R1265:1269 ProyectoCoq.Def_Lattice <> trans abbrev
+R1265:1269 ProyectoCoq.Def_Lattice <> trans abbrev
+prf 1284:1291 <> ConnectM
+R1298:1304 ProyectoCoq.Def_Lattice <> lattice rec
+binder 1294:1294 <> T:14
+R1312:1312 ProyectoCoq.MathCompLattices_SeqEnv <> T:14 var
+binder 1308:1308 <> z:15
+R1330:1330 ProyectoCoq.MathCompLattices_SeqEnv <> T:14 var
+binder 1324:1324 <> a:16
+binder 1326:1326 <> b:17
+R1341:1346 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R1358:1358 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R1335:1339 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R1334:1334 ProyectoCoq.MathCompLattices_SeqEnv <> a:16 var
+R1340:1340 ProyectoCoq.MathCompLattices_SeqEnv <> b:17 var
+R1354:1356 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1348:1352 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R1347:1347 ProyectoCoq.MathCompLattices_SeqEnv <> b:17 var
+R1353:1353 ProyectoCoq.MathCompLattices_SeqEnv <> a:16 var
+R1357:1357 ProyectoCoq.MathCompLattices_SeqEnv <> a:16 var
+R1389:1391 Coq.Init.Logic <> iff def
+R1389:1391 Coq.Init.Logic <> iff def
+R1389:1391 Coq.Init.Logic <> iff def
+R1435:1438 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R1440:1441 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R1443:1443 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R1435:1438 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R1440:1441 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R1443:1443 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R1445:1449 ProyectoCoq.Def_Lattice <> meetT proj
+R1451:1455 ProyectoCoq.Def_Lattice <> joinT proj
+R1464:1474 ProyectoCoq.Ltac_Dual <> reflectDual thm
+R1464:1474 ProyectoCoq.Ltac_Dual <> reflectDual thm
+R1485:1488 ProyectoCoq.Dualidad <> Dual thm
+R1491:1494 ProyectoCoq.Dualidad <> dual def
+R1497:1502 ProyectoCoq.Dualidad <> dual_t def
+R1485:1488 ProyectoCoq.Dualidad <> Dual thm
+R1485:1488 ProyectoCoq.Dualidad <> Dual thm
+R1491:1494 ProyectoCoq.Dualidad <> dual def
+R1491:1494 ProyectoCoq.Dualidad <> dual def
+R1497:1502 ProyectoCoq.Dualidad <> dual_t def
+R1497:1502 ProyectoCoq.Dualidad <> dual_t def
+R1528:1533 ProyectoCoq.Dualidad <> eval_f def
+R1528:1533 ProyectoCoq.Dualidad <> eval_f def
+R1528:1533 ProyectoCoq.Dualidad <> eval_f def
+R1545:1552 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R1563:1566 ProyectoCoq.Dualidad <> eval def
+R1580:1582 ProyectoCoq.Dualidad <> Var constr
+R1589:1592 ProyectoCoq.Dualidad <> eval def
+R1606:1608 ProyectoCoq.Dualidad <> Var constr
+R1545:1552 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R1563:1566 ProyectoCoq.Dualidad <> eval def
+R1580:1582 ProyectoCoq.Dualidad <> Var constr
+R1589:1592 ProyectoCoq.Dualidad <> eval def
+R1606:1608 ProyectoCoq.Dualidad <> Var constr
+R1545:1552 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R1563:1566 ProyectoCoq.Dualidad <> eval def
+R1580:1582 ProyectoCoq.Dualidad <> Var constr
+R1589:1592 ProyectoCoq.Dualidad <> eval def
+R1606:1608 ProyectoCoq.Dualidad <> Var constr
+R1629:1631 Coq.Init.Logic <> iff def
+R1629:1631 Coq.Init.Logic <> iff def
+R1629:1631 Coq.Init.Logic <> iff def
+prf 1672:1673 <> L3
+R1680:1686 ProyectoCoq.Def_Lattice <> lattice rec
+binder 1676:1676 <> T:18
+R1694:1694 ProyectoCoq.MathCompLattices_SeqEnv <> T:18 var
+binder 1690:1690 <> z:19
+R1710:1710 ProyectoCoq.MathCompLattices_SeqEnv <> T:18 var
+binder 1706:1706 <> a:20
+R1721:1723 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1715:1719 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R1714:1714 ProyectoCoq.MathCompLattices_SeqEnv <> a:20 var
+R1720:1720 ProyectoCoq.MathCompLattices_SeqEnv <> a:20 var
+R1724:1724 ProyectoCoq.MathCompLattices_SeqEnv <> a:20 var
+R1751:1756 ProyectoCoq.Def_Lattice <> reflex abbrev
+R1751:1756 ProyectoCoq.Def_Lattice <> reflex abbrev
+R1751:1756 ProyectoCoq.Def_Lattice <> reflex abbrev
+R1776:1783 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+prf 1801:1803 <> L3d
+R1810:1816 ProyectoCoq.Def_Lattice <> lattice rec
+binder 1806:1806 <> T:21
+R1824:1824 ProyectoCoq.MathCompLattices_SeqEnv <> T:21 var
+binder 1820:1820 <> z:22
+R1840:1840 ProyectoCoq.MathCompLattices_SeqEnv <> T:21 var
+binder 1836:1836 <> a:23
+R1851:1853 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1845:1849 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R1844:1844 ProyectoCoq.MathCompLattices_SeqEnv <> a:23 var
+R1850:1850 ProyectoCoq.MathCompLattices_SeqEnv <> a:23 var
+R1854:1854 ProyectoCoq.MathCompLattices_SeqEnv <> a:23 var
+R1915:1918 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_']' not
+R1920:1920 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_']' not
+R1915:1918 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_']' not
+R1920:1920 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_']' not
+R1922:1926 ProyectoCoq.Def_Lattice <> meetT proj
+R1928:1932 ProyectoCoq.Def_Lattice <> joinT proj
+R1941:1951 ProyectoCoq.Ltac_Dual <> reflectDual thm
+R1941:1951 ProyectoCoq.Ltac_Dual <> reflectDual thm
+R1962:1965 ProyectoCoq.Dualidad <> Dual thm
+R1968:1971 ProyectoCoq.Dualidad <> dual def
+R1974:1979 ProyectoCoq.Dualidad <> dual_t def
+R1962:1965 ProyectoCoq.Dualidad <> Dual thm
+R1962:1965 ProyectoCoq.Dualidad <> Dual thm
+R1968:1971 ProyectoCoq.Dualidad <> dual def
+R1968:1971 ProyectoCoq.Dualidad <> dual def
+R1974:1979 ProyectoCoq.Dualidad <> dual_t def
+R1974:1979 ProyectoCoq.Dualidad <> dual_t def
+R2005:2010 ProyectoCoq.Dualidad <> eval_f def
+R2005:2010 ProyectoCoq.Dualidad <> eval_f def
+R2005:2010 ProyectoCoq.Dualidad <> eval_f def
+R2025:2026 ProyectoCoq.MathCompLattices_SeqEnv <> L3 thm
+R2036:2039 ProyectoCoq.Dualidad <> eval def
+R2053:2055 ProyectoCoq.Dualidad <> Var constr
+R2025:2026 ProyectoCoq.MathCompLattices_SeqEnv <> L3 thm
+R2036:2039 ProyectoCoq.Dualidad <> eval def
+R2053:2055 ProyectoCoq.Dualidad <> Var constr
+R2025:2026 ProyectoCoq.MathCompLattices_SeqEnv <> L3 thm
+R2036:2039 ProyectoCoq.Dualidad <> eval def
+R2053:2055 ProyectoCoq.Dualidad <> Var constr
+prf 2076:2077 <> L2
+R2084:2090 ProyectoCoq.Def_Lattice <> lattice rec
+binder 2080:2080 <> T:24
+R2098:2098 ProyectoCoq.MathCompLattices_SeqEnv <> T:24 var
+binder 2094:2094 <> z:25
+R2116:2116 ProyectoCoq.MathCompLattices_SeqEnv <> T:24 var
+binder 2110:2110 <> a:26
+binder 2112:2112 <> b:27
+R2127:2129 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2121:2125 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R2120:2120 ProyectoCoq.MathCompLattices_SeqEnv <> a:26 var
+R2126:2126 ProyectoCoq.MathCompLattices_SeqEnv <> b:27 var
+R2131:2135 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R2130:2130 ProyectoCoq.MathCompLattices_SeqEnv <> b:27 var
+R2136:2136 ProyectoCoq.MathCompLattices_SeqEnv <> a:26 var
+R2165:2171 ProyectoCoq.Def_Lattice <> antisym abbrev
+R2165:2171 ProyectoCoq.Def_Lattice <> antisym abbrev
+R2183:2192 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R2183:2192 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R2183:2192 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R2205:2212 Coq.Init.Logic <> and_comm thm
+R2228:2229 ProyectoCoq.Def_Lattice <> JH abbrev
+R2228:2229 ProyectoCoq.Def_Lattice <> JH abbrev
+R2228:2229 ProyectoCoq.Def_Lattice <> JH abbrev
+R2240:2249 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R2240:2249 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R2240:2249 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R2262:2269 Coq.Init.Logic <> and_comm thm
+R2283:2284 ProyectoCoq.Def_Lattice <> JH abbrev
+R2283:2284 ProyectoCoq.Def_Lattice <> JH abbrev
+R2283:2284 ProyectoCoq.Def_Lattice <> JH abbrev
+prf 2299:2301 <> L2d
+R2308:2314 ProyectoCoq.Def_Lattice <> lattice rec
+binder 2304:2304 <> T:28
+R2322:2322 ProyectoCoq.MathCompLattices_SeqEnv <> T:28 var
+binder 2318:2318 <> z:29
+R2340:2340 ProyectoCoq.MathCompLattices_SeqEnv <> T:28 var
+binder 2334:2334 <> a:30
+binder 2336:2336 <> b:31
+R2351:2353 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2345:2349 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R2344:2344 ProyectoCoq.MathCompLattices_SeqEnv <> a:30 var
+R2350:2350 ProyectoCoq.MathCompLattices_SeqEnv <> b:31 var
+R2355:2359 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R2354:2354 ProyectoCoq.MathCompLattices_SeqEnv <> b:31 var
+R2360:2360 ProyectoCoq.MathCompLattices_SeqEnv <> a:30 var
+R2423:2426 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R2428:2429 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R2431:2431 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R2423:2426 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R2428:2429 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R2431:2431 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R2433:2437 ProyectoCoq.Def_Lattice <> meetT proj
+R2439:2443 ProyectoCoq.Def_Lattice <> joinT proj
+R2452:2462 ProyectoCoq.Ltac_Dual <> reflectDual thm
+R2452:2462 ProyectoCoq.Ltac_Dual <> reflectDual thm
+R2473:2476 ProyectoCoq.Dualidad <> Dual thm
+R2479:2482 ProyectoCoq.Dualidad <> dual def
+R2485:2490 ProyectoCoq.Dualidad <> dual_t def
+R2473:2476 ProyectoCoq.Dualidad <> Dual thm
+R2473:2476 ProyectoCoq.Dualidad <> Dual thm
+R2479:2482 ProyectoCoq.Dualidad <> dual def
+R2479:2482 ProyectoCoq.Dualidad <> dual def
+R2485:2490 ProyectoCoq.Dualidad <> dual_t def
+R2485:2490 ProyectoCoq.Dualidad <> dual_t def
+R2516:2521 ProyectoCoq.Dualidad <> eval_f def
+R2516:2521 ProyectoCoq.Dualidad <> eval_f def
+R2516:2521 ProyectoCoq.Dualidad <> eval_f def
+R2536:2537 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R2547:2550 ProyectoCoq.Dualidad <> eval def
+R2564:2566 ProyectoCoq.Dualidad <> Var constr
+R2573:2576 ProyectoCoq.Dualidad <> eval def
+R2590:2592 ProyectoCoq.Dualidad <> Var constr
+R2536:2537 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R2547:2550 ProyectoCoq.Dualidad <> eval def
+R2564:2566 ProyectoCoq.Dualidad <> Var constr
+R2573:2576 ProyectoCoq.Dualidad <> eval def
+R2590:2592 ProyectoCoq.Dualidad <> Var constr
+R2536:2537 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R2547:2550 ProyectoCoq.Dualidad <> eval def
+R2564:2566 ProyectoCoq.Dualidad <> Var constr
+R2573:2576 ProyectoCoq.Dualidad <> eval def
+R2590:2592 ProyectoCoq.Dualidad <> Var constr
+prf 2613:2614 <> L4
+R2621:2627 ProyectoCoq.Def_Lattice <> lattice rec
+binder 2617:2617 <> T:32
+R2635:2635 ProyectoCoq.MathCompLattices_SeqEnv <> T:32 var
+binder 2631:2631 <> z:33
+R2653:2653 ProyectoCoq.MathCompLattices_SeqEnv <> T:32 var
+binder 2647:2647 <> a:34
+binder 2649:2649 <> b:35
+R2672:2674 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2658:2663 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R2671:2671 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R2657:2657 ProyectoCoq.MathCompLattices_SeqEnv <> a:34 var
+R2665:2669 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R2664:2664 ProyectoCoq.MathCompLattices_SeqEnv <> a:34 var
+R2670:2670 ProyectoCoq.MathCompLattices_SeqEnv <> b:35 var
+R2675:2675 ProyectoCoq.MathCompLattices_SeqEnv <> a:34 var
+R2704:2713 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R2704:2713 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R2704:2713 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R2726:2730 Coq.Init.Logic <> proj1 thm
+R2742:2749 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R2766:2767 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R2766:2767 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R2766:2767 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+prf 2782:2784 <> L4d
+R2791:2797 ProyectoCoq.Def_Lattice <> lattice rec
+binder 2787:2787 <> T:36
+R2805:2805 ProyectoCoq.MathCompLattices_SeqEnv <> T:36 var
+binder 2801:2801 <> z:37
+R2823:2823 ProyectoCoq.MathCompLattices_SeqEnv <> T:36 var
+binder 2817:2817 <> a:38
+binder 2819:2819 <> b:39
+R2842:2844 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2828:2833 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R2841:2841 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R2827:2827 ProyectoCoq.MathCompLattices_SeqEnv <> a:38 var
+R2835:2839 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R2834:2834 ProyectoCoq.MathCompLattices_SeqEnv <> a:38 var
+R2840:2840 ProyectoCoq.MathCompLattices_SeqEnv <> b:39 var
+R2845:2845 ProyectoCoq.MathCompLattices_SeqEnv <> a:38 var
+R2908:2911 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R2913:2914 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R2916:2916 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R2908:2911 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R2913:2914 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R2916:2916 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R2918:2922 ProyectoCoq.Def_Lattice <> meetT proj
+R2924:2928 ProyectoCoq.Def_Lattice <> joinT proj
+R2937:2947 ProyectoCoq.Ltac_Dual <> reflectDual thm
+R2937:2947 ProyectoCoq.Ltac_Dual <> reflectDual thm
+R2958:2961 ProyectoCoq.Dualidad <> Dual thm
+R2964:2967 ProyectoCoq.Dualidad <> dual def
+R2970:2975 ProyectoCoq.Dualidad <> dual_t def
+R2958:2961 ProyectoCoq.Dualidad <> Dual thm
+R2958:2961 ProyectoCoq.Dualidad <> Dual thm
+R2964:2967 ProyectoCoq.Dualidad <> dual def
+R2964:2967 ProyectoCoq.Dualidad <> dual def
+R2970:2975 ProyectoCoq.Dualidad <> dual_t def
+R2970:2975 ProyectoCoq.Dualidad <> dual_t def
+R3001:3006 ProyectoCoq.Dualidad <> eval_f def
+R3001:3006 ProyectoCoq.Dualidad <> eval_f def
+R3001:3006 ProyectoCoq.Dualidad <> eval_f def
+R3021:3022 ProyectoCoq.MathCompLattices_SeqEnv <> L4 thm
+R3032:3035 ProyectoCoq.Dualidad <> eval def
+R3049:3051 ProyectoCoq.Dualidad <> Var constr
+R3058:3061 ProyectoCoq.Dualidad <> eval def
+R3075:3077 ProyectoCoq.Dualidad <> Var constr
+R3021:3022 ProyectoCoq.MathCompLattices_SeqEnv <> L4 thm
+R3032:3035 ProyectoCoq.Dualidad <> eval def
+R3049:3051 ProyectoCoq.Dualidad <> Var constr
+R3058:3061 ProyectoCoq.Dualidad <> eval def
+R3075:3077 ProyectoCoq.Dualidad <> Var constr
+R3021:3022 ProyectoCoq.MathCompLattices_SeqEnv <> L4 thm
+R3032:3035 ProyectoCoq.Dualidad <> eval def
+R3049:3051 ProyectoCoq.Dualidad <> Var constr
+R3058:3061 ProyectoCoq.Dualidad <> eval def
+R3075:3077 ProyectoCoq.Dualidad <> Var constr
+prf 3098:3099 <> L1
+R3106:3112 ProyectoCoq.Def_Lattice <> lattice rec
+binder 3102:3102 <> T:40
+R3120:3120 ProyectoCoq.MathCompLattices_SeqEnv <> T:40 var
+binder 3116:3116 <> z:41
+R3140:3140 ProyectoCoq.MathCompLattices_SeqEnv <> T:40 var
+binder 3132:3132 <> a:42
+binder 3134:3134 <> b:43
+binder 3136:3136 <> c:44
+R3159:3161 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3144:3144 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R3152:3157 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R3146:3150 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R3145:3145 ProyectoCoq.MathCompLattices_SeqEnv <> a:42 var
+R3151:3151 ProyectoCoq.MathCompLattices_SeqEnv <> b:43 var
+R3158:3158 ProyectoCoq.MathCompLattices_SeqEnv <> c:44 var
+R3163:3168 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R3176:3176 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R3162:3162 ProyectoCoq.MathCompLattices_SeqEnv <> a:42 var
+R3170:3174 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R3169:3169 ProyectoCoq.MathCompLattices_SeqEnv <> b:43 var
+R3175:3175 ProyectoCoq.MathCompLattices_SeqEnv <> c:44 var
+binder 3210:3210 <> x:45
+binder 3212:3212 <> y:46
+binder 3214:3214 <> w:47
+R3229:3232 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3223:3227 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R3222:3222 ProyectoCoq.MathCompLattices_SeqEnv <> w:47 var
+R3228:3228 ProyectoCoq.MathCompLattices_SeqEnv <> y:46 var
+R3234:3239 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R3247:3247 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R3233:3233 ProyectoCoq.MathCompLattices_SeqEnv <> w:47 var
+R3241:3245 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R3240:3240 ProyectoCoq.MathCompLattices_SeqEnv <> x:45 var
+R3246:3246 ProyectoCoq.MathCompLattices_SeqEnv <> y:46 var
+R3283:3292 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3283:3292 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3283:3292 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3305:3309 Coq.Init.Logic <> proj2 thm
+R3341:3345 ProyectoCoq.Def_Lattice <> trans abbrev
+R3341:3345 ProyectoCoq.Def_Lattice <> trans abbrev
+R3369:3375 ProyectoCoq.Def_Lattice <> antisym abbrev
+R3369:3375 ProyectoCoq.Def_Lattice <> antisym abbrev
+R3389:3390 ProyectoCoq.Def_Lattice <> JH abbrev
+R3389:3390 ProyectoCoq.Def_Lattice <> JH abbrev
+R3389:3390 ProyectoCoq.Def_Lattice <> JH abbrev
+R3415:3416 ProyectoCoq.Def_Lattice <> JH abbrev
+R3415:3416 ProyectoCoq.Def_Lattice <> JH abbrev
+R3415:3416 ProyectoCoq.Def_Lattice <> JH abbrev
+R3446:3455 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3463:3467 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R3446:3455 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3463:3467 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R3446:3455 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3463:3467 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R3476:3480 Coq.Init.Logic <> proj1 thm
+R3532:3541 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3532:3541 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3532:3541 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3554:3558 Coq.Init.Logic <> proj1 thm
+R3619:3628 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3619:3628 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3619:3628 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3641:3645 Coq.Init.Logic <> proj2 thm
+R3694:3695 ProyectoCoq.Def_Lattice <> JH abbrev
+R3694:3695 ProyectoCoq.Def_Lattice <> JH abbrev
+R3694:3695 ProyectoCoq.Def_Lattice <> JH abbrev
+R3716:3717 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R3716:3717 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R3716:3717 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R3732:3741 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3732:3741 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3732:3741 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3754:3758 Coq.Init.Logic <> proj1 thm
+R3794:3795 ProyectoCoq.Def_Lattice <> JH abbrev
+R3794:3795 ProyectoCoq.Def_Lattice <> JH abbrev
+R3794:3795 ProyectoCoq.Def_Lattice <> JH abbrev
+R3814:3823 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3853:3857 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R3861:3862 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R3814:3823 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3814:3823 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3836:3840 Coq.Init.Logic <> proj2 thm
+R3861:3862 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R3853:3857 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R3853:3857 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R3861:3862 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R3923:3932 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3938:3942 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R3923:3932 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3938:3942 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R3923:3932 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R3938:3942 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R3953:3957 Coq.Init.Logic <> proj2 thm
+prf 3998:4000 <> L1d
+R4007:4013 ProyectoCoq.Def_Lattice <> lattice rec
+binder 4003:4003 <> T:48
+R4021:4021 ProyectoCoq.MathCompLattices_SeqEnv <> T:48 var
+binder 4017:4017 <> z:49
+R4041:4041 ProyectoCoq.MathCompLattices_SeqEnv <> T:48 var
+binder 4033:4033 <> a:50
+binder 4035:4035 <> b:51
+binder 4037:4037 <> c:52
+R4060:4062 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4045:4045 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R4053:4058 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R4047:4051 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R4046:4046 ProyectoCoq.MathCompLattices_SeqEnv <> a:50 var
+R4052:4052 ProyectoCoq.MathCompLattices_SeqEnv <> b:51 var
+R4059:4059 ProyectoCoq.MathCompLattices_SeqEnv <> c:52 var
+R4064:4069 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R4077:4077 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R4063:4063 ProyectoCoq.MathCompLattices_SeqEnv <> a:50 var
+R4071:4075 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R4070:4070 ProyectoCoq.MathCompLattices_SeqEnv <> b:51 var
+R4076:4076 ProyectoCoq.MathCompLattices_SeqEnv <> c:52 var
+R4143:4146 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R4148:4149 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R4151:4152 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R4154:4154 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R4143:4146 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R4148:4149 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R4151:4152 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R4154:4154 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R4156:4160 ProyectoCoq.Def_Lattice <> meetT proj
+R4162:4166 ProyectoCoq.Def_Lattice <> joinT proj
+R4175:4185 ProyectoCoq.Ltac_Dual <> reflectDual thm
+R4175:4185 ProyectoCoq.Ltac_Dual <> reflectDual thm
+R4196:4199 ProyectoCoq.Dualidad <> Dual thm
+R4202:4205 ProyectoCoq.Dualidad <> dual def
+R4208:4213 ProyectoCoq.Dualidad <> dual_t def
+R4196:4199 ProyectoCoq.Dualidad <> Dual thm
+R4196:4199 ProyectoCoq.Dualidad <> Dual thm
+R4202:4205 ProyectoCoq.Dualidad <> dual def
+R4202:4205 ProyectoCoq.Dualidad <> dual def
+R4208:4213 ProyectoCoq.Dualidad <> dual_t def
+R4208:4213 ProyectoCoq.Dualidad <> dual_t def
+R4239:4244 ProyectoCoq.Dualidad <> eval_f def
+R4239:4244 ProyectoCoq.Dualidad <> eval_f def
+R4239:4244 ProyectoCoq.Dualidad <> eval_f def
+R4259:4260 ProyectoCoq.MathCompLattices_SeqEnv <> L1 thm
+R4270:4273 ProyectoCoq.Dualidad <> eval def
+R4287:4289 ProyectoCoq.Dualidad <> Var constr
+R4296:4299 ProyectoCoq.Dualidad <> eval def
+R4313:4315 ProyectoCoq.Dualidad <> Var constr
+R4344:4347 ProyectoCoq.Dualidad <> eval def
+R4361:4363 ProyectoCoq.Dualidad <> Var constr
+R4259:4260 ProyectoCoq.MathCompLattices_SeqEnv <> L1 thm
+R4270:4273 ProyectoCoq.Dualidad <> eval def
+R4287:4289 ProyectoCoq.Dualidad <> Var constr
+R4296:4299 ProyectoCoq.Dualidad <> eval def
+R4313:4315 ProyectoCoq.Dualidad <> Var constr
+R4344:4347 ProyectoCoq.Dualidad <> eval def
+R4361:4363 ProyectoCoq.Dualidad <> Var constr
+R4259:4260 ProyectoCoq.MathCompLattices_SeqEnv <> L1 thm
+R4270:4273 ProyectoCoq.Dualidad <> eval def
+R4287:4289 ProyectoCoq.Dualidad <> Var constr
+R4296:4299 ProyectoCoq.Dualidad <> eval def
+R4313:4315 ProyectoCoq.Dualidad <> Var constr
+R4344:4347 ProyectoCoq.Dualidad <> eval def
+R4361:4363 ProyectoCoq.Dualidad <> Var constr
+rec 4388:4397 <> latticeAlg
+proj 4422:4422 <> A
+proj 4437:4437 <> j
+proj 4458:4458 <> m
+proj 4479:4480 <> l1
+proj 4533:4535 <> l1d
+proj 4588:4589 <> l2
+proj 4628:4630 <> l2d
+proj 4669:4670 <> l3
+proj 4703:4705 <> l3d
+proj 4738:4739 <> l4
+proj 4780:4782 <> l4d
+R4442:4445 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4441:4441 ProyectoCoq.MathCompLattices_SeqEnv <> A:54 meth
+R4447:4450 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4446:4446 ProyectoCoq.MathCompLattices_SeqEnv <> A:54 meth
+R4451:4451 ProyectoCoq.MathCompLattices_SeqEnv <> A:54 meth
+R4463:4466 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4462:4462 ProyectoCoq.MathCompLattices_SeqEnv <> A:54 meth
+R4468:4471 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4467:4467 ProyectoCoq.MathCompLattices_SeqEnv <> A:54 meth
+R4472:4472 ProyectoCoq.MathCompLattices_SeqEnv <> A:54 meth
+R4499:4499 ProyectoCoq.MathCompLattices_SeqEnv <> A:54 meth
+binder 4491:4491 <> a:57
+binder 4493:4493 <> b:58
+binder 4495:4495 <> c:59
+R4513:4515 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4502:4502 ProyectoCoq.MathCompLattices_SeqEnv <> j:55 meth
+R4512:4512 ProyectoCoq.MathCompLattices_SeqEnv <> c:59 var
+R4505:4505 ProyectoCoq.MathCompLattices_SeqEnv <> j:55 meth
+R4509:4509 ProyectoCoq.MathCompLattices_SeqEnv <> b:58 var
+R4507:4507 ProyectoCoq.MathCompLattices_SeqEnv <> a:57 var
+R4516:4516 ProyectoCoq.MathCompLattices_SeqEnv <> j:55 meth
+R4521:4521 ProyectoCoq.MathCompLattices_SeqEnv <> j:55 meth
+R4525:4525 ProyectoCoq.MathCompLattices_SeqEnv <> c:59 var
+R4523:4523 ProyectoCoq.MathCompLattices_SeqEnv <> b:58 var
+R4518:4518 ProyectoCoq.MathCompLattices_SeqEnv <> a:57 var
+R4554:4554 ProyectoCoq.MathCompLattices_SeqEnv <> A:54 meth
+binder 4546:4546 <> a:61
+binder 4548:4548 <> b:62
+binder 4550:4550 <> c:63
+R4568:4570 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4557:4557 ProyectoCoq.MathCompLattices_SeqEnv <> m:56 meth
+R4567:4567 ProyectoCoq.MathCompLattices_SeqEnv <> c:63 var
+R4560:4560 ProyectoCoq.MathCompLattices_SeqEnv <> m:56 meth
+R4564:4564 ProyectoCoq.MathCompLattices_SeqEnv <> b:62 var
+R4562:4562 ProyectoCoq.MathCompLattices_SeqEnv <> a:61 var
+R4571:4571 ProyectoCoq.MathCompLattices_SeqEnv <> m:56 meth
+R4576:4576 ProyectoCoq.MathCompLattices_SeqEnv <> m:56 meth
+R4580:4580 ProyectoCoq.MathCompLattices_SeqEnv <> c:63 var
+R4578:4578 ProyectoCoq.MathCompLattices_SeqEnv <> b:62 var
+R4573:4573 ProyectoCoq.MathCompLattices_SeqEnv <> a:61 var
+R4606:4606 ProyectoCoq.MathCompLattices_SeqEnv <> A:54 meth
+binder 4600:4600 <> a:65
+binder 4602:4602 <> b:66
+R4614:4616 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4609:4609 ProyectoCoq.MathCompLattices_SeqEnv <> j:55 meth
+R4613:4613 ProyectoCoq.MathCompLattices_SeqEnv <> b:66 var
+R4611:4611 ProyectoCoq.MathCompLattices_SeqEnv <> a:65 var
+R4617:4617 ProyectoCoq.MathCompLattices_SeqEnv <> j:55 meth
+R4621:4621 ProyectoCoq.MathCompLattices_SeqEnv <> a:65 var
+R4619:4619 ProyectoCoq.MathCompLattices_SeqEnv <> b:66 var
+R4647:4647 ProyectoCoq.MathCompLattices_SeqEnv <> A:54 meth
+binder 4641:4641 <> a:68
+binder 4643:4643 <> b:69
+R4655:4657 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4650:4650 ProyectoCoq.MathCompLattices_SeqEnv <> m:56 meth
+R4654:4654 ProyectoCoq.MathCompLattices_SeqEnv <> b:69 var
+R4652:4652 ProyectoCoq.MathCompLattices_SeqEnv <> a:68 var
+R4658:4658 ProyectoCoq.MathCompLattices_SeqEnv <> m:56 meth
+R4662:4662 ProyectoCoq.MathCompLattices_SeqEnv <> a:68 var
+R4660:4660 ProyectoCoq.MathCompLattices_SeqEnv <> b:69 var
+R4685:4685 ProyectoCoq.MathCompLattices_SeqEnv <> A:54 meth
+binder 4681:4681 <> a:71
+R4693:4695 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4688:4688 ProyectoCoq.MathCompLattices_SeqEnv <> j:55 meth
+R4692:4692 ProyectoCoq.MathCompLattices_SeqEnv <> a:71 var
+R4690:4690 ProyectoCoq.MathCompLattices_SeqEnv <> a:71 var
+R4696:4696 ProyectoCoq.MathCompLattices_SeqEnv <> a:71 var
+R4720:4720 ProyectoCoq.MathCompLattices_SeqEnv <> A:54 meth
+binder 4716:4716 <> a:73
+R4728:4730 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4723:4723 ProyectoCoq.MathCompLattices_SeqEnv <> m:56 meth
+R4727:4727 ProyectoCoq.MathCompLattices_SeqEnv <> a:73 var
+R4725:4725 ProyectoCoq.MathCompLattices_SeqEnv <> a:73 var
+R4731:4731 ProyectoCoq.MathCompLattices_SeqEnv <> a:73 var
+R4756:4756 ProyectoCoq.MathCompLattices_SeqEnv <> A:54 meth
+binder 4750:4750 <> a:75
+binder 4752:4752 <> b:76
+R4770:4772 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4759:4759 ProyectoCoq.MathCompLattices_SeqEnv <> j:55 meth
+R4764:4764 ProyectoCoq.MathCompLattices_SeqEnv <> m:56 meth
+R4768:4768 ProyectoCoq.MathCompLattices_SeqEnv <> b:76 var
+R4766:4766 ProyectoCoq.MathCompLattices_SeqEnv <> a:75 var
+R4761:4761 ProyectoCoq.MathCompLattices_SeqEnv <> a:75 var
+R4773:4773 ProyectoCoq.MathCompLattices_SeqEnv <> a:75 var
+R4799:4799 ProyectoCoq.MathCompLattices_SeqEnv <> A:54 meth
+binder 4793:4793 <> a:78
+binder 4795:4795 <> b:79
+R4813:4815 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4802:4802 ProyectoCoq.MathCompLattices_SeqEnv <> m:56 meth
+R4807:4807 ProyectoCoq.MathCompLattices_SeqEnv <> j:55 meth
+R4811:4811 ProyectoCoq.MathCompLattices_SeqEnv <> b:79 var
+R4809:4809 ProyectoCoq.MathCompLattices_SeqEnv <> a:78 var
+R4804:4804 ProyectoCoq.MathCompLattices_SeqEnv <> a:78 var
+R4816:4816 ProyectoCoq.MathCompLattices_SeqEnv <> a:78 var
+R4847:4847 ProyectoCoq.MathCompLattices_SeqEnv <> m proj
+not 4832:4832 <> :::x_'∧'_x
+R4908:4908 ProyectoCoq.MathCompLattices_SeqEnv <> j proj
+not 4893:4893 <> :::x_'∨'_x
+abbrev 4952:4957 <> L1_Alg
+R4963:4964 ProyectoCoq.MathCompLattices_SeqEnv <> l1 proj
+abbrev 4979:4985 <> L1d_Alg
+R4991:4993 ProyectoCoq.MathCompLattices_SeqEnv <> l1d proj
+abbrev 5008:5013 <> L2_Alg
+R5019:5020 ProyectoCoq.MathCompLattices_SeqEnv <> l2 proj
+abbrev 5035:5041 <> L2d_Alg
+R5047:5049 ProyectoCoq.MathCompLattices_SeqEnv <> l2d proj
+abbrev 5064:5069 <> L3_Alg
+R5075:5076 ProyectoCoq.MathCompLattices_SeqEnv <> l3 proj
+abbrev 5091:5097 <> L3d_Alg
+R5103:5105 ProyectoCoq.MathCompLattices_SeqEnv <> l3d proj
+abbrev 5120:5125 <> L4_Alg
+R5131:5132 ProyectoCoq.MathCompLattices_SeqEnv <> l4 proj
+abbrev 5147:5153 <> L4d_Alg
+R5159:5161 ProyectoCoq.MathCompLattices_SeqEnv <> l4d proj
+def 5178:5188 <> Alg_lattice
+R5195:5201 ProyectoCoq.Def_Lattice <> lattice rec
+binder 5191:5191 <> T:81
+R5209:5209 ProyectoCoq.MathCompLattices_SeqEnv <> T:81 var
+binder 5205:5205 <> z:82
+R5215:5224 ProyectoCoq.MathCompLattices_SeqEnv <> LatticeAlg constr
+R5226:5226 ProyectoCoq.MathCompLattices_SeqEnv <> T:81 var
+R5230:5234 ProyectoCoq.Def_Lattice <> joinT proj
+R5236:5236 ProyectoCoq.MathCompLattices_SeqEnv <> T:81 var
+R5241:5245 ProyectoCoq.Def_Lattice <> meetT proj
+R5247:5247 ProyectoCoq.MathCompLattices_SeqEnv <> T:81 var
+R5251:5252 ProyectoCoq.MathCompLattices_SeqEnv <> L1 thm
+R5254:5254 ProyectoCoq.MathCompLattices_SeqEnv <> z:82 var
+R5258:5260 ProyectoCoq.MathCompLattices_SeqEnv <> L1d thm
+R5262:5262 ProyectoCoq.MathCompLattices_SeqEnv <> z:82 var
+R5266:5267 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R5269:5269 ProyectoCoq.MathCompLattices_SeqEnv <> z:82 var
+R5273:5275 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R5277:5277 ProyectoCoq.MathCompLattices_SeqEnv <> z:82 var
+R5281:5282 ProyectoCoq.MathCompLattices_SeqEnv <> L3 thm
+R5284:5284 ProyectoCoq.MathCompLattices_SeqEnv <> z:82 var
+R5288:5290 ProyectoCoq.MathCompLattices_SeqEnv <> L3d thm
+R5292:5292 ProyectoCoq.MathCompLattices_SeqEnv <> z:82 var
+R5296:5297 ProyectoCoq.MathCompLattices_SeqEnv <> L4 thm
+R5299:5299 ProyectoCoq.MathCompLattices_SeqEnv <> z:82 var
+R5303:5305 ProyectoCoq.MathCompLattices_SeqEnv <> L4d thm
+R5307:5307 ProyectoCoq.MathCompLattices_SeqEnv <> z:82 var
+prf 5318:5326 <> AlgToSet1
+R5333:5342 ProyectoCoq.MathCompLattices_SeqEnv <> latticeAlg rec
+binder 5329:5329 <> T:83
+R5360:5360 ProyectoCoq.MathCompLattices_SeqEnv <> T:83 var
+binder 5354:5354 <> a:84
+binder 5356:5356 <> b:85
+R5363:5364 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R5376:5383 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R5395:5395 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R5372:5374 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5366:5370 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'∨'_x not
+R5365:5365 ProyectoCoq.MathCompLattices_SeqEnv <> a:84 var
+R5371:5371 ProyectoCoq.MathCompLattices_SeqEnv <> b:85 var
+R5375:5375 ProyectoCoq.MathCompLattices_SeqEnv <> b:85 var
+R5391:5393 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5385:5389 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'∧'_x not
+R5384:5384 ProyectoCoq.MathCompLattices_SeqEnv <> a:84 var
+R5390:5390 ProyectoCoq.MathCompLattices_SeqEnv <> b:85 var
+R5394:5394 ProyectoCoq.MathCompLattices_SeqEnv <> a:84 var
+R5437:5443 ProyectoCoq.MathCompLattices_SeqEnv <> L4d_Alg abbrev
+R5437:5443 ProyectoCoq.MathCompLattices_SeqEnv <> L4d_Alg abbrev
+R5437:5443 ProyectoCoq.MathCompLattices_SeqEnv <> L4d_Alg abbrev
+R5492:5497 ProyectoCoq.MathCompLattices_SeqEnv <> L4_Alg abbrev
+R5492:5497 ProyectoCoq.MathCompLattices_SeqEnv <> L4_Alg abbrev
+R5492:5497 ProyectoCoq.MathCompLattices_SeqEnv <> L4_Alg abbrev
+R5516:5522 ProyectoCoq.MathCompLattices_SeqEnv <> L2d_Alg abbrev
+R5530:5535 ProyectoCoq.MathCompLattices_SeqEnv <> L2_Alg abbrev
+R5516:5522 ProyectoCoq.MathCompLattices_SeqEnv <> L2d_Alg abbrev
+R5516:5522 ProyectoCoq.MathCompLattices_SeqEnv <> L2d_Alg abbrev
+R5530:5535 ProyectoCoq.MathCompLattices_SeqEnv <> L2_Alg abbrev
+R5530:5535 ProyectoCoq.MathCompLattices_SeqEnv <> L2_Alg abbrev
+def 5555:5558 <> nord
+R5565:5574 ProyectoCoq.MathCompLattices_SeqEnv <> latticeAlg rec
+binder 5561:5561 <> T:86
+R5584:5584 ProyectoCoq.MathCompLattices_SeqEnv <> T:86 var
+binder 5578:5578 <> a:87
+binder 5580:5580 <> b:88
+R5598:5600 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5592:5596 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'∨'_x not
+R5591:5591 ProyectoCoq.MathCompLattices_SeqEnv <> a:87 var
+R5597:5597 ProyectoCoq.MathCompLattices_SeqEnv <> b:88 var
+R5601:5601 ProyectoCoq.MathCompLattices_SeqEnv <> b:88 var
+R5629:5632 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+not 5614:5614 <> :::x_'≼'_x
+prf 5682:5695 <> AlgToSetReflex
+R5702:5711 ProyectoCoq.MathCompLattices_SeqEnv <> latticeAlg rec
+binder 5698:5698 <> T:89
+R5716:5724 ProyectoCoq.Def_Lattice <> reflexive def
+R5728:5731 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R5733:5733 ProyectoCoq.MathCompLattices_SeqEnv <> T:89 var
+R5767:5770 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R5767:5770 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R5767:5770 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R5785:5790 ProyectoCoq.MathCompLattices_SeqEnv <> L3_Alg abbrev
+R5785:5790 ProyectoCoq.MathCompLattices_SeqEnv <> L3_Alg abbrev
+prf 5805:5819 <> AlgToSetAntisym
+R5826:5835 ProyectoCoq.MathCompLattices_SeqEnv <> latticeAlg rec
+binder 5822:5822 <> T:90
+R5840:5851 ProyectoCoq.Def_Lattice <> antisymetric def
+R5855:5858 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R5860:5860 ProyectoCoq.MathCompLattices_SeqEnv <> T:90 var
+R5896:5899 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R5896:5899 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R5896:5899 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R5923:5928 ProyectoCoq.MathCompLattices_SeqEnv <> L2_Alg abbrev
+R5923:5928 ProyectoCoq.MathCompLattices_SeqEnv <> L2_Alg abbrev
+R5923:5928 ProyectoCoq.MathCompLattices_SeqEnv <> L2_Alg abbrev
+prf 5948:5960 <> AlgToSetTrans
+R5967:5976 ProyectoCoq.MathCompLattices_SeqEnv <> latticeAlg rec
+binder 5963:5963 <> T:91
+R5981:5990 ProyectoCoq.Def_Lattice <> transitive def
+R5994:5997 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R5999:5999 ProyectoCoq.MathCompLattices_SeqEnv <> T:91 var
+R6033:6036 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R6033:6036 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R6033:6036 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R6069:6074 ProyectoCoq.MathCompLattices_SeqEnv <> L1_Alg abbrev
+R6069:6074 ProyectoCoq.MathCompLattices_SeqEnv <> L1_Alg abbrev
+R6069:6074 ProyectoCoq.MathCompLattices_SeqEnv <> L1_Alg abbrev
+def 6121:6134 <> T_ordenParcial
+R6141:6150 ProyectoCoq.MathCompLattices_SeqEnv <> latticeAlg rec
+binder 6137:6137 <> T:92
+R6156:6167 ProyectoCoq.Def_Lattice <> OrdenParcial constr
+R6169:6169 ProyectoCoq.MathCompLattices_SeqEnv <> T:92 var
+R6173:6176 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R6178:6178 ProyectoCoq.MathCompLattices_SeqEnv <> T:92 var
+R6181:6194 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSetReflex thm
+R6196:6210 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSetAntisym thm
+R6212:6224 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSetTrans thm
+prf 6235:6250 <> AlgToSet_joinAlg
+R6257:6266 ProyectoCoq.MathCompLattices_SeqEnv <> latticeAlg rec
+binder 6253:6253 <> T:93
+R6282:6282 ProyectoCoq.MathCompLattices_SeqEnv <> T:93 var
+binder 6278:6278 <> z:94
+R6299:6299 ProyectoCoq.MathCompLattices_SeqEnv <> T:93 var
+binder 6293:6293 <> x:95
+binder 6295:6295 <> y:96
+R6302:6302 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R6321:6326 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R6310:6313 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6304:6308 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'≼'_x not
+R6303:6303 ProyectoCoq.MathCompLattices_SeqEnv <> x:95 var
+R6309:6309 ProyectoCoq.MathCompLattices_SeqEnv <> z:94 var
+R6315:6319 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'≼'_x not
+R6314:6314 ProyectoCoq.MathCompLattices_SeqEnv <> y:96 var
+R6320:6320 ProyectoCoq.MathCompLattices_SeqEnv <> z:94 var
+R6327:6327 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'≼'_x not
+R6335:6340 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'≼'_x not
+R6329:6333 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'∨'_x not
+R6328:6328 ProyectoCoq.MathCompLattices_SeqEnv <> x:95 var
+R6334:6334 ProyectoCoq.MathCompLattices_SeqEnv <> y:96 var
+R6341:6341 ProyectoCoq.MathCompLattices_SeqEnv <> z:94 var
+R6384:6387 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R6384:6387 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R6384:6387 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R6453:6458 ProyectoCoq.MathCompLattices_SeqEnv <> L1_Alg abbrev
+R6453:6458 ProyectoCoq.MathCompLattices_SeqEnv <> L1_Alg abbrev
+R6453:6458 ProyectoCoq.MathCompLattices_SeqEnv <> L1_Alg abbrev
+binder 6491:6491 <> a:97
+binder 6493:6493 <> b:98
+R6500:6500 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6516:6521 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6537:6537 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6502:6507 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'≼'_x not
+R6515:6515 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'≼'_x not
+R6501:6501 ProyectoCoq.MathCompLattices_SeqEnv <> a:97 var
+R6509:6513 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'∨'_x not
+R6508:6508 ProyectoCoq.MathCompLattices_SeqEnv <> a:97 var
+R6514:6514 ProyectoCoq.MathCompLattices_SeqEnv <> b:98 var
+R6523:6528 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'≼'_x not
+R6536:6536 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'≼'_x not
+R6522:6522 ProyectoCoq.MathCompLattices_SeqEnv <> b:98 var
+R6530:6534 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'∨'_x not
+R6529:6529 ProyectoCoq.MathCompLattices_SeqEnv <> a:97 var
+R6535:6535 ProyectoCoq.MathCompLattices_SeqEnv <> b:98 var
+R6579:6582 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R6585:6590 ProyectoCoq.MathCompLattices_SeqEnv <> L1_Alg abbrev
+R6592:6597 ProyectoCoq.MathCompLattices_SeqEnv <> L3_Alg abbrev
+R6579:6582 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R6579:6582 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R6585:6590 ProyectoCoq.MathCompLattices_SeqEnv <> L1_Alg abbrev
+R6585:6590 ProyectoCoq.MathCompLattices_SeqEnv <> L1_Alg abbrev
+R6592:6597 ProyectoCoq.MathCompLattices_SeqEnv <> L3_Alg abbrev
+R6592:6597 ProyectoCoq.MathCompLattices_SeqEnv <> L3_Alg abbrev
+R6614:6617 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R6619:6624 ProyectoCoq.MathCompLattices_SeqEnv <> L2_Alg abbrev
+R6626:6631 ProyectoCoq.MathCompLattices_SeqEnv <> L1_Alg abbrev
+R6633:6638 ProyectoCoq.MathCompLattices_SeqEnv <> L3_Alg abbrev
+R6614:6617 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R6614:6617 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R6619:6624 ProyectoCoq.MathCompLattices_SeqEnv <> L2_Alg abbrev
+R6619:6624 ProyectoCoq.MathCompLattices_SeqEnv <> L2_Alg abbrev
+R6626:6631 ProyectoCoq.MathCompLattices_SeqEnv <> L1_Alg abbrev
+R6626:6631 ProyectoCoq.MathCompLattices_SeqEnv <> L1_Alg abbrev
+R6633:6638 ProyectoCoq.MathCompLattices_SeqEnv <> L3_Alg abbrev
+R6633:6638 ProyectoCoq.MathCompLattices_SeqEnv <> L3_Alg abbrev
+R6675:6679 Coq.Init.Logic <> proj1 thm
+R6694:6706 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSetTrans thm
+R6694:6706 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSetTrans thm
+R6746:6750 Coq.Init.Logic <> proj2 thm
+R6763:6775 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSetTrans thm
+R6763:6775 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSetTrans thm
+prf 6790:6805 <> AlgToSet_meetAlg
+R6812:6821 ProyectoCoq.MathCompLattices_SeqEnv <> latticeAlg rec
+binder 6808:6808 <> T:99
+R6836:6836 ProyectoCoq.MathCompLattices_SeqEnv <> T:99 var
+binder 6832:6832 <> z:100
+R6853:6853 ProyectoCoq.MathCompLattices_SeqEnv <> T:99 var
+binder 6847:6847 <> x:101
+binder 6849:6849 <> y:102
+R6856:6856 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R6875:6880 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R6864:6867 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6858:6862 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'≼'_x not
+R6857:6857 ProyectoCoq.MathCompLattices_SeqEnv <> z:100 var
+R6863:6863 ProyectoCoq.MathCompLattices_SeqEnv <> x:101 var
+R6869:6873 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'≼'_x not
+R6868:6868 ProyectoCoq.MathCompLattices_SeqEnv <> z:100 var
+R6874:6874 ProyectoCoq.MathCompLattices_SeqEnv <> y:102 var
+R6882:6887 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'≼'_x not
+R6895:6895 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'≼'_x not
+R6881:6881 ProyectoCoq.MathCompLattices_SeqEnv <> z:100 var
+R6889:6893 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'∧'_x not
+R6888:6888 ProyectoCoq.MathCompLattices_SeqEnv <> x:101 var
+R6894:6894 ProyectoCoq.MathCompLattices_SeqEnv <> y:102 var
+R6939:6942 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R6939:6942 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R6939:6942 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R6958:6966 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSet1 thm
+R6974:6982 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSet1 thm
+R7000:7008 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSet1 thm
+R7000:7008 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSet1 thm
+R7000:7008 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSet1 thm
+R7045:7051 ProyectoCoq.MathCompLattices_SeqEnv <> L1d_Alg abbrev
+R7054:7060 ProyectoCoq.MathCompLattices_SeqEnv <> L2d_Alg abbrev
+R7045:7051 ProyectoCoq.MathCompLattices_SeqEnv <> L1d_Alg abbrev
+R7045:7051 ProyectoCoq.MathCompLattices_SeqEnv <> L1d_Alg abbrev
+R7054:7060 ProyectoCoq.MathCompLattices_SeqEnv <> L2d_Alg abbrev
+R7054:7060 ProyectoCoq.MathCompLattices_SeqEnv <> L2d_Alg abbrev
+binder 7098:7098 <> a:103
+binder 7100:7100 <> b:104
+R7107:7107 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7123:7128 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7144:7144 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7108:7108 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'≼'_x not
+R7116:7121 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'≼'_x not
+R7110:7114 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'∧'_x not
+R7109:7109 ProyectoCoq.MathCompLattices_SeqEnv <> a:103 var
+R7115:7115 ProyectoCoq.MathCompLattices_SeqEnv <> b:104 var
+R7122:7122 ProyectoCoq.MathCompLattices_SeqEnv <> a:103 var
+R7129:7129 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'≼'_x not
+R7137:7142 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'≼'_x not
+R7131:7135 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'∧'_x not
+R7130:7130 ProyectoCoq.MathCompLattices_SeqEnv <> a:103 var
+R7136:7136 ProyectoCoq.MathCompLattices_SeqEnv <> b:104 var
+R7143:7143 ProyectoCoq.MathCompLattices_SeqEnv <> b:104 var
+R7186:7189 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R7191:7199 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSet1 thm
+R7202:7208 ProyectoCoq.MathCompLattices_SeqEnv <> L2d_Alg abbrev
+R7213:7219 ProyectoCoq.MathCompLattices_SeqEnv <> L1d_Alg abbrev
+R7222:7228 ProyectoCoq.MathCompLattices_SeqEnv <> L3d_Alg abbrev
+R7186:7189 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R7186:7189 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R7191:7199 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSet1 thm
+R7191:7199 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSet1 thm
+R7202:7208 ProyectoCoq.MathCompLattices_SeqEnv <> L2d_Alg abbrev
+R7202:7208 ProyectoCoq.MathCompLattices_SeqEnv <> L2d_Alg abbrev
+R7213:7219 ProyectoCoq.MathCompLattices_SeqEnv <> L1d_Alg abbrev
+R7213:7219 ProyectoCoq.MathCompLattices_SeqEnv <> L1d_Alg abbrev
+R7222:7228 ProyectoCoq.MathCompLattices_SeqEnv <> L3d_Alg abbrev
+R7222:7228 ProyectoCoq.MathCompLattices_SeqEnv <> L3d_Alg abbrev
+R7245:7248 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R7250:7258 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSet1 thm
+R7260:7266 ProyectoCoq.MathCompLattices_SeqEnv <> L1d_Alg abbrev
+R7268:7274 ProyectoCoq.MathCompLattices_SeqEnv <> L3d_Alg abbrev
+R7245:7248 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R7245:7248 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R7250:7258 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSet1 thm
+R7250:7258 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSet1 thm
+R7260:7266 ProyectoCoq.MathCompLattices_SeqEnv <> L1d_Alg abbrev
+R7260:7266 ProyectoCoq.MathCompLattices_SeqEnv <> L1d_Alg abbrev
+R7268:7274 ProyectoCoq.MathCompLattices_SeqEnv <> L3d_Alg abbrev
+R7268:7274 ProyectoCoq.MathCompLattices_SeqEnv <> L3d_Alg abbrev
+R7308:7312 Coq.Init.Logic <> proj1 thm
+R7338:7350 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSetTrans thm
+R7338:7350 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSetTrans thm
+R7375:7379 Coq.Init.Logic <> proj2 thm
+R7402:7414 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSetTrans thm
+R7402:7414 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSetTrans thm
+def 7433:7441 <> T_lattice
+R7448:7457 ProyectoCoq.MathCompLattices_SeqEnv <> latticeAlg rec
+binder 7444:7444 <> T:105
+R7463:7469 ProyectoCoq.Def_Lattice <> Lattice constr
+R7472:7483 ProyectoCoq.Def_Lattice <> OrdenParcial constr
+R7485:7485 ProyectoCoq.MathCompLattices_SeqEnv <> T:105 var
+R7487:7490 ProyectoCoq.MathCompLattices_SeqEnv <> nord def
+R7492:7505 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSetReflex thm
+R7507:7521 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSetAntisym thm
+R7523:7535 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSetTrans thm
+R7563:7563 ProyectoCoq.MathCompLattices_SeqEnv <> j proj
+R7568:7583 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSet_joinAlg thm
+R7587:7587 ProyectoCoq.MathCompLattices_SeqEnv <> m proj
+R7592:7607 ProyectoCoq.MathCompLattices_SeqEnv <> AlgToSet_meetAlg thm
+prf 7617:7623 <> join_eq
+R7630:7639 ProyectoCoq.MathCompLattices_SeqEnv <> latticeAlg rec
+binder 7626:7626 <> T:106
+R7656:7656 ProyectoCoq.MathCompLattices_SeqEnv <> T:106 var
+binder 7650:7650 <> a:107
+binder 7652:7652 <> b:108
+R7667:7669 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7661:7665 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'∨'_x not
+R7660:7660 ProyectoCoq.MathCompLattices_SeqEnv <> a:107 var
+R7666:7666 ProyectoCoq.MathCompLattices_SeqEnv <> b:108 var
+R7670:7674 ProyectoCoq.Def_Lattice <> joinT proj
+R7676:7684 ProyectoCoq.MathCompLattices_SeqEnv <> T_lattice canonstruc
+R7686:7686 ProyectoCoq.MathCompLattices_SeqEnv <> a:107 var
+R7688:7688 ProyectoCoq.MathCompLattices_SeqEnv <> b:108 var
+prf 7717:7723 <> meet_eq
+R7730:7739 ProyectoCoq.MathCompLattices_SeqEnv <> latticeAlg rec
+binder 7726:7726 <> T:109
+R7756:7756 ProyectoCoq.MathCompLattices_SeqEnv <> T:109 var
+binder 7750:7750 <> a:110
+binder 7752:7752 <> b:111
+R7766:7768 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7760:7764 ProyectoCoq.MathCompLattices_SeqEnv <> :::x_'∧'_x not
+R7759:7759 ProyectoCoq.MathCompLattices_SeqEnv <> a:110 var
+R7765:7765 ProyectoCoq.MathCompLattices_SeqEnv <> b:111 var
+R7769:7773 ProyectoCoq.Def_Lattice <> meetT proj
+R7775:7783 ProyectoCoq.MathCompLattices_SeqEnv <> T_lattice canonstruc
+R7785:7785 ProyectoCoq.MathCompLattices_SeqEnv <> a:110 var
+R7787:7787 ProyectoCoq.MathCompLattices_SeqEnv <> b:111 var
+def 7846:7855 <> ordPreserv
+R7864:7870 ProyectoCoq.Def_Lattice <> lattice rec
+binder 7858:7858 <> L:112
+binder 7860:7860 <> K:113
+R7879:7882 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7878:7878 ProyectoCoq.MathCompLattices_SeqEnv <> L:112 var
+R7883:7883 ProyectoCoq.MathCompLattices_SeqEnv <> K:113 var
+binder 7874:7874 <> f:114
+R7925:7925 ProyectoCoq.MathCompLattices_SeqEnv <> L:112 var
+binder 7919:7919 <> a:115
+binder 7921:7921 <> b:116
+R7935:7938 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7929:7933 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R7928:7928 ProyectoCoq.MathCompLattices_SeqEnv <> a:115 var
+R7934:7934 ProyectoCoq.MathCompLattices_SeqEnv <> b:116 var
+R7939:7939 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R7943:7949 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R7953:7953 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R7940:7940 ProyectoCoq.MathCompLattices_SeqEnv <> f:114 var
+R7942:7942 ProyectoCoq.MathCompLattices_SeqEnv <> a:115 var
+R7950:7950 ProyectoCoq.MathCompLattices_SeqEnv <> f:114 var
+R7952:7952 ProyectoCoq.MathCompLattices_SeqEnv <> b:116 var
+def 7968:7976 <> ordEmmbed
+R7985:7991 ProyectoCoq.Def_Lattice <> lattice rec
+binder 7979:7979 <> L:117
+binder 7981:7981 <> K:118
+R8000:8003 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7999:7999 ProyectoCoq.MathCompLattices_SeqEnv <> L:117 var
+R8004:8004 ProyectoCoq.MathCompLattices_SeqEnv <> K:118 var
+binder 7995:7995 <> f:119
+R8044:8044 ProyectoCoq.MathCompLattices_SeqEnv <> L:117 var
+binder 8038:8038 <> a:120
+binder 8040:8040 <> b:121
+R8054:8058 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R8048:8052 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R8047:8047 ProyectoCoq.MathCompLattices_SeqEnv <> a:120 var
+R8053:8053 ProyectoCoq.MathCompLattices_SeqEnv <> b:121 var
+R8059:8059 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R8063:8069 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R8073:8073 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R8060:8060 ProyectoCoq.MathCompLattices_SeqEnv <> f:119 var
+R8062:8062 ProyectoCoq.MathCompLattices_SeqEnv <> a:120 var
+R8070:8070 ProyectoCoq.MathCompLattices_SeqEnv <> f:119 var
+R8072:8072 ProyectoCoq.MathCompLattices_SeqEnv <> b:121 var
+def 8088:8096 <> Biyective
+R8105:8111 ProyectoCoq.Def_Lattice <> lattice rec
+binder 8099:8099 <> L:122
+binder 8101:8101 <> K:123
+R8120:8123 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8119:8119 ProyectoCoq.MathCompLattices_SeqEnv <> L:122 var
+R8124:8124 ProyectoCoq.MathCompLattices_SeqEnv <> K:123 var
+binder 8115:8115 <> f:124
+R8151:8151 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8191:8196 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8235:8235 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8165:8165 ProyectoCoq.MathCompLattices_SeqEnv <> L:122 var
+binder 8159:8159 <> a:125
+binder 8161:8161 <> b:126
+R8181:8185 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R8168:8168 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8172:8176 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8180:8180 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8169:8169 ProyectoCoq.MathCompLattices_SeqEnv <> f:124 var
+R8171:8171 ProyectoCoq.MathCompLattices_SeqEnv <> a:125 var
+R8177:8177 ProyectoCoq.MathCompLattices_SeqEnv <> f:124 var
+R8179:8179 ProyectoCoq.MathCompLattices_SeqEnv <> b:126 var
+R8187:8189 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8186:8186 ProyectoCoq.MathCompLattices_SeqEnv <> a:125 var
+R8190:8190 ProyectoCoq.MathCompLattices_SeqEnv <> b:126 var
+R8208:8208 ProyectoCoq.MathCompLattices_SeqEnv <> K:123 var
+binder 8204:8204 <> b:127
+R8212:8218 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8224:8225 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8223:8223 ProyectoCoq.MathCompLattices_SeqEnv <> L:122 var
+binder 8219:8219 <> a:128
+R8227:8229 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8226:8226 ProyectoCoq.MathCompLattices_SeqEnv <> b:127 var
+R8230:8230 ProyectoCoq.MathCompLattices_SeqEnv <> f:124 var
+R8232:8232 ProyectoCoq.MathCompLattices_SeqEnv <> a:128 var
+def 8250:8255 <> ordIso
+R8264:8270 ProyectoCoq.Def_Lattice <> lattice rec
+binder 8258:8258 <> L:129
+binder 8260:8260 <> K:130
+R8279:8282 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8278:8278 ProyectoCoq.MathCompLattices_SeqEnv <> L:129 var
+R8283:8283 ProyectoCoq.MathCompLattices_SeqEnv <> K:130 var
+binder 8274:8274 <> f:131
+R8289:8289 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8306:8311 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8328:8328 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8291:8299 ProyectoCoq.MathCompLattices_SeqEnv <> Biyective def
+R8301:8301 ProyectoCoq.MathCompLattices_SeqEnv <> L:129 var
+R8303:8303 ProyectoCoq.MathCompLattices_SeqEnv <> K:130 var
+R8305:8305 ProyectoCoq.MathCompLattices_SeqEnv <> f:131 var
+R8313:8321 ProyectoCoq.MathCompLattices_SeqEnv <> ordEmmbed def
+R8323:8323 ProyectoCoq.MathCompLattices_SeqEnv <> L:129 var
+R8325:8325 ProyectoCoq.MathCompLattices_SeqEnv <> K:130 var
+R8327:8327 ProyectoCoq.MathCompLattices_SeqEnv <> f:131 var
+def 8344:8357 <> joinOrdPreserv
+R8366:8372 ProyectoCoq.Def_Lattice <> lattice rec
+binder 8360:8360 <> L:132
+binder 8362:8362 <> K:133
+R8381:8384 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8380:8380 ProyectoCoq.MathCompLattices_SeqEnv <> L:132 var
+R8385:8385 ProyectoCoq.MathCompLattices_SeqEnv <> K:133 var
+binder 8376:8376 <> f:134
+R8430:8430 ProyectoCoq.MathCompLattices_SeqEnv <> L:132 var
+binder 8424:8424 <> x:135
+binder 8426:8426 <> y:136
+R8448:8452 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R8433:8433 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R8437:8443 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R8447:8447 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R8434:8434 ProyectoCoq.MathCompLattices_SeqEnv <> f:134 var
+R8436:8436 ProyectoCoq.MathCompLattices_SeqEnv <> x:135 var
+R8444:8444 ProyectoCoq.MathCompLattices_SeqEnv <> f:134 var
+R8446:8446 ProyectoCoq.MathCompLattices_SeqEnv <> y:136 var
+R8453:8453 ProyectoCoq.MathCompLattices_SeqEnv <> f:134 var
+R8457:8461 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R8456:8456 ProyectoCoq.MathCompLattices_SeqEnv <> x:135 var
+R8462:8462 ProyectoCoq.MathCompLattices_SeqEnv <> y:136 var
+def 8479:8492 <> meetOrdPreserv
+R8501:8507 ProyectoCoq.Def_Lattice <> lattice rec
+binder 8495:8495 <> L:137
+binder 8497:8497 <> K:138
+R8516:8519 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8515:8515 ProyectoCoq.MathCompLattices_SeqEnv <> L:137 var
+R8520:8520 ProyectoCoq.MathCompLattices_SeqEnv <> K:138 var
+binder 8511:8511 <> f:139
+R8565:8565 ProyectoCoq.MathCompLattices_SeqEnv <> L:137 var
+binder 8559:8559 <> x:140
+binder 8561:8561 <> y:141
+R8579:8584 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R8600:8600 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R8568:8568 ProyectoCoq.MathCompLattices_SeqEnv <> f:139 var
+R8572:8576 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R8571:8571 ProyectoCoq.MathCompLattices_SeqEnv <> x:140 var
+R8577:8577 ProyectoCoq.MathCompLattices_SeqEnv <> y:141 var
+R8585:8585 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R8589:8595 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R8599:8599 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R8586:8586 ProyectoCoq.MathCompLattices_SeqEnv <> f:139 var
+R8588:8588 ProyectoCoq.MathCompLattices_SeqEnv <> x:140 var
+R8596:8596 ProyectoCoq.MathCompLattices_SeqEnv <> f:139 var
+R8598:8598 ProyectoCoq.MathCompLattices_SeqEnv <> y:141 var
+def 8615:8625 <> joinPreserv
+R8634:8640 ProyectoCoq.Def_Lattice <> lattice rec
+binder 8628:8628 <> L:142
+binder 8630:8630 <> K:143
+R8649:8652 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8648:8648 ProyectoCoq.MathCompLattices_SeqEnv <> L:142 var
+R8653:8653 ProyectoCoq.MathCompLattices_SeqEnv <> K:143 var
+binder 8644:8644 <> f:144
+R8695:8695 ProyectoCoq.MathCompLattices_SeqEnv <> L:142 var
+binder 8689:8689 <> x:145
+binder 8691:8691 <> y:146
+R8713:8715 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8698:8698 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R8702:8708 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R8712:8712 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R8699:8699 ProyectoCoq.MathCompLattices_SeqEnv <> f:144 var
+R8701:8701 ProyectoCoq.MathCompLattices_SeqEnv <> x:145 var
+R8709:8709 ProyectoCoq.MathCompLattices_SeqEnv <> f:144 var
+R8711:8711 ProyectoCoq.MathCompLattices_SeqEnv <> y:146 var
+R8716:8716 ProyectoCoq.MathCompLattices_SeqEnv <> f:144 var
+R8720:8724 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R8719:8719 ProyectoCoq.MathCompLattices_SeqEnv <> x:145 var
+R8725:8725 ProyectoCoq.MathCompLattices_SeqEnv <> y:146 var
+def 8741:8751 <> meetPreserv
+R8760:8766 ProyectoCoq.Def_Lattice <> lattice rec
+binder 8754:8754 <> L:147
+binder 8756:8756 <> K:148
+R8775:8778 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8774:8774 ProyectoCoq.MathCompLattices_SeqEnv <> L:147 var
+R8779:8779 ProyectoCoq.MathCompLattices_SeqEnv <> K:148 var
+binder 8770:8770 <> f:149
+R8821:8821 ProyectoCoq.MathCompLattices_SeqEnv <> L:147 var
+binder 8815:8815 <> x:150
+binder 8817:8817 <> y:151
+R8835:8837 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8824:8824 ProyectoCoq.MathCompLattices_SeqEnv <> f:149 var
+R8828:8832 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R8827:8827 ProyectoCoq.MathCompLattices_SeqEnv <> x:150 var
+R8833:8833 ProyectoCoq.MathCompLattices_SeqEnv <> y:151 var
+R8838:8838 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R8842:8848 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R8852:8852 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R8839:8839 ProyectoCoq.MathCompLattices_SeqEnv <> f:149 var
+R8841:8841 ProyectoCoq.MathCompLattices_SeqEnv <> x:150 var
+R8849:8849 ProyectoCoq.MathCompLattices_SeqEnv <> f:149 var
+R8851:8851 ProyectoCoq.MathCompLattices_SeqEnv <> y:151 var
+def 8867:8876 <> latticeIso
+R8885:8891 ProyectoCoq.Def_Lattice <> lattice rec
+binder 8879:8879 <> L:152
+binder 8881:8881 <> K:153
+R8900:8903 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8899:8899 ProyectoCoq.MathCompLattices_SeqEnv <> L:152 var
+R8904:8904 ProyectoCoq.MathCompLattices_SeqEnv <> K:153 var
+binder 8895:8895 <> f:154
+R8932:8932 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8951:8955 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8934:8944 ProyectoCoq.MathCompLattices_SeqEnv <> joinPreserv def
+R8946:8946 ProyectoCoq.MathCompLattices_SeqEnv <> L:152 var
+R8948:8948 ProyectoCoq.MathCompLattices_SeqEnv <> K:153 var
+R8950:8950 ProyectoCoq.MathCompLattices_SeqEnv <> f:154 var
+R8956:8956 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8975:8980 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8997:8997 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8958:8968 ProyectoCoq.MathCompLattices_SeqEnv <> meetPreserv def
+R8970:8970 ProyectoCoq.MathCompLattices_SeqEnv <> L:152 var
+R8972:8972 ProyectoCoq.MathCompLattices_SeqEnv <> K:153 var
+R8974:8974 ProyectoCoq.MathCompLattices_SeqEnv <> f:154 var
+R8982:8990 ProyectoCoq.MathCompLattices_SeqEnv <> Biyective def
+R8992:8992 ProyectoCoq.MathCompLattices_SeqEnv <> L:152 var
+R8994:8994 ProyectoCoq.MathCompLattices_SeqEnv <> K:153 var
+R8996:8996 ProyectoCoq.MathCompLattices_SeqEnv <> f:154 var
+prf 9007:9015 <> prop219i1
+R9024:9030 ProyectoCoq.Def_Lattice <> lattice rec
+binder 9018:9018 <> L:155
+binder 9020:9020 <> K:156
+R9038:9038 ProyectoCoq.MathCompLattices_SeqEnv <> L:155 var
+binder 9034:9034 <> z:157
+R9047:9047 ProyectoCoq.MathCompLattices_SeqEnv <> K:156 var
+binder 9042:9043 <> fz:158
+R9056:9059 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9055:9055 ProyectoCoq.MathCompLattices_SeqEnv <> L:155 var
+R9060:9060 ProyectoCoq.MathCompLattices_SeqEnv <> K:156 var
+binder 9051:9051 <> f:159
+R9065:9065 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R9083:9090 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R9112:9112 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R9067:9076 ProyectoCoq.MathCompLattices_SeqEnv <> ordPreserv def
+R9078:9078 ProyectoCoq.MathCompLattices_SeqEnv <> L:155 var
+R9080:9080 ProyectoCoq.MathCompLattices_SeqEnv <> K:156 var
+R9082:9082 ProyectoCoq.MathCompLattices_SeqEnv <> f:159 var
+R9092:9105 ProyectoCoq.MathCompLattices_SeqEnv <> joinOrdPreserv def
+R9107:9107 ProyectoCoq.MathCompLattices_SeqEnv <> L:155 var
+R9109:9109 ProyectoCoq.MathCompLattices_SeqEnv <> K:156 var
+R9111:9111 ProyectoCoq.MathCompLattices_SeqEnv <> f:159 var
+R9140:9149 ProyectoCoq.MathCompLattices_SeqEnv <> ordPreserv def
+R9140:9149 ProyectoCoq.MathCompLattices_SeqEnv <> ordPreserv def
+R9140:9149 ProyectoCoq.MathCompLattices_SeqEnv <> ordPreserv def
+R9185:9194 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R9185:9194 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R9185:9194 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R9256:9257 ProyectoCoq.Def_Lattice <> JH abbrev
+R9256:9257 ProyectoCoq.Def_Lattice <> JH abbrev
+R9256:9257 ProyectoCoq.Def_Lattice <> JH abbrev
+R9281:9294 ProyectoCoq.MathCompLattices_SeqEnv <> joinOrdPreserv def
+R9281:9294 ProyectoCoq.MathCompLattices_SeqEnv <> joinOrdPreserv def
+R9281:9294 ProyectoCoq.MathCompLattices_SeqEnv <> joinOrdPreserv def
+R9315:9322 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R9371:9380 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R9371:9380 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R9371:9380 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R9402:9406 Coq.Init.Logic <> proj1 thm
+R9419:9423 ProyectoCoq.Def_Lattice <> trans abbrev
+R9419:9423 ProyectoCoq.Def_Lattice <> trans abbrev
+prf 9439:9447 <> prop219i2
+R9456:9462 ProyectoCoq.Def_Lattice <> lattice rec
+binder 9450:9450 <> L:160
+binder 9452:9452 <> K:161
+R9470:9470 ProyectoCoq.MathCompLattices_SeqEnv <> L:160 var
+binder 9466:9466 <> z:162
+R9479:9479 ProyectoCoq.MathCompLattices_SeqEnv <> K:161 var
+binder 9474:9475 <> fz:163
+R9488:9491 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9487:9487 ProyectoCoq.MathCompLattices_SeqEnv <> L:160 var
+R9492:9492 ProyectoCoq.MathCompLattices_SeqEnv <> K:161 var
+binder 9483:9483 <> f:164
+R9497:9497 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R9515:9521 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R9543:9543 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R9499:9508 ProyectoCoq.MathCompLattices_SeqEnv <> ordPreserv def
+R9510:9510 ProyectoCoq.MathCompLattices_SeqEnv <> L:160 var
+R9512:9512 ProyectoCoq.MathCompLattices_SeqEnv <> K:161 var
+R9514:9514 ProyectoCoq.MathCompLattices_SeqEnv <> f:164 var
+R9523:9536 ProyectoCoq.MathCompLattices_SeqEnv <> meetOrdPreserv def
+R9538:9538 ProyectoCoq.MathCompLattices_SeqEnv <> L:160 var
+R9540:9540 ProyectoCoq.MathCompLattices_SeqEnv <> K:161 var
+R9542:9542 ProyectoCoq.MathCompLattices_SeqEnv <> f:164 var
+R9571:9580 ProyectoCoq.MathCompLattices_SeqEnv <> ordPreserv def
+R9571:9580 ProyectoCoq.MathCompLattices_SeqEnv <> ordPreserv def
+R9571:9580 ProyectoCoq.MathCompLattices_SeqEnv <> ordPreserv def
+R9616:9625 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R9616:9625 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R9616:9625 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R9681:9684 Coq.Init.Logic <> conj constr
+R9681:9684 Coq.Init.Logic <> conj constr
+R9681:9684 Coq.Init.Logic <> conj constr
+R9717:9718 ProyectoCoq.Def_Lattice <> MH abbrev
+R9717:9718 ProyectoCoq.Def_Lattice <> MH abbrev
+R9717:9718 ProyectoCoq.Def_Lattice <> MH abbrev
+R9730:9743 ProyectoCoq.MathCompLattices_SeqEnv <> meetOrdPreserv def
+R9730:9743 ProyectoCoq.MathCompLattices_SeqEnv <> meetOrdPreserv def
+R9730:9743 ProyectoCoq.MathCompLattices_SeqEnv <> meetOrdPreserv def
+R9786:9788 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R9764:9771 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R9786:9788 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R9786:9788 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R9810:9819 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R9810:9819 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R9810:9819 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R9841:9845 Coq.Init.Logic <> proj2 thm
+R9888:9892 ProyectoCoq.Def_Lattice <> trans abbrev
+R9888:9892 ProyectoCoq.Def_Lattice <> trans abbrev
+prf 9907:9915 <> prop219i3
+R9924:9930 ProyectoCoq.Def_Lattice <> lattice rec
+binder 9918:9918 <> L:165
+binder 9920:9920 <> K:166
+R9938:9938 ProyectoCoq.MathCompLattices_SeqEnv <> L:165 var
+binder 9934:9934 <> z:167
+R9947:9947 ProyectoCoq.MathCompLattices_SeqEnv <> K:166 var
+binder 9942:9943 <> fz:168
+R9956:9959 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9955:9955 ProyectoCoq.MathCompLattices_SeqEnv <> L:165 var
+R9960:9960 ProyectoCoq.MathCompLattices_SeqEnv <> K:166 var
+binder 9951:9951 <> f:169
+R9965:9965 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R9979:9985 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R10003:10003 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R9967:9972 ProyectoCoq.MathCompLattices_SeqEnv <> ordIso def
+R9974:9974 ProyectoCoq.MathCompLattices_SeqEnv <> L:165 var
+R9976:9976 ProyectoCoq.MathCompLattices_SeqEnv <> K:166 var
+R9978:9978 ProyectoCoq.MathCompLattices_SeqEnv <> f:169 var
+R9987:9996 ProyectoCoq.MathCompLattices_SeqEnv <> latticeIso def
+R9998:9998 ProyectoCoq.MathCompLattices_SeqEnv <> L:165 var
+R10000:10000 ProyectoCoq.MathCompLattices_SeqEnv <> K:166 var
+R10002:10002 ProyectoCoq.MathCompLattices_SeqEnv <> f:169 var
+R10031:10036 ProyectoCoq.MathCompLattices_SeqEnv <> ordIso def
+R10039:10047 ProyectoCoq.MathCompLattices_SeqEnv <> ordEmmbed def
+R10050:10058 ProyectoCoq.MathCompLattices_SeqEnv <> Biyective def
+R10031:10036 ProyectoCoq.MathCompLattices_SeqEnv <> ordIso def
+R10031:10036 ProyectoCoq.MathCompLattices_SeqEnv <> ordIso def
+R10039:10047 ProyectoCoq.MathCompLattices_SeqEnv <> ordEmmbed def
+R10039:10047 ProyectoCoq.MathCompLattices_SeqEnv <> ordEmmbed def
+R10050:10058 ProyectoCoq.MathCompLattices_SeqEnv <> Biyective def
+R10050:10058 ProyectoCoq.MathCompLattices_SeqEnv <> Biyective def
+R10094:10103 ProyectoCoq.MathCompLattices_SeqEnv <> latticeIso def
+R10094:10103 ProyectoCoq.MathCompLattices_SeqEnv <> latticeIso def
+R10094:10103 ProyectoCoq.MathCompLattices_SeqEnv <> latticeIso def
+R10139:10145 ProyectoCoq.Def_Lattice <> antisym abbrev
+R10139:10145 ProyectoCoq.Def_Lattice <> antisym abbrev
+R10162:10170 ProyectoCoq.MathCompLattices_SeqEnv <> prop219i1 thm
+R10194:10203 ProyectoCoq.MathCompLattices_SeqEnv <> ordPreserv def
+R10206:10219 ProyectoCoq.MathCompLattices_SeqEnv <> joinOrdPreserv def
+R10162:10170 ProyectoCoq.MathCompLattices_SeqEnv <> prop219i1 thm
+R10162:10170 ProyectoCoq.MathCompLattices_SeqEnv <> prop219i1 thm
+R10194:10203 ProyectoCoq.MathCompLattices_SeqEnv <> ordPreserv def
+R10194:10203 ProyectoCoq.MathCompLattices_SeqEnv <> ordPreserv def
+R10206:10219 ProyectoCoq.MathCompLattices_SeqEnv <> joinOrdPreserv def
+R10206:10219 ProyectoCoq.MathCompLattices_SeqEnv <> joinOrdPreserv def
+R10225:10229 Coq.Init.Logic <> proj1 thm
+R10286:10290 Coq.Init.Logic <> proj1 thm
+R10309:10309 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R10313:10319 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R10323:10323 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R10309:10309 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R10313:10319 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R10323:10323 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R10309:10309 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R10313:10319 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R10323:10323 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R10349:10358 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R10349:10358 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R10349:10358 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R10440:10441 ProyectoCoq.Def_Lattice <> JH abbrev
+R10440:10441 ProyectoCoq.Def_Lattice <> JH abbrev
+R10440:10441 ProyectoCoq.Def_Lattice <> JH abbrev
+R10476:10482 ProyectoCoq.Def_Lattice <> antisym abbrev
+R10476:10482 ProyectoCoq.Def_Lattice <> antisym abbrev
+R10499:10507 ProyectoCoq.MathCompLattices_SeqEnv <> prop219i2 thm
+R10531:10540 ProyectoCoq.MathCompLattices_SeqEnv <> ordPreserv def
+R10543:10556 ProyectoCoq.MathCompLattices_SeqEnv <> meetOrdPreserv def
+R10499:10507 ProyectoCoq.MathCompLattices_SeqEnv <> prop219i2 thm
+R10499:10507 ProyectoCoq.MathCompLattices_SeqEnv <> prop219i2 thm
+R10531:10540 ProyectoCoq.MathCompLattices_SeqEnv <> ordPreserv def
+R10531:10540 ProyectoCoq.MathCompLattices_SeqEnv <> ordPreserv def
+R10543:10556 ProyectoCoq.MathCompLattices_SeqEnv <> meetOrdPreserv def
+R10543:10556 ProyectoCoq.MathCompLattices_SeqEnv <> meetOrdPreserv def
+R10562:10566 Coq.Init.Logic <> proj1 thm
+R10623:10627 Coq.Init.Logic <> proj1 thm
+R10648:10648 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R10652:10658 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R10662:10662 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R10648:10648 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R10652:10658 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R10662:10662 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R10648:10648 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R10652:10658 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R10662:10662 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R10690:10699 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R10690:10699 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R10690:10699 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R10785:10786 ProyectoCoq.Def_Lattice <> MH abbrev
+R10785:10786 ProyectoCoq.Def_Lattice <> MH abbrev
+R10785:10786 ProyectoCoq.Def_Lattice <> MH abbrev
+R10809:10818 ProyectoCoq.MathCompLattices_SeqEnv <> latticeIso def
+R10809:10818 ProyectoCoq.MathCompLattices_SeqEnv <> latticeIso def
+R10809:10818 ProyectoCoq.MathCompLattices_SeqEnv <> latticeIso def
+R10939:10946 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R10904:10911 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R10939:10946 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R10939:10946 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R10962:10969 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R10987:10994 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R10962:10969 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R10962:10969 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R10987:10994 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R10987:10994 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+prf 11063:11070 <> Lema4_1i
+R11077:11083 ProyectoCoq.Def_Lattice <> lattice rec
+binder 11073:11073 <> T:170
+R11091:11091 ProyectoCoq.MathCompLattices_SeqEnv <> T:170 var
+binder 11087:11087 <> z:171
+R11111:11111 ProyectoCoq.MathCompLattices_SeqEnv <> T:170 var
+binder 11103:11103 <> a:172
+binder 11105:11105 <> b:173
+binder 11107:11107 <> c:174
+R11114:11114 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R11138:11144 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R11160:11160 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R11115:11115 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R11123:11129 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R11137:11137 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R11117:11121 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R11116:11116 ProyectoCoq.MathCompLattices_SeqEnv <> a:172 var
+R11122:11122 ProyectoCoq.MathCompLattices_SeqEnv <> b:173 var
+R11131:11135 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R11130:11130 ProyectoCoq.MathCompLattices_SeqEnv <> a:172 var
+R11136:11136 ProyectoCoq.MathCompLattices_SeqEnv <> c:174 var
+R11146:11151 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R11159:11159 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R11145:11145 ProyectoCoq.MathCompLattices_SeqEnv <> a:172 var
+R11153:11157 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R11152:11152 ProyectoCoq.MathCompLattices_SeqEnv <> b:173 var
+R11158:11158 ProyectoCoq.MathCompLattices_SeqEnv <> c:174 var
+R11193:11194 ProyectoCoq.Def_Lattice <> MH abbrev
+R11193:11194 ProyectoCoq.Def_Lattice <> MH abbrev
+R11193:11194 ProyectoCoq.Def_Lattice <> MH abbrev
+R11215:11216 ProyectoCoq.Def_Lattice <> JH abbrev
+R11215:11216 ProyectoCoq.Def_Lattice <> JH abbrev
+R11215:11216 ProyectoCoq.Def_Lattice <> JH abbrev
+R11242:11251 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R11242:11251 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R11242:11251 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R11264:11268 Coq.Init.Logic <> proj1 thm
+R11283:11292 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R11283:11292 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R11283:11292 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R11305:11309 Coq.Init.Logic <> proj1 thm
+R11321:11322 ProyectoCoq.Def_Lattice <> JH abbrev
+R11321:11322 ProyectoCoq.Def_Lattice <> JH abbrev
+R11321:11322 ProyectoCoq.Def_Lattice <> JH abbrev
+R11332:11341 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R11332:11341 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R11332:11341 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R11386:11395 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R11386:11395 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R11386:11395 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R11415:11419 Coq.Init.Logic <> proj2 thm
+R11434:11438 ProyectoCoq.Def_Lattice <> trans abbrev
+R11434:11438 ProyectoCoq.Def_Lattice <> trans abbrev
+R11448:11457 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R11448:11457 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R11448:11457 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R11477:11481 Coq.Init.Logic <> proj2 thm
+R11494:11498 ProyectoCoq.Def_Lattice <> trans abbrev
+R11494:11498 ProyectoCoq.Def_Lattice <> trans abbrev
+prf 11513:11521 <> Lema4_1id
+R11528:11534 ProyectoCoq.Def_Lattice <> lattice rec
+binder 11524:11524 <> T:175
+R11542:11542 ProyectoCoq.MathCompLattices_SeqEnv <> T:175 var
+binder 11538:11538 <> z:176
+R11562:11562 ProyectoCoq.MathCompLattices_SeqEnv <> T:175 var
+binder 11554:11554 <> a:177
+binder 11556:11556 <> b:178
+binder 11558:11558 <> c:179
+R11565:11565 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R11581:11587 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R11611:11611 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R11567:11572 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R11580:11580 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R11566:11566 ProyectoCoq.MathCompLattices_SeqEnv <> a:177 var
+R11574:11578 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R11573:11573 ProyectoCoq.MathCompLattices_SeqEnv <> b:178 var
+R11579:11579 ProyectoCoq.MathCompLattices_SeqEnv <> c:179 var
+R11588:11588 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R11596:11602 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R11610:11610 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R11590:11594 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R11589:11589 ProyectoCoq.MathCompLattices_SeqEnv <> a:177 var
+R11595:11595 ProyectoCoq.MathCompLattices_SeqEnv <> b:178 var
+R11604:11608 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R11603:11603 ProyectoCoq.MathCompLattices_SeqEnv <> a:177 var
+R11609:11609 ProyectoCoq.MathCompLattices_SeqEnv <> c:179 var
+R11676:11679 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R11681:11682 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R11684:11685 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R11687:11687 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R11676:11679 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R11681:11682 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R11684:11685 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R11687:11687 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R11689:11693 ProyectoCoq.Def_Lattice <> meetT proj
+R11695:11699 ProyectoCoq.Def_Lattice <> joinT proj
+R11708:11718 ProyectoCoq.Ltac_Dual <> reflectDual thm
+R11708:11718 ProyectoCoq.Ltac_Dual <> reflectDual thm
+R11729:11732 ProyectoCoq.Dualidad <> Dual thm
+R11735:11738 ProyectoCoq.Dualidad <> dual def
+R11741:11746 ProyectoCoq.Dualidad <> dual_t def
+R11729:11732 ProyectoCoq.Dualidad <> Dual thm
+R11729:11732 ProyectoCoq.Dualidad <> Dual thm
+R11735:11738 ProyectoCoq.Dualidad <> dual def
+R11735:11738 ProyectoCoq.Dualidad <> dual def
+R11741:11746 ProyectoCoq.Dualidad <> dual_t def
+R11741:11746 ProyectoCoq.Dualidad <> dual_t def
+R11772:11777 ProyectoCoq.Dualidad <> eval_f def
+R11772:11777 ProyectoCoq.Dualidad <> eval_f def
+R11772:11777 ProyectoCoq.Dualidad <> eval_f def
+R11792:11799 ProyectoCoq.MathCompLattices_SeqEnv <> Lema4_1i thm
+R11809:11812 ProyectoCoq.Dualidad <> eval def
+R11826:11828 ProyectoCoq.Dualidad <> Var constr
+R11835:11838 ProyectoCoq.Dualidad <> eval def
+R11852:11854 ProyectoCoq.Dualidad <> Var constr
+R11872:11875 ProyectoCoq.Dualidad <> eval def
+R11889:11891 ProyectoCoq.Dualidad <> Var constr
+R11792:11799 ProyectoCoq.MathCompLattices_SeqEnv <> Lema4_1i thm
+R11809:11812 ProyectoCoq.Dualidad <> eval def
+R11826:11828 ProyectoCoq.Dualidad <> Var constr
+R11835:11838 ProyectoCoq.Dualidad <> eval def
+R11852:11854 ProyectoCoq.Dualidad <> Var constr
+R11872:11875 ProyectoCoq.Dualidad <> eval def
+R11889:11891 ProyectoCoq.Dualidad <> Var constr
+R11792:11799 ProyectoCoq.MathCompLattices_SeqEnv <> Lema4_1i thm
+R11809:11812 ProyectoCoq.Dualidad <> eval def
+R11826:11828 ProyectoCoq.Dualidad <> Var constr
+R11835:11838 ProyectoCoq.Dualidad <> eval def
+R11852:11854 ProyectoCoq.Dualidad <> Var constr
+R11872:11875 ProyectoCoq.Dualidad <> eval def
+R11889:11891 ProyectoCoq.Dualidad <> Var constr
+prf 11912:11920 <> Lema4_1ii
+R11927:11933 ProyectoCoq.Def_Lattice <> lattice rec
+binder 11923:11923 <> T:180
+R11941:11941 ProyectoCoq.MathCompLattices_SeqEnv <> T:180 var
+binder 11937:11937 <> z:181
+R11961:11961 ProyectoCoq.MathCompLattices_SeqEnv <> T:180 var
+binder 11953:11953 <> a:182
+binder 11955:11955 <> b:183
+binder 11957:11957 <> c:184
+R11971:11974 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11965:11969 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R11964:11964 ProyectoCoq.MathCompLattices_SeqEnv <> c:184 var
+R11970:11970 ProyectoCoq.MathCompLattices_SeqEnv <> a:182 var
+R11975:11975 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R11991:11997 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R12013:12013 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R11976:11976 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R11984:11989 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R11978:11982 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R11977:11977 ProyectoCoq.MathCompLattices_SeqEnv <> a:182 var
+R11983:11983 ProyectoCoq.MathCompLattices_SeqEnv <> b:183 var
+R11990:11990 ProyectoCoq.MathCompLattices_SeqEnv <> c:184 var
+R11999:12004 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R12012:12012 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R11998:11998 ProyectoCoq.MathCompLattices_SeqEnv <> a:182 var
+R12006:12010 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R12005:12005 ProyectoCoq.MathCompLattices_SeqEnv <> b:183 var
+R12011:12011 ProyectoCoq.MathCompLattices_SeqEnv <> c:184 var
+R12037:12044 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R12060:12067 ProyectoCoq.MathCompLattices_SeqEnv <> Lema4_1i thm
+R12060:12067 ProyectoCoq.MathCompLattices_SeqEnv <> Lema4_1i thm
+R12060:12067 ProyectoCoq.MathCompLattices_SeqEnv <> Lema4_1i thm
+prf 12102:12111 <> Lema4_1iid
+R12118:12124 ProyectoCoq.Def_Lattice <> lattice rec
+binder 12114:12114 <> T:185
+R12132:12132 ProyectoCoq.MathCompLattices_SeqEnv <> T:185 var
+binder 12128:12128 <> z:186
+R12152:12152 ProyectoCoq.MathCompLattices_SeqEnv <> T:185 var
+binder 12144:12144 <> a:187
+binder 12146:12146 <> b:188
+binder 12148:12148 <> c:189
+R12162:12165 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12156:12160 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R12155:12155 ProyectoCoq.MathCompLattices_SeqEnv <> a:187 var
+R12161:12161 ProyectoCoq.MathCompLattices_SeqEnv <> c:189 var
+R12166:12166 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R12182:12188 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R12204:12204 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R12168:12173 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R12181:12181 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R12167:12167 ProyectoCoq.MathCompLattices_SeqEnv <> a:187 var
+R12175:12179 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R12174:12174 ProyectoCoq.MathCompLattices_SeqEnv <> b:188 var
+R12180:12180 ProyectoCoq.MathCompLattices_SeqEnv <> c:189 var
+R12189:12189 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R12197:12202 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R12191:12195 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R12190:12190 ProyectoCoq.MathCompLattices_SeqEnv <> a:187 var
+R12196:12196 ProyectoCoq.MathCompLattices_SeqEnv <> b:188 var
+R12203:12203 ProyectoCoq.MathCompLattices_SeqEnv <> c:189 var
+R12269:12272 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R12274:12275 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R12277:12278 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R12280:12280 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R12269:12272 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R12274:12275 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R12277:12278 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R12280:12280 mathcomp.ssreflect.seq <> ::seq_scope:'['_'::'_x_';'_x_';'_'..'_';'_x_']' not
+R12282:12286 ProyectoCoq.Def_Lattice <> meetT proj
+R12288:12292 ProyectoCoq.Def_Lattice <> joinT proj
+R12301:12311 ProyectoCoq.Ltac_Dual <> reflectDual thm
+R12301:12311 ProyectoCoq.Ltac_Dual <> reflectDual thm
+R12322:12325 ProyectoCoq.Dualidad <> Dual thm
+R12328:12331 ProyectoCoq.Dualidad <> dual def
+R12334:12339 ProyectoCoq.Dualidad <> dual_t def
+R12322:12325 ProyectoCoq.Dualidad <> Dual thm
+R12322:12325 ProyectoCoq.Dualidad <> Dual thm
+R12328:12331 ProyectoCoq.Dualidad <> dual def
+R12328:12331 ProyectoCoq.Dualidad <> dual def
+R12334:12339 ProyectoCoq.Dualidad <> dual_t def
+R12334:12339 ProyectoCoq.Dualidad <> dual_t def
+R12365:12370 ProyectoCoq.Dualidad <> eval_f def
+R12365:12370 ProyectoCoq.Dualidad <> eval_f def
+R12365:12370 ProyectoCoq.Dualidad <> eval_f def
+R12385:12393 ProyectoCoq.MathCompLattices_SeqEnv <> Lema4_1ii thm
+R12403:12406 ProyectoCoq.Dualidad <> eval def
+R12420:12422 ProyectoCoq.Dualidad <> Var constr
+R12429:12432 ProyectoCoq.Dualidad <> eval def
+R12446:12448 ProyectoCoq.Dualidad <> Var constr
+R12466:12469 ProyectoCoq.Dualidad <> eval def
+R12483:12485 ProyectoCoq.Dualidad <> Var constr
+R12385:12393 ProyectoCoq.MathCompLattices_SeqEnv <> Lema4_1ii thm
+R12403:12406 ProyectoCoq.Dualidad <> eval def
+R12420:12422 ProyectoCoq.Dualidad <> Var constr
+R12429:12432 ProyectoCoq.Dualidad <> eval def
+R12446:12448 ProyectoCoq.Dualidad <> Var constr
+R12466:12469 ProyectoCoq.Dualidad <> eval def
+R12483:12485 ProyectoCoq.Dualidad <> Var constr
+R12385:12393 ProyectoCoq.MathCompLattices_SeqEnv <> Lema4_1ii thm
+R12403:12406 ProyectoCoq.Dualidad <> eval def
+R12420:12422 ProyectoCoq.Dualidad <> Var constr
+R12429:12432 ProyectoCoq.Dualidad <> eval def
+R12446:12448 ProyectoCoq.Dualidad <> Var constr
+R12466:12469 ProyectoCoq.Dualidad <> eval def
+R12483:12485 ProyectoCoq.Dualidad <> Var constr
+prf 12506:12515 <> Lema4_1iii
+R12522:12528 ProyectoCoq.Def_Lattice <> lattice rec
+binder 12518:12518 <> T:190
+R12536:12536 ProyectoCoq.MathCompLattices_SeqEnv <> T:190 var
+binder 12532:12532 <> z:191
+R12556:12556 ProyectoCoq.MathCompLattices_SeqEnv <> T:190 var
+binder 12548:12548 <> a:192
+binder 12550:12550 <> b:193
+binder 12552:12552 <> c:194
+R12559:12559 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R12597:12603 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R12641:12641 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R12583:12588 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R12596:12596 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R12560:12560 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R12568:12574 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R12582:12582 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R12562:12566 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R12561:12561 ProyectoCoq.MathCompLattices_SeqEnv <> a:192 var
+R12567:12567 ProyectoCoq.MathCompLattices_SeqEnv <> b:193 var
+R12576:12580 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R12575:12575 ProyectoCoq.MathCompLattices_SeqEnv <> b:193 var
+R12581:12581 ProyectoCoq.MathCompLattices_SeqEnv <> c:194 var
+R12590:12594 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R12589:12589 ProyectoCoq.MathCompLattices_SeqEnv <> c:194 var
+R12595:12595 ProyectoCoq.MathCompLattices_SeqEnv <> a:192 var
+R12627:12632 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R12640:12640 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R12604:12604 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R12612:12618 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R12626:12626 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R12606:12610 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R12605:12605 ProyectoCoq.MathCompLattices_SeqEnv <> a:192 var
+R12611:12611 ProyectoCoq.MathCompLattices_SeqEnv <> b:193 var
+R12620:12624 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R12619:12619 ProyectoCoq.MathCompLattices_SeqEnv <> b:193 var
+R12625:12625 ProyectoCoq.MathCompLattices_SeqEnv <> c:194 var
+R12634:12638 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R12633:12633 ProyectoCoq.MathCompLattices_SeqEnv <> c:194 var
+R12639:12639 ProyectoCoq.MathCompLattices_SeqEnv <> a:192 var
+binder 12669:12669 <> a:195
+binder 12671:12671 <> b:196
+binder 12673:12673 <> c:197
+R12680:12680 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R12688:12694 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R12702:12702 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R12682:12686 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R12681:12681 ProyectoCoq.MathCompLattices_SeqEnv <> a:195 var
+R12687:12687 ProyectoCoq.MathCompLattices_SeqEnv <> b:196 var
+R12696:12700 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R12695:12695 ProyectoCoq.MathCompLattices_SeqEnv <> c:197 var
+R12701:12701 ProyectoCoq.MathCompLattices_SeqEnv <> a:195 var
+R12728:12737 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R12728:12737 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R12728:12737 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R12749:12753 Coq.Init.Logic <> proj2 thm
+R12765:12774 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R12765:12774 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R12765:12774 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R12787:12791 Coq.Init.Logic <> proj1 thm
+R12806:12810 ProyectoCoq.Def_Lattice <> trans abbrev
+R12806:12810 ProyectoCoq.Def_Lattice <> trans abbrev
+R12836:12837 ProyectoCoq.Def_Lattice <> JH abbrev
+R12836:12837 ProyectoCoq.Def_Lattice <> JH abbrev
+R12836:12837 ProyectoCoq.Def_Lattice <> JH abbrev
+R12858:12859 ProyectoCoq.Def_Lattice <> MH abbrev
+R12858:12859 ProyectoCoq.Def_Lattice <> MH abbrev
+R12858:12859 ProyectoCoq.Def_Lattice <> MH abbrev
+R12886:12891 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R12915:12915 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R12892:12892 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R12900:12906 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R12914:12914 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R12894:12898 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R12908:12912 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R12933:12934 ProyectoCoq.Def_Lattice <> MH abbrev
+R12933:12934 ProyectoCoq.Def_Lattice <> MH abbrev
+R12933:12934 ProyectoCoq.Def_Lattice <> MH abbrev
+R12968:12977 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R12968:12977 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R12968:12977 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R12990:12994 Coq.Init.Logic <> proj2 thm
+R13013:13022 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R13013:13022 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R13013:13022 ProyectoCoq.MathCompLattices_SeqEnv <> ab_leq_jab thm
+R13035:13039 Coq.Init.Logic <> proj1 thm
+R13056:13056 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R13080:13085 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R13057:13057 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R13065:13071 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R13079:13079 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R13059:13063 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R13073:13077 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R13104:13105 ProyectoCoq.Def_Lattice <> JH abbrev
+R13104:13105 ProyectoCoq.Def_Lattice <> JH abbrev
+R13104:13105 ProyectoCoq.Def_Lattice <> JH abbrev
+R13139:13148 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R13139:13148 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R13139:13148 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R13161:13165 Coq.Init.Logic <> proj2 thm
+R13184:13193 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R13184:13193 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R13184:13193 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R13206:13210 Coq.Init.Logic <> proj1 thm
+R13247:13251 ProyectoCoq.Def_Lattice <> trans abbrev
+R13247:13251 ProyectoCoq.Def_Lattice <> trans abbrev
+R13265:13266 ProyectoCoq.Def_Lattice <> JH abbrev
+R13265:13266 ProyectoCoq.Def_Lattice <> JH abbrev
+R13265:13266 ProyectoCoq.Def_Lattice <> JH abbrev
+R13311:13313 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R13319:13320 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R13311:13313 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R13311:13313 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R13319:13320 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R13319:13320 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R13346:13347 ProyectoCoq.Def_Lattice <> MH abbrev
+R13346:13347 ProyectoCoq.Def_Lattice <> MH abbrev
+R13346:13347 ProyectoCoq.Def_Lattice <> MH abbrev
+R13368:13369 ProyectoCoq.Def_Lattice <> MH abbrev
+R13368:13369 ProyectoCoq.Def_Lattice <> MH abbrev
+R13368:13369 ProyectoCoq.Def_Lattice <> MH abbrev
+R13397:13399 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R13405:13406 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R13397:13399 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R13397:13399 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R13405:13406 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R13405:13406 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R13452:13453 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R13452:13453 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R13452:13453 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+prf 13484:13491 <> Lema4_2i
+R13498:13504 ProyectoCoq.Def_Lattice <> lattice rec
+binder 13494:13494 <> T:198
+R13512:13512 ProyectoCoq.MathCompLattices_SeqEnv <> T:198 var
+binder 13508:13508 <> z:199
+R13532:13532 ProyectoCoq.MathCompLattices_SeqEnv <> T:198 var
+binder 13524:13524 <> a:200
+binder 13526:13526 <> b:201
+binder 13528:13528 <> c:202
+R13535:13535 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R13584:13625 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R13682:13682 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R13543:13546 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13537:13541 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R13536:13536 ProyectoCoq.MathCompLattices_SeqEnv <> c:202 var
+R13542:13542 ProyectoCoq.MathCompLattices_SeqEnv <> a:200 var
+R13547:13547 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13563:13567 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13583:13583 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13549:13554 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R13562:13562 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R13548:13548 ProyectoCoq.MathCompLattices_SeqEnv <> a:200 var
+R13556:13560 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R13555:13555 ProyectoCoq.MathCompLattices_SeqEnv <> b:201 var
+R13561:13561 ProyectoCoq.MathCompLattices_SeqEnv <> c:202 var
+R13568:13568 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R13576:13581 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R13570:13574 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R13569:13569 ProyectoCoq.MathCompLattices_SeqEnv <> a:200 var
+R13575:13575 ProyectoCoq.MathCompLattices_SeqEnv <> b:201 var
+R13582:13582 ProyectoCoq.MathCompLattices_SeqEnv <> c:202 var
+R13633:13636 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13627:13631 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R13626:13626 ProyectoCoq.MathCompLattices_SeqEnv <> c:202 var
+R13632:13632 ProyectoCoq.MathCompLattices_SeqEnv <> a:200 var
+R13637:13637 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13653:13657 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13681:13681 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13639:13644 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R13652:13652 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R13638:13638 ProyectoCoq.MathCompLattices_SeqEnv <> a:200 var
+R13646:13650 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R13645:13645 ProyectoCoq.MathCompLattices_SeqEnv <> b:201 var
+R13651:13651 ProyectoCoq.MathCompLattices_SeqEnv <> c:202 var
+R13658:13658 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R13666:13672 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R13680:13680 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R13660:13664 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R13659:13659 ProyectoCoq.MathCompLattices_SeqEnv <> a:200 var
+R13665:13665 ProyectoCoq.MathCompLattices_SeqEnv <> b:201 var
+R13674:13678 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R13673:13673 ProyectoCoq.MathCompLattices_SeqEnv <> a:200 var
+R13679:13679 ProyectoCoq.MathCompLattices_SeqEnv <> c:202 var
+R13716:13719 ProyectoCoq.MathCompLattices_SeqEnv <> dobl thm
+R13724:13731 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R13769:13772 ProyectoCoq.MathCompLattices_SeqEnv <> dobl thm
+R13777:13784 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+prf 13820:13828 <> Lema4_2ii
+R13835:13841 ProyectoCoq.Def_Lattice <> lattice rec
+binder 13831:13831 <> T:203
+R13849:13849 ProyectoCoq.MathCompLattices_SeqEnv <> T:203 var
+binder 13845:13845 <> z:204
+R13854:13854 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R13929:13953 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R14025:14025 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R13870:13870 ProyectoCoq.MathCompLattices_SeqEnv <> T:203 var
+binder 13862:13862 <> a:205
+binder 13864:13864 <> b:206
+binder 13866:13866 <> c:207
+R13880:13883 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13874:13878 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R13873:13873 ProyectoCoq.MathCompLattices_SeqEnv <> c:207 var
+R13879:13879 ProyectoCoq.MathCompLattices_SeqEnv <> a:205 var
+R13884:13884 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13900:13904 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13928:13928 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13886:13891 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R13899:13899 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R13885:13885 ProyectoCoq.MathCompLattices_SeqEnv <> a:205 var
+R13893:13897 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R13892:13892 ProyectoCoq.MathCompLattices_SeqEnv <> b:206 var
+R13898:13898 ProyectoCoq.MathCompLattices_SeqEnv <> c:207 var
+R13905:13905 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R13913:13919 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R13927:13927 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R13907:13911 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R13906:13906 ProyectoCoq.MathCompLattices_SeqEnv <> a:205 var
+R13912:13912 ProyectoCoq.MathCompLattices_SeqEnv <> b:206 var
+R13921:13925 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R13920:13920 ProyectoCoq.MathCompLattices_SeqEnv <> a:205 var
+R13926:13926 ProyectoCoq.MathCompLattices_SeqEnv <> c:207 var
+R13969:13969 ProyectoCoq.MathCompLattices_SeqEnv <> T:203 var
+binder 13961:13961 <> p:208
+binder 13963:13963 <> q:209
+binder 13965:13965 <> r:210
+R13972:13972 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13996:14000 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14024:14024 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13974:13979 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R13995:13995 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R13973:13973 ProyectoCoq.MathCompLattices_SeqEnv <> p:208 var
+R13981:13986 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R13994:13994 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R13980:13980 ProyectoCoq.MathCompLattices_SeqEnv <> q:209 var
+R13988:13992 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R13987:13987 ProyectoCoq.MathCompLattices_SeqEnv <> p:208 var
+R13993:13993 ProyectoCoq.MathCompLattices_SeqEnv <> r:210 var
+R14001:14001 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14009:14015 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14023:14023 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14003:14007 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14002:14002 ProyectoCoq.MathCompLattices_SeqEnv <> p:208 var
+R14008:14008 ProyectoCoq.MathCompLattices_SeqEnv <> q:209 var
+R14017:14021 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14016:14016 ProyectoCoq.MathCompLattices_SeqEnv <> p:208 var
+R14022:14022 ProyectoCoq.MathCompLattices_SeqEnv <> r:210 var
+R14069:14078 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R14069:14078 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R14069:14078 ProyectoCoq.MathCompLattices_SeqEnv <> mab_leq_ab thm
+R14091:14095 Coq.Init.Logic <> proj1 thm
+R14109:14116 ProyectoCoq.MathCompLattices_SeqEnv <> Lema4_2i thm
+R14109:14116 ProyectoCoq.MathCompLattices_SeqEnv <> Lema4_2i thm
+R14109:14116 ProyectoCoq.MathCompLattices_SeqEnv <> Lema4_2i thm
+R14154:14161 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+prf 14218:14224 <> Lema4_3
+R14231:14237 ProyectoCoq.Def_Lattice <> lattice rec
+binder 14227:14227 <> T:211
+R14245:14245 ProyectoCoq.MathCompLattices_SeqEnv <> T:211 var
+binder 14241:14241 <> z:212
+R14250:14250 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R14312:14335 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R14397:14397 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R14266:14266 ProyectoCoq.MathCompLattices_SeqEnv <> T:211 var
+binder 14258:14258 <> a:213
+binder 14260:14260 <> b:214
+binder 14262:14262 <> c:215
+R14269:14269 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14285:14288 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14271:14276 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14284:14284 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14270:14270 ProyectoCoq.MathCompLattices_SeqEnv <> a:213 var
+R14278:14282 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14277:14277 ProyectoCoq.MathCompLattices_SeqEnv <> b:214 var
+R14283:14283 ProyectoCoq.MathCompLattices_SeqEnv <> c:215 var
+R14289:14289 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14297:14303 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14311:14311 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14291:14295 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14290:14290 ProyectoCoq.MathCompLattices_SeqEnv <> a:213 var
+R14296:14296 ProyectoCoq.MathCompLattices_SeqEnv <> b:214 var
+R14305:14309 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14304:14304 ProyectoCoq.MathCompLattices_SeqEnv <> a:213 var
+R14310:14310 ProyectoCoq.MathCompLattices_SeqEnv <> c:215 var
+R14351:14351 ProyectoCoq.MathCompLattices_SeqEnv <> T:211 var
+binder 14343:14343 <> p:216
+binder 14345:14345 <> q:217
+binder 14347:14347 <> r:218
+R14354:14354 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14370:14373 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14356:14361 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14369:14369 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14355:14355 ProyectoCoq.MathCompLattices_SeqEnv <> p:216 var
+R14363:14367 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14362:14362 ProyectoCoq.MathCompLattices_SeqEnv <> q:217 var
+R14368:14368 ProyectoCoq.MathCompLattices_SeqEnv <> r:218 var
+R14374:14374 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14382:14388 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14396:14396 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14376:14380 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14375:14375 ProyectoCoq.MathCompLattices_SeqEnv <> p:216 var
+R14381:14381 ProyectoCoq.MathCompLattices_SeqEnv <> q:217 var
+R14390:14394 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14389:14389 ProyectoCoq.MathCompLattices_SeqEnv <> p:216 var
+R14395:14395 ProyectoCoq.MathCompLattices_SeqEnv <> r:218 var
+R14445:14449 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14445:14449 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14445:14449 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14470:14470 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14478:14483 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14472:14476 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14487:14489 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R14496:14501 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14509:14509 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14503:14507 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14512:14514 ProyectoCoq.MathCompLattices_SeqEnv <> L4d thm
+R14520:14520 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14528:14533 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14522:14526 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14537:14539 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R14487:14489 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R14470:14470 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14478:14483 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14472:14476 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14470:14470 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14478:14483 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14472:14476 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14487:14489 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R14512:14514 ProyectoCoq.MathCompLattices_SeqEnv <> L4d thm
+R14496:14501 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14509:14509 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14503:14507 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14496:14501 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14509:14509 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14503:14507 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14512:14514 ProyectoCoq.MathCompLattices_SeqEnv <> L4d thm
+R14537:14539 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R14520:14520 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14528:14533 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14522:14526 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14520:14520 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14528:14533 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14522:14526 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14537:14539 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R14581:14582 ProyectoCoq.MathCompLattices_SeqEnv <> L1 thm
+R14589:14593 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14597:14599 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R14606:14611 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14619:14619 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14613:14617 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14622:14623 ProyectoCoq.MathCompLattices_SeqEnv <> L4 thm
+R14630:14634 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14638:14640 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R14581:14582 ProyectoCoq.MathCompLattices_SeqEnv <> L1 thm
+R14581:14582 ProyectoCoq.MathCompLattices_SeqEnv <> L1 thm
+R14597:14599 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R14589:14593 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14589:14593 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14597:14599 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R14622:14623 ProyectoCoq.MathCompLattices_SeqEnv <> L4 thm
+R14606:14611 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14619:14619 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14613:14617 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14606:14611 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14619:14619 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14613:14617 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14622:14623 ProyectoCoq.MathCompLattices_SeqEnv <> L4 thm
+R14638:14640 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R14630:14634 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14630:14634 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14638:14640 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R14673:14677 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14673:14677 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14673:14677 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14696:14696 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14704:14709 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14698:14702 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14713:14714 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R14721:14726 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14734:14734 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14728:14732 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14737:14738 ProyectoCoq.MathCompLattices_SeqEnv <> L4 thm
+R14713:14714 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R14696:14696 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14704:14709 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14698:14702 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14696:14696 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14704:14709 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14698:14702 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14713:14714 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R14737:14738 ProyectoCoq.MathCompLattices_SeqEnv <> L4 thm
+R14721:14726 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14734:14734 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14728:14732 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14721:14726 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14734:14734 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14728:14732 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14737:14738 ProyectoCoq.MathCompLattices_SeqEnv <> L4 thm
+R14753:14753 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14761:14766 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14755:14759 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14770:14771 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R14770:14771 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R14753:14753 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14761:14766 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14755:14759 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14753:14753 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14761:14766 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14755:14759 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14770:14771 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R14800:14802 ProyectoCoq.MathCompLattices_SeqEnv <> L1d thm
+R14809:14813 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14817:14818 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R14825:14830 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14838:14838 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14832:14836 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14841:14843 ProyectoCoq.MathCompLattices_SeqEnv <> L4d thm
+R14850:14854 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14858:14859 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R14800:14802 ProyectoCoq.MathCompLattices_SeqEnv <> L1d thm
+R14800:14802 ProyectoCoq.MathCompLattices_SeqEnv <> L1d thm
+R14817:14818 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R14809:14813 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14809:14813 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14817:14818 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R14841:14843 ProyectoCoq.MathCompLattices_SeqEnv <> L4d thm
+R14825:14830 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14838:14838 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14832:14836 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14825:14830 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14838:14838 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14832:14836 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14841:14843 ProyectoCoq.MathCompLattices_SeqEnv <> L4d thm
+R14858:14859 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R14850:14854 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14850:14854 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14858:14859 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+def 14882:14893 <> Distributive
+R14900:14906 ProyectoCoq.Def_Lattice <> lattice rec
+binder 14896:14896 <> T:219
+R14927:14927 ProyectoCoq.MathCompLattices_SeqEnv <> T:219 var
+binder 14919:14919 <> a:220
+binder 14921:14921 <> b:221
+binder 14923:14923 <> c:222
+R14930:14930 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14946:14950 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14974:14974 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14932:14937 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14945:14945 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14931:14931 ProyectoCoq.MathCompLattices_SeqEnv <> a:220 var
+R14939:14943 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14938:14938 ProyectoCoq.MathCompLattices_SeqEnv <> b:221 var
+R14944:14944 ProyectoCoq.MathCompLattices_SeqEnv <> c:222 var
+R14951:14951 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14959:14965 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14973:14973 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R14953:14957 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14952:14952 ProyectoCoq.MathCompLattices_SeqEnv <> a:220 var
+R14958:14958 ProyectoCoq.MathCompLattices_SeqEnv <> b:221 var
+R14967:14971 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R14966:14966 ProyectoCoq.MathCompLattices_SeqEnv <> a:220 var
+R14972:14972 ProyectoCoq.MathCompLattices_SeqEnv <> c:222 var
+def 14989:14994 <> Modu_L
+R15001:15007 ProyectoCoq.Def_Lattice <> lattice rec
+binder 14997:14997 <> T:223
+R15028:15028 ProyectoCoq.MathCompLattices_SeqEnv <> T:223 var
+binder 15020:15020 <> a:224
+binder 15022:15022 <> b:225
+binder 15024:15024 <> c:226
+R15039:15042 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15033:15037 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R15032:15032 ProyectoCoq.MathCompLattices_SeqEnv <> c:226 var
+R15038:15038 ProyectoCoq.MathCompLattices_SeqEnv <> a:224 var
+R15043:15043 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15059:15063 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15079:15079 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15045:15050 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15058:15058 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15044:15044 ProyectoCoq.MathCompLattices_SeqEnv <> c:226 var
+R15052:15056 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15051:15051 ProyectoCoq.MathCompLattices_SeqEnv <> b:225 var
+R15057:15057 ProyectoCoq.MathCompLattices_SeqEnv <> a:224 var
+R15064:15064 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15072:15077 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15066:15070 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15065:15065 ProyectoCoq.MathCompLattices_SeqEnv <> c:226 var
+R15071:15071 ProyectoCoq.MathCompLattices_SeqEnv <> b:225 var
+R15078:15078 ProyectoCoq.MathCompLattices_SeqEnv <> a:224 var
+prf 15090:15097 <> Modular2
+R15104:15110 ProyectoCoq.Def_Lattice <> lattice rec
+binder 15100:15100 <> T:227
+R15118:15118 ProyectoCoq.MathCompLattices_SeqEnv <> T:227 var
+binder 15114:15114 <> z:228
+R15123:15123 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15133:15138 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15207:15207 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15125:15130 ProyectoCoq.MathCompLattices_SeqEnv <> Modu_L def
+R15132:15132 ProyectoCoq.MathCompLattices_SeqEnv <> T:227 var
+R15154:15154 ProyectoCoq.MathCompLattices_SeqEnv <> T:227 var
+binder 15146:15146 <> a:229
+binder 15148:15148 <> b:230
+binder 15150:15150 <> c:231
+R15165:15168 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15159:15163 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R15158:15158 ProyectoCoq.MathCompLattices_SeqEnv <> c:231 var
+R15164:15164 ProyectoCoq.MathCompLattices_SeqEnv <> a:229 var
+R15169:15169 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15185:15189 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15205:15205 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15171:15176 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15184:15184 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15170:15170 ProyectoCoq.MathCompLattices_SeqEnv <> a:229 var
+R15178:15182 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15177:15177 ProyectoCoq.MathCompLattices_SeqEnv <> b:230 var
+R15183:15183 ProyectoCoq.MathCompLattices_SeqEnv <> c:231 var
+R15190:15190 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15198:15203 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15192:15196 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15191:15191 ProyectoCoq.MathCompLattices_SeqEnv <> a:229 var
+R15197:15197 ProyectoCoq.MathCompLattices_SeqEnv <> b:230 var
+R15204:15204 ProyectoCoq.MathCompLattices_SeqEnv <> c:231 var
+R15226:15231 ProyectoCoq.MathCompLattices_SeqEnv <> Modu_L def
+R15226:15231 ProyectoCoq.MathCompLattices_SeqEnv <> Modu_L def
+R15226:15231 ProyectoCoq.MathCompLattices_SeqEnv <> Modu_L def
+R15276:15277 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R15284:15287 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15291:15293 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R15300:15304 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15308:15310 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R15317:15321 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15325:15326 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R15276:15277 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R15276:15277 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R15291:15293 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R15284:15287 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15284:15287 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15291:15293 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R15308:15310 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R15300:15304 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15300:15304 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15308:15310 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R15325:15326 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R15317:15321 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15317:15321 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15325:15326 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+prf 15344:15351 <> ModularD
+R15358:15364 ProyectoCoq.Def_Lattice <> lattice rec
+binder 15354:15354 <> T:232
+R15372:15372 ProyectoCoq.MathCompLattices_SeqEnv <> T:232 var
+binder 15368:15368 <> z:233
+R15377:15377 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15387:15392 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15461:15462 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15379:15384 ProyectoCoq.MathCompLattices_SeqEnv <> Modu_L def
+R15386:15386 ProyectoCoq.MathCompLattices_SeqEnv <> T:232 var
+R15408:15408 ProyectoCoq.MathCompLattices_SeqEnv <> T:232 var
+binder 15400:15400 <> a:234
+binder 15402:15402 <> b:235
+binder 15404:15404 <> c:236
+R15419:15422 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15413:15417 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R15412:15412 ProyectoCoq.MathCompLattices_SeqEnv <> a:234 var
+R15418:15418 ProyectoCoq.MathCompLattices_SeqEnv <> c:236 var
+R15423:15423 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15439:15443 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15459:15459 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15425:15430 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15438:15438 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15424:15424 ProyectoCoq.MathCompLattices_SeqEnv <> a:234 var
+R15432:15436 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15431:15431 ProyectoCoq.MathCompLattices_SeqEnv <> b:235 var
+R15437:15437 ProyectoCoq.MathCompLattices_SeqEnv <> c:236 var
+R15444:15444 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15452:15457 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15446:15450 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15445:15445 ProyectoCoq.MathCompLattices_SeqEnv <> a:234 var
+R15451:15451 ProyectoCoq.MathCompLattices_SeqEnv <> b:235 var
+R15458:15458 ProyectoCoq.MathCompLattices_SeqEnv <> c:236 var
+R15481:15486 ProyectoCoq.MathCompLattices_SeqEnv <> Modu_L def
+R15481:15486 ProyectoCoq.MathCompLattices_SeqEnv <> Modu_L def
+R15481:15486 ProyectoCoq.MathCompLattices_SeqEnv <> Modu_L def
+prf 15533:15541 <> ModularD2
+R15548:15554 ProyectoCoq.Def_Lattice <> lattice rec
+binder 15544:15544 <> T:237
+R15562:15562 ProyectoCoq.MathCompLattices_SeqEnv <> T:237 var
+binder 15558:15558 <> z:238
+R15567:15567 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15636:15657 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15727:15727 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15583:15583 ProyectoCoq.MathCompLattices_SeqEnv <> T:237 var
+binder 15575:15575 <> a:239
+binder 15577:15577 <> b:240
+binder 15579:15579 <> c:241
+R15594:15597 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15588:15592 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R15587:15587 ProyectoCoq.MathCompLattices_SeqEnv <> a:239 var
+R15593:15593 ProyectoCoq.MathCompLattices_SeqEnv <> c:241 var
+R15598:15598 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15614:15618 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15634:15634 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15600:15605 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15613:15613 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15599:15599 ProyectoCoq.MathCompLattices_SeqEnv <> a:239 var
+R15607:15611 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15606:15606 ProyectoCoq.MathCompLattices_SeqEnv <> b:240 var
+R15612:15612 ProyectoCoq.MathCompLattices_SeqEnv <> c:241 var
+R15619:15619 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15627:15632 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15621:15625 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15620:15620 ProyectoCoq.MathCompLattices_SeqEnv <> a:239 var
+R15626:15626 ProyectoCoq.MathCompLattices_SeqEnv <> b:240 var
+R15633:15633 ProyectoCoq.MathCompLattices_SeqEnv <> c:241 var
+R15673:15673 ProyectoCoq.MathCompLattices_SeqEnv <> T:237 var
+binder 15665:15665 <> a:242
+binder 15667:15667 <> b:243
+binder 15669:15669 <> c:244
+R15684:15689 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15724:15725 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15678:15682 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R15677:15677 ProyectoCoq.MathCompLattices_SeqEnv <> a:242 var
+R15683:15683 ProyectoCoq.MathCompLattices_SeqEnv <> c:244 var
+R15705:15708 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15691:15696 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15704:15704 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15690:15690 ProyectoCoq.MathCompLattices_SeqEnv <> c:244 var
+R15698:15702 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15697:15697 ProyectoCoq.MathCompLattices_SeqEnv <> b:243 var
+R15703:15703 ProyectoCoq.MathCompLattices_SeqEnv <> a:242 var
+R15709:15709 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15717:15722 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15711:15715 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15710:15710 ProyectoCoq.MathCompLattices_SeqEnv <> c:244 var
+R15716:15716 ProyectoCoq.MathCompLattices_SeqEnv <> b:243 var
+R15723:15723 ProyectoCoq.MathCompLattices_SeqEnv <> a:242 var
+R15782:15783 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R15790:15794 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15798:15800 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R15807:15811 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15815:15817 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R15824:15828 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15832:15833 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R15782:15783 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R15782:15783 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R15798:15800 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R15790:15794 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15790:15794 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15798:15800 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R15815:15817 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R15807:15811 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15807:15811 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R15815:15817 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R15832:15833 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R15824:15828 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15824:15828 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R15832:15833 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+rec 15855:15868 <> boundedLattice
+proj 15897:15898 <> BL
+proj 15916:15918 <> Top
+proj 15930:15932 <> Bot
+proj 15944:15953 <> Top_Bottom
+R15903:15909 ProyectoCoq.Def_Lattice <> lattice rec
+R15922:15923 ProyectoCoq.MathCompLattices_SeqEnv <> BL:246 meth
+R15936:15937 ProyectoCoq.MathCompLattices_SeqEnv <> BL:246 meth
+R15968:15969 ProyectoCoq.MathCompLattices_SeqEnv <> BL:246 meth
+binder 15964:15964 <> a:249
+R15981:15984 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R15973:15977 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R15972:15972 ProyectoCoq.MathCompLattices_SeqEnv <> a:249 var
+R15978:15980 ProyectoCoq.MathCompLattices_SeqEnv <> Top:247 meth
+R15988:15992 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R15985:15987 ProyectoCoq.MathCompLattices_SeqEnv <> Bot:248 meth
+R15993:15993 ProyectoCoq.MathCompLattices_SeqEnv <> a:249 var
+abbrev 16010:16012 <> top
+R16018:16020 ProyectoCoq.MathCompLattices_SeqEnv <> Top proj
+abbrev 16036:16038 <> bot
+R16044:16046 ProyectoCoq.MathCompLattices_SeqEnv <> Bot proj
+abbrev 16061:16062 <> TB
+R16068:16077 ProyectoCoq.MathCompLattices_SeqEnv <> Top_Bottom proj
+rec 16094:16107 <> booleanLattice
+proj 16135:16138 <> BooL
+proj 16163:16167 <> Distr
+proj 16196:16207 <> ExComplement
+R16143:16156 ProyectoCoq.MathCompLattices_SeqEnv <> boundedLattice rec
+R16172:16183 ProyectoCoq.MathCompLattices_SeqEnv <> Distributive def
+R16185:16188 ProyectoCoq.MathCompLattices_SeqEnv <> BooL:252 meth
+R16222:16225 ProyectoCoq.MathCompLattices_SeqEnv <> BooL:252 meth
+binder 16218:16218 <> a:254
+R16229:16235 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R16237:16238 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 16236:16236 <> b:255
+R16239:16239 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R16253:16259 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R16273:16273 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R16247:16249 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16241:16245 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R16240:16240 ProyectoCoq.MathCompLattices_SeqEnv <> a:254 var
+R16246:16246 ProyectoCoq.MathCompLattices_SeqEnv <> b:255 var
+R16250:16252 ProyectoCoq.MathCompLattices_SeqEnv <> top abbrev
+R16267:16269 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16261:16265 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R16260:16260 ProyectoCoq.MathCompLattices_SeqEnv <> a:254 var
+R16266:16266 ProyectoCoq.MathCompLattices_SeqEnv <> b:255 var
+R16270:16272 ProyectoCoq.MathCompLattices_SeqEnv <> bot abbrev
+abbrev 16292:16295 <> Dist
+R16301:16305 ProyectoCoq.MathCompLattices_SeqEnv <> Distr proj
+abbrev 16320:16325 <> ExComp
+R16331:16342 ProyectoCoq.MathCompLattices_SeqEnv <> ExComplement proj
+prf 16355:16359 <> ajBot
+R16366:16379 ProyectoCoq.MathCompLattices_SeqEnv <> boundedLattice rec
+binder 16362:16362 <> T:257
+R16387:16387 ProyectoCoq.MathCompLattices_SeqEnv <> T:257 var
+binder 16383:16383 <> z:258
+R16403:16403 ProyectoCoq.MathCompLattices_SeqEnv <> T:257 var
+binder 16399:16399 <> a:259
+R16415:16417 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16407:16411 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R16406:16406 ProyectoCoq.MathCompLattices_SeqEnv <> a:259 var
+R16412:16414 ProyectoCoq.MathCompLattices_SeqEnv <> bot abbrev
+R16418:16418 ProyectoCoq.MathCompLattices_SeqEnv <> a:259 var
+R16447:16448 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R16455:16462 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R16447:16448 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R16447:16448 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R16455:16462 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R16455:16462 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R16478:16479 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R16478:16479 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R16478:16479 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R16488:16492 Coq.Init.Logic <> proj2 thm
+prf 16507:16511 <> amTop
+R16518:16531 ProyectoCoq.MathCompLattices_SeqEnv <> boundedLattice rec
+binder 16514:16514 <> T:260
+R16539:16539 ProyectoCoq.MathCompLattices_SeqEnv <> T:260 var
+binder 16535:16535 <> z:261
+R16555:16555 ProyectoCoq.MathCompLattices_SeqEnv <> T:260 var
+binder 16551:16551 <> a:262
+R16567:16569 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16559:16563 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R16558:16558 ProyectoCoq.MathCompLattices_SeqEnv <> a:262 var
+R16564:16566 ProyectoCoq.MathCompLattices_SeqEnv <> top abbrev
+R16570:16570 ProyectoCoq.MathCompLattices_SeqEnv <> a:262 var
+R16599:16601 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R16608:16615 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R16599:16601 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R16599:16601 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R16608:16615 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R16608:16615 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R16631:16632 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R16631:16632 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R16631:16632 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R16641:16645 Coq.Init.Logic <> proj1 thm
+def 16665:16668 <> Comp
+R16675:16688 ProyectoCoq.MathCompLattices_SeqEnv <> boundedLattice rec
+binder 16671:16671 <> T:263
+R16698:16698 ProyectoCoq.MathCompLattices_SeqEnv <> T:263 var
+binder 16692:16692 <> a:264
+binder 16694:16694 <> b:265
+R16704:16704 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R16718:16723 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R16737:16737 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R16712:16714 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16706:16710 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R16705:16705 ProyectoCoq.MathCompLattices_SeqEnv <> a:264 var
+R16711:16711 ProyectoCoq.MathCompLattices_SeqEnv <> b:265 var
+R16715:16717 ProyectoCoq.MathCompLattices_SeqEnv <> top abbrev
+R16731:16733 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16725:16729 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R16724:16724 ProyectoCoq.MathCompLattices_SeqEnv <> a:264 var
+R16730:16730 ProyectoCoq.MathCompLattices_SeqEnv <> b:265 var
+R16734:16736 ProyectoCoq.MathCompLattices_SeqEnv <> bot abbrev
+prf 16748:16756 <> compUnico
+R16763:16776 ProyectoCoq.MathCompLattices_SeqEnv <> booleanLattice rec
+binder 16759:16759 <> T:266
+R16784:16784 ProyectoCoq.MathCompLattices_SeqEnv <> T:266 var
+binder 16780:16780 <> z:267
+R16804:16804 ProyectoCoq.MathCompLattices_SeqEnv <> T:266 var
+binder 16796:16796 <> a:268
+binder 16798:16798 <> b:269
+binder 16800:16800 <> c:270
+R16823:16823 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16861:16865 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16832:16852 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R16824:16827 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R16831:16831 ProyectoCoq.MathCompLattices_SeqEnv <> b:269 var
+R16829:16829 ProyectoCoq.MathCompLattices_SeqEnv <> a:268 var
+R16853:16856 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R16860:16860 ProyectoCoq.MathCompLattices_SeqEnv <> c:270 var
+R16858:16858 ProyectoCoq.MathCompLattices_SeqEnv <> a:268 var
+R16867:16869 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16866:16866 ProyectoCoq.MathCompLattices_SeqEnv <> b:269 var
+R16870:16870 ProyectoCoq.MathCompLattices_SeqEnv <> c:270 var
+R16903:16906 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R16903:16906 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R16903:16906 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R16943:16949 ProyectoCoq.Def_Lattice <> antisym abbrev
+R16943:16949 ProyectoCoq.Def_Lattice <> antisym abbrev
+R16963:16970 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R16963:16970 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R16963:16970 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R16991:16995 ProyectoCoq.MathCompLattices_SeqEnv <> amTop thm
+R16991:16995 ProyectoCoq.MathCompLattices_SeqEnv <> amTop thm
+R16991:16995 ProyectoCoq.MathCompLattices_SeqEnv <> amTop thm
+R17028:17031 ProyectoCoq.MathCompLattices_SeqEnv <> Dist abbrev
+R17028:17031 ProyectoCoq.MathCompLattices_SeqEnv <> Dist abbrev
+R17028:17031 ProyectoCoq.MathCompLattices_SeqEnv <> Dist abbrev
+R17049:17053 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R17057:17059 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R17068:17069 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R17075:17079 ProyectoCoq.MathCompLattices_SeqEnv <> ajBot thm
+R17085:17087 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R17057:17059 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R17049:17053 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R17049:17053 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R17057:17059 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R17068:17069 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R17068:17069 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R17075:17079 ProyectoCoq.MathCompLattices_SeqEnv <> ajBot thm
+R17075:17079 ProyectoCoq.MathCompLattices_SeqEnv <> ajBot thm
+R17085:17087 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R17085:17087 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R17102:17109 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R17102:17109 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R17102:17109 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R17128:17132 ProyectoCoq.MathCompLattices_SeqEnv <> amTop thm
+R17128:17132 ProyectoCoq.MathCompLattices_SeqEnv <> amTop thm
+R17128:17132 ProyectoCoq.MathCompLattices_SeqEnv <> amTop thm
+R17163:17166 ProyectoCoq.MathCompLattices_SeqEnv <> Dist abbrev
+R17163:17166 ProyectoCoq.MathCompLattices_SeqEnv <> Dist abbrev
+R17163:17166 ProyectoCoq.MathCompLattices_SeqEnv <> Dist abbrev
+R17183:17187 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R17191:17193 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R17202:17203 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R17209:17213 ProyectoCoq.MathCompLattices_SeqEnv <> ajBot thm
+R17219:17221 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R17191:17193 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R17183:17187 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R17183:17187 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R17191:17193 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R17202:17203 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R17202:17203 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R17209:17213 ProyectoCoq.MathCompLattices_SeqEnv <> ajBot thm
+R17209:17213 ProyectoCoq.MathCompLattices_SeqEnv <> ajBot thm
+R17219:17221 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R17219:17221 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+prf 17239:17247 <> lema4_15i
+R17254:17267 ProyectoCoq.MathCompLattices_SeqEnv <> booleanLattice rec
+binder 17250:17250 <> T:271
+R17275:17275 ProyectoCoq.MathCompLattices_SeqEnv <> T:271 var
+binder 17271:17271 <> z:272
+R17282:17285 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R17287:17287 ProyectoCoq.MathCompLattices_SeqEnv <> T:271 var
+R17289:17291 ProyectoCoq.MathCompLattices_SeqEnv <> top abbrev
+R17293:17295 ProyectoCoq.MathCompLattices_SeqEnv <> bot abbrev
+R17323:17332 ProyectoCoq.MathCompLattices_SeqEnv <> Top_Bottom proj
+R17336:17338 ProyectoCoq.MathCompLattices_SeqEnv <> top abbrev
+R17323:17332 ProyectoCoq.MathCompLattices_SeqEnv <> Top_Bottom proj
+R17336:17338 ProyectoCoq.MathCompLattices_SeqEnv <> top abbrev
+R17323:17332 ProyectoCoq.MathCompLattices_SeqEnv <> Top_Bottom proj
+R17336:17338 ProyectoCoq.MathCompLattices_SeqEnv <> top abbrev
+R17345:17349 Coq.Init.Logic <> proj2 thm
+R17366:17373 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R17379:17380 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R17366:17373 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R17366:17373 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R17379:17380 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R17379:17380 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R17394:17403 ProyectoCoq.MathCompLattices_SeqEnv <> Top_Bottom proj
+R17407:17409 ProyectoCoq.MathCompLattices_SeqEnv <> bot abbrev
+R17394:17403 ProyectoCoq.MathCompLattices_SeqEnv <> Top_Bottom proj
+R17407:17409 ProyectoCoq.MathCompLattices_SeqEnv <> bot abbrev
+R17394:17403 ProyectoCoq.MathCompLattices_SeqEnv <> Top_Bottom proj
+R17407:17409 ProyectoCoq.MathCompLattices_SeqEnv <> bot abbrev
+R17416:17420 Coq.Init.Logic <> proj1 thm
+R17435:17442 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R17448:17450 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R17435:17442 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R17435:17442 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R17448:17450 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R17448:17450 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+prf 17468:17477 <> lema4_15ii
+R17484:17497 ProyectoCoq.MathCompLattices_SeqEnv <> booleanLattice rec
+binder 17480:17480 <> T:273
+R17505:17505 ProyectoCoq.MathCompLattices_SeqEnv <> T:273 var
+binder 17501:17501 <> z:274
+R17525:17525 ProyectoCoq.MathCompLattices_SeqEnv <> T:273 var
+binder 17517:17517 <> a:275
+binder 17519:17519 <> b:276
+binder 17521:17521 <> c:277
+R17536:17539 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17528:17531 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R17535:17535 ProyectoCoq.MathCompLattices_SeqEnv <> b:276 var
+R17533:17533 ProyectoCoq.MathCompLattices_SeqEnv <> a:275 var
+R17548:17551 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17540:17543 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R17547:17547 ProyectoCoq.MathCompLattices_SeqEnv <> c:277 var
+R17545:17545 ProyectoCoq.MathCompLattices_SeqEnv <> b:276 var
+R17553:17555 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17552:17552 ProyectoCoq.MathCompLattices_SeqEnv <> c:277 var
+R17556:17556 ProyectoCoq.MathCompLattices_SeqEnv <> a:275 var
+R17589:17592 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R17589:17592 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R17589:17592 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R17604:17605 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R17611:17613 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R17604:17605 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R17604:17605 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R17611:17613 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R17611:17613 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R17651:17659 ProyectoCoq.MathCompLattices_SeqEnv <> compUnico thm
+R17651:17659 ProyectoCoq.MathCompLattices_SeqEnv <> compUnico thm
+R17676:17679 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R17676:17679 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R17676:17679 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+prf 17705:17715 <> lema4_15iii
+R17722:17735 ProyectoCoq.MathCompLattices_SeqEnv <> booleanLattice rec
+binder 17718:17718 <> T:278
+R17743:17743 ProyectoCoq.MathCompLattices_SeqEnv <> T:278 var
+binder 17739:17739 <> z:279
+R17777:17777 ProyectoCoq.MathCompLattices_SeqEnv <> T:278 var
+binder 17755:17755 <> a:280
+binder 17757:17757 <> b:281
+binder 17759:17762 <> caub:282
+binder 17764:17765 <> ca:283
+binder 17767:17768 <> cb:284
+binder 17770:17773 <> canb:285
+R17822:17822 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R17890:17936 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R18004:18004 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R17842:17845 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17823:17826 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R17838:17841 ProyectoCoq.MathCompLattices_SeqEnv <> caub:282 var
+R17830:17834 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R17829:17829 ProyectoCoq.MathCompLattices_SeqEnv <> a:280 var
+R17835:17835 ProyectoCoq.MathCompLattices_SeqEnv <> b:281 var
+R17855:17858 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17846:17849 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R17853:17854 ProyectoCoq.MathCompLattices_SeqEnv <> ca:283 var
+R17851:17851 ProyectoCoq.MathCompLattices_SeqEnv <> a:280 var
+R17868:17872 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17889:17889 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17859:17862 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R17866:17867 ProyectoCoq.MathCompLattices_SeqEnv <> cb:284 var
+R17864:17864 ProyectoCoq.MathCompLattices_SeqEnv <> b:281 var
+R17877:17879 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17873:17876 ProyectoCoq.MathCompLattices_SeqEnv <> caub:282 var
+R17882:17886 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R17880:17881 ProyectoCoq.MathCompLattices_SeqEnv <> ca:283 var
+R17887:17888 ProyectoCoq.MathCompLattices_SeqEnv <> cb:284 var
+R17956:17959 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17937:17940 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R17952:17955 ProyectoCoq.MathCompLattices_SeqEnv <> canb:285 var
+R17944:17948 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R17943:17943 ProyectoCoq.MathCompLattices_SeqEnv <> a:280 var
+R17949:17949 ProyectoCoq.MathCompLattices_SeqEnv <> b:281 var
+R17969:17972 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17960:17963 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R17967:17968 ProyectoCoq.MathCompLattices_SeqEnv <> ca:283 var
+R17965:17965 ProyectoCoq.MathCompLattices_SeqEnv <> a:280 var
+R17982:17986 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18003:18003 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17973:17976 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R17980:17981 ProyectoCoq.MathCompLattices_SeqEnv <> cb:284 var
+R17978:17978 ProyectoCoq.MathCompLattices_SeqEnv <> b:281 var
+R17991:17993 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17987:17990 ProyectoCoq.MathCompLattices_SeqEnv <> canb:285 var
+R17996:18000 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R17994:17995 ProyectoCoq.MathCompLattices_SeqEnv <> ca:283 var
+R18001:18002 ProyectoCoq.MathCompLattices_SeqEnv <> cb:284 var
+R18049:18053 ProyectoCoq.MathCompLattices_SeqEnv <> Distr proj
+R18049:18053 ProyectoCoq.MathCompLattices_SeqEnv <> Distr proj
+R18049:18053 ProyectoCoq.MathCompLattices_SeqEnv <> Distr proj
+R18068:18079 ProyectoCoq.MathCompLattices_SeqEnv <> Distributive def
+R18082:18088 ProyectoCoq.MathCompLattices_SeqEnv <> Lema4_3 thm
+R18068:18079 ProyectoCoq.MathCompLattices_SeqEnv <> Distributive def
+R18068:18079 ProyectoCoq.MathCompLattices_SeqEnv <> Distributive def
+R18082:18088 ProyectoCoq.MathCompLattices_SeqEnv <> Lema4_3 thm
+R18082:18088 ProyectoCoq.MathCompLattices_SeqEnv <> Lema4_3 thm
+R18119:18122 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R18119:18122 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R18119:18122 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R18169:18177 ProyectoCoq.MathCompLattices_SeqEnv <> compUnico thm
+R18183:18187 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R18169:18177 ProyectoCoq.MathCompLattices_SeqEnv <> compUnico thm
+R18183:18187 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R18243:18247 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R18251:18252 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R18258:18259 ProyectoCoq.MathCompLattices_SeqEnv <> L1 thm
+R18251:18252 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R18243:18247 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R18243:18247 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R18251:18252 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R18258:18259 ProyectoCoq.MathCompLattices_SeqEnv <> L1 thm
+R18258:18259 ProyectoCoq.MathCompLattices_SeqEnv <> L1 thm
+R18281:18282 ProyectoCoq.MathCompLattices_SeqEnv <> L1 thm
+R18281:18282 ProyectoCoq.MathCompLattices_SeqEnv <> L1 thm
+R18281:18282 ProyectoCoq.MathCompLattices_SeqEnv <> L1 thm
+R18302:18303 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R18309:18310 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R18309:18310 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R18309:18310 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R18302:18303 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R18302:18303 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R18328:18332 Coq.Init.Logic <> proj1 thm
+R18335:18342 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R18353:18357 Coq.Init.Logic <> proj1 thm
+R18360:18367 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R18403:18407 ProyectoCoq.MathCompLattices_SeqEnv <> amTop thm
+R18403:18407 ProyectoCoq.MathCompLattices_SeqEnv <> amTop thm
+R18403:18407 ProyectoCoq.MathCompLattices_SeqEnv <> amTop thm
+R18421:18423 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18428:18431 ProyectoCoq.MathCompLattices_SeqEnv <> Dist abbrev
+R18434:18436 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18443:18445 ProyectoCoq.MathCompLattices_SeqEnv <> L1d thm
+R18421:18423 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18421:18423 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18428:18431 ProyectoCoq.MathCompLattices_SeqEnv <> Dist abbrev
+R18428:18431 ProyectoCoq.MathCompLattices_SeqEnv <> Dist abbrev
+R18434:18436 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18434:18436 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18443:18445 ProyectoCoq.MathCompLattices_SeqEnv <> L1d thm
+R18443:18445 ProyectoCoq.MathCompLattices_SeqEnv <> L1d thm
+R18465:18467 ProyectoCoq.MathCompLattices_SeqEnv <> L1d thm
+R18475:18479 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R18483:18485 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18465:18467 ProyectoCoq.MathCompLattices_SeqEnv <> L1d thm
+R18465:18467 ProyectoCoq.MathCompLattices_SeqEnv <> L1d thm
+R18483:18485 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18475:18479 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R18475:18479 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R18483:18485 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18503:18504 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R18511:18512 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R18511:18512 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R18511:18512 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R18503:18504 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R18503:18504 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R18529:18533 Coq.Init.Logic <> proj2 thm
+R18536:18543 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R18554:18558 Coq.Init.Logic <> proj2 thm
+R18561:18568 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R18593:18595 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18610:18614 ProyectoCoq.MathCompLattices_SeqEnv <> ajBot thm
+R18593:18595 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18593:18595 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18610:18614 ProyectoCoq.MathCompLattices_SeqEnv <> ajBot thm
+R18610:18614 ProyectoCoq.MathCompLattices_SeqEnv <> ajBot thm
+R18626:18629 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R18626:18629 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R18626:18629 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R18673:18681 ProyectoCoq.MathCompLattices_SeqEnv <> compUnico thm
+R18688:18692 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R18673:18681 ProyectoCoq.MathCompLattices_SeqEnv <> compUnico thm
+R18688:18692 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R18732:18733 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R18743:18744 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R18751:18752 ProyectoCoq.MathCompLattices_SeqEnv <> L1 thm
+R18761:18762 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R18732:18733 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R18732:18733 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R18743:18744 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R18743:18744 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R18751:18752 ProyectoCoq.MathCompLattices_SeqEnv <> L1 thm
+R18751:18752 ProyectoCoq.MathCompLattices_SeqEnv <> L1 thm
+R18761:18762 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R18761:18762 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R18779:18780 ProyectoCoq.MathCompLattices_SeqEnv <> L1 thm
+R18788:18792 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R18796:18797 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R18779:18780 ProyectoCoq.MathCompLattices_SeqEnv <> L1 thm
+R18779:18780 ProyectoCoq.MathCompLattices_SeqEnv <> L1 thm
+R18796:18797 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R18788:18792 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R18788:18792 ProyectoCoq.Def_Lattice <> :::x_'⊔'_x not
+R18796:18797 ProyectoCoq.MathCompLattices_SeqEnv <> L2 thm
+R18815:18816 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R18823:18824 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R18823:18824 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R18823:18824 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R18815:18816 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R18815:18816 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R18841:18845 Coq.Init.Logic <> proj1 thm
+R18848:18855 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R18866:18870 Coq.Init.Logic <> proj1 thm
+R18873:18880 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R18914:18918 ProyectoCoq.MathCompLattices_SeqEnv <> amTop thm
+R18914:18918 ProyectoCoq.MathCompLattices_SeqEnv <> amTop thm
+R18914:18918 ProyectoCoq.MathCompLattices_SeqEnv <> amTop thm
+R18929:18932 ProyectoCoq.MathCompLattices_SeqEnv <> Dist abbrev
+R18936:18940 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R18944:18946 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18952:18954 ProyectoCoq.MathCompLattices_SeqEnv <> L1d thm
+R18963:18965 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18929:18932 ProyectoCoq.MathCompLattices_SeqEnv <> Dist abbrev
+R18929:18932 ProyectoCoq.MathCompLattices_SeqEnv <> Dist abbrev
+R18944:18946 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18936:18940 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R18936:18940 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R18944:18946 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18952:18954 ProyectoCoq.MathCompLattices_SeqEnv <> L1d thm
+R18952:18954 ProyectoCoq.MathCompLattices_SeqEnv <> L1d thm
+R18963:18965 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18963:18965 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18981:18985 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R18989:18991 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18997:18999 ProyectoCoq.MathCompLattices_SeqEnv <> L1d thm
+R19009:19013 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R19014:19016 ProyectoCoq.MathCompLattices_SeqEnv <> bot abbrev
+R19019:19021 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18989:18991 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18981:18985 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R18981:18985 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R18989:18991 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R18997:18999 ProyectoCoq.MathCompLattices_SeqEnv <> L1d thm
+R18997:18999 ProyectoCoq.MathCompLattices_SeqEnv <> L1d thm
+R19019:19021 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R19009:19013 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R19014:19016 ProyectoCoq.MathCompLattices_SeqEnv <> bot abbrev
+R19009:19013 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R19014:19016 ProyectoCoq.MathCompLattices_SeqEnv <> bot abbrev
+R19019:19021 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R19034:19035 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R19041:19042 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R19041:19042 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R19041:19042 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R19034:19035 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R19034:19035 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R19056:19060 Coq.Init.Logic <> proj2 thm
+R19063:19070 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R19081:19085 Coq.Init.Logic <> proj2 thm
+R19088:19095 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R19118:19120 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R19131:19133 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R19143:19147 ProyectoCoq.MathCompLattices_SeqEnv <> ajBot thm
+R19118:19120 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R19118:19120 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R19131:19133 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R19131:19133 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R19143:19147 ProyectoCoq.MathCompLattices_SeqEnv <> ajBot thm
+R19143:19147 ProyectoCoq.MathCompLattices_SeqEnv <> ajBot thm
+prf 19163:19171 <> lema4_15v
+R19178:19191 ProyectoCoq.MathCompLattices_SeqEnv <> booleanLattice rec
+binder 19174:19174 <> T:286
+R19199:19199 ProyectoCoq.MathCompLattices_SeqEnv <> T:286 var
+binder 19195:19195 <> z:287
+R19219:19219 ProyectoCoq.MathCompLattices_SeqEnv <> T:286 var
+binder 19211:19211 <> a:288
+binder 19213:19213 <> b:289
+binder 19215:19215 <> c:290
+R19230:19233 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19222:19225 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R19229:19229 ProyectoCoq.MathCompLattices_SeqEnv <> c:290 var
+R19227:19227 ProyectoCoq.MathCompLattices_SeqEnv <> b:289 var
+R19247:19251 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R19241:19243 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19235:19239 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R19234:19234 ProyectoCoq.MathCompLattices_SeqEnv <> a:288 var
+R19240:19240 ProyectoCoq.MathCompLattices_SeqEnv <> c:290 var
+R19244:19246 ProyectoCoq.MathCompLattices_SeqEnv <> bot abbrev
+R19253:19257 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R19252:19252 ProyectoCoq.MathCompLattices_SeqEnv <> a:288 var
+R19258:19258 ProyectoCoq.MathCompLattices_SeqEnv <> b:289 var
+R19289:19293 ProyectoCoq.MathCompLattices_SeqEnv <> Distr proj
+R19289:19293 ProyectoCoq.MathCompLattices_SeqEnv <> Distr proj
+R19289:19293 ProyectoCoq.MathCompLattices_SeqEnv <> Distr proj
+R19308:19319 ProyectoCoq.MathCompLattices_SeqEnv <> Distributive def
+R19322:19328 ProyectoCoq.MathCompLattices_SeqEnv <> Lema4_3 thm
+R19308:19319 ProyectoCoq.MathCompLattices_SeqEnv <> Distributive def
+R19308:19319 ProyectoCoq.MathCompLattices_SeqEnv <> Distributive def
+R19322:19328 ProyectoCoq.MathCompLattices_SeqEnv <> Lema4_3 thm
+R19322:19328 ProyectoCoq.MathCompLattices_SeqEnv <> Lema4_3 thm
+R19351:19354 ProyectoCoq.MathCompLattices_SeqEnv <> dobl thm
+R19401:19408 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R19401:19408 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R19401:19408 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R19423:19427 ProyectoCoq.MathCompLattices_SeqEnv <> amTop thm
+R19423:19427 ProyectoCoq.MathCompLattices_SeqEnv <> amTop thm
+R19423:19427 ProyectoCoq.MathCompLattices_SeqEnv <> amTop thm
+R19452:19455 ProyectoCoq.MathCompLattices_SeqEnv <> Dist abbrev
+R19461:19465 ProyectoCoq.MathCompLattices_SeqEnv <> ajBot thm
+R19471:19473 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R19452:19455 ProyectoCoq.MathCompLattices_SeqEnv <> Dist abbrev
+R19452:19455 ProyectoCoq.MathCompLattices_SeqEnv <> Dist abbrev
+R19461:19465 ProyectoCoq.MathCompLattices_SeqEnv <> ajBot thm
+R19461:19465 ProyectoCoq.MathCompLattices_SeqEnv <> ajBot thm
+R19471:19473 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R19471:19473 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R19488:19495 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R19488:19495 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R19488:19495 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectJ thm
+R19513:19518 ProyectoCoq.MathCompLattices_SeqEnv <> ExComp abbrev
+R19513:19518 ProyectoCoq.MathCompLattices_SeqEnv <> ExComp abbrev
+R19513:19518 ProyectoCoq.MathCompLattices_SeqEnv <> ExComp abbrev
+R19558:19561 ProyectoCoq.MathCompLattices_SeqEnv <> Comp def
+R19585:19586 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R19585:19586 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R19585:19586 ProyectoCoq.MathCompLattices_SeqEnv <> TB abbrev
+R19595:19599 Coq.Init.Logic <> proj2 thm
+R19611:19618 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R19633:19635 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R19641:19643 ProyectoCoq.MathCompLattices_SeqEnv <> L1d thm
+R19611:19618 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R19611:19618 ProyectoCoq.MathCompLattices_SeqEnv <> ConnectM thm
+R19633:19635 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R19633:19635 ProyectoCoq.MathCompLattices_SeqEnv <> L2d thm
+R19641:19643 ProyectoCoq.MathCompLattices_SeqEnv <> L1d thm
+R19641:19643 ProyectoCoq.MathCompLattices_SeqEnv <> L1d thm
+R19656:19666 ProyectoCoq.MathCompLattices_SeqEnv <> lema4_15iii thm
+R19683:19687 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R19656:19666 ProyectoCoq.MathCompLattices_SeqEnv <> lema4_15iii thm
+R19683:19687 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R19656:19666 ProyectoCoq.MathCompLattices_SeqEnv <> lema4_15iii thm
+R19683:19687 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R19697:19701 Coq.Init.Logic <> proj1 thm

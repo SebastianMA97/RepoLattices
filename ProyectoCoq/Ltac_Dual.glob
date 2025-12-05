@@ -1,0 +1,77 @@
+DIGEST dd8470b96daeb9935cd8ff7925f43f98
+FProyectoCoq.Ltac_Dual
+R29:41 mathcomp.ssreflect.all_ssreflect <> <> lib
+R76:86 ProyectoCoq.Def_Lattice <> <> lib
+R121:128 ProyectoCoq.Dualidad <> <> lib
+R175:178 Coq.Init.Datatypes <> cons constr
+R175:178 Coq.Init.Datatypes <> cons constr
+R274:276 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R274:276 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R313:313 Coq.Init.Datatypes <> S constr
+R249:251 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R710:712 ProyectoCoq.Dualidad <> Var constr
+R686:688 ProyectoCoq.Dualidad <> Var constr
+R615:618 ProyectoCoq.Dualidad <> Join constr
+R492:495 ProyectoCoq.Dualidad <> Meet constr
+R781:785 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R781:785 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R905:907 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R905:907 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1024:1025 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1024:1025 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1108:1111 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1108:1111 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1242:1245 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R1242:1245 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R1374:1377 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1374:1377 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1488:1492 ProyectoCoq.Dualidad <> f_imp constr
+R1356:1359 ProyectoCoq.Dualidad <> f_or constr
+R1222:1227 ProyectoCoq.Dualidad <> f_conj constr
+R1092:1096 ProyectoCoq.Dualidad <> f_neg constr
+R1008:1011 ProyectoCoq.Dualidad <> f_eq constr
+R886:890 ProyectoCoq.Dualidad <> f_leq constr
+prf 1572:1589 <> reflect_sound_full
+R1596:1602 ProyectoCoq.Def_Lattice <> lattice rec
+binder 1592:1592 <> L:1
+R1610:1610 ProyectoCoq.Ltac_Dual <> L:1 var
+binder 1606:1606 <> z:2
+R1620:1622 mathcomp.ssreflect.seq <> seq abbrev
+R1624:1624 ProyectoCoq.Ltac_Dual <> L:1 var
+binder 1614:1616 <> env:3
+R1632:1635 ProyectoCoq.Dualidad <> Form ind
+binder 1628:1628 <> f:4
+R1658:1662 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R1642:1647 ProyectoCoq.Dualidad <> eval_f def
+R1649:1649 ProyectoCoq.Ltac_Dual <> L:1 var
+R1651:1651 ProyectoCoq.Ltac_Dual <> z:2 var
+R1653:1655 ProyectoCoq.Ltac_Dual <> env:3 var
+R1657:1657 ProyectoCoq.Ltac_Dual <> f:4 var
+R1663:1668 ProyectoCoq.Dualidad <> eval_f def
+R1670:1670 ProyectoCoq.Ltac_Dual <> L:1 var
+R1672:1672 ProyectoCoq.Ltac_Dual <> z:2 var
+R1674:1676 ProyectoCoq.Ltac_Dual <> env:3 var
+R1678:1678 ProyectoCoq.Ltac_Dual <> f:4 var
+R1818:1822 Coq.Init.Logic <> proj1 thm
+R1825:1842 ProyectoCoq.Ltac_Dual <> reflect_sound_full thm
+prf 1871:1881 <> reflectDual
+R1888:1894 ProyectoCoq.Def_Lattice <> lattice rec
+binder 1884:1884 <> L:5
+R1902:1902 ProyectoCoq.Ltac_Dual <> L:5 var
+binder 1898:1898 <> z:6
+R1912:1914 mathcomp.ssreflect.seq <> seq abbrev
+R1916:1916 ProyectoCoq.Ltac_Dual <> L:5 var
+binder 1906:1908 <> env:7
+R1924:1927 ProyectoCoq.Dualidad <> Form ind
+binder 1920:1920 <> F:8
+R1943:1946 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1932:1938 ProyectoCoq.Dualidad <> Teorema def
+R1941:1941 ProyectoCoq.Ltac_Dual <> F:8 var
+R1947:1952 ProyectoCoq.Dualidad <> eval_f def
+R1954:1954 ProyectoCoq.Ltac_Dual <> L:5 var
+R1956:1956 ProyectoCoq.Ltac_Dual <> z:6 var
+R1958:1960 ProyectoCoq.Ltac_Dual <> env:7 var
+R1962:1962 ProyectoCoq.Ltac_Dual <> F:8 var
+R1981:1987 ProyectoCoq.Dualidad <> Teorema def
+R1981:1987 ProyectoCoq.Dualidad <> Teorema def
+R1981:1987 ProyectoCoq.Dualidad <> Teorema def

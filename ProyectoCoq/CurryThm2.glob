@@ -1,0 +1,371 @@
+DIGEST e415d94cbbe096b6fd4e6feb1121b098
+FProyectoCoq.CurryThm2
+R29:41 mathcomp.ssreflect.all_ssreflect <> <> lib
+R76:86 ProyectoCoq.Def_Lattice <> <> lib
+abbrev 99:100 <> ρ
+R106:112 ProyectoCoq.Def_Lattice <> reflexT proj
+abbrev 127:128 <> τ
+R134:139 ProyectoCoq.Def_Lattice <> transT proj
+abbrev 154:155 <> σ
+R161:168 ProyectoCoq.Def_Lattice <> antisymT proj
+prf 181:183 <> ΛK
+R190:196 ProyectoCoq.Def_Lattice <> lattice rec
+binder 186:186 <> T:1
+R204:204 ProyectoCoq.CurryThm2 <> T:1 var
+binder 200:200 <> z:2
+R222:222 ProyectoCoq.CurryThm2 <> T:1 var
+binder 216:216 <> a:3
+binder 218:218 <> b:4
+R227:227 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R235:240 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R229:233 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R228:228 ProyectoCoq.CurryThm2 <> a:3 var
+R234:234 ProyectoCoq.CurryThm2 <> b:4 var
+R241:241 ProyectoCoq.CurryThm2 <> a:3 var
+R270:271 ProyectoCoq.CurryThm2 <> ρ abbrev
+R275:279 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R270:271 ProyectoCoq.CurryThm2 <> ρ abbrev
+R275:279 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R270:271 ProyectoCoq.CurryThm2 <> ρ abbrev
+R275:279 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R298:299 ProyectoCoq.Def_Lattice <> MH abbrev
+R303:307 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R298:299 ProyectoCoq.Def_Lattice <> MH abbrev
+R303:307 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R298:299 ProyectoCoq.Def_Lattice <> MH abbrev
+R303:307 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R320:324 Coq.Init.Logic <> proj1 thm
+prf 339:342 <> ΛK'
+R349:355 ProyectoCoq.Def_Lattice <> lattice rec
+binder 345:345 <> T:5
+R363:363 ProyectoCoq.CurryThm2 <> T:5 var
+binder 359:359 <> z:6
+R381:381 ProyectoCoq.CurryThm2 <> T:5 var
+binder 375:375 <> a:7
+binder 377:377 <> b:8
+R385:385 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R393:398 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R387:391 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R386:386 ProyectoCoq.CurryThm2 <> a:7 var
+R392:392 ProyectoCoq.CurryThm2 <> b:8 var
+R399:399 ProyectoCoq.CurryThm2 <> b:8 var
+R428:429 ProyectoCoq.CurryThm2 <> ρ abbrev
+R433:437 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R428:429 ProyectoCoq.CurryThm2 <> ρ abbrev
+R433:437 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R428:429 ProyectoCoq.CurryThm2 <> ρ abbrev
+R433:437 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R456:457 ProyectoCoq.Def_Lattice <> MH abbrev
+R461:465 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R456:457 ProyectoCoq.Def_Lattice <> MH abbrev
+R461:465 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R456:457 ProyectoCoq.Def_Lattice <> MH abbrev
+R461:465 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R478:482 Coq.Init.Logic <> proj2 thm
+prf 497:499 <> ΛS
+R506:512 ProyectoCoq.Def_Lattice <> lattice rec
+binder 502:502 <> T:9
+R520:520 ProyectoCoq.CurryThm2 <> T:9 var
+binder 516:516 <> z:10
+R540:540 ProyectoCoq.CurryThm2 <> T:9 var
+binder 532:532 <> a:11
+binder 534:534 <> b:12
+binder 536:536 <> c:13
+R545:545 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R564:568 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R553:556 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R547:551 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R546:546 ProyectoCoq.CurryThm2 <> c:13 var
+R552:552 ProyectoCoq.CurryThm2 <> a:11 var
+R558:562 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R557:557 ProyectoCoq.CurryThm2 <> c:13 var
+R563:563 ProyectoCoq.CurryThm2 <> b:12 var
+R570:575 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R583:583 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R569:569 ProyectoCoq.CurryThm2 <> c:13 var
+R577:581 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R576:576 ProyectoCoq.CurryThm2 <> a:11 var
+R582:582 ProyectoCoq.CurryThm2 <> b:12 var
+R618:619 ProyectoCoq.Def_Lattice <> MH abbrev
+R618:619 ProyectoCoq.Def_Lattice <> MH abbrev
+R618:619 ProyectoCoq.Def_Lattice <> MH abbrev
+R632:636 Coq.Init.Logic <> proj1 thm
+ind 655:659 <> STerm
+constr 673:676 <> svar
+constr 695:697 <> sOp
+R683:686 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R680:682 Coq.Init.Datatypes <> nat ind
+R687:691 ProyectoCoq.CurryThm2 <> STerm:14 ind
+R707:710 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R702:706 ProyectoCoq.CurryThm2 <> STerm:14 ind
+R716:719 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R711:715 ProyectoCoq.CurryThm2 <> STerm:14 ind
+R720:724 ProyectoCoq.CurryThm2 <> STerm:14 ind
+def 737:741 <> evalS
+R749:755 ProyectoCoq.Def_Lattice <> lattice rec
+binder 744:745 <> sL:16
+R763:764 ProyectoCoq.CurryThm2 <> sL:16 var
+binder 759:759 <> z:17
+R774:776 mathcomp.ssreflect.seq <> seq abbrev
+R778:779 ProyectoCoq.CurryThm2 <> sL:16 var
+binder 768:770 <> env:18
+R787:791 ProyectoCoq.CurryThm2 <> STerm ind
+binder 783:783 <> t:19
+R797:798 ProyectoCoq.CurryThm2 <> sL:16 var
+R811:811 ProyectoCoq.CurryThm2 <> t:19 var
+R822:825 ProyectoCoq.CurryThm2 <> svar constr
+R832:834 mathcomp.ssreflect.seq <> nth def
+R838:840 ProyectoCoq.CurryThm2 <> env:18 var
+R836:836 ProyectoCoq.CurryThm2 <> z:17 var
+R848:850 ProyectoCoq.CurryThm2 <> sOp constr
+R878:882 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R861:865 ProyectoCoq.CurryThm2 <> evalS:20 def
+R872:874 ProyectoCoq.CurryThm2 <> env:18 var
+R870:870 ProyectoCoq.CurryThm2 <> z:17 var
+R867:868 ProyectoCoq.CurryThm2 <> sL:16 var
+R883:887 ProyectoCoq.CurryThm2 <> evalS:20 def
+R894:896 ProyectoCoq.CurryThm2 <> env:18 var
+R892:892 ProyectoCoq.CurryThm2 <> z:17 var
+R889:890 ProyectoCoq.CurryThm2 <> sL:16 var
+ind 919:923 <> SForm
+constr 936:941 <> fs_leq
+constr 972:976 <> fs_eq
+R951:954 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R946:950 ProyectoCoq.CurryThm2 <> STerm ind
+R960:963 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R955:959 ProyectoCoq.CurryThm2 <> STerm ind
+R964:968 ProyectoCoq.CurryThm2 <> SForm:22 ind
+R987:990 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R982:986 ProyectoCoq.CurryThm2 <> STerm ind
+R996:999 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R991:995 ProyectoCoq.CurryThm2 <> STerm ind
+R1000:1004 ProyectoCoq.CurryThm2 <> SForm:22 ind
+def 1017:1023 <> evalS_f
+R1030:1036 ProyectoCoq.Def_Lattice <> lattice rec
+binder 1026:1026 <> L:24
+R1044:1044 ProyectoCoq.CurryThm2 <> L:24 var
+binder 1040:1040 <> z:25
+R1054:1056 mathcomp.ssreflect.seq <> seq abbrev
+R1058:1058 ProyectoCoq.CurryThm2 <> L:24 var
+binder 1048:1050 <> env:26
+R1066:1070 ProyectoCoq.CurryThm2 <> SForm ind
+binder 1062:1062 <> f:27
+R1091:1091 ProyectoCoq.CurryThm2 <> f:27 var
+R1102:1107 ProyectoCoq.CurryThm2 <> fs_leq constr
+R1118:1118 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R1135:1141 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R1158:1158 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R1119:1123 ProyectoCoq.CurryThm2 <> evalS def
+R1125:1125 ProyectoCoq.CurryThm2 <> L:24 var
+R1127:1127 ProyectoCoq.CurryThm2 <> z:25 var
+R1129:1131 ProyectoCoq.CurryThm2 <> env:26 var
+R1142:1146 ProyectoCoq.CurryThm2 <> evalS def
+R1148:1148 ProyectoCoq.CurryThm2 <> L:24 var
+R1150:1150 ProyectoCoq.CurryThm2 <> z:25 var
+R1152:1154 ProyectoCoq.CurryThm2 <> env:26 var
+R1164:1168 ProyectoCoq.CurryThm2 <> fs_eq constr
+R1180:1180 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1197:1201 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1218:1218 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1181:1185 ProyectoCoq.CurryThm2 <> evalS def
+R1187:1187 ProyectoCoq.CurryThm2 <> L:24 var
+R1189:1189 ProyectoCoq.CurryThm2 <> z:25 var
+R1191:1193 ProyectoCoq.CurryThm2 <> env:26 var
+R1202:1206 ProyectoCoq.CurryThm2 <> evalS def
+R1208:1208 ProyectoCoq.CurryThm2 <> L:24 var
+R1210:1210 ProyectoCoq.CurryThm2 <> z:25 var
+R1212:1214 ProyectoCoq.CurryThm2 <> env:26 var
+def 1239:1241 <> Leq
+R1250:1254 ProyectoCoq.CurryThm2 <> STerm ind
+binder 1244:1244 <> s:30
+binder 1246:1246 <> t:31
+binder 1274:1274 <> L:32
+binder 1276:1276 <> z:33
+binder 1278:1280 <> env:34
+R1298:1303 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R1283:1287 ProyectoCoq.CurryThm2 <> evalS def
+R1289:1289 ProyectoCoq.CurryThm2 <> L:32 var
+R1291:1291 ProyectoCoq.CurryThm2 <> z:33 var
+R1293:1295 ProyectoCoq.CurryThm2 <> env:34 var
+R1297:1297 ProyectoCoq.CurryThm2 <> s:30 var
+R1304:1308 ProyectoCoq.CurryThm2 <> evalS def
+R1310:1310 ProyectoCoq.CurryThm2 <> L:32 var
+R1312:1312 ProyectoCoq.CurryThm2 <> z:33 var
+R1314:1316 ProyectoCoq.CurryThm2 <> env:34 var
+R1318:1318 ProyectoCoq.CurryThm2 <> t:31 var
+def 1333:1337 <> Equiv
+R1346:1350 ProyectoCoq.CurryThm2 <> STerm ind
+binder 1340:1340 <> s:35
+binder 1342:1342 <> t:36
+binder 1370:1370 <> L:37
+binder 1372:1372 <> z:38
+binder 1374:1376 <> env:39
+R1394:1396 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1379:1383 ProyectoCoq.CurryThm2 <> evalS def
+R1385:1385 ProyectoCoq.CurryThm2 <> L:37 var
+R1387:1387 ProyectoCoq.CurryThm2 <> z:38 var
+R1389:1391 ProyectoCoq.CurryThm2 <> env:39 var
+R1393:1393 ProyectoCoq.CurryThm2 <> s:35 var
+R1397:1401 ProyectoCoq.CurryThm2 <> evalS def
+R1403:1403 ProyectoCoq.CurryThm2 <> L:37 var
+R1405:1405 ProyectoCoq.CurryThm2 <> z:38 var
+R1407:1409 ProyectoCoq.CurryThm2 <> env:39 var
+R1411:1411 ProyectoCoq.CurryThm2 <> t:36 var
+def 1424:1429 <> atm_en
+R1436:1440 ProyectoCoq.CurryThm2 <> STerm ind
+binder 1432:1432 <> s:40
+R1448:1450 Coq.Init.Datatypes <> nat ind
+binder 1444:1444 <> j:41
+R1464:1464 ProyectoCoq.CurryThm2 <> s:40 var
+R1475:1478 ProyectoCoq.CurryThm2 <> svar constr
+R1486:1488 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1489:1489 ProyectoCoq.CurryThm2 <> j:41 var
+R1495:1497 ProyectoCoq.CurryThm2 <> sOp constr
+R1508:1508 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R1520:1525 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R1537:1537 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R1509:1514 ProyectoCoq.CurryThm2 <> atm_en:42 def
+R1519:1519 ProyectoCoq.CurryThm2 <> j:41 var
+R1526:1531 ProyectoCoq.CurryThm2 <> atm_en:42 def
+R1536:1536 ProyectoCoq.CurryThm2 <> j:41 var
+def 1556:1558 <> leq
+R1567:1571 ProyectoCoq.CurryThm2 <> STerm ind
+binder 1561:1561 <> s:44
+binder 1563:1563 <> t:45
+R1585:1585 ProyectoCoq.CurryThm2 <> t:45 var
+R1596:1599 ProyectoCoq.CurryThm2 <> svar constr
+R1606:1611 ProyectoCoq.CurryThm2 <> atm_en def
+R1613:1613 ProyectoCoq.CurryThm2 <> s:44 var
+R1621:1623 ProyectoCoq.CurryThm2 <> sOp constr
+R1634:1634 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1643:1648 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1657:1657 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1635:1637 ProyectoCoq.CurryThm2 <> leq:46 def
+R1639:1639 ProyectoCoq.CurryThm2 <> s:44 var
+R1649:1651 ProyectoCoq.CurryThm2 <> leq:46 def
+R1653:1653 ProyectoCoq.CurryThm2 <> s:44 var
+prf 1673:1686 <> atm_en_eval_le
+R1694:1700 ProyectoCoq.Def_Lattice <> lattice rec
+binder 1689:1690 <> sL:48
+R1708:1709 ProyectoCoq.CurryThm2 <> sL:48 var
+binder 1704:1704 <> z:49
+R1719:1721 mathcomp.ssreflect.seq <> seq abbrev
+R1723:1724 ProyectoCoq.CurryThm2 <> sL:48 var
+binder 1713:1715 <> env:50
+R1732:1736 ProyectoCoq.CurryThm2 <> STerm ind
+binder 1728:1728 <> s:51
+binder 1739:1739 <> j:52
+R1755:1758 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1745:1750 ProyectoCoq.CurryThm2 <> atm_en def
+R1752:1752 ProyectoCoq.CurryThm2 <> s:51 var
+R1754:1754 ProyectoCoq.CurryThm2 <> j:52 var
+R1775:1779 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R1759:1763 ProyectoCoq.CurryThm2 <> evalS def
+R1765:1766 ProyectoCoq.CurryThm2 <> sL:48 var
+R1768:1768 ProyectoCoq.CurryThm2 <> z:49 var
+R1770:1772 ProyectoCoq.CurryThm2 <> env:50 var
+R1774:1774 ProyectoCoq.CurryThm2 <> s:51 var
+R1780:1782 mathcomp.ssreflect.seq <> nth def
+R1790:1790 ProyectoCoq.CurryThm2 <> j:52 var
+R1786:1788 ProyectoCoq.CurryThm2 <> env:50 var
+R1784:1784 ProyectoCoq.CurryThm2 <> z:49 var
+R1868:1869 ProyectoCoq.CurryThm2 <> ρ abbrev
+R1872:1874 mathcomp.ssreflect.seq <> nth def
+R1868:1869 ProyectoCoq.CurryThm2 <> ρ abbrev
+R1872:1874 mathcomp.ssreflect.seq <> nth def
+R1868:1869 ProyectoCoq.CurryThm2 <> ρ abbrev
+R1872:1874 mathcomp.ssreflect.seq <> nth def
+R1914:1916 ProyectoCoq.CurryThm2 <> ΛK thm
+R1941:1945 ProyectoCoq.CurryThm2 <> evalS def
+R1921:1925 ProyectoCoq.CurryThm2 <> evalS def
+R1914:1916 ProyectoCoq.CurryThm2 <> ΛK thm
+R1941:1945 ProyectoCoq.CurryThm2 <> evalS def
+R1921:1925 ProyectoCoq.CurryThm2 <> evalS def
+R1914:1916 ProyectoCoq.CurryThm2 <> ΛK thm
+R1941:1945 ProyectoCoq.CurryThm2 <> evalS def
+R1921:1925 ProyectoCoq.CurryThm2 <> evalS def
+R1980:1981 ProyectoCoq.CurryThm2 <> τ abbrev
+R2001:2005 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R1984:1988 ProyectoCoq.CurryThm2 <> evalS def
+R2006:2010 ProyectoCoq.CurryThm2 <> evalS def
+R2026:2030 ProyectoCoq.CurryThm2 <> evalS def
+R1980:1981 ProyectoCoq.CurryThm2 <> τ abbrev
+R2001:2005 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R1984:1988 ProyectoCoq.CurryThm2 <> evalS def
+R2006:2010 ProyectoCoq.CurryThm2 <> evalS def
+R2026:2030 ProyectoCoq.CurryThm2 <> evalS def
+R2093:2096 ProyectoCoq.CurryThm2 <> ΛK' thm
+R2121:2125 ProyectoCoq.CurryThm2 <> evalS def
+R2101:2105 ProyectoCoq.CurryThm2 <> evalS def
+R2093:2096 ProyectoCoq.CurryThm2 <> ΛK' thm
+R2121:2125 ProyectoCoq.CurryThm2 <> evalS def
+R2101:2105 ProyectoCoq.CurryThm2 <> evalS def
+R2093:2096 ProyectoCoq.CurryThm2 <> ΛK' thm
+R2121:2125 ProyectoCoq.CurryThm2 <> evalS def
+R2101:2105 ProyectoCoq.CurryThm2 <> evalS def
+R2155:2156 ProyectoCoq.CurryThm2 <> τ abbrev
+R2176:2180 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R2159:2163 ProyectoCoq.CurryThm2 <> evalS def
+R2181:2185 ProyectoCoq.CurryThm2 <> evalS def
+R2201:2205 ProyectoCoq.CurryThm2 <> evalS def
+R2155:2156 ProyectoCoq.CurryThm2 <> τ abbrev
+R2176:2180 ProyectoCoq.Def_Lattice <> :::x_'⊓'_x not
+R2159:2163 ProyectoCoq.CurryThm2 <> evalS def
+R2181:2185 ProyectoCoq.CurryThm2 <> evalS def
+R2201:2205 ProyectoCoq.CurryThm2 <> evalS def
+prf 2265:2276 <> leq_impl_Leq
+binder 2278:2278 <> s:53
+binder 2280:2280 <> t:54
+R2293:2296 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2286:2288 ProyectoCoq.CurryThm2 <> leq def
+R2290:2290 ProyectoCoq.CurryThm2 <> s:53 var
+R2292:2292 ProyectoCoq.CurryThm2 <> t:54 var
+R2297:2299 ProyectoCoq.CurryThm2 <> Leq def
+R2301:2301 ProyectoCoq.CurryThm2 <> s:53 var
+R2303:2303 ProyectoCoq.CurryThm2 <> t:54 var
+R2379:2383 ProyectoCoq.CurryThm2 <> evalS def
+R2379:2383 ProyectoCoq.CurryThm2 <> evalS def
+R2379:2383 ProyectoCoq.CurryThm2 <> evalS def
+R2399:2412 ProyectoCoq.CurryThm2 <> atm_en_eval_le thm
+R2399:2412 ProyectoCoq.CurryThm2 <> atm_en_eval_le thm
+R2399:2412 ProyectoCoq.CurryThm2 <> atm_en_eval_le thm
+R2470:2472 ProyectoCoq.CurryThm2 <> ΛS thm
+R2470:2472 ProyectoCoq.CurryThm2 <> ΛS thm
+R2567:2570 Coq.Init.Datatypes <> cons constr
+R2567:2570 Coq.Init.Datatypes <> cons constr
+R2666:2668 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2666:2668 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2706:2706 Coq.Init.Datatypes <> S constr
+R2641:2643 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2978:2981 ProyectoCoq.CurryThm2 <> svar constr
+R2953:2956 ProyectoCoq.CurryThm2 <> svar constr
+R2882:2884 ProyectoCoq.CurryThm2 <> sOp constr
+R3049:3053 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R3049:3053 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R3172:3174 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3172:3174 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3273:3277 ProyectoCoq.CurryThm2 <> fs_eq constr
+R3152:3157 ProyectoCoq.CurryThm2 <> fs_leq constr
+prf 3357:3370 <> reflectS_sound
+R3377:3383 ProyectoCoq.Def_Lattice <> lattice rec
+binder 3373:3373 <> L:55
+R3391:3391 ProyectoCoq.CurryThm2 <> L:55 var
+binder 3387:3387 <> z:56
+R3401:3403 mathcomp.ssreflect.seq <> seq abbrev
+R3405:3405 ProyectoCoq.CurryThm2 <> L:55 var
+binder 3395:3397 <> env:57
+R3413:3417 ProyectoCoq.CurryThm2 <> SForm ind
+binder 3409:3409 <> f:58
+R3441:3445 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R3424:3430 ProyectoCoq.CurryThm2 <> evalS_f def
+R3432:3432 ProyectoCoq.CurryThm2 <> L:55 var
+R3434:3434 ProyectoCoq.CurryThm2 <> z:56 var
+R3436:3438 ProyectoCoq.CurryThm2 <> env:57 var
+R3440:3440 ProyectoCoq.CurryThm2 <> f:58 var
+R3446:3452 ProyectoCoq.CurryThm2 <> evalS_f def
+R3454:3454 ProyectoCoq.CurryThm2 <> L:55 var
+R3456:3456 ProyectoCoq.CurryThm2 <> z:56 var
+R3458:3460 ProyectoCoq.CurryThm2 <> env:57 var
+R3462:3462 ProyectoCoq.CurryThm2 <> f:58 var
+R3600:3604 Coq.Init.Logic <> proj1 thm
+R3607:3620 ProyectoCoq.CurryThm2 <> reflectS_sound thm

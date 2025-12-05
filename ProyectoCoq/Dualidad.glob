@@ -1,0 +1,1001 @@
+DIGEST 6fe666d5e211afb7076ca34554debfb5
+FProyectoCoq.Dualidad
+R29:41 mathcomp.ssreflect.all_ssreflect <> <> lib
+R76:86 ProyectoCoq.Def_Lattice <> <> lib
+def 101:104 <> dord
+R111:122 ProyectoCoq.Def_Lattice <> ordenParcial rec
+binder 107:107 <> T:1
+R132:132 ProyectoCoq.Dualidad <> T:1 var
+binder 126:126 <> x:2
+binder 128:128 <> y:3
+R138:140 ProyectoCoq.Def_Lattice <> ord proj
+R142:142 ProyectoCoq.Dualidad <> T:1 var
+R144:144 ProyectoCoq.Dualidad <> y:3 var
+R146:146 ProyectoCoq.Dualidad <> x:2 var
+prf 156:162 <> Dreflex
+R169:180 ProyectoCoq.Def_Lattice <> ordenParcial rec
+binder 165:165 <> T:4
+R185:193 ProyectoCoq.Def_Lattice <> reflexive def
+R197:200 ProyectoCoq.Dualidad <> dord def
+R202:202 ProyectoCoq.Dualidad <> T:4 var
+R220:226 ProyectoCoq.Def_Lattice <> reflexT proj
+R220:226 ProyectoCoq.Def_Lattice <> reflexT proj
+R220:226 ProyectoCoq.Def_Lattice <> reflexT proj
+R244:252 ProyectoCoq.Def_Lattice <> reflexive def
+R255:258 ProyectoCoq.Dualidad <> dord def
+R244:252 ProyectoCoq.Def_Lattice <> reflexive def
+R244:252 ProyectoCoq.Def_Lattice <> reflexive def
+R255:258 ProyectoCoq.Dualidad <> dord def
+R255:258 ProyectoCoq.Dualidad <> dord def
+prf 273:280 <> Dantisym
+R287:298 ProyectoCoq.Def_Lattice <> ordenParcial rec
+binder 283:283 <> T:5
+R303:314 ProyectoCoq.Def_Lattice <> antisymetric def
+R318:321 ProyectoCoq.Dualidad <> dord def
+R323:323 ProyectoCoq.Dualidad <> T:5 var
+R341:348 ProyectoCoq.Def_Lattice <> antisymT proj
+R341:348 ProyectoCoq.Def_Lattice <> antisymT proj
+R341:348 ProyectoCoq.Def_Lattice <> antisymT proj
+R363:374 ProyectoCoq.Def_Lattice <> antisymetric def
+R377:380 ProyectoCoq.Dualidad <> dord def
+R363:374 ProyectoCoq.Def_Lattice <> antisymetric def
+R363:374 ProyectoCoq.Def_Lattice <> antisymetric def
+R377:380 ProyectoCoq.Dualidad <> dord def
+R377:380 ProyectoCoq.Dualidad <> dord def
+prf 439:444 <> Dtrans
+R451:462 ProyectoCoq.Def_Lattice <> ordenParcial rec
+binder 447:447 <> T:6
+R467:476 ProyectoCoq.Def_Lattice <> transitive def
+R480:483 ProyectoCoq.Dualidad <> dord def
+R485:485 ProyectoCoq.Dualidad <> T:6 var
+R503:508 ProyectoCoq.Def_Lattice <> transT proj
+R503:508 ProyectoCoq.Def_Lattice <> transT proj
+R503:508 ProyectoCoq.Def_Lattice <> transT proj
+R523:532 ProyectoCoq.Def_Lattice <> transitive def
+R535:538 ProyectoCoq.Dualidad <> dord def
+R523:532 ProyectoCoq.Def_Lattice <> transitive def
+R523:532 ProyectoCoq.Def_Lattice <> transitive def
+R535:538 ProyectoCoq.Dualidad <> dord def
+R535:538 ProyectoCoq.Dualidad <> dord def
+def 615:622 <> dual_ord
+binder 624:624 <> T:7
+R629:640 ProyectoCoq.Def_Lattice <> OrdenParcial constr
+R643:643 ProyectoCoq.Def_Lattice <> O proj
+R645:645 ProyectoCoq.Dualidad <> T:7 var
+R649:652 ProyectoCoq.Dualidad <> dord def
+R655:661 ProyectoCoq.Dualidad <> Dreflex thm
+R663:670 ProyectoCoq.Dualidad <> Dantisym thm
+R672:677 ProyectoCoq.Dualidad <> Dtrans thm
+def 701:715 <> dual_lattice_of
+R722:728 ProyectoCoq.Def_Lattice <> lattice rec
+binder 718:718 <> L:8
+R733:739 ProyectoCoq.Def_Lattice <> lattice rec
+R746:752 ProyectoCoq.Def_Lattice <> Lattice constr
+R759:766 ProyectoCoq.Dualidad <> dual_ord canonstruc
+R768:768 ProyectoCoq.Dualidad <> L:8 var
+R772:776 ProyectoCoq.Def_Lattice <> meetT proj
+R778:778 ProyectoCoq.Dualidad <> L:8 var
+binder 786:786 <> z:9
+binder 788:788 <> x:10
+binder 790:790 <> y:11
+R795:797 ProyectoCoq.Def_Lattice <> mHT proj
+R799:799 ProyectoCoq.Dualidad <> L:8 var
+R801:801 ProyectoCoq.Dualidad <> z:9 var
+R803:803 ProyectoCoq.Dualidad <> x:10 var
+R805:805 ProyectoCoq.Dualidad <> y:11 var
+R809:813 ProyectoCoq.Def_Lattice <> joinT proj
+R815:815 ProyectoCoq.Dualidad <> L:8 var
+binder 823:823 <> z:12
+binder 825:825 <> x:13
+binder 827:827 <> y:14
+R832:834 ProyectoCoq.Def_Lattice <> jHT proj
+R836:836 ProyectoCoq.Dualidad <> L:8 var
+R838:838 ProyectoCoq.Dualidad <> z:12 var
+R840:840 ProyectoCoq.Dualidad <> x:13 var
+R842:842 ProyectoCoq.Dualidad <> y:14 var
+ind 857:860 <> Term
+constr 873:875 <> Var
+constr 894:897 <> Meet
+constr 924:927 <> Join
+R883:886 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R880:882 Coq.Init.Datatypes <> nat ind
+R887:890 ProyectoCoq.Dualidad <> Term:15 ind
+R905:908 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R901:904 ProyectoCoq.Dualidad <> Term:15 ind
+R913:916 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R909:912 ProyectoCoq.Dualidad <> Term:15 ind
+R917:920 ProyectoCoq.Dualidad <> Term:15 ind
+R935:938 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R931:934 ProyectoCoq.Dualidad <> Term:15 ind
+R943:946 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R939:942 ProyectoCoq.Dualidad <> Term:15 ind
+R947:950 ProyectoCoq.Dualidad <> Term:15 ind
+def 963:966 <> eval
+R973:979 ProyectoCoq.Def_Lattice <> lattice rec
+binder 969:969 <> L:17
+R987:987 ProyectoCoq.Dualidad <> L:17 var
+binder 983:983 <> z:18
+R997:999 mathcomp.ssreflect.seq <> seq abbrev
+R1001:1001 ProyectoCoq.Dualidad <> L:17 var
+binder 991:993 <> env:19
+R1009:1012 ProyectoCoq.Dualidad <> Term ind
+binder 1005:1005 <> t:20
+R1017:1017 ProyectoCoq.Dualidad <> L:17 var
+R1030:1030 ProyectoCoq.Dualidad <> t:20 var
+R1041:1043 ProyectoCoq.Dualidad <> Var constr
+R1054:1056 mathcomp.ssreflect.seq <> nth def
+R1060:1062 ProyectoCoq.Dualidad <> env:19 var
+R1058:1058 ProyectoCoq.Dualidad <> z:18 var
+R1070:1073 ProyectoCoq.Dualidad <> Meet constr
+R1085:1089 ProyectoCoq.Def_Lattice <> meetT proj
+R1091:1091 ProyectoCoq.Dualidad <> L:17 var
+R1094:1097 ProyectoCoq.Dualidad <> eval:21 def
+R1103:1105 ProyectoCoq.Dualidad <> env:19 var
+R1101:1101 ProyectoCoq.Dualidad <> z:18 var
+R1099:1099 ProyectoCoq.Dualidad <> L:17 var
+R1112:1115 ProyectoCoq.Dualidad <> eval:21 def
+R1121:1123 ProyectoCoq.Dualidad <> env:19 var
+R1119:1119 ProyectoCoq.Dualidad <> z:18 var
+R1117:1117 ProyectoCoq.Dualidad <> L:17 var
+R1133:1136 ProyectoCoq.Dualidad <> Join constr
+R1148:1152 ProyectoCoq.Def_Lattice <> joinT proj
+R1154:1154 ProyectoCoq.Dualidad <> L:17 var
+R1157:1160 ProyectoCoq.Dualidad <> eval:21 def
+R1166:1168 ProyectoCoq.Dualidad <> env:19 var
+R1164:1164 ProyectoCoq.Dualidad <> z:18 var
+R1162:1162 ProyectoCoq.Dualidad <> L:17 var
+R1175:1178 ProyectoCoq.Dualidad <> eval:21 def
+R1184:1186 ProyectoCoq.Dualidad <> env:19 var
+R1182:1182 ProyectoCoq.Dualidad <> z:18 var
+R1180:1180 ProyectoCoq.Dualidad <> L:17 var
+ind 1210:1213 <> Form
+constr 1226:1230 <> f_leq
+constr 1258:1261 <> f_eq
+constr 1290:1294 <> f_neg
+constr 1314:1319 <> f_conj
+constr 1346:1349 <> f_or
+constr 1378:1382 <> f_imp
+R1239:1242 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1235:1238 ProyectoCoq.Dualidad <> Term ind
+R1247:1250 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1243:1246 ProyectoCoq.Dualidad <> Term ind
+R1251:1254 ProyectoCoq.Dualidad <> Form:23 ind
+R1271:1274 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1267:1270 ProyectoCoq.Dualidad <> Term ind
+R1279:1282 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1275:1278 ProyectoCoq.Dualidad <> Term ind
+R1283:1286 ProyectoCoq.Dualidad <> Form:23 ind
+R1303:1306 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1299:1302 ProyectoCoq.Dualidad <> Form:23 ind
+R1307:1310 ProyectoCoq.Dualidad <> Form:23 ind
+R1327:1330 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1323:1326 ProyectoCoq.Dualidad <> Form:23 ind
+R1335:1338 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1331:1334 ProyectoCoq.Dualidad <> Form:23 ind
+R1339:1342 ProyectoCoq.Dualidad <> Form:23 ind
+R1359:1362 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1355:1358 ProyectoCoq.Dualidad <> Form:23 ind
+R1367:1370 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1363:1366 ProyectoCoq.Dualidad <> Form:23 ind
+R1371:1374 ProyectoCoq.Dualidad <> Form:23 ind
+R1391:1394 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1387:1390 ProyectoCoq.Dualidad <> Form:23 ind
+R1399:1402 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1395:1398 ProyectoCoq.Dualidad <> Form:23 ind
+R1403:1406 ProyectoCoq.Dualidad <> Form:23 ind
+def 1419:1424 <> eval_f
+R1431:1437 ProyectoCoq.Def_Lattice <> lattice rec
+binder 1427:1427 <> L:25
+R1445:1445 ProyectoCoq.Dualidad <> L:25 var
+binder 1441:1441 <> z:26
+R1455:1457 mathcomp.ssreflect.seq <> seq abbrev
+R1459:1459 ProyectoCoq.Dualidad <> L:25 var
+binder 1449:1451 <> env:27
+R1467:1470 ProyectoCoq.Dualidad <> Form ind
+binder 1463:1463 <> f:28
+R1491:1491 ProyectoCoq.Dualidad <> f:28 var
+R1502:1506 ProyectoCoq.Dualidad <> f_leq constr
+R1517:1517 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R1533:1539 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R1555:1555 ProyectoCoq.Def_Lattice <> :::x_'≤'_x not
+R1518:1521 ProyectoCoq.Dualidad <> eval def
+R1523:1523 ProyectoCoq.Dualidad <> L:25 var
+R1525:1525 ProyectoCoq.Dualidad <> z:26 var
+R1527:1529 ProyectoCoq.Dualidad <> env:27 var
+R1540:1543 ProyectoCoq.Dualidad <> eval def
+R1545:1545 ProyectoCoq.Dualidad <> L:25 var
+R1547:1547 ProyectoCoq.Dualidad <> z:26 var
+R1549:1551 ProyectoCoq.Dualidad <> env:27 var
+R1561:1564 ProyectoCoq.Dualidad <> f_eq constr
+R1576:1576 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1592:1596 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1612:1612 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1577:1580 ProyectoCoq.Dualidad <> eval def
+R1582:1582 ProyectoCoq.Dualidad <> L:25 var
+R1584:1584 ProyectoCoq.Dualidad <> z:26 var
+R1586:1588 ProyectoCoq.Dualidad <> env:27 var
+R1597:1600 ProyectoCoq.Dualidad <> eval def
+R1602:1602 ProyectoCoq.Dualidad <> L:25 var
+R1604:1604 ProyectoCoq.Dualidad <> z:26 var
+R1606:1608 ProyectoCoq.Dualidad <> env:27 var
+R1618:1622 ProyectoCoq.Dualidad <> f_neg constr
+R1634:1636 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1654:1654 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1637:1642 ProyectoCoq.Dualidad <> eval_f:29 def
+R1648:1650 ProyectoCoq.Dualidad <> env:27 var
+R1646:1646 ProyectoCoq.Dualidad <> z:26 var
+R1644:1644 ProyectoCoq.Dualidad <> L:25 var
+R1660:1665 ProyectoCoq.Dualidad <> f_conj constr
+R1694:1697 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1677:1682 ProyectoCoq.Dualidad <> eval_f:29 def
+R1688:1690 ProyectoCoq.Dualidad <> env:27 var
+R1686:1686 ProyectoCoq.Dualidad <> z:26 var
+R1684:1684 ProyectoCoq.Dualidad <> L:25 var
+R1698:1703 ProyectoCoq.Dualidad <> eval_f:29 def
+R1709:1711 ProyectoCoq.Dualidad <> env:27 var
+R1707:1707 ProyectoCoq.Dualidad <> z:26 var
+R1705:1705 ProyectoCoq.Dualidad <> L:25 var
+R1720:1723 ProyectoCoq.Dualidad <> f_or constr
+R1737:1737 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R1755:1760 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R1778:1778 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R1738:1743 ProyectoCoq.Dualidad <> eval_f:29 def
+R1749:1751 ProyectoCoq.Dualidad <> env:27 var
+R1747:1747 ProyectoCoq.Dualidad <> z:26 var
+R1745:1745 ProyectoCoq.Dualidad <> L:25 var
+R1761:1766 ProyectoCoq.Dualidad <> eval_f:29 def
+R1772:1774 ProyectoCoq.Dualidad <> env:27 var
+R1770:1770 ProyectoCoq.Dualidad <> z:26 var
+R1768:1768 ProyectoCoq.Dualidad <> L:25 var
+R1784:1788 ProyectoCoq.Dualidad <> f_imp constr
+R1802:1802 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1820:1825 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1843:1843 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1803:1808 ProyectoCoq.Dualidad <> eval_f:29 def
+R1814:1816 ProyectoCoq.Dualidad <> env:27 var
+R1812:1812 ProyectoCoq.Dualidad <> z:26 var
+R1810:1810 ProyectoCoq.Dualidad <> L:25 var
+R1826:1831 ProyectoCoq.Dualidad <> eval_f:29 def
+R1837:1839 ProyectoCoq.Dualidad <> env:27 var
+R1835:1835 ProyectoCoq.Dualidad <> z:26 var
+R1833:1833 ProyectoCoq.Dualidad <> L:25 var
+def 1862:1867 <> dual_t
+R1874:1877 ProyectoCoq.Dualidad <> Term ind
+binder 1870:1870 <> t:31
+R1882:1885 ProyectoCoq.Dualidad <> Term ind
+R1898:1898 ProyectoCoq.Dualidad <> t:31 var
+R1909:1911 ProyectoCoq.Dualidad <> Var constr
+R1918:1920 ProyectoCoq.Dualidad <> Var constr
+R1928:1931 ProyectoCoq.Dualidad <> Meet constr
+R1942:1945 ProyectoCoq.Dualidad <> Join constr
+R1948:1953 ProyectoCoq.Dualidad <> dual_t:32 def
+R1960:1965 ProyectoCoq.Dualidad <> dual_t:32 def
+R1975:1978 ProyectoCoq.Dualidad <> Join constr
+R1989:1992 ProyectoCoq.Dualidad <> Meet constr
+R1995:2000 ProyectoCoq.Dualidad <> dual_t:32 def
+R2007:2012 ProyectoCoq.Dualidad <> dual_t:32 def
+def 2035:2038 <> dual
+R2045:2048 ProyectoCoq.Dualidad <> Form ind
+binder 2041:2041 <> f:34
+R2053:2056 ProyectoCoq.Dualidad <> Form ind
+R2069:2069 ProyectoCoq.Dualidad <> f:34 var
+R2080:2084 ProyectoCoq.Dualidad <> f_leq constr
+R2095:2099 ProyectoCoq.Dualidad <> f_leq constr
+R2102:2107 ProyectoCoq.Dualidad <> dual_t def
+R2114:2119 ProyectoCoq.Dualidad <> dual_t def
+R2129:2132 ProyectoCoq.Dualidad <> f_eq constr
+R2144:2147 ProyectoCoq.Dualidad <> f_eq constr
+R2150:2155 ProyectoCoq.Dualidad <> dual_t def
+R2162:2167 ProyectoCoq.Dualidad <> dual_t def
+R2177:2181 ProyectoCoq.Dualidad <> f_neg constr
+R2193:2197 ProyectoCoq.Dualidad <> f_neg constr
+R2200:2203 ProyectoCoq.Dualidad <> dual:35 def
+R2213:2218 ProyectoCoq.Dualidad <> f_conj constr
+R2230:2235 ProyectoCoq.Dualidad <> f_conj constr
+R2238:2241 ProyectoCoq.Dualidad <> dual:35 def
+R2248:2251 ProyectoCoq.Dualidad <> dual:35 def
+R2261:2264 ProyectoCoq.Dualidad <> f_or constr
+R2278:2281 ProyectoCoq.Dualidad <> f_or constr
+R2284:2287 ProyectoCoq.Dualidad <> dual:35 def
+R2294:2297 ProyectoCoq.Dualidad <> dual:35 def
+R2307:2311 ProyectoCoq.Dualidad <> f_imp constr
+R2324:2328 ProyectoCoq.Dualidad <> f_imp constr
+R2331:2334 ProyectoCoq.Dualidad <> dual:35 def
+R2341:2344 ProyectoCoq.Dualidad <> dual:35 def
+prf 2389:2392 <> jldm
+R2408:2414 ProyectoCoq.Def_Lattice <> lattice rec
+binder 2404:2404 <> L:37
+R2443:2445 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2418:2422 ProyectoCoq.Def_Lattice <> joinT proj
+R2425:2439 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R2441:2441 ProyectoCoq.Dualidad <> L:37 var
+R2446:2450 ProyectoCoq.Def_Lattice <> meetT proj
+R2452:2452 ProyectoCoq.Dualidad <> L:37 var
+prf 2483:2486 <> mldj
+R2502:2508 ProyectoCoq.Def_Lattice <> lattice rec
+binder 2498:2498 <> L:38
+R2537:2539 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2512:2516 ProyectoCoq.Def_Lattice <> meetT proj
+R2519:2533 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R2535:2535 ProyectoCoq.Dualidad <> L:38 var
+R2540:2544 ProyectoCoq.Def_Lattice <> joinT proj
+R2546:2546 ProyectoCoq.Dualidad <> L:38 var
+prf 2578:2583 <> eval_m
+R2599:2605 ProyectoCoq.Def_Lattice <> lattice rec
+binder 2595:2595 <> L:39
+R2613:2613 ProyectoCoq.Dualidad <> L:39 var
+binder 2609:2609 <> z:40
+R2623:2625 mathcomp.ssreflect.seq <> seq abbrev
+R2627:2627 ProyectoCoq.Dualidad <> L:39 var
+binder 2617:2619 <> env:41
+R2639:2642 ProyectoCoq.Dualidad <> Term ind
+binder 2631:2632 <> t0:42
+binder 2634:2635 <> t1:43
+R2686:2688 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2661:2664 ProyectoCoq.Dualidad <> eval def
+R2666:2666 ProyectoCoq.Dualidad <> L:39 var
+R2668:2668 ProyectoCoq.Dualidad <> z:40 var
+R2670:2672 ProyectoCoq.Dualidad <> env:41 var
+R2675:2678 ProyectoCoq.Dualidad <> Meet constr
+R2680:2681 ProyectoCoq.Dualidad <> t0:42 var
+R2683:2684 ProyectoCoq.Dualidad <> t1:43 var
+R2689:2693 ProyectoCoq.Def_Lattice <> meetT proj
+R2695:2695 ProyectoCoq.Dualidad <> L:39 var
+R2698:2701 ProyectoCoq.Dualidad <> eval def
+R2703:2703 ProyectoCoq.Dualidad <> L:39 var
+R2705:2705 ProyectoCoq.Dualidad <> z:40 var
+R2707:2709 ProyectoCoq.Dualidad <> env:41 var
+R2711:2712 ProyectoCoq.Dualidad <> t0:42 var
+R2716:2719 ProyectoCoq.Dualidad <> eval def
+R2721:2721 ProyectoCoq.Dualidad <> L:39 var
+R2723:2723 ProyectoCoq.Dualidad <> z:40 var
+R2725:2727 ProyectoCoq.Dualidad <> env:41 var
+R2729:2730 ProyectoCoq.Dualidad <> t1:43 var
+R2769:2772 ProyectoCoq.Dualidad <> eval def
+R2769:2772 ProyectoCoq.Dualidad <> eval def
+R2769:2772 ProyectoCoq.Dualidad <> eval def
+prf 2787:2792 <> eval_j
+R2808:2814 ProyectoCoq.Def_Lattice <> lattice rec
+binder 2804:2804 <> L:44
+R2822:2822 ProyectoCoq.Dualidad <> L:44 var
+binder 2818:2818 <> z:45
+R2832:2834 mathcomp.ssreflect.seq <> seq abbrev
+R2836:2836 ProyectoCoq.Dualidad <> L:44 var
+binder 2826:2828 <> env:46
+R2848:2851 ProyectoCoq.Dualidad <> Term ind
+binder 2840:2841 <> t0:47
+binder 2843:2844 <> t1:48
+R2895:2897 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2870:2873 ProyectoCoq.Dualidad <> eval def
+R2875:2875 ProyectoCoq.Dualidad <> L:44 var
+R2877:2877 ProyectoCoq.Dualidad <> z:45 var
+R2879:2881 ProyectoCoq.Dualidad <> env:46 var
+R2884:2887 ProyectoCoq.Dualidad <> Join constr
+R2889:2890 ProyectoCoq.Dualidad <> t0:47 var
+R2892:2893 ProyectoCoq.Dualidad <> t1:48 var
+R2898:2902 ProyectoCoq.Def_Lattice <> joinT proj
+R2904:2904 ProyectoCoq.Dualidad <> L:44 var
+R2907:2910 ProyectoCoq.Dualidad <> eval def
+R2912:2912 ProyectoCoq.Dualidad <> L:44 var
+R2914:2914 ProyectoCoq.Dualidad <> z:45 var
+R2916:2918 ProyectoCoq.Dualidad <> env:46 var
+R2920:2921 ProyectoCoq.Dualidad <> t0:47 var
+R2925:2928 ProyectoCoq.Dualidad <> eval def
+R2930:2930 ProyectoCoq.Dualidad <> L:44 var
+R2932:2932 ProyectoCoq.Dualidad <> z:45 var
+R2934:2936 ProyectoCoq.Dualidad <> env:46 var
+R2938:2939 ProyectoCoq.Dualidad <> t1:48 var
+R2978:2981 ProyectoCoq.Dualidad <> eval def
+R2978:2981 ProyectoCoq.Dualidad <> eval def
+R2978:2981 ProyectoCoq.Dualidad <> eval def
+prf 2996:3004 <> eval_conj
+R3020:3026 ProyectoCoq.Def_Lattice <> lattice rec
+binder 3016:3016 <> L:49
+R3034:3034 ProyectoCoq.Dualidad <> L:49 var
+binder 3030:3030 <> z:50
+R3044:3046 mathcomp.ssreflect.seq <> seq abbrev
+R3048:3048 ProyectoCoq.Dualidad <> L:49 var
+binder 3038:3040 <> env:51
+R3060:3063 ProyectoCoq.Dualidad <> Form ind
+binder 3052:3053 <> f0:52
+binder 3055:3056 <> f1:53
+R3116:3118 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3087:3092 ProyectoCoq.Dualidad <> eval_f def
+R3094:3094 ProyectoCoq.Dualidad <> L:49 var
+R3096:3096 ProyectoCoq.Dualidad <> z:50 var
+R3098:3100 ProyectoCoq.Dualidad <> env:51 var
+R3103:3108 ProyectoCoq.Dualidad <> f_conj constr
+R3110:3111 ProyectoCoq.Dualidad <> f0:52 var
+R3113:3114 ProyectoCoq.Dualidad <> f1:53 var
+R3119:3121 Coq.Init.Logic <> and ind
+R3144:3149 ProyectoCoq.Dualidad <> eval_f def
+R3151:3151 ProyectoCoq.Dualidad <> L:49 var
+R3153:3153 ProyectoCoq.Dualidad <> z:50 var
+R3155:3157 ProyectoCoq.Dualidad <> env:51 var
+R3159:3160 ProyectoCoq.Dualidad <> f1:53 var
+R3124:3129 ProyectoCoq.Dualidad <> eval_f def
+R3131:3131 ProyectoCoq.Dualidad <> L:49 var
+R3133:3133 ProyectoCoq.Dualidad <> z:50 var
+R3135:3137 ProyectoCoq.Dualidad <> env:51 var
+R3139:3140 ProyectoCoq.Dualidad <> f0:52 var
+prf 3191:3199 <> dual_conj
+R3219:3222 ProyectoCoq.Dualidad <> Form ind
+binder 3211:3212 <> f0:54
+binder 3214:3215 <> f1:55
+R3245:3247 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3226:3229 ProyectoCoq.Dualidad <> dual def
+R3232:3237 ProyectoCoq.Dualidad <> f_conj constr
+R3239:3240 ProyectoCoq.Dualidad <> f0:54 var
+R3242:3243 ProyectoCoq.Dualidad <> f1:55 var
+R3248:3253 ProyectoCoq.Dualidad <> f_conj constr
+R3256:3259 ProyectoCoq.Dualidad <> dual def
+R3261:3262 ProyectoCoq.Dualidad <> f0:54 var
+R3266:3269 ProyectoCoq.Dualidad <> dual def
+R3271:3272 ProyectoCoq.Dualidad <> f1:55 var
+prf 3303:3309 <> eval_or
+R3325:3331 ProyectoCoq.Def_Lattice <> lattice rec
+binder 3321:3321 <> L:56
+R3339:3339 ProyectoCoq.Dualidad <> L:56 var
+binder 3335:3335 <> z:57
+R3349:3351 mathcomp.ssreflect.seq <> seq abbrev
+R3353:3353 ProyectoCoq.Dualidad <> L:56 var
+binder 3343:3345 <> env:58
+R3365:3368 ProyectoCoq.Dualidad <> Form ind
+binder 3357:3358 <> f0:59
+binder 3360:3361 <> f1:60
+R3419:3421 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3392:3397 ProyectoCoq.Dualidad <> eval_f def
+R3399:3399 ProyectoCoq.Dualidad <> L:56 var
+R3401:3401 ProyectoCoq.Dualidad <> z:57 var
+R3403:3405 ProyectoCoq.Dualidad <> env:58 var
+R3408:3411 ProyectoCoq.Dualidad <> f_or constr
+R3413:3414 ProyectoCoq.Dualidad <> f0:59 var
+R3416:3417 ProyectoCoq.Dualidad <> f1:60 var
+R3422:3423 Coq.Init.Logic <> or ind
+R3446:3451 ProyectoCoq.Dualidad <> eval_f def
+R3453:3453 ProyectoCoq.Dualidad <> L:56 var
+R3455:3455 ProyectoCoq.Dualidad <> z:57 var
+R3457:3459 ProyectoCoq.Dualidad <> env:58 var
+R3461:3462 ProyectoCoq.Dualidad <> f1:60 var
+R3426:3431 ProyectoCoq.Dualidad <> eval_f def
+R3433:3433 ProyectoCoq.Dualidad <> L:56 var
+R3435:3435 ProyectoCoq.Dualidad <> z:57 var
+R3437:3439 ProyectoCoq.Dualidad <> env:58 var
+R3441:3442 ProyectoCoq.Dualidad <> f0:59 var
+prf 3493:3499 <> dual_or
+R3519:3522 ProyectoCoq.Dualidad <> Form ind
+binder 3511:3512 <> f0:61
+binder 3514:3515 <> f1:62
+R3543:3545 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3526:3529 ProyectoCoq.Dualidad <> dual def
+R3532:3535 ProyectoCoq.Dualidad <> f_or constr
+R3537:3538 ProyectoCoq.Dualidad <> f0:61 var
+R3540:3541 ProyectoCoq.Dualidad <> f1:62 var
+R3546:3549 ProyectoCoq.Dualidad <> f_or constr
+R3552:3555 ProyectoCoq.Dualidad <> dual def
+R3557:3558 ProyectoCoq.Dualidad <> f0:61 var
+R3562:3565 ProyectoCoq.Dualidad <> dual def
+R3567:3568 ProyectoCoq.Dualidad <> f1:62 var
+prf 3599:3606 <> eval_imp
+R3622:3628 ProyectoCoq.Def_Lattice <> lattice rec
+binder 3618:3618 <> L:63
+R3636:3636 ProyectoCoq.Dualidad <> L:63 var
+binder 3632:3632 <> z:64
+R3646:3648 mathcomp.ssreflect.seq <> seq abbrev
+R3650:3650 ProyectoCoq.Dualidad <> L:63 var
+binder 3640:3642 <> env:65
+R3662:3665 ProyectoCoq.Dualidad <> Form ind
+binder 3654:3655 <> f0:66
+binder 3657:3658 <> f1:67
+R3717:3719 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3763:3763 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3689:3694 ProyectoCoq.Dualidad <> eval_f def
+R3696:3696 ProyectoCoq.Dualidad <> L:63 var
+R3698:3698 ProyectoCoq.Dualidad <> z:64 var
+R3700:3702 ProyectoCoq.Dualidad <> env:65 var
+R3705:3709 ProyectoCoq.Dualidad <> f_imp constr
+R3711:3712 ProyectoCoq.Dualidad <> f0:66 var
+R3714:3715 ProyectoCoq.Dualidad <> f1:67 var
+R3720:3721 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3739:3744 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3762:3762 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3722:3727 ProyectoCoq.Dualidad <> eval_f def
+R3729:3729 ProyectoCoq.Dualidad <> L:63 var
+R3731:3731 ProyectoCoq.Dualidad <> z:64 var
+R3733:3735 ProyectoCoq.Dualidad <> env:65 var
+R3737:3738 ProyectoCoq.Dualidad <> f0:66 var
+R3745:3750 ProyectoCoq.Dualidad <> eval_f def
+R3752:3752 ProyectoCoq.Dualidad <> L:63 var
+R3754:3754 ProyectoCoq.Dualidad <> z:64 var
+R3756:3758 ProyectoCoq.Dualidad <> env:65 var
+R3760:3761 ProyectoCoq.Dualidad <> f1:67 var
+prf 3792:3799 <> dual_imp
+R3819:3822 ProyectoCoq.Dualidad <> Form ind
+binder 3811:3812 <> f0:68
+binder 3814:3815 <> f1:69
+R3844:3846 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3826:3829 ProyectoCoq.Dualidad <> dual def
+R3832:3836 ProyectoCoq.Dualidad <> f_imp constr
+R3838:3839 ProyectoCoq.Dualidad <> f0:68 var
+R3841:3842 ProyectoCoq.Dualidad <> f1:69 var
+R3847:3851 ProyectoCoq.Dualidad <> f_imp constr
+R3854:3857 ProyectoCoq.Dualidad <> dual def
+R3859:3860 ProyectoCoq.Dualidad <> f0:68 var
+R3864:3867 ProyectoCoq.Dualidad <> dual def
+R3869:3870 ProyectoCoq.Dualidad <> f1:69 var
+prf 3901:3906 <> dual_m
+R3925:3928 ProyectoCoq.Dualidad <> Term ind
+binder 3917:3918 <> t0:70
+binder 3920:3921 <> t1:71
+R3967:3969 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3948:3953 ProyectoCoq.Dualidad <> dual_t def
+R3956:3959 ProyectoCoq.Dualidad <> Meet constr
+R3961:3962 ProyectoCoq.Dualidad <> t0:70 var
+R3964:3965 ProyectoCoq.Dualidad <> t1:71 var
+R3970:3973 ProyectoCoq.Dualidad <> Join constr
+R3976:3981 ProyectoCoq.Dualidad <> dual_t def
+R3983:3984 ProyectoCoq.Dualidad <> t0:70 var
+R3988:3993 ProyectoCoq.Dualidad <> dual_t def
+R3995:3996 ProyectoCoq.Dualidad <> t1:71 var
+R4034:4039 ProyectoCoq.Dualidad <> dual_t def
+R4034:4039 ProyectoCoq.Dualidad <> dual_t def
+R4034:4039 ProyectoCoq.Dualidad <> dual_t def
+prf 4054:4059 <> dual_j
+R4078:4081 ProyectoCoq.Dualidad <> Term ind
+binder 4070:4071 <> t0:72
+binder 4073:4074 <> t1:73
+R4120:4122 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4101:4106 ProyectoCoq.Dualidad <> dual_t def
+R4109:4112 ProyectoCoq.Dualidad <> Join constr
+R4114:4115 ProyectoCoq.Dualidad <> t0:72 var
+R4117:4118 ProyectoCoq.Dualidad <> t1:73 var
+R4123:4126 ProyectoCoq.Dualidad <> Meet constr
+R4129:4134 ProyectoCoq.Dualidad <> dual_t def
+R4136:4137 ProyectoCoq.Dualidad <> t0:72 var
+R4141:4146 ProyectoCoq.Dualidad <> dual_t def
+R4148:4149 ProyectoCoq.Dualidad <> t1:73 var
+R4187:4192 ProyectoCoq.Dualidad <> dual_t def
+R4187:4192 ProyectoCoq.Dualidad <> dual_t def
+R4187:4192 ProyectoCoq.Dualidad <> dual_t def
+prf 4207:4213 <> le_dual
+R4220:4226 ProyectoCoq.Def_Lattice <> lattice rec
+binder 4216:4216 <> L:74
+R4236:4236 ProyectoCoq.Dualidad <> L:74 var
+binder 4230:4230 <> x:75
+binder 4232:4232 <> y:76
+R4243:4243 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R4271:4277 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R4287:4287 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R4244:4246 ProyectoCoq.Def_Lattice <> ord proj
+R4249:4263 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R4265:4265 ProyectoCoq.Dualidad <> L:74 var
+R4268:4268 ProyectoCoq.Dualidad <> x:75 var
+R4270:4270 ProyectoCoq.Dualidad <> y:76 var
+R4278:4280 ProyectoCoq.Def_Lattice <> ord proj
+R4282:4282 ProyectoCoq.Dualidad <> L:74 var
+R4284:4284 ProyectoCoq.Dualidad <> y:76 var
+R4286:4286 ProyectoCoq.Dualidad <> x:75 var
+prf 4318:4326 <> eval_dual
+R4333:4339 ProyectoCoq.Def_Lattice <> lattice rec
+binder 4329:4329 <> L:77
+R4347:4347 ProyectoCoq.Dualidad <> L:77 var
+binder 4343:4343 <> z:78
+R4357:4359 mathcomp.ssreflect.seq <> seq abbrev
+R4361:4361 ProyectoCoq.Dualidad <> L:77 var
+binder 4351:4353 <> env:79
+R4369:4372 ProyectoCoq.Dualidad <> Term ind
+binder 4365:4365 <> t:80
+R4411:4413 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4379:4382 ProyectoCoq.Dualidad <> eval def
+R4385:4399 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R4401:4401 ProyectoCoq.Dualidad <> L:77 var
+R4404:4404 ProyectoCoq.Dualidad <> z:78 var
+R4406:4408 ProyectoCoq.Dualidad <> env:79 var
+R4410:4410 ProyectoCoq.Dualidad <> t:80 var
+R4414:4417 ProyectoCoq.Dualidad <> eval def
+R4419:4419 ProyectoCoq.Dualidad <> L:77 var
+R4421:4421 ProyectoCoq.Dualidad <> z:78 var
+R4423:4425 ProyectoCoq.Dualidad <> env:79 var
+R4428:4433 ProyectoCoq.Dualidad <> dual_t def
+R4435:4435 ProyectoCoq.Dualidad <> t:80 var
+R4502:4505 ProyectoCoq.Dualidad <> eval def
+R4507:4512 ProyectoCoq.Dualidad <> dual_t def
+R4514:4517 ProyectoCoq.Dualidad <> eval def
+R4502:4505 ProyectoCoq.Dualidad <> eval def
+R4502:4505 ProyectoCoq.Dualidad <> eval def
+R4507:4512 ProyectoCoq.Dualidad <> dual_t def
+R4507:4512 ProyectoCoq.Dualidad <> dual_t def
+R4514:4517 ProyectoCoq.Dualidad <> eval def
+R4514:4517 ProyectoCoq.Dualidad <> eval def
+R4573:4578 ProyectoCoq.Dualidad <> dual_m thm
+R4581:4586 ProyectoCoq.Dualidad <> eval_j thm
+R4573:4578 ProyectoCoq.Dualidad <> dual_m thm
+R4573:4578 ProyectoCoq.Dualidad <> dual_m thm
+R4581:4586 ProyectoCoq.Dualidad <> eval_j thm
+R4581:4586 ProyectoCoq.Dualidad <> eval_j thm
+R4609:4614 ProyectoCoq.Dualidad <> eval_m thm
+R4617:4631 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R4609:4614 ProyectoCoq.Dualidad <> eval_m thm
+R4617:4631 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R4609:4614 ProyectoCoq.Dualidad <> eval_m thm
+R4617:4631 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R4663:4666 ProyectoCoq.Dualidad <> mldj thm
+R4663:4666 ProyectoCoq.Dualidad <> mldj thm
+R4663:4666 ProyectoCoq.Dualidad <> mldj thm
+R4721:4726 ProyectoCoq.Dualidad <> dual_j thm
+R4729:4734 ProyectoCoq.Dualidad <> eval_m thm
+R4721:4726 ProyectoCoq.Dualidad <> dual_j thm
+R4721:4726 ProyectoCoq.Dualidad <> dual_j thm
+R4729:4734 ProyectoCoq.Dualidad <> eval_m thm
+R4729:4734 ProyectoCoq.Dualidad <> eval_m thm
+R4757:4762 ProyectoCoq.Dualidad <> eval_j thm
+R4765:4779 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R4757:4762 ProyectoCoq.Dualidad <> eval_j thm
+R4765:4779 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R4757:4762 ProyectoCoq.Dualidad <> eval_j thm
+R4765:4779 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R4811:4814 ProyectoCoq.Dualidad <> jldm thm
+R4811:4814 ProyectoCoq.Dualidad <> jldm thm
+R4811:4814 ProyectoCoq.Dualidad <> jldm thm
+prf 4831:4841 <> eval_dual_f
+R4848:4854 ProyectoCoq.Def_Lattice <> lattice rec
+binder 4844:4844 <> L:81
+R4862:4862 ProyectoCoq.Dualidad <> L:81 var
+binder 4858:4858 <> z:82
+R4872:4874 mathcomp.ssreflect.seq <> seq abbrev
+R4876:4876 ProyectoCoq.Dualidad <> L:81 var
+binder 4866:4868 <> env:83
+R4884:4887 ProyectoCoq.Dualidad <> Form ind
+binder 4880:4880 <> f:84
+R4928:4930 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4894:4899 ProyectoCoq.Dualidad <> eval_f def
+R4902:4916 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R4918:4918 ProyectoCoq.Dualidad <> L:81 var
+R4921:4921 ProyectoCoq.Dualidad <> z:82 var
+R4923:4925 ProyectoCoq.Dualidad <> env:83 var
+R4927:4927 ProyectoCoq.Dualidad <> f:84 var
+R4931:4936 ProyectoCoq.Dualidad <> eval_f def
+R4938:4938 ProyectoCoq.Dualidad <> L:81 var
+R4940:4940 ProyectoCoq.Dualidad <> z:82 var
+R4942:4944 ProyectoCoq.Dualidad <> env:83 var
+R4947:4950 ProyectoCoq.Dualidad <> dual def
+R4952:4952 ProyectoCoq.Dualidad <> f:84 var
+R5014:5017 ProyectoCoq.Dualidad <> dual def
+R5020:5025 ProyectoCoq.Dualidad <> eval_f def
+R5027:5035 ProyectoCoq.Dualidad <> eval_dual thm
+R5037:5045 ProyectoCoq.Dualidad <> eval_dual thm
+R5014:5017 ProyectoCoq.Dualidad <> dual def
+R5014:5017 ProyectoCoq.Dualidad <> dual def
+R5020:5025 ProyectoCoq.Dualidad <> eval_f def
+R5020:5025 ProyectoCoq.Dualidad <> eval_f def
+R5027:5035 ProyectoCoq.Dualidad <> eval_dual thm
+R5027:5035 ProyectoCoq.Dualidad <> eval_dual thm
+R5037:5045 ProyectoCoq.Dualidad <> eval_dual thm
+R5037:5045 ProyectoCoq.Dualidad <> eval_dual thm
+R5081:5084 ProyectoCoq.Dualidad <> dual def
+R5087:5092 ProyectoCoq.Dualidad <> eval_f def
+R5094:5102 ProyectoCoq.Dualidad <> eval_dual thm
+R5104:5112 ProyectoCoq.Dualidad <> eval_dual thm
+R5081:5084 ProyectoCoq.Dualidad <> dual def
+R5081:5084 ProyectoCoq.Dualidad <> dual def
+R5087:5092 ProyectoCoq.Dualidad <> eval_f def
+R5087:5092 ProyectoCoq.Dualidad <> eval_f def
+R5094:5102 ProyectoCoq.Dualidad <> eval_dual thm
+R5094:5102 ProyectoCoq.Dualidad <> eval_dual thm
+R5104:5112 ProyectoCoq.Dualidad <> eval_dual thm
+R5104:5112 ProyectoCoq.Dualidad <> eval_dual thm
+R5170:5176 ProyectoCoq.Def_Lattice <> lattice rec
+binder 5166:5166 <> L:85
+R5184:5184 ProyectoCoq.Dualidad <> L:85 var
+binder 5180:5180 <> z:86
+R5194:5196 mathcomp.ssreflect.seq <> seq abbrev
+R5198:5198 ProyectoCoq.Dualidad <> L:85 var
+binder 5188:5190 <> env:87
+R5207:5210 ProyectoCoq.Dualidad <> Form ind
+binder 5202:5203 <> f0:88
+R5239:5241 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5214:5219 ProyectoCoq.Dualidad <> eval_f def
+R5221:5221 ProyectoCoq.Dualidad <> L:85 var
+R5223:5223 ProyectoCoq.Dualidad <> z:86 var
+R5225:5227 ProyectoCoq.Dualidad <> env:87 var
+R5230:5234 ProyectoCoq.Dualidad <> f_neg constr
+R5236:5237 ProyectoCoq.Dualidad <> f0:88 var
+R5242:5244 Coq.Init.Logic <> ::type_scope:'~'_x not
+R5262:5262 Coq.Init.Logic <> ::type_scope:'~'_x not
+R5245:5250 ProyectoCoq.Dualidad <> eval_f def
+R5252:5252 ProyectoCoq.Dualidad <> L:85 var
+R5254:5254 ProyectoCoq.Dualidad <> z:86 var
+R5256:5258 ProyectoCoq.Dualidad <> env:87 var
+R5260:5261 ProyectoCoq.Dualidad <> f0:88 var
+R5302:5305 ProyectoCoq.Dualidad <> Form ind
+binder 5297:5298 <> f0:89
+R5324:5326 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5309:5312 ProyectoCoq.Dualidad <> dual def
+R5315:5319 ProyectoCoq.Dualidad <> f_neg constr
+R5321:5322 ProyectoCoq.Dualidad <> f0:89 var
+R5327:5331 ProyectoCoq.Dualidad <> f_neg constr
+R5334:5337 ProyectoCoq.Dualidad <> dual def
+R5339:5340 ProyectoCoq.Dualidad <> f0:89 var
+R5442:5450 ProyectoCoq.Dualidad <> dual_conj thm
+R5452:5460 ProyectoCoq.Dualidad <> eval_conj thm
+R5462:5470 ProyectoCoq.Dualidad <> eval_conj thm
+R5442:5450 ProyectoCoq.Dualidad <> dual_conj thm
+R5442:5450 ProyectoCoq.Dualidad <> dual_conj thm
+R5452:5460 ProyectoCoq.Dualidad <> eval_conj thm
+R5452:5460 ProyectoCoq.Dualidad <> eval_conj thm
+R5462:5470 ProyectoCoq.Dualidad <> eval_conj thm
+R5462:5470 ProyectoCoq.Dualidad <> eval_conj thm
+R5539:5545 ProyectoCoq.Dualidad <> dual_or thm
+R5547:5553 ProyectoCoq.Dualidad <> eval_or thm
+R5555:5561 ProyectoCoq.Dualidad <> eval_or thm
+R5539:5545 ProyectoCoq.Dualidad <> dual_or thm
+R5539:5545 ProyectoCoq.Dualidad <> dual_or thm
+R5547:5553 ProyectoCoq.Dualidad <> eval_or thm
+R5547:5553 ProyectoCoq.Dualidad <> eval_or thm
+R5555:5561 ProyectoCoq.Dualidad <> eval_or thm
+R5555:5561 ProyectoCoq.Dualidad <> eval_or thm
+R5631:5638 ProyectoCoq.Dualidad <> dual_imp thm
+R5640:5647 ProyectoCoq.Dualidad <> eval_imp thm
+R5649:5656 ProyectoCoq.Dualidad <> eval_imp thm
+R5631:5638 ProyectoCoq.Dualidad <> dual_imp thm
+R5631:5638 ProyectoCoq.Dualidad <> dual_imp thm
+R5640:5647 ProyectoCoq.Dualidad <> eval_imp thm
+R5640:5647 ProyectoCoq.Dualidad <> eval_imp thm
+R5649:5656 ProyectoCoq.Dualidad <> eval_imp thm
+R5649:5656 ProyectoCoq.Dualidad <> eval_imp thm
+prf 5692:5698 <> dual_td
+R5713:5716 ProyectoCoq.Dualidad <> Term ind
+binder 5709:5709 <> t:90
+R5720:5722 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5719:5719 ProyectoCoq.Dualidad <> t:90 var
+R5723:5728 ProyectoCoq.Dualidad <> dual_t def
+R5731:5736 ProyectoCoq.Dualidad <> dual_t def
+R5738:5738 ProyectoCoq.Dualidad <> t:90 var
+R5781:5786 ProyectoCoq.Dualidad <> dual_t def
+R5781:5786 ProyectoCoq.Dualidad <> dual_t def
+R5781:5786 ProyectoCoq.Dualidad <> dual_t def
+R5827:5832 ProyectoCoq.Dualidad <> dual_m thm
+R5834:5839 ProyectoCoq.Dualidad <> dual_j thm
+R5827:5832 ProyectoCoq.Dualidad <> dual_m thm
+R5827:5832 ProyectoCoq.Dualidad <> dual_m thm
+R5834:5839 ProyectoCoq.Dualidad <> dual_j thm
+R5834:5839 ProyectoCoq.Dualidad <> dual_j thm
+R5888:5893 ProyectoCoq.Dualidad <> dual_j thm
+R5895:5900 ProyectoCoq.Dualidad <> dual_m thm
+R5888:5893 ProyectoCoq.Dualidad <> dual_j thm
+R5888:5893 ProyectoCoq.Dualidad <> dual_j thm
+R5895:5900 ProyectoCoq.Dualidad <> dual_m thm
+R5895:5900 ProyectoCoq.Dualidad <> dual_m thm
+prf 5923:5927 <> duald
+R5942:5945 ProyectoCoq.Dualidad <> Form ind
+binder 5938:5938 <> F:91
+R5949:5951 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5948:5948 ProyectoCoq.Dualidad <> F:91 var
+R5952:5955 ProyectoCoq.Dualidad <> dual def
+R5958:5961 ProyectoCoq.Dualidad <> dual def
+R5963:5963 ProyectoCoq.Dualidad <> F:91 var
+R6019:6022 ProyectoCoq.Dualidad <> dual def
+R6028:6034 ProyectoCoq.Dualidad <> dual_td thm
+R6044:6050 ProyectoCoq.Dualidad <> dual_td thm
+R6019:6022 ProyectoCoq.Dualidad <> dual def
+R6019:6022 ProyectoCoq.Dualidad <> dual def
+R6028:6034 ProyectoCoq.Dualidad <> dual_td thm
+R6028:6034 ProyectoCoq.Dualidad <> dual_td thm
+R6044:6050 ProyectoCoq.Dualidad <> dual_td thm
+R6044:6050 ProyectoCoq.Dualidad <> dual_td thm
+R6086:6089 ProyectoCoq.Dualidad <> dual def
+R6095:6101 ProyectoCoq.Dualidad <> dual_td thm
+R6111:6117 ProyectoCoq.Dualidad <> dual_td thm
+R6086:6089 ProyectoCoq.Dualidad <> dual def
+R6086:6089 ProyectoCoq.Dualidad <> dual def
+R6095:6101 ProyectoCoq.Dualidad <> dual_td thm
+R6095:6101 ProyectoCoq.Dualidad <> dual_td thm
+R6111:6117 ProyectoCoq.Dualidad <> dual_td thm
+R6111:6117 ProyectoCoq.Dualidad <> dual_td thm
+R6164:6167 ProyectoCoq.Dualidad <> dual def
+R6164:6167 ProyectoCoq.Dualidad <> dual def
+R6164:6167 ProyectoCoq.Dualidad <> dual def
+R6204:6212 ProyectoCoq.Dualidad <> dual_conj thm
+R6214:6222 ProyectoCoq.Dualidad <> dual_conj thm
+R6204:6212 ProyectoCoq.Dualidad <> dual_conj thm
+R6204:6212 ProyectoCoq.Dualidad <> dual_conj thm
+R6214:6222 ProyectoCoq.Dualidad <> dual_conj thm
+R6214:6222 ProyectoCoq.Dualidad <> dual_conj thm
+R6267:6273 ProyectoCoq.Dualidad <> dual_or thm
+R6275:6281 ProyectoCoq.Dualidad <> dual_or thm
+R6267:6273 ProyectoCoq.Dualidad <> dual_or thm
+R6267:6273 ProyectoCoq.Dualidad <> dual_or thm
+R6275:6281 ProyectoCoq.Dualidad <> dual_or thm
+R6275:6281 ProyectoCoq.Dualidad <> dual_or thm
+R6326:6333 ProyectoCoq.Dualidad <> dual_imp thm
+R6335:6342 ProyectoCoq.Dualidad <> dual_imp thm
+R6326:6333 ProyectoCoq.Dualidad <> dual_imp thm
+R6326:6333 ProyectoCoq.Dualidad <> dual_imp thm
+R6335:6342 ProyectoCoq.Dualidad <> dual_imp thm
+R6335:6342 ProyectoCoq.Dualidad <> dual_imp thm
+def 6370:6376 <> Teorema
+R6383:6386 ProyectoCoq.Dualidad <> Form ind
+binder 6379:6379 <> F:92
+R6411:6417 ProyectoCoq.Def_Lattice <> lattice rec
+binder 6407:6407 <> L:93
+R6425:6425 ProyectoCoq.Dualidad <> L:93 var
+binder 6421:6421 <> z:94
+R6435:6437 mathcomp.ssreflect.seq <> seq abbrev
+R6439:6439 ProyectoCoq.Dualidad <> L:93 var
+binder 6429:6431 <> env:95
+R6444:6449 ProyectoCoq.Dualidad <> eval_f def
+R6451:6451 ProyectoCoq.Dualidad <> L:93 var
+R6453:6453 ProyectoCoq.Dualidad <> z:94 var
+R6455:6457 ProyectoCoq.Dualidad <> env:95 var
+R6459:6459 ProyectoCoq.Dualidad <> F:92 var
+prf 6472:6479 <> Dualidad
+R6494:6497 ProyectoCoq.Dualidad <> Form ind
+binder 6490:6490 <> f:96
+R6500:6500 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6510:6515 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6532:6532 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6501:6507 ProyectoCoq.Dualidad <> Teorema def
+R6509:6509 ProyectoCoq.Dualidad <> f:96 var
+R6516:6522 ProyectoCoq.Dualidad <> Teorema def
+R6525:6528 ProyectoCoq.Dualidad <> dual def
+R6530:6530 ProyectoCoq.Dualidad <> f:96 var
+R6611:6614 ProyectoCoq.Dualidad <> dual def
+R6617:6623 ProyectoCoq.Dualidad <> Teorema def
+R6611:6614 ProyectoCoq.Dualidad <> dual def
+R6611:6614 ProyectoCoq.Dualidad <> dual def
+R6617:6623 ProyectoCoq.Dualidad <> Teorema def
+R6617:6623 ProyectoCoq.Dualidad <> Teorema def
+R6657:6671 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R6657:6671 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R6657:6671 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R6699:6709 ProyectoCoq.Dualidad <> eval_dual_f thm
+R6712:6715 ProyectoCoq.Dualidad <> dual def
+R6699:6709 ProyectoCoq.Dualidad <> eval_dual_f thm
+R6699:6709 ProyectoCoq.Dualidad <> eval_dual_f thm
+R6712:6715 ProyectoCoq.Dualidad <> dual def
+R6712:6715 ProyectoCoq.Dualidad <> dual def
+R6756:6762 ProyectoCoq.Dualidad <> Teorema def
+R6765:6768 ProyectoCoq.Dualidad <> dual def
+R6771:6776 ProyectoCoq.Dualidad <> eval_f def
+R6756:6762 ProyectoCoq.Dualidad <> Teorema def
+R6756:6762 ProyectoCoq.Dualidad <> Teorema def
+R6765:6768 ProyectoCoq.Dualidad <> dual def
+R6765:6768 ProyectoCoq.Dualidad <> dual def
+R6771:6776 ProyectoCoq.Dualidad <> eval_f def
+R6771:6776 ProyectoCoq.Dualidad <> eval_f def
+R6816:6830 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R6816:6830 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R6816:6830 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R6858:6866 ProyectoCoq.Dualidad <> eval_dual thm
+R6868:6876 ProyectoCoq.Dualidad <> eval_dual thm
+R6858:6866 ProyectoCoq.Dualidad <> eval_dual thm
+R6858:6866 ProyectoCoq.Dualidad <> eval_dual thm
+R6868:6876 ProyectoCoq.Dualidad <> eval_dual thm
+R6868:6876 ProyectoCoq.Dualidad <> eval_dual thm
+R6913:6919 ProyectoCoq.Dualidad <> Teorema def
+R6913:6919 ProyectoCoq.Dualidad <> Teorema def
+R6913:6919 ProyectoCoq.Dualidad <> Teorema def
+R6958:6972 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R6958:6972 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R6958:6972 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R7011:7017 ProyectoCoq.Def_Lattice <> lattice rec
+binder 7007:7007 <> L:97
+R7025:7025 ProyectoCoq.Dualidad <> L:97 var
+binder 7021:7021 <> z:98
+R7035:7037 mathcomp.ssreflect.seq <> seq abbrev
+R7039:7039 ProyectoCoq.Dualidad <> L:97 var
+binder 7029:7031 <> env:99
+R7048:7051 ProyectoCoq.Dualidad <> Form ind
+binder 7043:7044 <> f0:100
+R7080:7082 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7055:7060 ProyectoCoq.Dualidad <> eval_f def
+R7062:7062 ProyectoCoq.Dualidad <> L:97 var
+R7064:7064 ProyectoCoq.Dualidad <> z:98 var
+R7066:7068 ProyectoCoq.Dualidad <> env:99 var
+R7071:7075 ProyectoCoq.Dualidad <> f_neg constr
+R7077:7078 ProyectoCoq.Dualidad <> f0:100 var
+R7083:7085 Coq.Init.Logic <> ::type_scope:'~'_x not
+R7103:7103 Coq.Init.Logic <> ::type_scope:'~'_x not
+R7086:7091 ProyectoCoq.Dualidad <> eval_f def
+R7093:7093 ProyectoCoq.Dualidad <> L:97 var
+R7095:7095 ProyectoCoq.Dualidad <> z:98 var
+R7097:7099 ProyectoCoq.Dualidad <> env:99 var
+R7101:7102 ProyectoCoq.Dualidad <> f0:100 var
+R7147:7150 ProyectoCoq.Dualidad <> Form ind
+binder 7142:7143 <> f0:101
+R7169:7171 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7154:7157 ProyectoCoq.Dualidad <> dual def
+R7160:7164 ProyectoCoq.Dualidad <> f_neg constr
+R7166:7167 ProyectoCoq.Dualidad <> f0:101 var
+R7172:7176 ProyectoCoq.Dualidad <> f_neg constr
+R7179:7182 ProyectoCoq.Dualidad <> dual def
+R7184:7185 ProyectoCoq.Dualidad <> f0:101 var
+R7243:7253 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7243:7253 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7243:7253 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7291:7297 ProyectoCoq.Dualidad <> Teorema def
+R7291:7297 ProyectoCoq.Dualidad <> Teorema def
+R7291:7297 ProyectoCoq.Dualidad <> Teorema def
+R7341:7355 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R7341:7355 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R7341:7355 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R7380:7388 ProyectoCoq.Dualidad <> dual_conj thm
+R7390:7398 ProyectoCoq.Dualidad <> eval_conj thm
+R7400:7408 ProyectoCoq.Dualidad <> eval_conj thm
+R7380:7388 ProyectoCoq.Dualidad <> dual_conj thm
+R7380:7388 ProyectoCoq.Dualidad <> dual_conj thm
+R7390:7398 ProyectoCoq.Dualidad <> eval_conj thm
+R7390:7398 ProyectoCoq.Dualidad <> eval_conj thm
+R7400:7408 ProyectoCoq.Dualidad <> eval_conj thm
+R7400:7408 ProyectoCoq.Dualidad <> eval_conj thm
+R7426:7436 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7438:7448 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7426:7436 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7426:7436 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7438:7448 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7438:7448 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7484:7490 ProyectoCoq.Dualidad <> Teorema def
+R7484:7490 ProyectoCoq.Dualidad <> Teorema def
+R7484:7490 ProyectoCoq.Dualidad <> Teorema def
+R7534:7548 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R7534:7548 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R7534:7548 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R7573:7579 ProyectoCoq.Dualidad <> dual_or thm
+R7581:7587 ProyectoCoq.Dualidad <> eval_or thm
+R7589:7595 ProyectoCoq.Dualidad <> eval_or thm
+R7573:7579 ProyectoCoq.Dualidad <> dual_or thm
+R7573:7579 ProyectoCoq.Dualidad <> dual_or thm
+R7581:7587 ProyectoCoq.Dualidad <> eval_or thm
+R7581:7587 ProyectoCoq.Dualidad <> eval_or thm
+R7589:7595 ProyectoCoq.Dualidad <> eval_or thm
+R7589:7595 ProyectoCoq.Dualidad <> eval_or thm
+R7613:7623 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7625:7635 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7613:7623 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7613:7623 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7625:7635 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7625:7635 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7672:7678 ProyectoCoq.Dualidad <> Teorema def
+R7672:7678 ProyectoCoq.Dualidad <> Teorema def
+R7672:7678 ProyectoCoq.Dualidad <> Teorema def
+R7722:7736 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R7722:7736 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R7722:7736 ProyectoCoq.Dualidad <> dual_lattice_of canonstruc
+R7761:7768 ProyectoCoq.Dualidad <> dual_imp thm
+R7770:7777 ProyectoCoq.Dualidad <> eval_imp thm
+R7779:7786 ProyectoCoq.Dualidad <> eval_imp thm
+R7761:7768 ProyectoCoq.Dualidad <> dual_imp thm
+R7761:7768 ProyectoCoq.Dualidad <> dual_imp thm
+R7770:7777 ProyectoCoq.Dualidad <> eval_imp thm
+R7770:7777 ProyectoCoq.Dualidad <> eval_imp thm
+R7779:7786 ProyectoCoq.Dualidad <> eval_imp thm
+R7779:7786 ProyectoCoq.Dualidad <> eval_imp thm
+R7804:7814 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7816:7826 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7804:7814 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7804:7814 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7816:7826 ProyectoCoq.Dualidad <> eval_dual_f thm
+R7816:7826 ProyectoCoq.Dualidad <> eval_dual_f thm
+prf 7882:7885 <> Dual
+R7900:7903 ProyectoCoq.Dualidad <> Form ind
+binder 7896:7896 <> f:102
+R7906:7906 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R7916:7922 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R7939:7939 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R7907:7913 ProyectoCoq.Dualidad <> Teorema def
+R7915:7915 ProyectoCoq.Dualidad <> f:102 var
+R7923:7929 ProyectoCoq.Dualidad <> Teorema def
+R7932:7935 ProyectoCoq.Dualidad <> dual def
+R7937:7937 ProyectoCoq.Dualidad <> f:102 var
+R7978:7985 ProyectoCoq.Dualidad <> Dualidad thm
+R7978:7985 ProyectoCoq.Dualidad <> Dualidad thm
+R7978:7985 ProyectoCoq.Dualidad <> Dualidad thm
+R7998:8005 ProyectoCoq.Dualidad <> Dualidad thm
+R8008:8011 ProyectoCoq.Dualidad <> dual def
+R7998:8005 ProyectoCoq.Dualidad <> Dualidad thm
+R8008:8011 ProyectoCoq.Dualidad <> dual def
+R7998:8005 ProyectoCoq.Dualidad <> Dualidad thm
+R8008:8011 ProyectoCoq.Dualidad <> dual def
+R8037:8041 ProyectoCoq.Dualidad <> duald thm
+R8037:8041 ProyectoCoq.Dualidad <> duald thm
+R8037:8041 ProyectoCoq.Dualidad <> duald thm
